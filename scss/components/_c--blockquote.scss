@@ -1,0 +1,25 @@
+// ========================================================
+// @component: blockquote
+// ========================================================
+//
+
+// component config
+//
+$color-blockquote-bgcolor:              $brand--heritageYellowTint;
+$color-blockquote-bordercolor:      $brand--heritageYellow;
+$color-blockquote-textcolor:            $monochrome--black;
+
+// component block
+//
+blockquote {
+    border-left: solid 4px $color-blockquote-bordercolor;
+    background: $color-blockquote-bgcolor;
+    color: $color-blockquote-textcolor;
+    margin: 1.5em 0px;
+	padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    
+    p {
+        display: inline; 
+    }
+}

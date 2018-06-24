@@ -1,0 +1,63 @@
+// ========================================================
+// @component: section nav
+// ========================================================
+//
+
+// settings;
+//
+$section-nav-line-height:          $spacing--lg;
+$section-nav-neg-margin:           $spacing--xs;
+$section-nav-parent-child-padding: $spacing--xs;
+$section-nav-parent-color-txt:     $brand--heritageBlue;
+$section-nav-parent-color-hover:   $monochrome--paleGrey;
+$section-nav-child-color-txt:      $monochrome--black;
+$section-nav-child-active-bgcolor: $extended--blueLight;
+
+// component block
+//
+.c-section-nav {
+    line-height: $section-nav-line-height;
+    @include remcalc(margin-left, -($section-nav-neg-margin));
+
+    // component element(s)
+    //
+    &__parent,
+    &__child {
+        display: inline-block;
+        @include remcalc(padding-top, $section-nav-parent-child-padding);
+        @include remcalc(padding-right, $section-nav-parent-child-padding);
+        @include remcalc(padding-bottom, $section-nav-parent-child-padding);
+        @include remcalc(padding-left, $section-nav-parent-child-padding);
+        text-decoration: none;
+    }
+
+    &__parent {
+        border: none;
+        color: $section-nav-parent-color-txt;
+        @include remcalc(font-size, 21px);
+        @include font('Open Sans', 800);
+
+        &:hover {
+            background-color: $section-nav-parent-color-hover;
+        }
+    }
+
+    &__child {
+        border: none;
+        color: $section-nav-child-color-txt;
+
+        &--active {
+            background-color: $section-nav-child-active-bgcolor
+        }
+
+        &:hover {
+            background: none;
+        }
+
+        &:visited {
+            // NOTE: this will need to go somewhere specific in `s--colors.scss`
+            // then be referenced above in a variable.
+            color: #53388d;
+        }
+    }
+}
