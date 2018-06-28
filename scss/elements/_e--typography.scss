@@ -1,0 +1,77 @@
+// ========================================================
+// @settings: typography
+// ========================================================
+//
+
+// settings;
+//
+$typography-default-number:   $magicNumber;
+$typeography-color--heading:  $brand--heritageBlue;
+$typography-color--paragraph: $monochrome--black;
+$typography-focuscolor:       $brand--heritageYellow;
+
+// module definitions:
+//
+html {
+    @include remcalc(font-size, $magicNumber);
+}
+
+body {
+    @include font('Open Sans', 400);
+    color: $typography-color--paragraph;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+p, .p {
+    margin: 0;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+    color: $typeography-color--heading;
+}
+
+h1, .h1 {
+    @include remcalc(font-size, 36px);
+    @include remcalc(line-height, 48px);
+    @include remcalc(margin-top, $spacing--2xl);
+    @include remcalc(margin-bottom, $spacing--2xl);
+    font-weight: 800;
+}
+
+h2, .h2 {
+    @include remcalc(font-size, 28px);
+    @include remcalc(line-height, 36px);
+    @include remcalc(margin-top, $spacing--2xl);
+    @include remcalc(margin-bottom, $spacing--md);
+    font-weight: 700;
+}
+
+h3, .h3 {
+    @include remcalc(font-size, 20px);
+    @include remcalc(line-height, 28px);
+    @include remcalc(margin-top, $spacing--2xl);
+    @include remcalc(margin-bottom, $spacing--md);
+    font-weight: 600;
+}
+
+p, .p {
+    @include remcalc(font-size, $typography-default-number);
+    @include remcalc(line-height, $typography-default-number * 1.5);
+    @include remcalc(margin-bottom, $spacing--md);
+}
+
+ul,
+ol {
+    @include remcalc(line-height, $typography-default-number * 1.5);
+    @include remcalc(margin-bottom, $typography-default-number);
+    @include remcalc(padding-left, $typography-default-number * 2);
+}
+
+ul     { list-style-type: disc; }
+ol     { list-style-type: decimal; }
+strong { font-weight: 700; }
+em     { font-style: italic; }

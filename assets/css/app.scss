@@ -1,0 +1,52 @@
+---
+---
+
+@import '../../scss/cabui';
+
+// // ====================================================================
+// // IMPORT CAB UI FRAMEWORK
+// // ====================================================================
+//
+// // SETTINGS: global variables, config switches
+// @import '../../scss/settings/s--magicnumber';
+// @import '../../scss/settings/s--spacing';
+// @import '../../scss/settings/s--colors';
+// @import '../../scss/settings/s--breakpoints';
+//
+// // TOOLS: default mixins and functions
+// @import '../../scss/tools/t--remcalc';
+// @import '../../scss/tools/t--clearfix';
+// @import '../../scss/tools/t--fonts';
+//
+// // GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
+// @import '../../scss/generic/g--normalize';
+// @import '../../scss/generic/g--boxsizing';
+//
+// // ELEMENTS: unclassed HTML elements (type selectors)
+// @import '../../scss/elements/e--typography';
+// @import '../../scss/elements/e--links';
+// @import '../../scss/elements/e--forms';
+//
+// // OBJECTS: cosmetic-free design patterns
+// @import '../../scss/objects/o--grid';
+// @import '../../scss/objects/o--list';
+//
+// // COMPONENTS: designed components, chunks of UI
+// @import '../../scss/components/c--wrap';
+// @import '../../scss/components/c--maincontent';
+//
+// @import '../../scss/components/c--section-nav';
+// // @import '../../scss/components/c--global-header';
+// // @import '../../scss/components/c--button';
+// // @import '../../scss/components/c--blockquote';
+//
+// // UTILITIES: helpers and overrides
+// @import '../../scss/utilities/u--helpers';
+
+
+// ====================================================================
+// IMPORT APPLICATION STYLES
+// ====================================================================
+
+// load in the docs styling
+@import 'elements/e--code';

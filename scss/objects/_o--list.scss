@@ -1,0 +1,34 @@
+// ========================================================
+// @object: list
+// ========================================================
+//
+
+// component config
+//
+
+
+// component block
+//
+.o-list {
+    margin-top: 0;
+    @include remcalc(padding-left, 18px);
+
+    // component elements
+    //
+    &__item {}
+
+    // component modifiers
+    //
+    &--flat {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &--inline {
+        .o-list__item {
+            display: inline-block;
+            @include remcalc(margin-right, 5px);
+        }
+    }
+}

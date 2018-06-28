@@ -1,0 +1,25 @@
+// ========================================================
+// @component: wrap
+// ========================================================
+//
+
+// component config
+//
+$c-wrap__maxW: 1024px;
+$c-wrap__spacing: 16px;
+$c-wrap__bp--sm: $bp--sm;
+
+// component block
+//
+.c-wrap {
+    @include remcalc(padding-left, $c-wrap__spacing);
+    @include remcalc(padding-right, $c-wrap__spacing);
+    max-width: 61.25rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $c-wrap__bp--sm) {
+        @include remcalc(padding-left, $c-wrap__spacing * 2);
+        @include remcalc(padding-right, $c-wrap__spacing * 2);
+    }
+}

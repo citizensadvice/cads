@@ -1,0 +1,70 @@
+// ========================================================
+// @component: button
+// ========================================================
+//
+
+// component config
+//
+$focuscolor: $brand--heritageYellow;
+
+$default-bgcolor: $monochrome--paleGrey;
+$default-textcolor: $monochrome--black;
+
+$primary-bgcolor: $extended--turquoisePrimary;
+$primary-bgcolor--hover: $extended--turquoiseDark;
+$primary-textcolor: $brand--heritageBlue;
+
+$secondary-bgcolor--hover: $extended--blueMid;
+$secondary-bordercolor: $extended--blueDark;
+$secondary-textcolor: $brand--heritageBlue;
+
+// component block
+.c-btn {
+    background: $default-bgcolor;
+    border: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: $default-textcolor;
+    font-weight: 600;
+    @include remcalc(font-size, 16px);
+    margin: 0;
+    @include remcalc(margin-right, 8px);
+    @include remcalc(padding, 8px);
+    outline: none;
+    text-decoration: none;
+
+    // component modifiers
+    &--primary {
+        border: none;
+        background: $primary-bgcolor;
+        color: $primary-textcolor;
+        @include remcalc(padding-top, 16px);
+        @include remcalc(padding-bottom, 16px);
+        @include remcalc(padding-left, 17px);
+        @include remcalc(padding-right, 17px);
+
+        &:hover {
+            background-color: $primary-bgcolor--hover;
+        }
+    }
+
+    &--secondary {
+        background: transparent;
+        border: 1px solid $secondary-bordercolor;
+        color: $secondary-textcolor;
+        @include remcalc(font-size, 14px);
+        @include remcalc(padding-top, 8px);
+        @include remcalc(padding-bottom, 8px);
+        @include remcalc(padding-left, 9px);
+        @include remcalc(padding-right, 9px);
+
+        &:hover {
+            background: $secondary-bgcolor--hover;
+        }
+    }
+
+    // component states
+    &:focus {
+        outline: 2px solid $focuscolor;
+    }
+}
