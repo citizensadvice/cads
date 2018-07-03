@@ -1,48 +1,10 @@
 ---
 ---
 
+// ====================================================================
+// IMPORT CAB UI FRAMEWORK
+// ====================================================================
 @import '../../scss/cabui';
-
-// // ====================================================================
-// // IMPORT CAB UI FRAMEWORK
-// // ====================================================================
-//
-// // SETTINGS: global variables, config switches
-// @import '../../scss/settings/s--magicnumber';
-// @import '../../scss/settings/s--spacing';
-// @import '../../scss/settings/s--colors';
-// @import '../../scss/settings/s--breakpoints';
-//
-// // TOOLS: default mixins and functions
-// @import '../../scss/tools/t--remcalc';
-// @import '../../scss/tools/t--clearfix';
-// @import '../../scss/tools/t--fonts';
-//
-// // GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
-// @import '../../scss/generic/g--normalize';
-// @import '../../scss/generic/g--boxsizing';
-//
-// // ELEMENTS: unclassed HTML elements (type selectors)
-// @import '../../scss/elements/e--typography';
-// @import '../../scss/elements/e--links';
-// @import '../../scss/elements/e--forms';
-//
-// // OBJECTS: cosmetic-free design patterns
-// @import '../../scss/objects/o--grid';
-// @import '../../scss/objects/o--list';
-//
-// // COMPONENTS: designed components, chunks of UI
-// @import '../../scss/components/c--wrap';
-// @import '../../scss/components/c--maincontent';
-//
-// @import '../../scss/components/c--section-nav';
-// // @import '../../scss/components/c--global-header';
-// // @import '../../scss/components/c--button';
-// // @import '../../scss/components/c--blockquote';
-//
-// // UTILITIES: helpers and overrides
-// @import '../../scss/utilities/u--helpers';
-
 
 // ====================================================================
 // IMPORT APPLICATION STYLES
@@ -50,70 +12,4 @@
 
 // load in the docs styling
 @import 'elements/e--code';
-
-
-nav ul {
-    list-style-type: none;
-}
-nav li {
-    line-height: 30px;
-}
-nav a {
-    text-decoration: none;
-}
-nav li.active a {
-    color: #ffffff;
-}
-
-/* NAVIGATION BAR
- -------------------------------------------------- */
- #navigation {
-    min-height: 70px !important;
-    padding-top: 10px;
-}
-#navigation .navbar-brand {
-    padding-right: 28px;
-    width: 280px;
-    border-right: 3px solid rgba(255, 255, 255, 0.1);
-    font-family: "hobo-std", sans-serif;
-    font-style: italic;
-    font-size: 26px !important;
-    color: #5fcf80 !important;
-}
-#navigation .navbar-brand .site-logo {
-    float: left;
-    margin-top: -10px;
-    margin-right: 1rem;
-    width: 250px;
-}
-#navigation #navbar {
-    float: right !important;
-    margin-right: -15px;
-    font-family: 'Helvetica Rounded', Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 38px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .5) !important;
-}
-@media (max-width: 768px) {
-    #navigation #navbar {
-        float: none !important;
-        margin-right: 0;
-    }
-}
-#navigation #navbar .navbar-nav li a {
-    color: #b2bbbd !important;
-}
-#navigation #navbar .navbar-nav li a:hover,
-#navigation #navbar .navbar-nav li a:focus {
-    color: #ffffff !important;
-    border-bottom: 2px solid #ffffff !important;
-}
-#navigation #navbar .navbar-nav .active a {
-    color: #ffffff !important;
-    border-bottom: 2px solid #ffffff !important;
-}
-#navigation #navbar .navbar-nav .dropdown-menu li a {
-    color: #515151 !important;
-    text-shadow: none !important;
-}
+@import 'components/c--nav';
