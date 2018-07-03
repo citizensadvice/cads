@@ -1,16 +1,51 @@
-- title: About
-  url: pages/about.html
+- title: Design System
   sublinks:
-    - title: FAQ
-      url: /faq.html
-    - title: Documentation
+    - title: Getting started
+      url: /start.html
+    - title: Front end 
       url: /documentation.html
-    - title: separator
-    - title: Customer Support
-      url: /customer-support.html
-- title: Team
-  url: /team.html
-- title: Contact
-  url: /contact.html
-- title: Store
-  url: /store.html
+    - title: Sketch Files
+      url: /sketch.html
+- title: Foundation 
+  sublinks:
+    - title: Colours
+      url: /colours.html
+    - title: Grid
+      url: /grid.html
+    - title: Icons
+      url: /icons.html
+    - title: Spacing
+      url: /spacing.html
+    - title: Typography
+      url: /typo.html   
+- title: Components
+  sublinks:
+    - title: Breadcrumbs
+      url: /breadcrumbs.html
+    - title: Button
+      url: /button.html
+    - title: Check boxes
+      url: /checkboxes.html
+    - title: Date Input
+      url: /date.html
+    - title: Fields
+      url: /fields.html  
+    - title: Footer
+      url: /footer.html
+    - title: Inline links
+      url: /links.html 
+    - title: Radio Buttons
+      url: /radio.html  
+    - title: Search
+      url: /search.html
+    - title: Section Navigation
+      url: /sec-navigation.html
+    - title: Text Input
+      url: /text-input.html  
+    - title: Top Level Nav
+      url: /top-nav.html
+    - title: Validation
+      url: /links.html
+    - title: Wells
+      url: well.html
+

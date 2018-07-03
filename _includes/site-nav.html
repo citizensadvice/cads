@@ -1,11 +1,17 @@
 <nav>
   <ul>
     {% for link in site.data.navigation %}
-      {% if page.title contains "about" %}
-        {% for sublink in link.sublinks %}
-          <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-        {% endfor %}
-      {% endif %}
+      <li>
+        <span >{{ link.title }} </span>
+        <ul>
+            {% for sublink in link.sublinks %}
+          <li>
+              
+              <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+      </li>
     {% endfor %}
   </ul>
 </nav>
