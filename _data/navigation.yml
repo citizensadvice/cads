@@ -1,7 +1,7 @@
 - title: Design System
   sublinks:
     - title: Getting started
-      url: /start.html
+      url: /docs/1.0/getting-started/introduction.html
     - title: Front end 
       url: /documentation.html
     - title: Sketch Files
@@ -9,15 +9,15 @@
 - title: Foundation 
   sublinks:
     - title: Colours
-      url: /colours.html
+      url: /docs/1.0/foundation/colours.html
     - title: Grid
-      url: /grid.html
+      url: /docs/1.0/foundation/grid.html
     - title: Icons
-      url: /icons.html
+      url: /docs/1.0/foundation/icons.html
     - title: Spacing
-      url: /spacing.html
+      url: /docs/1.0/foundation/spacing.html
     - title: Typography
-      url: /typo.html   
+      url: /docs/1.0/foundation/typography.html   
 - title: Components
   sublinks:
     - title: Breadcrumbs
