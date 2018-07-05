@@ -4,6 +4,9 @@
         {% include head.html %}
     </head>
     <body>
-        {{ content }}
+        {% include site-nav.html %}
+        <main>
+            {{ content }}
+        </main>
     </body>
 </html>
