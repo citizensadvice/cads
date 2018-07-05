@@ -21,31 +21,30 @@
 - title: Components
   sublinks:
     - title: Breadcrumbs
-      url: /breadcrumbs.html
+      url: /docs/1.0/components/breadcrumbs.html
     - title: Button
-      url: /button.html
+      url: /docs/1.0/components/buttons.html
     - title: Check boxes
-      url: /checkboxes.html
+      url: /docs/1.0/components/checkboxes.html
     - title: Date Input
-      url: /date.html
+      url: /docs/1.0/components/date-input.html
     - title: Fields
-      url: /fields.html  
+      url: /docs/1.0/components/fields.html  
     - title: Footer
-      url: /footer.html
+      url: /docs/1.0/components/footer.html
     - title: Inline links
-      url: /links.html 
+      url: /docs/1.0/components/inline-links.html 
     - title: Radio Buttons
-      url: /radio.html  
+      url: /docs/1.0/components/radios.html  
     - title: Search
-      url: /search.html
+      url: /docs/1.0/components/search.html
     - title: Section Navigation
-      url: /sec-navigation.html
+      url: /docs/1.0/components/section-nav.html
     - title: Text Input
-      url: /text-input.html  
+      url: /docs/1.0/components/text-input.html  
     - title: Top Level Nav
-      url: /top-nav.html
+      url: /docs/1.0/components/top-nav.html
     - title: Validation
-      url: /links.html
+      url: /docs/1.0/components/validation.html
     - title: Wells
-      url: well.html
-
+      url: /docs/1.0/components/wells.html
