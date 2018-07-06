@@ -10,6 +10,19 @@
 // IMPORT APPLICATION STYLES
 // ====================================================================
 
-// load in the docs styling
+// SETTINGS: global variables, config switches
+
+// TOOLS: default mixins and functions
+
+// GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
+
+// ELEMENTS: unclassed HTML elements (type selectors)
 @import 'elements/e--code';
-@import 'components/c--nav';
+
+// OBJECTS: cosmetic-free design patterns
+
+// COMPONENTS: designed components, chunks of UI
+@import 'components/c--layout';
+
+// UTILITIES: helpers and overrides
+@import 'utilities/h--positioning';

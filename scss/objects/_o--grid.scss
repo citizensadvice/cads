@@ -3,6 +3,7 @@
 // ========================================================
 //
 
+$grid-fixed-unit-width: 300;
 $grid-bp--sm: $bp--sm;
 $grid-bp--md: $bp--md;
 $grid-bp--lg: $bp--lg;
@@ -11,152 +12,197 @@ $grid-margin: 32px;
 // component block
 //
 .o-grid {
+  direction: ltr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -$grid-margin;
+  text-align: left;
+  clear: both;
+
+  // component elements
+  //
+  &__unit {
     direction: ltr;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: -$grid-margin;
-    text-align: left;
-    clear: both;
+    display: inline-block;
+    margin-right: -4.1px;
+    padding-left: $grid-margin;
+    transition: width 0.2s ease-in-out;
+    vertical-align: top;
+    width: 100%;
 
-    // component elements
+    // component element modifiers
     //
-    &__unit {
-        direction: ltr;
-        display: inline-block;
-        margin-right: -4.1px;
-        padding-left: $grid-margin;
-        transition: width 0.2s ease-in-out;
-        vertical-align: top;
+
+    // whole
+    &--m-1-1 {
+      width: 100%;
+    }
+
+    // halves
+    &--m-1-2,
+    &--m-2-4 {
+      width: 50%;
+    }
+
+    // thirds
+    &--m-1-3 {
+      width: 33.3333%;
+    }
+    &--m-2-3 {
+      width: 66.6666%;
+    }
+
+    // quarters
+    &--m-1-4 {
+      width: 25%;
+    }
+    &--m-3-4 {
+      width: 75%;
+    }
+
+    @media (min-width: $grid-bp--sm) {
+      // whole
+      &--t-1-1 {
         width: 100%;
+      }
 
-        // component element modifiers
-        //
+      // halves
+      &--t-1-2,
+      &--t-2-4 {
+        width: 50%;
+      }
 
-        // whole
-        &--m-1-1 {
-            width: 100%;
-        }
+      // thirds
+      &--t-1-3 {
+        width: 33.3333%;
+      }
+      &--t-2-3 {
+        width: 66.6666%;
+      }
 
-        // halves
-        &--m-1-2,
-        &--m-2-4 {
-            width: 50%;
-        }
+      // quarters
+      &--t-1-4 {
+        width: 25%;
+      }
+      &--t-3-4 {
+        width: 75%;
+      }
+    }
 
-        // thirds
-        &--m-1-3 {
-            width: 33.3333%;
-        }
-        &--m-2-3 {
-            width: 66.6666%;
-        }
+    @media (min-width: $grid-bp--md) {
+      // whole
+      &--d-1-1 {
+        width: 100%;
+      }
 
-        // quarters
-        &--m-1-4 {
-            width: 25%;
-        }
-        &--m-3-4 {
-            width: 75%;
-        }
+      // halves
+      &--d-1-2,
+      &--d-2-4 {
+        width: 50%;
+      }
 
+      // thirds
+      &--d-1-3 {
+        width: 33.3333%;
+      }
+      &--d-2-3 {
+        width: 66.6666%;
+      }
+
+      // quarters
+      &--d-1-4 {
+        width: 25%;
+      }
+      &--d-3-4 {
+        width: 75%;
+      }
+    }
+
+    @media (min-width: $grid-bp--lg) {
+      // whole
+      &--d-1-1 {
+        width: 100%;
+      }
+
+      // halves
+      &--d-1-2,
+      &--d-2-4 {
+        width: 50%;
+      }
+
+      // thirds
+      &--d-1-3 {
+        width: 33.3333%;
+      }
+      &--d-2-3 {
+        width: 66.6666%;
+      }
+
+      // quarters
+      &--d-1-4 {
+        width: 25%;
+      }
+      &--d-3-4 {
+        width: 75%;
+      }
+    }
+  }
+
+  // component modifiers
+  //
+
+  // vertical alignment class
+  &--middle {
+    > .o-grid__unit {
+      vertical-align: middle;
+    }
+  }
+
+  // switch unit order
+  &--rev {
+    direction: rtl;
+  }
+
+  // give first unit a fixed width and next flexible, only built for
+  // a two unit layout. The width value is set in the config at the
+  // top of this file.
+  &--fixed-col {
+    @include clearfix();
+
+    > .o-grid__unit:first-child {
+      @media (min-width: $grid-bp--sm) {
+        float: left;
+        height: 100%;
+        left: 0;
+        overflow: auto;
+        position: fixed;
+      }
+    }
+
+    > .o-grid__unit:last-child {
+      @media (min-width: $grid-bp--sm) {
+        float: right;
+        width: 100%;
+      }
+    }
+
+    &--#{$grid-fixed-unit-width} {
+      > .o-grid__unit:first-child {
         @media (min-width: $grid-bp--sm) {
-            // whole
-            &--t-1-1 {
-                width: 100%;
-            }
-
-            // halves
-            &--t-1-2,
-            &--t-2-4 {
-                width: 50%;
-            }
-
-            // thirds
-            &--t-1-3 {
-                width: 33.3333%;
-            }
-            &--t-2-3 {
-                width: 66.6666%;
-            }
-
-            // quarters
-            &--t-1-4 {
-                width: 25%;
-            }
-            &--t-3-4 {
-                width: 75%;
-            }
+          width: #{$grid-fixed-unit-width}px;
         }
+      }
 
-        @media (min-width: $grid-bp--md) {
-            // whole
-            &--d-1-1 {
-                width: 100%;
-            }
+      > .o-grid__unit:last-child {
+        @media (min-width: $grid-bp--sm) {
+          margin-left: -#{$grid-fixed-unit-width}px;
 
-            // halves
-            &--d-1-2,
-            &--d-2-4 {
-                width: 50%;
-            }
-
-            // thirds
-            &--d-1-3 {
-                width: 33.3333%;
-            }
-            &--d-2-3 {
-                width: 66.6666%;
-            }
-
-            // quarters
-            &--d-1-4 {
-                width: 25%;
-            }
-            &--d-3-4 {
-                width: 75%;
-            }
+          > * {
+            margin-left: #{$grid-fixed-unit-width}px;
+          }
         }
-
-        @media (min-width: $grid-bp--lg) {
-            // whole
-            &--d-1-1 {
-                width: 100%;
-            }
-
-            // halves
-            &--d-1-2,
-            &--d-2-4 {
-                width: 50%;
-            }
-
-            // thirds
-            &--d-1-3 {
-                width: 33.3333%;
-            }
-            &--d-2-3 {
-                width: 66.6666%;
-            }
-
-            // quarters
-            &--d-1-4 {
-                width: 25%;
-            }
-            &--d-3-4 {
-                width: 75%;
-            }
-        }
+      }
     }
-
-    // component modifiers
-    //
-    &--middle {
-        > .o-grid__unit {
-            vertical-align: middle;
-        }
-    }
-
-    &--rev {
-        direction: rtl;
-    }
+  }
 }

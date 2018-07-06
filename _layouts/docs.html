@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% include head.html %}
-    </head>
-    <body>
-        {% include site-nav.html %}
-        <main>
-            {{ content }}
-        </main>
-    </body>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="c-wrap c-wrap--full-width">
+      <div class="o-grid o-grid--fixed-col o-grid--fixed-col--300">
+        <div class="o-grid__unit">
+          <nav>{% include site-nav.html %}</nav>
+        </div>
+
+        <div class="o-grid__unit">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

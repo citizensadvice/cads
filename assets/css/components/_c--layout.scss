@@ -1,0 +1,35 @@
+// ========================================================
+// @component: layout
+// ========================================================
+//
+
+// component config
+//
+$layout-staticCol-width: 300px;
+$layout-bp--sm: $bp--sm;
+
+// component block
+.c-layout {
+  @media (min-width: $layout-bp--sm) {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+
+    // component elements
+    &__col {
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      // component modifiers
+      &--fixed {
+        min-width: $layout-staticCol-width;
+        max-width: $layout-staticCol-width;
+        flex-basis: $layout-staticCol-width;
+      }
+
+      &--fluid {
+        width: 100%;
+      }
+    }
+  }
+}
