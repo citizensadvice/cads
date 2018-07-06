@@ -1,0 +1,18 @@
+// ========================================================
+// @component: static container
+// ========================================================
+//
+
+// component config
+//
+
+// component block
+.c-static-container {
+  &__unit {
+    @media (min-width: $grid-bp--sm) {
+      height: 100%;
+      overflow: auto;
+      position: fixed;
+    }
+  }
+}

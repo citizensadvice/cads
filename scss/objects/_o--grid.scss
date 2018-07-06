@@ -173,10 +173,7 @@ $grid-margin: 32px;
     > .o-grid__unit:first-child {
       @media (min-width: $grid-bp--sm) {
         float: left;
-        height: 100%;
         left: 0;
-        overflow: auto;
-        position: fixed;
       }
     }
 
