@@ -5,21 +5,20 @@
 
 // component config
 //
-$bg-color:   $brand--heritageBlue;
+$bg-color: $brand--heritageBlue;
 $text-color: $monochrome--white;
-
 
 // component block
 //
-.c-global-header {
-    @include remcalc(margin-bottom, 32px);
-    background: $brand--heritageBlue;
-    color: $text-color;
-
-    &__item {
-        a {
-            border: none;
-            background: none;
-        }
-    }
-}
+// .c-global-header {
+//     @include remcalc(margin-bottom, 32px);
+//     background: $brand--heritageBlue;
+//     color: $text-color;
+//
+//     &__item {
+//         a {
+//             border: none;
+//             background: none;
+//         }
+//     }
+// }

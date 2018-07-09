@@ -4,7 +4,7 @@
 // ====================================================================
 // IMPORT CAB UI FRAMEWORK
 // ====================================================================
-@import '../../scss/cabui';
+@import "../../scss/cabui";
 
 // ====================================================================
 // IMPORT APPLICATION STYLES
@@ -22,6 +22,8 @@
 // OBJECTS: cosmetic-free design patterns
 
 // COMPONENTS: designed components, chunks of UI
-@import 'components/c--static-container';
+@import "components/c--static-container";
+@import "components/c--global-header";
 
 // UTILITIES: helpers and overrides
+@import "utilities/u--testing";
