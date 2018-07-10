@@ -1,14 +1,14 @@
 - title: Design System
   sublinks:
-    - title: Getting started
+    - title: About the system
       url: /docs/1.0/getting-started/introduction.html
-    - title: Front end 
+    - title: Frontend installation
       url: /documentation.html
-    - title: Sketch Files
+    - title: Sketch file download
       url: /sketch.html
-- title: Foundation 
+- title: Foundations
   sublinks:
-    - title: Colours
+    - title: Colour
       url: /docs/1.0/foundation/colours.html
     - title: Grid
       url: /docs/1.0/foundation/grid.html
@@ -22,14 +22,12 @@
   sublinks:
     - title: Breadcrumbs
       url: /docs/1.0/components/breadcrumbs.html
-    - title: Button
+    - title: Buttons
       url: /docs/1.0/components/buttons.html
-    - title: Check boxes
+    - title: Checkboxes
       url: /docs/1.0/components/checkboxes.html
     - title: Date Input
       url: /docs/1.0/components/date-input.html
-    - title: Fields
-      url: /docs/1.0/components/fields.html  
     - title: Footer
       url: /docs/1.0/components/footer.html
     - title: Inline links
@@ -42,9 +40,7 @@
       url: /docs/1.0/components/section-nav.html
     - title: Text Input
       url: /docs/1.0/components/text-input.html  
-    - title: Top Level Nav
+    - title: Top Level Navigation
       url: /docs/1.0/components/top-nav.html
-    - title: Validation
-      url: /docs/1.0/components/validation.html
     - title: Wells
       url: /docs/1.0/components/wells.html
