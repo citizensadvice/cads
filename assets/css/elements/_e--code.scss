@@ -1,43 +1,41 @@
 code,
 tt {
-    margin: 0 2px;
-    padding: 0 5px;
-    white-space: nowrap;
-    border: 1px solid #eaeaea;
-    background-color: #f8f8f8;
-    border-radius: 3px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  font-family: Hack, monospace;
+  @include remcalc(font-size, 14px);
+  @include remcalc(line-height, 26px);
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
 }
 
 pre code {
-    margin: 0;
-    padding: 0;
-    white-space: pre;
-    border: none;
-    background: transparent;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
 }
 
 .highlight pre {
-    background-color: #f8f8f8;
-    border: 1px solid #cccccc;
-    font-size: 13px;
-    line-height: 19px;
-    overflow: auto;
-    padding: 6px 10px;
-    border-radius: 3px;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 12px 20px;
 }
 
 pre {
-    background-color: #f8f8f8;
-    border: 1px solid #dfe1e3;
-    font-size: 13px;
-    line-height: 19px;
-    overflow: auto;
-    padding: 20px;
-    margin-top: 0;
+  background-color: #f8f8f8;
+  line-height: 19px;
+  margin-top: 0;
+  overflow: auto;
+  padding: 20px;
 }
 
 pre code,
 pre tt {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
