@@ -1,0 +1,19 @@
+// ========================================================
+// @component: highlight for code snippets
+// ========================================================
+//
+
+// component config
+//
+$main-content-bp--md: $bp--md;
+$highlight-item-width: 80% !important;
+
+// component block
+.highlight {
+  margin-right: 0;
+  margin-left: 0;
+
+  @media (min-width: $main-content-bp--md) {
+    max-width: $highlight-item-width;
+  }
+}

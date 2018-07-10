@@ -7,18 +7,16 @@
     "doc": "docs"
   },
   "scripts": {
-    "css-compile":  "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/cabui.scss dist/css/cabui.css",
-    "docs-compile": "bundle exec jekyll build",
-    "docs-serve":   "bundle exec jekyll serve",
+    "compile-css":
+      "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/cabui.scss dist/css/cabui.css",
+    "compile-docs": "bundle exec jekyll build",
+    "serve-docs": "bundle exec jekyll serve",
     "dist-framework": "npm-run-all --parallel css-compile"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "files": [
-    "dist",
-    "scss"
-  ],
+  "files": ["dist", "scss"],
   "devDependencies": {
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",

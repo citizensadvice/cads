@@ -1,0 +1,73 @@
+// ========================================================
+// @component: side navigation
+// ========================================================
+//
+
+// component config
+//
+$section-nav-section-heading-color--first-child: $brand--heritageBlue;
+$section-nav-section-spacing: $spacing--2xl;
+$section-nav-section-spacing--md: $spacing--md;
+$section-nav-section-heading-color: $monochrome--grey;
+$section-nav-section-heading-spacing: $spacing--md;
+$section-nav-text-color: $monochrome--black;
+$section-nav-item-padding: $spacing--xs;
+$section-nav-item-hover-color: $extended--blueLight;
+$section-nav-sidebar-color: $monochrome--grey;
+$section-nav-bp--sm: $bp--sm;
+
+// component block
+.c-section-nav {
+  padding-top: $section-nav-section-spacing;
+
+  @media (min-width: $section-nav-bp--sm) {
+    border-right: 1px solid $section-nav-sidebar-color;
+    padding-bottom: $section-nav-section-spacing;
+  }
+
+  &__section {
+    @include remcalc(margin-bottom, $section-nav-section-spacing);
+
+    &:last-child {
+      @include remcalc(margin-bottom, $section-nav-section-spacing--md);
+    }
+
+    &-heading {
+      color: $section-nav-section-heading-color;
+      display: inline-block;
+      @include remcalc(font-size, 24px);
+      font-weight: 600;
+      @include remcalc(margin-bottom, $section-nav-section-heading-spacing);
+    }
+
+    &:first-child &-heading {
+      color: $section-nav-section-heading-color--first-child;
+    }
+
+    &-item {
+      color: $section-nav-text-color;
+      @include remcalc(padding-top, $section-nav-item-padding);
+      @include remcalc(padding-bottom, $section-nav-item-padding);
+
+      a {
+        border: none;
+        color: $section-nav-text-color;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      &--active {
+        background-color: $section-nav-item-hover-color;
+        @include remcalc(margin-left, -16px);
+        @include remcalc(padding-left, 16px);
+
+        @media (min-width: $section-nav-bp--sm) {
+          @include remcalc(margin-left, -32px);
+          @include remcalc(padding-left, 32px);
+        }
+      }
+    }
+  }
+}

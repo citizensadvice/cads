@@ -22,8 +22,12 @@
 // OBJECTS: cosmetic-free design patterns
 
 // COMPONENTS: designed components, chunks of UI
+@import "components/c--main-content";
 @import "components/c--static-container";
 @import "components/c--global-header";
+@import "components/c--section-nav";
+@import "components/c--pygmentscss--autumn";
+@import "components/c--highlight";
 
 // UTILITIES: helpers and overrides
 @import "utilities/u--testing";

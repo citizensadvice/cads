@@ -180,6 +180,7 @@ $grid-margin: 32px;
     > .o-grid__unit:last-child {
       @media (min-width: $grid-bp--sm) {
         float: right;
+        margin-right: 0;
         width: 100%;
       }
     }
@@ -187,16 +188,16 @@ $grid-margin: 32px;
     &--#{$grid-fixed-unit-width} {
       > .o-grid__unit:first-child {
         @media (min-width: $grid-bp--sm) {
-          width: #{$grid-fixed-unit-width}px;
+          @include remcalc(width, #{$grid-fixed-unit-width}px);
         }
       }
 
       > .o-grid__unit:last-child {
         @media (min-width: $grid-bp--sm) {
-          margin-left: -#{$grid-fixed-unit-width}px;
+          @include remcalc(margin-left, -#{$grid-fixed-unit-width}px);
 
           > * {
-            margin-left: #{$grid-fixed-unit-width}px;
+            @include remcalc(margin-left, #{$grid-fixed-unit-width}px);
           }
         }
       }

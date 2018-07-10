@@ -1,13 +1,13 @@
-<ul>
+<ul class="o-list o-list--flat-recursive c-section-nav">
   {% for link in site.data.navigation %}
-    <li>
-      <span >{{ link.title }} </span>
+    <li class="c-section-nav__section">
+      <span class="c-section-nav__section-heading">{{ link.title }} </span>
       <ul>
-          {% for sublink in link.sublinks %}
-        <li>
-            <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-          </li>
-          {% endfor %}
+        {% for sublink in link.sublinks %}
+        <li class="c-section-nav__section-item">
+          <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+        </li>
+        {% endfor %}
       </ul>
     </li>
   {% endfor %}

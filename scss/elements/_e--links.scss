@@ -12,15 +12,17 @@ $focuscolor: $brand--heritageYellow;
 // module definitions:
 //
 a {
+  & {
     border-bottom: 1px solid currentColor;
     color: $color--link;
     text-decoration: none;
 
     &:hover {
-        background-color: $color--link-hover;
+      background-color: $color--link-hover;
     }
 
     &:focus {
-        outline: 2px solid $focuscolor;
+      outline: 2px solid $focuscolor;
     }
+  }
 }

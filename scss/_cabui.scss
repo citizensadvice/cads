@@ -6,37 +6,36 @@
 //
 
 // SETTINGS: global variables, config switches
-@import 'settings/s--magicnumber';
-@import 'settings/s--spacing';
-@import 'settings/s--colors';
-@import 'settings/s--breakpoints';
+@import "settings/s--magicnumber";
+@import "settings/s--spacing";
+@import "settings/s--colors";
+@import "settings/s--breakpoints";
 
 // TOOLS: default mixins and functions
-@import 'tools/t--remcalc';
-@import 'tools/t--clearfix';
-@import 'tools/t--fonts';
+@import "tools/t--remcalc";
+@import "tools/t--clearfix";
+@import "tools/t--fonts";
+// @import "tools/t--make-link";
 
 // GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
-@import 'generic/g--normalize';
-@import 'generic/g--boxsizing';
+@import "generic/g--normalize";
+@import "generic/g--boxsizing";
 
 // ELEMENTS: unclassed HTML elements (type selectors)
-@import 'elements/e--typography';
-@import 'elements/e--links';
-@import 'elements/e--forms';
+@import "elements/e--typography";
+@import "elements/e--links";
+@import "elements/e--forms";
 
 // OBJECTS: cosmetic-free design patterns
-@import 'objects/o--grid';
-@import 'objects/o--list';
+@import "objects/o--grid";
+@import "objects/o--list";
 
 // COMPONENTS: designed components, chunks of UI
-@import 'components/c--wrap';
-@import 'components/c--maincontent';
-
-@import 'components/c--section-nav';
-@import 'components/c--global-header';
-@import 'components/c--button';
-@import 'components/c--blockquote';
+@import "components/c--wrap";
+@import "components/c--maincontent";
+@import "components/c--global-header";
+@import "components/c--button";
+@import "components/c--blockquote";
 
 // UTILITIES: helpers and overrides
-@import 'utilities/u--helpers';
+@import "utilities/u--helpers";

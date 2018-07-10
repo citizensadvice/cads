@@ -1,0 +1,22 @@
+// ========================================================
+// @component: main content
+// ========================================================
+//
+
+// component config
+//
+$main-content-bp--md: $bp--md;
+$main-content-item-width: 65%;
+
+// component block
+.c-main-content {
+  > * {
+    @media (min-width: $main-content-bp--md) {
+      max-width: $main-content-item-width;
+    }
+  }
+
+  &:not(.highlight) {
+    max-width: 100%;
+  }
+}
