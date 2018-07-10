@@ -1,0 +1,34 @@
+// ========================================================
+// @component: example boxes
+// ========================================================
+//
+
+// component config
+//
+$example-border-color: $monochrome--lightGrey;
+$example-padding: $spacing--md;
+$example-spacing: $spacing--2xl;
+$example-tag-spacing: $spacing--xs;
+
+// component block
+.c-example {
+  margin-top: $example-spacing;
+
+  &__tag {
+    border: 1px solid $example-border-color;
+    border-bottom: none;
+    display: inline-block;
+    padding: $example-tag-spacing;
+  }
+
+  &__box {
+    border: 1px solid $example-border-color;
+    padding: $example-padding;
+  }
+
+  &--code-snippet {
+    .c-example__box {
+      padding: 0;
+    }
+  }
+}

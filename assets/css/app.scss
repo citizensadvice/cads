@@ -17,7 +17,7 @@
 // GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
 
 // ELEMENTS: unclassed HTML elements (type selectors)
-@import 'elements/e--code';
+@import "elements/e--code";
 
 // OBJECTS: cosmetic-free design patterns
 
@@ -28,6 +28,7 @@
 @import "components/c--section-nav";
 @import "components/c--pygmentscss--borland";
 @import "components/c--highlight";
+@import "components/c--example";
 
 // UTILITIES: helpers and overrides
 @import "utilities/u--testing";
