@@ -3,9 +3,9 @@
     - title: About the system
       url: /docs/1.0/getting-started/introduction.html
     - title: Frontend installation
-      url: /documentation.html
+      url: /docs/1.0/front-end.html
     - title: Sketch file download
-      url: /sketch.html
+      url: /docs/1.0/sketch-file.html
 - title: Foundations
   sublinks:
     - title: Colour
