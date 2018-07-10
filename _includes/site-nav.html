@@ -4,9 +4,15 @@
       <span class="c-section-nav__section-heading">{{ link.title }} </span>
       <ul>
         {% for sublink in link.sublinks %}
-        <li class="c-section-nav__section-item">
-          <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-        </li>
+          {% if page.url == sublink.url %}
+          <li class="c-section-nav__section-item c-section-nav__section-item--active">
+            <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+          </li>
+          {% else %}
+          <li class="c-section-nav__section-item">
+            <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+          </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </li>
