@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Buttons
-group: components
 ---
 
 # Buttons

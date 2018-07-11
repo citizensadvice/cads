@@ -1,8 +1,8 @@
 ---
 layout: docs
-title: Section navigation
+title: Spacing
 ---
 
-# Section navigation
+# Spacing
 
 > Hold onto your hats folks! Content coming real soon...

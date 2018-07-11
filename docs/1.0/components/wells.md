@@ -1,9 +1,8 @@
 ---
 layout: docs
 title: Wells
-group: components
 ---
 
-## Introduction
+# Wells
 
-Wells
+> Hold onto your hats folks! Content coming real soon...

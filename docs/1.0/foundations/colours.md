@@ -1,8 +1,8 @@
 ---
 layout: docs
-title: Section navigation
+title: Colours
 ---
 
-# Section navigation
+# Colours
 
 > Hold onto your hats folks! Content coming real soon...

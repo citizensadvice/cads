@@ -7,12 +7,14 @@
 //
 $example-border-color: $monochrome--lightGrey;
 $example-padding: $spacing--md;
-$example-spacing: $spacing--2xl;
+$example-spacing-btm: $spacing--md;
+$example-spacing-top: $spacing--2xl;
 $example-tag-spacing: $spacing--xs;
 
 // component block
 .c-example {
-  margin-top: $example-spacing;
+  @include remcalc(margin-top, $example-spacing-top);
+  @include remcalc(margin-bottom, $example-spacing-btm);
 
   &__tag {
     border: 1px solid $example-border-color;
@@ -23,7 +25,7 @@ $example-tag-spacing: $spacing--xs;
 
   &__box {
     border: 1px solid $example-border-color;
-    padding: $example-padding;
+    @include remcalc(padding, $example-padding);
   }
 
   &--code-snippet {

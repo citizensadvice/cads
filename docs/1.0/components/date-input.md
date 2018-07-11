@@ -4,6 +4,6 @@ title: Date Input
 group: components
 ---
 
-## Introduction
+# Date input
 
-Date Input
+> Hold onto your hats folks! Content coming real soon...

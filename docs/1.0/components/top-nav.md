@@ -1,9 +1,8 @@
 ---
 layout: docs
-title: Top Navigation
-group: components
+title: Top navigation
 ---
 
-## Introduction
+# Top navigation
 
-Top Navigation
+> Hold onto your hats folks! Content coming real soon...

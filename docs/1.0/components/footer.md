@@ -1,9 +1,8 @@
 ---
 layout: docs
 title: Footer
-group: components
 ---
 
-## Introduction
+# Footer
 
-Footer
+> Hold onto your hats folks! Content coming real soon...
