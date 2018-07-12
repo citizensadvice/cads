@@ -15,11 +15,14 @@ The base-unit of spacing in the design system comes from 1rem which in most brow
 
 Colons can be used to align columns.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |`
-| zebra stripes | are neat      |    $1 |
+| Pixels    | Rem   | Cool           |
+| --------- |:-----:| -------------: |
+| 8px       | 0.5   |   $spacing-xs  |
+| 12px      | 0.75  |   $spacing-s   |
+| 16px      | 1     |   $spacing-m   |
+| 24px      | 1.5   |   $spacing-l   |
+| 32px      | 2     |   $spacing-xl  |
+| 40px      | 2.5   |   $spacing-xxl |
 
 <div class="c-example">
     <span class="c-example__tag">Example</span>
