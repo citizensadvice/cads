@@ -1,9 +1,8 @@
 ---
 layout: docs
 title: Validation
-group: components
 ---
 
-## Introduction
+# Validation
 
-Validation
+> Hold onto your hats folks! Content coming real soon...

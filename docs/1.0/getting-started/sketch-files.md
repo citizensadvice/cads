@@ -1,8 +1,8 @@
 ---
 layout: docs
-title: Section navigation
+title: Sketch file download
 ---
 
-# Section navigation
+# Sketch file download
 
 > Hold onto your hats folks! Content coming real soon...

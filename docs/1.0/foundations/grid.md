@@ -1,8 +1,8 @@
 ---
 layout: docs
-title: Section navigation
+title: Grid
 ---
 
-# Section navigation
+# Grid
 
 > Hold onto your hats folks! Content coming real soon...

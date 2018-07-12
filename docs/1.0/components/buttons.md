@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Buttons
-group: components
 ---
 
 # Buttons
@@ -20,47 +19,35 @@ If you want to link users between pages of a website, use links instead. If the 
 
 ## Primary Buttons
 
-In general, use primary buttons for actions that go to the next step.
+In general, use primary buttons for actions that go to the next step
 
-<div class="c-example">
-  <span class="c-example__tag">Example</span>
-  <div class="c-example__box">
-    <button type="button" class="c-btn c-btn--primary">Primary button</button>
-  </div>
-</div>
+{% capture example %}
+<button type="button" class="c-btn c-btn--primary">Primary button</button>
+{% endcapture %}
+{% include example.html content=example %}
 
-<div class="c-example c-example--code-snippet">
-  <span class="c-example__tag">HTML</span>
-  <div class="c-example__box">
-{% highlight html %}
+{% capture snippet %}
 <button type="button" class="c-btn c-btn--primary">
   Primary button
 </button>
-{% endhighlight %}
-  </div>
-</div>
+{% endcapture %}
+{% include snippet.html content=snippet %}
 
 ## Secondary Buttons
 
 Use secondary buttons for actions that happen on the same page.
 
-<div class="c-example">
-  <span class="c-example__tag">Example</span>
-  <div class="c-example__box">
-    <button type="button" class="c-btn c-btn--secondary">Secondary button</button>
-  </div>
-</div>
+{% capture example %}
+<button type="button" class="c-btn c-btn--secondary">Secondary button</button>
+{% endcapture %}
+{% include example.html content=example %}
 
-<div class="c-example c-example--code-snippet">
-  <span class="c-example__tag">HTML</span>
-  <div class="c-example__box">
-{% highlight html %}
+{% capture snippet %}
 <button type="button" class="c-btn c-btn--secondary">
   Secondary button
 </button>
-{% endhighlight %}
-  </div>
-</div>
+{% endcapture %}
+{% include snippet.html content=snippet %}
 
 ## Icons in buttons
 

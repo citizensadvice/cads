@@ -7,6 +7,7 @@
 //
 $main-content-bp--md: $bp--md;
 $main-content-item-width: 65%;
+$main-content-last-item-spacing: $spacing--md;
 
 // component block
 .c-main-content {
@@ -18,5 +19,9 @@ $main-content-item-width: 65%;
 
   &:not(.highlight) {
     max-width: 100%;
+  }
+
+  > *:last-child {
+    @include remcalc(margin-bottom, $main-content-last-item-spacing);
   }
 }

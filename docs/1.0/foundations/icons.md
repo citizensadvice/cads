@@ -1,8 +1,8 @@
 ---
 layout: docs
-title: Section navigation
+title: Icons
 ---
 
-# Section navigation
+# Icons
 
 > Hold onto your hats folks! Content coming real soon...
