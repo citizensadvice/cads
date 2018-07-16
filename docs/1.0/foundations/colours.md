@@ -95,7 +95,7 @@ title: Colours
 
 <div class="card">
     <div>
-        <div class=" card__item extendedTurquoise">
+        <div class=" card__item extendedTurquoiseDark">
         </div>
         <p>Turquoise dark</p>
         <p>#5CC0B5</p>
@@ -125,7 +125,7 @@ title: Colours
 
 <div class="card">
     <div>
-        <div class=" card__item heritageBlueTint">
+        <div class=" card__item redPrimary">
         </div>
         <p>Red primary</p>
         <p>#DF3034</p>
@@ -135,7 +135,7 @@ title: Colours
 
 <div class="card">
     <div>
-        <div class=" card__item heritageBlueTint">
+        <div class=" card__item redLight">
         </div>
         <p>Red light</p>
         <p>#FAE1E1</p>
