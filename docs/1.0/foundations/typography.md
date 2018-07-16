@@ -36,3 +36,38 @@ Open Sans - Semi Bold - Size 20px - Line Height 28px, 1.75 rem - Colour #004b88
 Open Sans - Semi Bold - Size 20px - Line Height 28px, 1.75 rem - Colour #004b88  
 <h3 class="h3">Citizens Advice helps people find a way forward.</h3>
 <h3 class="h3">Citizens Advice helps people find a way forward.</h3>
+
+## Paragraph
+
+Paragraph text
+Open Sans - Regular - Size 16px - Line Height 24px, 1.5 rem - Colour #000000
+<p>Citizens Advice helps people find a way forward.</p>
+<p>Citizens Advice helps people find a way forward.</p>
+
+## Inputs
+
+Button text
+
+Open Sans - Semibold - Size 16px - Line Height 24px, 1.5rem - Colour #004b88  
+ Button text
+
+ Small button text
+
+ Open Sans - Semibold - Size 14px - Line Height 20px, 1.25rem - Colour #004b88  
+ Small button text
+
+ Small button text
+
+Open Sans - Regular - Size 16px - Line Height 24px, 1.5rem - Colour #004b88  
+Inline link text
+
+Breadcrumb text
+
+Open Sans - Regular - Size 14px - Line Height 20px, 1.25rem - Colour #000000 
+Breadcrumb text
+
+Toolbar text
+
+Open Sans - Regular - Size 14px - Line Height 20px, 1.25rem - Colour #606060
+Toolbar text
+
