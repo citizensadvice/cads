@@ -1,15 +1,14 @@
 
-.card{
+.color{
     display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    margin: 10px 0;
     p{
         text-align: left;
         margin: 6px 0;
     }
     > div{
-        margin: 10px 5px;
+        margin: 0 10px;
     }
 
     &.extended{
@@ -17,12 +16,19 @@
             display: block;
         }
     }
+    &__block {
+        height: 190px;
+        width: 204px;
+        margin: 0;
+    }
+    &__element{
+        margin: 0;
+        border: 1px solid #ccc;
+        border-top: none;
+        padding-left: 15px;
+    }
 }
 
-.card__item {
-    height: 125px;
-    width: 140px;
-}
 //brand
 .heritageBlue{
     background: #004B88;
