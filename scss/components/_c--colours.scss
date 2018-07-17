@@ -1,5 +1,5 @@
 
-.color{
+.card{
     display: inline-flex;
     flex-direction: column;
     margin: 10px 0;
@@ -16,12 +16,12 @@
             display: block;
         }
     }
-    &__block {
+    &__media {
         height: 190px;
         width: 204px;
         margin: 0;
     }
-    &__element{
+    &__body{
         margin: 0;
         border: 1px solid #ccc;
         border-top: none;
