@@ -1,0 +1,96 @@
+
+.card{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px 0;
+    p{
+        text-align: left;
+        margin: 6px 0;
+    }
+    > div{
+        margin: 0 10px;
+    }
+
+    &.extended{
+        > div:nth-child(2){
+            display: block;
+        }
+    }
+    &__media {
+        height: 190px;
+        width: 204px;
+        margin: 0;
+    }
+    &__body{
+        margin: 0;
+        border: 1px solid #ccc;
+        border-top: none;
+        padding-left: 15px;
+    }
+}
+
+//brand
+.heritageBlue{
+    background: #004B88;
+}
+.heritageYellow{
+    background: #FCBB69;
+}
+.heritageBlueTint{
+    background: #97A8CC;
+}
+.heritageYellowTint{
+    background: #FDE5C4;
+}
+//extended
+.extendedBlueDark{
+    background:#229CFF;
+}
+.extendedBluePrimary{
+    background:#8AC4FF;
+}
+.extendedBlueMid{
+    background:#CAEAFF;
+}
+.extendedBlueLight{
+    background:#F2F8FF;
+}
+.extendedTurquoiseDark{
+    background:#5CC0B5;
+}
+.extendedTurquoisePrimary{
+    background:#81CEC6;
+}
+.extendedTurquoiseMid{
+    background:#B8E3DF;
+}
+
+.redPrimary{
+    background:#DF3034;
+}
+.redLight{
+    background:#FAE1E1;
+}
+//monoChrome
+.monochromeBlack{
+    background:#000000;
+}
+.monochromeDarkGray{
+    background:#333333;
+}
+.monochromeMidGray{
+    background:#606060;
+}
+.monochromeGray{
+    background:#9F9F9F;
+}
+.lightGray{
+    background:#DFDFDF;
+}
+.paleGray{
+    background:#F2F2F2;
+}
+.white{
+    background:#FFFFFF;
+    border: 1px solid #ccc;
+}
