@@ -21,11 +21,9 @@ The base-unit of spacing in the design system comes from 1rem which in most brow
 | 32px      | 2     | `$spacing-xl`  |
 | 40px      | 2.5   | `$spacing-xxl` |
 
-<div class="c-example">
-    <span class="c-example__tag">Example</span>
-    <div class="c-example__box">
-        <label>Input Label (optional)</label>
-        <p>Span text</p>
-        <button type="button" class="c-btn c-btn--primary">Primary button</button>
-    </div>
+{% capture example %}
+<div markdown="1">
+  ![Spacing example]({{ site.url }}/assets/images/example--spacing.png)
 </div>
+{% endcapture %}
+{% include example.html content=example %}
