@@ -1,0 +1,51 @@
+// ========================================================
+// @component: cards
+// ========================================================
+//
+
+// component config
+//
+$card-border-color: $monochrome--lightGrey;
+$card-body-spacing: $spacing--sm;
+$card-spacing: $spacing--md;
+$card-bp--sm: $bp--sm;
+$card-border-radius: $spacing--sm;
+
+// component block
+.c-card {
+  @include remcalc(border-radius, $card-border-radius / 2);
+  border-style: solid;
+  @include remcalc(border-width, 1px);
+  border-color: $card-border-color;
+  @include remcalc(margin-bottom, $card-spacing);
+  overflow: hidden;
+
+  @media (min-width: $card-bp--sm) {
+    display: inline-flex;
+    flex-direction: column;
+    @include remcalc(margin-right, $card-spacing);
+  }
+
+  &__media {
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+
+    @media (min-width: $card-bp--sm) {
+      @include remcalc(min-width, 200px);
+      @include remcalc(max-width, 200px);
+    }
+  }
+
+  &__body {
+    border-top-style: solid;
+    @include remcalc(border-top-width, 1px);
+    border-top-color: $card-border-color;
+    @include remcalc(padding, $card-body-spacing);
+
+    > * {
+      margin-bottom: 0;
+    }
+  }
+}
