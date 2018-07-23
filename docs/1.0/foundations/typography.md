@@ -5,87 +5,67 @@ title: Typography
 
 # Typography
 
+We take typography extremely seriously due to the large numbers of people with different Accessibility requirements accessing our products and services.
+The spacing has been carefully considered to ensure legibility on a variety of mediums.
+
 ## Headers
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title"> H1 page title - large </span>
-    <p class="c--typo__text">Open Sans - Extra bold - Size 36px - Line Height 48px, 3 rem - Colour #004b88 </p>
-    <h1 class="h1 c--typo__body">Citizens Advice helps people find a way forward.</h1>
-    <h1 class="h1 c--typo__body">Citizens Advice helps people find a way forward.</h1>    
-</div>
+{% capture example %}
+<h1 class="h1">Heading level #1</h1>
+<h2 class="h2">Heading level #2</h2>
+<h3 class="h3">Heading level #3</h3>
+<h4 class="h4">Heading level #4</h4>
+<h5 class="h5">Heading level #5</h5>
+<h6 class="h6">Heading level #6</h6>
+{% endcapture %}
+{% include example.html content=example %}
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title"> H1 page title - small</span>
-    <p class="c--typo__text">Open Sans - Bold - Size 28px - Line Height 36px, 2.25 rem - Colour #004b88 </p>  
-    <h1 class="h1__small c--typo__body">Citizens Advice helps people find a way forward.</h1>
-    <h1 class="h1__small c--typo__body">Citizens Advice helps people find a way forward.</h1>   
-</div>
+Headings also have a corresponding `className` so that they could in theory be used with any element.
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title"> H2 sub heading - large</span>
-    <p class="c--typo__text">Open Sans - Bold - Size 28px - Line Height 36px, 2.25 rem - Colour #004b88 </p> 
-    <h2 class="h2 c--typo__body">Citizens Advice helps people find a way forward.</h2>
-    <h2 class="h2 c--typo__body">Citizens Advice helps people find a way forward.</h2> 
-</div>
+{% capture snippet %}
+<h1 class="h1">Heading level #1</h1>
+<h2 class="h2">Heading level #2</h2>
+<h3 class="h3">Heading level #3</h3>
+<h4 class="h4">Heading level #4</h4>
+<h5 class="h5">Heading level #5</h5>
+<h6 class="h6">Heading level #6</h6>
+{% endcapture %}
+{% include snippet.html content=snippet %}
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title"> H2 sub heading - small</span>
-    <p class="c--typo__text">Open Sans - Bold - Size 20px - Line Height 28px, 1.75 rem - Colour #004b88 </p> 
-    <h2 class="h2__small c--typo__body">Citizens Advice helps people find a way forward.</h2>
-    <h2 class="h2__small c--typo__body">Citizens Advice helps people find a way forward.</h2> 
-</div>
+### Mobile heading details
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title"> H3 headings within sections - large</span>
-    <p class="c--typo__text">Open Sans - Semi Bold - Size 20px - Line Height 28px, 1.75 rem - Colour #004b88 </p> 
-    <h3 class="h3 c--typo__body">Citizens Advice helps people find a way forward.</h3>
-    <h3 class="h3 c--typo__body">Citizens Advice helps people find a way forward.</h3>
-</div>
+| Element | Font-family | Font-weight      | Font-size | Line-height | Colour    |
+| ------- | ----------- | ---------------- | --------- | ----------- | --------- |
+| `<h1/>` | Open Sans   | Extra bold (800) | `28px`    | `36px`      | `#004b88` |
+| `<h2/>` | Open Sans   | Semi bold (700)  | `20px`    | `28px`      | `#004b88` |
+| `<h3/>` | Open Sans   | Extra bold (600) | `20px`    | `28px`      | `#004b88` |
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title"> H3 headings within sections - small</span>
-    <p class="c--typo__text">Open Sans - Semi Bold - Size 20px - Line Height 28px, 1.75 rem - Colour #004b88 </p>  
-    <h3 class="h3__small c--typo__body">Citizens Advice helps people find a way forward.</h3>
-    <h3 class="h3__small c--typo__body">Citizens Advice helps people find a way forward.</h3>
-</div>
+### Tablet and up heading details `(min-width: 555px)`
 
-## Paragraph
+| Element | Font-family | Font-weight      | Font-size | Line-height | Colour    |
+| ------- | ----------- | ---------------- | --------- | ----------- | --------- |
+| `<h1/>` | Open Sans   | Extra bold (800) | `36px`    | `48px`      | `#004b88` |
+| `<h2/>` | Open Sans   | Extra bold (700) | `28px`    | `36px`      | `#004b88` |
+| `<h3/>` | Open Sans   | Extra bold (600) | `20px`    | `28px`      | `#004b88` |
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title">Paragraph text</span>
-    <p class="c--typo__text">Open Sans - Regular - Size 16px - Line Height 24px, 1.5 rem - Colour #000000</p>
-    <p>Citizens Advice helps people find a way forward.</p>
-    <p>Citizens Advice helps people find a way forward.</p>
-</div>
+## Paragraphs
 
-## Inputs
+{% capture example %}
+<p class="p">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+{% endcapture %}
+{% include example.html content=example %}
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title">Button text </span>
-    <p class="c--typo__text">Open Sans - Semibold - Size 16px - Line Height 24px, 1.5rem - Colour #004b88  </p>
-    <p>Button text</p>
-</div>
+{% capture snippet %}
+<p class="p">
+  ...
+</p>
+{% endcapture %}
+{% include snippet.html content=snippet %}
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title">Small button text</span>
-    <p class="c--typo__text">Open Sans - Semibold - Size 14px - Line Height 20px, 1.25rem - Colour #004b88 </p> 
-    <p>Small button text</p>
- </div>
+### Paragraph typography details
 
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title">Small button text</span>
-    <p class="c--typo__text">Open Sans - Regular - Size 16px - Line Height 24px, 1.5rem - Colour #004b88 </p>
-    <p>Inline link text</p>
-</div>
-
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title">Breadcrumb text</span>
-    <p class="c--typo__text">Open Sans - Regular - Size 14px - Line Height 20px, 1.25rem - Colour #000000 </p>
-    <p>Breadcrumb text</p>
-</div>
-
-<div class="c--typo c--typo--example">
-    <span class="c--typo__title">Toolbar text</span>
-    <p class="c--typo__text">Open Sans - Regular - Size 14px - Line Height 20px, 1.25rem - Colour #606060</p>
-    <p>Toolbar text</p>
-</div>
+| Element | Font-family | Font-weight      | Font-size | Line-height | Colour    |
+| ------- | ----------- | ---------------- | --------- | ----------- | --------- |
+| `<p/>`  | Open Sans   | Regular (400)    | `16px`    | `24px`      | `#000000` |
