@@ -23,7 +23,7 @@ The base-unit of spacing in the design system comes from 1rem which in most brow
 
 {% capture example %}
 <div markdown="1">
-  ![Spacing example]({{ site.url }}/assets/images/example--spacing.png)
+  ![Spacing example]({{ site.baseurl }}/assets/images/example--spacing.png)
 </div>
 {% endcapture %}
 {% include example.html content=example %}
