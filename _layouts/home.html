@@ -1,6 +1,23 @@
----
-layout: default
----
-{% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="c-hero">
+      <div class="c-hero__contents">
+        <h1 class="c-hero__title">Cabui</h1>
+        <h2 class="c-hero__subtitle">The Citizens Advice Design System</h2>
+      </div>
+    </div>
+
+    <div class="o-grid">
+      <div class="o-grid__unit">
+        <div class="u-center-contents">
+          <a class="c-btn c-btn--primary" href="{{ site.url }}/docs/1.0/getting-started/frontend-installation">Getting started</a>
+          <a class="c-btn c-btn--primary" href="{{ site.url }}/docs/1.0/getting-started/about">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

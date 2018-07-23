@@ -22,6 +22,7 @@ $secondary-textcolor: $brand--heritageBlue;
   border-radius: 2px;
   cursor: pointer;
   color: $default-textcolor;
+  display: inline-block;
   font-weight: 600;
   @include remcalc(font-size, 16px);
   margin: 0;
