@@ -31,7 +31,6 @@ $hero-spacing--2xl: $spacing--2xl;
   &__title {
     color: white;
     @include remcalc(font-size, 80px);
-    text-transform: uppercase;
   }
 
   &__subtitle {
