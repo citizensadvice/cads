@@ -1,8 +1,8 @@
-<ul class="o-list o-list--flat-recursive c-section-nav">
+<ul class="o-list o-list--flat-recursive c-section-nav c-section-nav--design-system">
   {% for link in site.data.navigation %}
     <li class="c-section-nav__section">
       <span class="c-section-nav__section-heading">{{ link.title }} </span>
-      <ul>
+      <ul class="c-section-nav__section-items">
         {% for sublink in link.sublinks %}
           {% if page.url == sublink.url %}
           <li class="c-section-nav__section-item c-section-nav__section-item--active">
