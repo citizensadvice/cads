@@ -11,7 +11,7 @@
     "minify-css": "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
     "compile-docs": "bundle exec jekyll build",
     "serve-docs": "bundle exec jekyll serve",
-    "dist-framework": "npm-run-all --parallel css-compile"
+    "dist-framework": "npm-run-all --parallel compile-css minify-css"
   },
   "keywords": [],
   "author": "",
