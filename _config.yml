@@ -13,12 +13,10 @@ highlighter: rouge
 plugins:
   - jekyll-feed
 sass:
-  sass_dir: assets/css
+  sass_dir: /assets/css
 
 # Exclude from processing.
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-
-theme: jekyll-theme-cayman
