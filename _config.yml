@@ -17,6 +17,8 @@ plugins:
 sass:
   sass_dir: /assets/css
 
+BASE_PATH : https://ca-designsystem.org.uk
+
 # Exclude from processing.
 exclude:
   - Gemfile
