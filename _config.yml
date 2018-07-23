@@ -6,6 +6,8 @@ url: ""
 twitter_username: jekyllrb
 github_username:  jekyll
 
+production_url : https://btomy.github.io/ca-designsystem/
+
 # Build settings
 current_version: 0.1.0
 markdown: kramdown
