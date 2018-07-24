@@ -4,8 +4,8 @@
       url: /docs/1.0/getting-started/about.html
     - title: Frontend installation
       url: /docs/1.0/getting-started/frontend-installation.html
-    - title: Sketch file download
-      url: /docs/1.0/getting-started/sketch-files.html
+    - title: Sketch template
+      url: /docs/1.0/getting-started/sketch-template.html
 - title: Foundations
   sublinks:
     - title: Colours
