@@ -11,7 +11,7 @@ The text used in a link should be descriptive of the page it's taking the user t
 
 
 {% capture example %}
-<a href="'#'">Link</a>
+<a href="#">Link</a>
 {% endcapture %}
 {% include example.html content=example %}
 
