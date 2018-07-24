@@ -5,13 +5,15 @@ title: Colours
 
 # Colours
 
+The colour palette is designed to pass accessibility contrast ratios while still being easy to implement.
+
 ## Brand
 
 <div class="c-card">
   <div class="c-card__media c-color-block--heritageBlue"></div>
   <div class="c-card__body">
     <p>
-      <strong>Heritage Blue</strong><br>
+      <strong>Heritage blue</strong><br>
       #004B88<br>
       rgba(0, 75, 136, 1)
     </p>
@@ -22,14 +24,14 @@ title: Colours
   <div class="c-card__media c-color-block--heritageYellow"></div>
   <div class="c-card__body">
     <p>
-      <strong>Heritage Yellow</strong><br>
+      <strong>Heritage yellow</strong><br>
       #FCBB69<br>
       rgba(252, 187, 105, 1)
     </p>
   </div>
 </div>
 
-## Brand Tints
+## Brand tints
 
 <div class="c-card">
   <div class="c-card__media c-color-block--heritageBlueTint"></div>
@@ -53,7 +55,7 @@ title: Colours
   </div>
 </div>
 
-## Extended Pallete
+## Extended palette
 
 <div class="c-card">
   <div class="c-card__media c-color-block--blueDark"></div>
@@ -155,7 +157,7 @@ title: Colours
   </div>
 </div>
 
-## Monochrome Pallette
+## Monochrome palette
 
 <div class="c-card">
   <div class="c-card__media c-color-block--black">

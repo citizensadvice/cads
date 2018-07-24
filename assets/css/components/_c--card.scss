@@ -9,11 +9,11 @@ $card-border-color: $monochrome--lightGrey;
 $card-body-spacing: $spacing--sm;
 $card-spacing: $spacing--md;
 $card-bp--sm: $bp--sm;
-$card-border-radius: $spacing--sm;
+$card-border-radius: $spacing--sm / 2;
 
 // component block
 .c-card {
-  @include remcalc(border-radius, $card-border-radius / 2);
+  @include remcalc(border-radius, $card-border-radius);
   border-style: solid;
   @include remcalc(border-width, 1px);
   border-color: $card-border-color;

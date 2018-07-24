@@ -6,19 +6,20 @@
 // component config
 //
 $main-content-bp--md: $bp--md;
-$main-content-item-width: 65%;
+$main-content-item-max-w: 600px;
+$main-content-example-max-w: $bp--lg;
 $main-content-last-item-spacing: $spacing--md;
 
 // component block
 .c-main-content {
   > * {
     @media (min-width: $main-content-bp--md) {
-      max-width: $main-content-item-width;
+      @include remcalc(max-width, $main-content-item-max-w);
     }
   }
 
-  &:not(.highlight) {
-    max-width: 100%;
+  > .c-example {
+    max-width: $main-content-example-max-w;
   }
 
   > *:last-child {

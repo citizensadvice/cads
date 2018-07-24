@@ -1,0 +1,29 @@
+// ========================================================
+// @utility: labels
+// ========================================================
+//
+
+// component config
+//
+$hintLabelColor:     $monochrome--midGrey;
+$optionalLabelColor: $monochrome--midGrey;
+
+// component block(s)
+.h-hintLabel {
+    color: $hintLabelColor;
+    display: block;
+    @include remcalc(margin-bottom, 8px);
+}
+
+.h-optionalLabel {
+    color: $optionalLabelColor;
+    font-weight: 400;
+    @include remcalc(padding-left, 4px);
+
+    &:before {
+        content: '(';
+    }
+    &:after {
+        content: ')';
+    }
+}

@@ -5,9 +5,6 @@
 
 // form helpers:
 //
-$hintLabelColor: $monochrome--midGrey;
-$optionalLabelColor: $monochrome--midGrey;
-
 .h-spaceTop--xs {
     @include remcalc(margin-top, 4px); // .25rem
 }
@@ -26,23 +23,4 @@ $optionalLabelColor: $monochrome--midGrey;
 
 .h-spaceTop--xl {
     @include remcalc(margin-top, 40px); // 2.5rem
-}
-
-.h-hintLabel {
-    color: $hintLabelColor;
-    display: block;
-    @include remcalc(margin-bottom, 8px);
-}
-
-.h-optionalLabel {
-    color: $optionalLabelColor;
-    font-weight: 400;
-    @include remcalc(padding-left, 4px);
-
-    &:before {
-        content: '(';
-    }
-    &:after {
-        content: ')';
-    }
 }

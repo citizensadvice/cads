@@ -6,7 +6,7 @@
       url: /docs/1.0/getting-started/frontend-installation.html
     - title: Sketch template
       url: /docs/1.0/getting-started/sketch-template.html
-- title: Foundation
+- title: Foundations
   sublinks:
     - title: Colours
       url: /docs/1.0/foundations/colours.html
@@ -22,7 +22,7 @@
   sublinks:
     - title: Breadcrumbs
       url: /docs/1.0/components/breadcrumbs.html
-    - title: Button
+    - title: Buttons
       url: /docs/1.0/components/buttons.html
     - title: Checkboxes
       url: /docs/1.0/components/checkboxes.html
