@@ -9,6 +9,9 @@ $global-header-bg-color: $brand--heritageBlue;
 $global-header-text-color: $monochrome--white;
 $global-header-bp--sm: $bp--sm;
 $global-header-layer-level: 100;
+$global-header-padding: $spacing--xs;
+
+
 
 // component block
 .c-global-header {
@@ -21,6 +24,9 @@ $global-header-layer-level: 100;
     @include remcalc(font-size, 20px);
     @include font('Open Sans', 600);
     margin: 0;
+    line-height:0;
+    padding-top: $global-header-padding;
+    padding-bottom: $global-header-padding;
   }
 
   &--sticky {
