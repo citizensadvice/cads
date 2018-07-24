@@ -15,6 +15,7 @@ $color-block--blueMid:              $extended--blueMid;
 $color-block--blueLight:            $extended--blueLight;
 $color-block--turquoiseDark:        $extended--turquoiseDark;
 $color-block--turquoisePrimary:     $extended--turquoisePrimary;
+$color-block--turquoiseMid:         $extended--turquoiseMid;
 $color-block--redPrimary:           $extended--redPrimary;
 $color-block--redLight:             $extended--redLight;
 $color-block--black:                $monochrome--black;
@@ -28,7 +29,7 @@ $color-block--white:                $monochrome--white;
 $color-block-example-border-radius: $spacing--sm / 2;
 $color-block-example-font-weight:   700;
 $color-block-example-spacing:       $spacing--md;
-$color-block-example-bp--sm:        $bp--sm;
+$color-block-example-bp--sm:        $bp--sm
 
 // component block
 .c-color-block {
@@ -56,6 +57,7 @@ $color-block-example-bp--sm:        $bp--sm;
   &--blueLight          { background-color: $color-block--blueLight }
   &--turquoiseDark      { background-color: $color-block--turquoiseDark }
   &--turquoisePrimary   { background-color: $color-block--turquoisePrimary }
+  &--turquoiseMid       { background-color: $color-block--turquoiseMid }
   &--redPrimary         { background-color: $color-block--redPrimary }
   &--redLight           { background-color: $color-block--redLight }
   &--black              { background-color: $color-block--black }
