@@ -5,6 +5,8 @@ title: Colours
 
 # Colours
 
+The colour palette is designed to pass accessibility contrast ratios while still being easy to implement.
+
 ## Brand
 
 <div class="c-card">
