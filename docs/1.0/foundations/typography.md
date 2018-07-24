@@ -5,8 +5,8 @@ title: Typography
 
 # Typography
 
-We take typography extremely seriously due to the large numbers of people with different Accessibility requirements accessing our products and services.
-The spacing has been carefully considered to ensure legibility on a variety of mediums.
+Open Sans is a friendly and modern typeface that is optimised for legibility. This helps large numbers of people with different accessibility requirements access our products and services.
+The spacing has been carefully considered to ensure readability on a variety of mediums.
 
 ## Headers
 
@@ -14,9 +14,6 @@ The spacing has been carefully considered to ensure legibility on a variety of m
 <h1 class="h1">Heading level #1</h1>
 <h2 class="h2">Heading level #2</h2>
 <h3 class="h3">Heading level #3</h3>
-<h4 class="h4">Heading level #4</h4>
-<h5 class="h5">Heading level #5</h5>
-<h6 class="h6">Heading level #6</h6>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -26,15 +23,12 @@ Headings also have a corresponding `className` so that they could in theory be u
 <h1 class="h1">Heading level #1</h1>
 <h2 class="h2">Heading level #2</h2>
 <h3 class="h3">Heading level #3</h3>
-<h4 class="h4">Heading level #4</h4>
-<h5 class="h5">Heading level #5</h5>
-<h6 class="h6">Heading level #6</h6>
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
 ### Mobile heading details
 
-| Element | Font-family | Font-weight      | Font-size | Line-height | Colour    |
+| Element | Font family | Font weight      | Font size | Line height | Colour    |
 | ------- | ----------- | ---------------- | --------- | ----------- | --------- |
 | `<h1/>` | Open Sans   | Extra bold (800) | `28px`    | `36px`      | `#004b88` |
 | `<h2/>` | Open Sans   | Semi bold (700)  | `20px`    | `28px`      | `#004b88` |
@@ -42,7 +36,7 @@ Headings also have a corresponding `className` so that they could in theory be u
 
 ### Tablet and up heading details `(min-width: 555px)`
 
-| Element | Font-family | Font-weight      | Font-size | Line-height | Colour    |
+| Element | Font family | Font weight      | Font size | Line height | Colour    |
 | ------- | ----------- | ---------------- | --------- | ----------- | --------- |
 | `<h1/>` | Open Sans   | Extra bold (800) | `36px`    | `48px`      | `#004b88` |
 | `<h2/>` | Open Sans   | Extra bold (700) | `28px`    | `36px`      | `#004b88` |
@@ -66,6 +60,6 @@ Headings also have a corresponding `className` so that they could in theory be u
 
 ### Paragraph typography details
 
-| Element | Font-family | Font-weight      | Font-size | Line-height | Colour    |
+| Element | Font family | Font weight      | Font size | Line height | Colour    |
 | ------- | ----------- | ---------------- | --------- | ----------- | --------- |
 | `<p/>`  | Open Sans   | Regular (400)    | `16px`    | `24px`      | `#000000` |
