@@ -12,14 +12,14 @@ Spacing values should be applied both within a component and between components 
 
 The base unit of spacing in the design system comes from 1rem which in most browsers equates to 16px.
 
-| Pixels    | Rem   | Variable       |
-| --------- | ----- | -------------- |
-| 8px       | 0.5   | `$spacing-xs`  |
-| 12px      | 0.75  | `$spacing-s`   |
-| 16px      | 1     | `$spacing-m`   |
-| 24px      | 1.5   | `$spacing-l`   |
-| 32px      | 2     | `$spacing-xl`  |
-| 40px      | 2.5   | `$spacing-2xl` |
+| Pixels    | Rem   | Variable        |
+| --------- | ----- | --------------- |
+| 8px       | 0.5   | `$spacing--xs`  |
+| 12px      | 0.75  | `$spacing--sm`  |
+| 16px      | 1     | `$spacing--md`  |
+| 24px      | 1.5   | `$spacing--lg`  |
+| 32px      | 2     | `$spacing--xl`  |
+| 40px      | 2.5   | `$spacing--2xl` |
 
 {% capture example %}
 <div markdown="1">
