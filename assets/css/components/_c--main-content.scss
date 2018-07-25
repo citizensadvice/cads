@@ -21,8 +21,4 @@ $main-content-last-item-spacing: $spacing--md;
   > .c-example {
     max-width: $main-content-example-max-w;
   }
-
-  // > *:last-child {
-  //   @include remcalc(margin-bottom, $main-content-last-item-spacing);
-  // }
 }
