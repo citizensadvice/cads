@@ -1,11 +1,11 @@
-- title: Getting started
+- title: Design system
   sublinks:
-    - title: About the system
-      url: /docs/1.0/getting-started/about.html
-    - title: Frontend installation
-      url: /docs/1.0/getting-started/frontend-installation.html
+    - title: Getting started
+      url: /docs/1.0/design-system/getting-started.html
+    - title: Frontend framework
+      url: /docs/1.0/design-system/frontend-framework.html
     - title: Sketch template
-      url: /docs/1.0/getting-started/sketch-template.html
+      url: /docs/1.0/design-system/sketch-template.html
 - title: Foundations
   sublinks:
     - title: Colours
