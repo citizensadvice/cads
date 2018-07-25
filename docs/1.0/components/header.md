@@ -4,7 +4,8 @@ title: Footer
 ---
 
 # Header
-
+Headers help users understand what website they are visiting.
+They appear at the top of a page, above the main section area.
 
 {% capture example %}
 <header class="c-global-header c-global-header--sticky">
