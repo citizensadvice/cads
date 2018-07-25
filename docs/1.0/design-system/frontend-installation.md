@@ -1,16 +1,16 @@
 ---
 layout: docs
-title: Frontend framework
+title: Frontend installation
 ---
 
-# Frontend framework
+# Frontend installation
 
 ## Install NPM
 
 This repository is distributed with npm. After installing node.js, and npm you can install the front-end developer kit using:
 
 ```
-$ npm install --save ca-ui
+$ npm install --save cabui
 ```
 
 ## Folder structure
