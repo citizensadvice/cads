@@ -6,10 +6,11 @@
 // component config
 //
 $global-footer-bg-color:       $extended--blueLight;
-$global-footer-mobile-spacing: $spacing--md;
+$global-footer-mobile-spacing: 6*$spacing--2xl;
 $global-footer-spacing:        $spacing--2xl;
 $global-footer-bp--sm:         $bp--sm;
-$global-footer-left-position:  $grid-fixed-unit-width; // from framework > objects > grid
+$global-footer-left-position:  $grid-fixed-unit-width;
+ // from framework > objects > grid
 
 // component block
 .c-global-footer {
@@ -19,6 +20,7 @@ $global-footer-left-position:  $grid-fixed-unit-width; // from framework > objec
   position: absolute;
   @include remcalc(padding, $global-footer-mobile-spacing);
   @include remcalc(right, 0px);
+
 
   @media (min-width: $global-footer-bp--sm) {
     position: absolute;
