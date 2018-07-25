@@ -1,11 +1,9 @@
 ---
 layout: docs
-title: About the system
+title: Getting started
 ---
 
 # Citizens Advice design system
-
-## About the system
 
 The Citizens Advice design system is a framework and set of tools to help designers and developers build digital products easily.
 
@@ -21,7 +19,6 @@ Components are reusable and accessible building blocks used to create websites a
 
 ## Getting started
 
-You can get started by installing the [Frontend toolkit]('#') or [downloading the Sketch template ]('#').
-You find guidance on how to use foundations and components throughout this website.
+You can get started by installing the [frontend framework](frontend-framework) or [downloading the Sketch template ](sketch-template).
 
 You find guidance on how to use foundations and components throughout this website.

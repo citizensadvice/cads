@@ -5,7 +5,7 @@ title: Colours
 
 # Colours
 
-The colour palette is designed to pass accessibility contrast ratios while still being easy to implement.
+The colour palette is designed to pass accessibility contrast ratios while still being easy to use.
 
 ## Brand
 

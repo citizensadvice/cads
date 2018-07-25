@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Frontend installation
+title: Frontend framework
 ---
 
-# Frontend installation
+# Frontend framework
 
 ## Install NPM
 
