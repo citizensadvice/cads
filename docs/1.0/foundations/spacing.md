@@ -21,6 +21,7 @@ The base unit of spacing in the design system comes from 1rem which in most brow
 | 32px      | 2rem     | `$spacing--xl`  |
 | 40px      | 2.5rem   | `$spacing--2xl` |
 
+
 {% capture example %}
 <div markdown="1">
   ![Spacing example]({{ site.baseurl }}/assets/images/example--spacing.png)

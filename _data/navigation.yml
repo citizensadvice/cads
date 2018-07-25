@@ -34,6 +34,8 @@
       url: /docs/1.0/components/inputs.html
     - title: Fieldsets
       url: /docs/1.0/components/fieldsets.html
+    - title: Header
+      url: /docs/1.0/components/header.html
     - title: Footer
       url: /docs/1.0/components/footer.html
     - title: Links

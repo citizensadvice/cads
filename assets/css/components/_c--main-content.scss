@@ -22,7 +22,7 @@ $main-content-last-item-spacing: $spacing--md;
     max-width: $main-content-example-max-w;
   }
 
-  > *:last-child {
-    @include remcalc(margin-bottom, $main-content-last-item-spacing);
-  }
+  // > *:last-child {
+  //   @include remcalc(margin-bottom, $main-content-last-item-spacing);
+  // }
 }

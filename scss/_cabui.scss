@@ -35,11 +35,13 @@
 @import "components/c--wrap";
 @import "components/c--maincontent";
 @import "components/c--global-header";
+@import "components/c--global-footer";
 @import "components/c--button";
 @import "components/c--blockquote";
 @import "components/c--section-nav";
 
 // UTILITIES: helpers and overrides
-@import "utilities/u--helpers";
+@import "utilities/u--spacing";
 @import "utilities/u--positioning";
 @import "utilities/u--labels";
+
