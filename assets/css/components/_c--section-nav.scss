@@ -5,10 +5,11 @@
 
 // component config
 //
-$section-nav-section-spacing: $spacing--2xl;
-$section-nav-sidebar-color:   $monochrome--grey;
-$section-nav-bp--sm:          $bp--sm;
-$section-nav-item-padding:    $spacing--xl;
+$section-nav-section-spacing-top:    $spacing--2xl;
+$section-nav-section-spacing-bottom: 4*$spacing--2xl;
+$section-nav-sidebar-color:          $monochrome--grey;
+$section-nav-bp--sm:                 $bp--sm;
+$section-nav-item-padding:           $spacing--xl;
 
 // component block
 .c-section-nav {
@@ -16,13 +17,13 @@ $section-nav-item-padding:    $spacing--xl;
   // modifiers
   //
   &--design-system {
-    padding-top: $section-nav-section-spacing;
+    padding-top: $section-nav-section-spacing-top;
 
     @media (min-width: $section-nav-bp--sm) {
       @include remcalc(border-right-width, 1px);
       border-right-style: solid;
       border-right-color: $section-nav-sidebar-color;
-      @include remcalc(padding-bottom, $section-nav-section-spacing);
+      @include remcalc(padding-bottom, $section-nav-section-spacing-bottom);
     }
 
     .c-section-nav__section-items {
