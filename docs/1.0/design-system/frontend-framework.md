@@ -10,8 +10,30 @@ title: Frontend framework
 This repository is distributed with npm. After installing node.js, and npm you can install the front-end developer kit using:
 
 ```
-$ npm install --save ca-ui
+$ npm i cadesignsystem
 ```
+
+## Link to the framework
+
+Next you'll need to bring the framework into your projects workflow. Use the following to get access to the `scss` files:
+
+```
+@import "./node_modules/cadesignsystem/scss/cabui";
+```
+
+or if you don't have a build process setup, you can always bring in the `css` files with:
+
+```
+@import "./node_modules/cadesignsystem/dist/css/cabui.css";
+```
+
+or linking to it directly in your `html`:
+
+```
+<link rel="stylesheet" href="./node_modules/cadesignsystem/dist/css/cabui.css">
+```
+
+There's also a minified version available, simply change `cabui.css` to `cabui.min.css`;
 
 ## Folder structure
 

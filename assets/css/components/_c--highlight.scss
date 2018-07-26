@@ -5,6 +5,7 @@
 
 // component config
 //
+$highlight-spacing: $spacing--md;
 
 // component block
 .highlight {
@@ -14,3 +15,8 @@
     margin: 0;
   }
 }
+
+.highlighter-rouge
+  .highlight {
+    @include remcalc(margin-bottom, $highlight-spacing);
+  }
