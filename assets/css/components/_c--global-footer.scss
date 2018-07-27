@@ -5,30 +5,19 @@
 
 // component config
 //
-$global-footer-bg-color:       $extended--blueLight;
-$global-footer-mobile-spacing: $spacing--md;
-$global-footer-spacing:        $spacing--2xl;
-$global-footer-bp--sm:         $bp--sm;
-$global-footer-left-position:  $grid-fixed-unit-width; // from framework > objects > grid
+$global-footer-bp--sm:        $bp--sm;
+$global-footer-left-position: $grid-fixed-unit-width; // from framework > objects > grid
 
 // component block
 .c-global-footer {
-  background-color: $global-footer-bg-color;
-  left: 0px;
-  max-width: 100%;
-  position: absolute;
-  @include remcalc(padding, $global-footer-mobile-spacing);
-  @include remcalc(right, 0px);
-
-  @media (min-width: $global-footer-bp--sm) {
+  &--design-system {
+    left: 0px;
     position: absolute;
-    @include remcalc(left, #{$global-footer-left-position}px);
-    @include remcalc(margin-top, $global-footer-mobile-spacing);
-    @include remcalc(padding, $global-footer-spacing);
-    right: 0;
-  }
+    @include remcalc(right, 0px);
 
-   p {
-     margin-bottom: 0;
-   }
+    @media (min-width: $global-footer-bp--sm) {
+      @include remcalc(left, #{$global-footer-left-position}px);
+      right: 0;
+    }
+  }
 }
