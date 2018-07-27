@@ -5,20 +5,34 @@
 
 // component config
 //
-$bg-color: $brand--heritageBlue;
-$text-color: $monochrome--white;
+$global-header-bg-color: $brand--heritageBlue;
+$global-header-text-color: $monochrome--white;
+$global-header-bp--sm: $bp--sm;
+$global-header-layer-level: 100;
+$global-header-padding: $spacing--md;
+
+
 
 // component block
-//
-// .c-global-header {
-//     @include remcalc(margin-bottom, 32px);
-//     background: $brand--heritageBlue;
-//     color: $text-color;
-//
-//     &__item {
-//         a {
-//             border: none;
-//             background: none;
-//         }
-//     }
-// }
+.c-global-header {
+  background-color: $global-header-bg-color;
+  position: relative;
+  z-index: $global-header-layer-level;
+
+  &__product-title {
+    color: $global-header-text-color;
+    @include remcalc(font-size, 20px);
+    @include font('Open Sans', 600);
+    margin: 0;
+    line-height:0;
+    padding-top: $global-header-padding;
+    padding-bottom: $global-header-padding;
+  }
+
+  &--sticky {
+    @media (min-width: $global-header-bp--sm) {
+      position: sticky;
+      top: 0;
+    }
+  }
+}
