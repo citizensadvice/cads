@@ -2,7 +2,26 @@
 // @component: global footer
 // ========================================================
 //
-.c-example__box > .c-global-footer{
-    position: relative;
-    left: 0;
+
+// component config
+//
+$global-footer-bg-color:       $extended--blueLight;
+$global-footer-mobile-spacing: $spacing--md;
+$global-footer-spacing:        $spacing--2xl;
+$global-footer-bp--sm:         $bp--sm;
+
+// component block
+.c-global-footer {
+  background-color: $global-footer-bg-color;
+  max-width: 100%;
+  @include remcalc(padding, $global-footer-mobile-spacing);
+
+  @media (min-width: $global-footer-bp--sm) {
+    @include remcalc(margin-top, $global-footer-mobile-spacing);
+    @include remcalc(padding, $global-footer-spacing);
+  }
+
+  .c-global-footer__body {
+    margin-bottom: 0
+  }
 }
