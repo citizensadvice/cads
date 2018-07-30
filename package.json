@@ -1,6 +1,6 @@
 {
   "name": "cadesignsystem",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -12,7 +12,8 @@
     "compile-docs": "bundle exec jekyll build",
     "serve-docs": "bundle exec jekyll serve",
     "copy-assets": "mkdir dist/images/ && cp -R assets/images/* dist/images/",
-    "dist-framework": "npm-run-all --parallel compile-css minify-css --sequential copy-assets"
+    "clean-framework": "rm -rf dist/",
+    "dist-framework": "npm-run-all --parallel clean-framework compile-css minify-css --sequential copy-assets"
   },
   "keywords": [],
   "author": "",

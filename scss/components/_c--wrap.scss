@@ -5,22 +5,22 @@
 
 // component config
 //
-$c-wrap__maxW: 1048px;
-$c-wrap__spacing: 16px;
-$c-wrap__bp--sm: $bp--sm;
+$wrap-max-width: 1048px;
+$wrap-spacing: 16px;
+$wrap-bp--sm: $bp--sm;
 
 // component block
 //
 .c-wrap {
-  @include remcalc(padding-left, $c-wrap__spacing);
-  @include remcalc(padding-right, $c-wrap__spacing);
-  max-width: 61.25rem;
+  @include remcalc(max-width, $wrap-max-width);
+  @include remcalc(padding-left, $wrap-spacing);
+  @include remcalc(padding-right, $wrap-spacing);
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: $c-wrap__bp--sm) {
-    @include remcalc(padding-left, $c-wrap__spacing * 2);
-    @include remcalc(padding-right, $c-wrap__spacing * 2);
+  @media (min-width: $wrap-bp--sm) {
+    @include remcalc(padding-left, $wrap-spacing * 2);
+    @include remcalc(padding-right, $wrap-spacing * 2);
   }
 
   &--full-width {
