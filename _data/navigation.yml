@@ -24,6 +24,8 @@
       url: /docs/1.0/components/breadcrumbs.html
     - title: Buttons
       url: /docs/1.0/components/buttons.html
+    - title: Button groups
+      url: /docs/1.0/components/button-groups.html
     - title: Checkboxes
       url: /docs/1.0/components/checkboxes.html
     - title: Date input
