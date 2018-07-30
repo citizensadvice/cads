@@ -2,9 +2,13 @@
 // @component: highlight for code snippets
 // ========================================================
 //
+// This file feels a little hacky, this is due to the way the markdown
+// parser spits out markup. Seeing as it's only for the documentation,
+// we're not too worried.
 
 // component config
 //
+$highlight-spacing: $spacing--md;
 
 // component block
 .highlight {
@@ -14,3 +18,19 @@
     margin: 0;
   }
 }
+
+p > .highlighter-rouge,
+.highlight {
+  color: #ff0000;
+}
+
+p > .highlighter-rouge {
+  @include remcalc(border-radius, 2px);
+  @include remcalc(padding-top, 1px);
+  @include remcalc(padding-bottom, 1px);
+}
+
+.highlighter-rouge
+  .highlight {
+    @include remcalc(margin-bottom, $highlight-spacing);
+  }

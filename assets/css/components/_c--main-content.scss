@@ -18,7 +18,7 @@ $main-content-last-item-spacing: $spacing--md;
     }
   }
 
-  > .c-example {
-    max-width: $main-content-example-max-w;
-  }
+  > .c-example { max-width: $main-content-example-max-w }
+  > .highlighter-rouge { max-width: $main-content-example-max-w }
+  > .c-global-footer { max-width: 100%}
 }

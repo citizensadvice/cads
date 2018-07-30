@@ -1,10 +1,11 @@
 ---
 layout: docs
-title: Footer
+title: Header
 ---
 
 # Header
-
+Headers help users understand what website they are visiting.
+They appear at the top of a page, above the main section area and have a default margin bottom of 80px. This can be removed by adding the modifier class `c-global-header--flat` where necessary.
 
 {% capture example %}
 <header class="c-global-header c-global-header--sticky">
@@ -14,7 +15,7 @@ title: Footer
     </h1>
   </div>
 </header>
-
+<main>Site content will begin here...</main>
 {% endcapture %}
 {% include example.html content=example %}
 

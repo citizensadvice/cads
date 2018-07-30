@@ -1,17 +1,18 @@
 {
-  "name": "ca-designsystem",
-  "version": "1.0.0",
+  "name": "cadesignsystem",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "compile-css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/cabui.scss dist/css/cabui.css",
+    "compile-css": "node-sass --output-style expanded  scss/_cabui.scss dist/css/cabui.css",
     "minify-css": "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
     "compile-docs": "bundle exec jekyll build",
     "serve-docs": "bundle exec jekyll serve",
-    "dist-framework": "npm-run-all --parallel compile-css minify-css"
+    "copy-assets": "cp assets/images/* dist/images/",
+    "dist-framework": "npm-run-all --parallel compile-css minify-css copy-assets"
   },
   "keywords": [],
   "author": "",
