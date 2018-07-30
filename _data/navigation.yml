@@ -2,8 +2,8 @@
   sublinks:
     - title: Getting started
       url: /docs/1.0/design-system/getting-started.html
-    - title: Frontend framework
-      url: /docs/1.0/design-system/frontend-framework.html
+    - title: Frontend installation
+      url: /docs/1.0/design-system/frontend-installation.html
     - title: Sketch template
       url: /docs/1.0/design-system/sketch-template.html
 - title: Foundations
