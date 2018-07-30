@@ -49,6 +49,23 @@ Use secondary buttons for actions that happen on the same page.
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
+## Action buttons
+
+There are cases where certain actions require specific button styling. We deal with this by creating modifier classes. An example of this can be seen below for a previous button which requires slightly different colours to a primary button. In this instance we've created the `c-btn--action-prev` class.
+
+{% capture example %}
+<button type="button" class="c-btn c-btn--primary c-btn--action-prev">Previous</button>
+<button type="button" class="c-btn c-btn--primary">Next</button>
+{% endcapture %}
+{% include example.html content=example %}
+
+{% capture snippet %}
+<button type="button" class="c-btn c-btn--primary c-btn--action-prev">
+  Previous
+</button>
+{% endcapture %}
+{% include snippet.html content=snippet %}
+
 ## Icons in buttons
 
 You should always place icons on the right of the button text. Use icons for specific actions for example Download, Print or Expand.
