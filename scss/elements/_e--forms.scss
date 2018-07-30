@@ -5,77 +5,107 @@
 
 // settings:
 //
-$magicNumber: 16px;
-$inputColor__border: $monochrome--lightGrey;
-$inputColor__border--focus: $brand--heritageYellow;
-$selectBgColor: $monochrome--white;
-$radioBgColor: $monochrome--paleGrey;
+$form-elements-border-color:       $monochrome--lightGrey;
+$form-elements-line-height:        $spacing--lg;
+$form-elements-border:             2px;
+$form-elements-padding-top-btm:    $spacing--xs + 2;
+$form-elements-padding-left-right: $spacing--sm + 2;
+$form-elements-font-size:          $spacing--md;
+
+$fieldset-spacing:                 $spacing--md;
+$label-spacing-bottom:             $spacing--xs;
+
+$select-bgcolor:                   $monochrome--white;
+$select-padding-top-btm:           $form-elements-padding-top-btm;
+$select-padding-left:              $form-elements-padding-left-right;
+$select-padding-right:             $spacing--2xl;
+$select-line-height:               $form-elements-line-height;
+$select-border-radius:             $form-elements-border;
+$select-border-width:              $form-elements-border;
+$select-border-color:              $form-elements-border-color;
+$select-focus-border-color:        $form-elements-border-color;
+
+$radio-border-radius:              $form-elements-border;
+$radio-border-width:               $form-elements-border;
+$radio-border-color:               $form-elements-border-color;
+$radio-border-color-checked:       $extended--bluePrimary;
+$radio-border-color-focus:         $brand--heritageYellow;
+$radio-spacing:                    $spacing--xs;
+$radio-bgcolor:                    $monochrome--paleGrey;
+$radio-bgcolor-hover:              $monochrome--grey;
+$radio-bgcolor-checked:            $extended--blueMid;
+$radio-bgcolor-focus:              $extended--blueMid;
+$radio-line-height:                $form-elements-line-height + ($radio-border-width * 2);
+$radio-check-spacing:              $radio-spacing / 2;
+$radio-check-size:                 14px;
+$radio-sibling-spacing:            $spacing--xs;
 
 // module definitions:
 //
-input,
-textarea,
-.input,
-.textarea,
+input, .input,
+textarea, .textarea,
 .select,
 .radio,
 .checkbox {
-  border: 2px solid $inputColor__border;
-  border-radius: 2px;
-  @include remcalc(line-height, $magicNumber * 1.5);
-  @include remcalc(padding-top, 12px);
-  @include remcalc(padding-bottom, 12px);
-  @include remcalc(padding-left, 16px);
-  @include remcalc(padding-right, 16px);
+  @include remcalc(border-width, $form-elements-border);
+  border-style: solid;
+  border-color: $form-elements-border-color;
+  @include remcalc(border-radius, $form-elements-border);
+  @include remcalc(font-size, $form-elements-font-size);
+  @include remcalc(line-height, $form-elements-line-height);
+  @include remcalc(padding-top, $form-elements-padding-top-btm);
+  @include remcalc(padding-bottom, $form-elements-padding-top-btm);
+  @include remcalc(padding-left, $form-elements-padding-left-right);
+  @include remcalc(padding-right, $form-elements-padding-left-right);
 
   &:focus {
-    border-color: $inputColor__border--focus;
+    border-color: $form-elements-border-color;
     outline: none;
   }
 }
 
-fieldset,
-.fieldset {
+fieldset, .fieldset {
   border: 0;
   margin: 0;
   padding: 0;
-  @include remcalc(margin-bottom, $magicNumber);
+  @include remcalc(margin-bottom, $fieldset-spacing);
 }
 
-label,
-.label {
+label, .label       {
   display: block;
   font-weight: 700;
-  @include remcalc(margin-bottom, 8px);
+  @include remcalc(margin-bottom, $label-spacing-bottom);
 }
 
-textarea,
-.textarea {
+textarea, .textarea {
   resize: vertical;
 }
 
-.select {
+.select             {
   border: 0;
-  background-color: $selectBgColor;
+  background-color: $select-bgcolor;
   display: inline-block;
   padding: 0;
   position: relative;
   width: auto;
 
-  select {
-    @include remcalc(padding-top, 12px);
-    @include remcalc(padding-bottom, 12px);
-    @include remcalc(padding-left, 16px);
-    @include remcalc(padding-right, 40px);
-    @include remcalc(border-radius, 2px);
-    border: 2px solid $inputColor__border;
+  select            {
     background: none;
+    @include remcalc(border-radius, $select-border-radius);
+    @include remcalc(border, $select-border-width);
+    border-style: solid;
+    border-color: $select-border-color;
     cursor: pointer;
+    @include remcalc(line-height, $select-line-height);
+    @include remcalc(padding-top, $select-padding-top-btm);
+    @include remcalc(padding-bottom, $select-padding-top-btm);
+    @include remcalc(padding-left, $select-padding-left);
+    @include remcalc(padding-right, $select-padding-right);
     -webkit-appearance: none;
     -moz-appearance: none;
 
     &:focus {
-      border-color: $inputColor__border--focus;
+      border-color: $select-focus-border-color;
       outline: none;
     }
   }
@@ -97,68 +127,54 @@ textarea,
 .checkbox {
   border: 0;
   @include remcalc(border-radius, 2px);
-  background-color: $radioBgColor;
+  background-color: $radio-bgcolor;
   cursor: pointer;
   display: inline-block;
-  font-weight: 600;
-  @include remcalc(margin-right, 8px);
+  font-weight: 400;
+  @include remcalc(line-height, $radio-line-height);
+  @include remcalc(margin-right, $radio-spacing);
   position: relative;
   width: auto;
   z-index: 1;
 
   input {
     display: inline-block;
-    @include remcalc(margin-right, 6px);
+    @include remcalc(height, $radio-check-size);
+    @include remcalc(margin-right, $radio-check-spacing);
     width: auto;
-  }
-}
 
-.radio,
-.checkbox {
-  input:before {
-    background-color: $monochrome--paleGrey;
-    border: 2px solid $monochrome--lightGrey;
-    @include remcalc(border-radius, 2px);
-    content: '';
-    cursor: pointer;
-    box-sizing: border-box;
-    display: block;
-    height: 100%;
-    left: 0;
-    @include remcalc(margin-right, 8px);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-    -webkit-user-select: none;
-  }
+    &:before {
+      background-color: $radio-bgcolor;
+      @include remcalc(border-width, $radio-border-width);
+      border-style: solid;
+      border-color: $radio-border-color;
+      @include remcalc(border-radius, $radio-border-radius);
+      content: '';
+      cursor: pointer;
+      box-sizing: border-box;
+      display: block;
+      height: 100%;
+      left: 0;
+      @include remcalc(margin-right, $radio-spacing);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      -webkit-user-select: none;
+    }
 
-  input:hover:before {
-    border-color: $monochrome--grey;
-  }
+    &:hover:before {
+      border-color: $radio-bgcolor-hover;
+    }
 
-  input:checked:before {
-    background: $extended--blueMid;
-    border-color: $extended--bluePrimary;
-  }
+    &:checked:before {
+      background: $radio-bgcolor-checked;
+      border-color: $radio-border-color-checked;
+    }
 
-  input:focus:before {
-    background: $extended--blueMid;
-    border-color: $brand--heritageYellow;
-  }
-}
-
-// module modifiers
-//
-.e-input--inline {
-  display: inline-block;
-  @include remcalc(margin-right, 8px);
-}
-
-.e-input--date {
-  @include remcalc(width, 72px);
-
-  &:last-of-type {
-    @include remcalc(width, 96px);
+    &:focus:before {
+      background: $radio-bgcolor-focus;
+      border-color: $radio-border-color-checked;
+    }
   }
 }
