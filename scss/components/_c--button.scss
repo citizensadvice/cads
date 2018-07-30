@@ -5,64 +5,90 @@
 
 // component config
 //
-$focuscolor: $brand--heritageYellow;
-$default-bgcolor: $monochrome--paleGrey;
-$default-textcolor: $monochrome--black;
-$primary-bgcolor: $extended--turquoisePrimary;
-$primary-bgcolor--hover: $extended--turquoiseDark;
-$primary-textcolor: $brand--heritageBlue;
-$secondary-bgcolor--hover: $extended--blueMid;
-$secondary-bordercolor: $extended--blueDark;
-$secondary-textcolor: $brand--heritageBlue;
+$btn-focus-outline-color:               $brand--heritageYellow;
+$btn-focus-outline-width:               2px;
+
+$btn-default-bgcolor:                   $monochrome--paleGrey;
+$btn-default-textcolor:                 $monochrome--black;
+$btn-default-border-width:              2px;
+$btn-default-radius:                    2px;
+$btn-default-padding:                   $spacing--xs;
+$btn-default-sibling-spacing:           $spacing--xs;
+
+$btn-primary-bgcolor:                   $extended--turquoisePrimary;
+$btn-primary-bgcolor-hover:             $extended--turquoiseDark;
+$btn-primary-textcolor:                 $brand--heritageBlue;
+$btn-primary-line-height:               $spacing--lg;
+$btn-primary-padding:                   $spacing--sm;
+
+$btn-primary-action-prev-bgcolor:       $extended--turquoiseMid;
+$btn-primary-action-prev-hover-bgcolor: $extended--turquoisePrimary;
+
+$btn-secondary-bgcolor-hover:           $extended--blueMid;
+$btn-secondary-bordercolor:             $extended--blueDark;
+$btn-secondary-textcolor:               $brand--heritageBlue;
+$btn-secondary-padding:                 $spacing--xs;
 
 // component block
 .c-btn {
-  background: $default-bgcolor;
-  border: 2px;
-  border-radius: 2px;
+  background: $btn-default-bgcolor;
+  border: $btn-default-border-width;
+  border-radius: $btn-default-radius;
   cursor: pointer;
-  color: $default-textcolor;
+  color: $btn-default-textcolor;
   display: inline-block;
   font-weight: 600;
   @include remcalc(font-size, 16px);
   margin: 0;
-  @include remcalc(margin-right, 8px);
-  @include remcalc(padding, 8px);
+  @include remcalc(padding, $btn-default-padding);
   outline: none;
   text-decoration: none;
 
   // component modifiers
   &--primary {
     border: none;
-    background: $primary-bgcolor;
-    color: $primary-textcolor;
-    @include remcalc(padding-top, 16px);
-    @include remcalc(padding-bottom, 16px);
-    @include remcalc(padding-left, 17px);
-    @include remcalc(padding-right, 17px);
+    background: $btn-primary-bgcolor;
+    color: $btn-primary-textcolor;
+    @include remcalc(line-height, $btn-primary-line-height);
+    @include remcalc(padding-top, $btn-primary-padding);
+    @include remcalc(padding-bottom, $btn-primary-padding);
+    @include remcalc(padding-left, $btn-primary-padding);
+    @include remcalc(padding-right, $btn-primary-padding);
 
     &:hover {
-      background-color: $primary-bgcolor--hover;
+      background-color: $btn-primary-bgcolor-hover;
     }
   }
 
   &--secondary {
     background: transparent;
-    border: 1px solid $secondary-bordercolor;
-    color: $secondary-textcolor;
+    border: 1px solid $btn-secondary-bordercolor;
+    color: $btn-secondary-textcolor;
     @include remcalc(font-size, 14px);
-    @include remcalc(padding-top, 8px);
-    @include remcalc(padding-bottom, 8px);
-    @include remcalc(padding-left, 9px);
-    @include remcalc(padding-right, 9px);
+    @include remcalc(line-height, 20px);
+    @include remcalc(padding, $btn-secondary-padding);
 
     &:hover {
-      background: $secondary-bgcolor--hover;
+      background: $btn-secondary-bgcolor-hover;
+    }
+  }
+
+  &--action-prev {
+    background-color: $btn-primary-action-prev-bgcolor;
+    &:hover {
+      background-color: $btn-primary-action-prev-hover-bgcolor;
     }
   }
 
   // component states
   &:focus {
-    outline: 2px solid $focuscolor;
+    @include remcalc(outline-width, $btn-focus-outline-width);
+    outline-style: solid;
+    outline-color: $btn-focus-outline-color;
+  }
+
+  // two buttons next to one another
+  & + & {
+    @include remcalc(margin-left, $btn-default-sibling-spacing);
   }
 }
