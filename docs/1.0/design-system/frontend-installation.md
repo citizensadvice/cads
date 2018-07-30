@@ -10,7 +10,7 @@ title: Frontend installation
 This repository is distributed with npm. After installing node.js, and npm you can install the front-end developer kit using:
 
 ```
-$ npm install --save cabui
+$ npm install --save cadesignsystem
 ```
 
 ## Folder structure
