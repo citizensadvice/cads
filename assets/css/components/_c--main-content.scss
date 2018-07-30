@@ -9,9 +9,12 @@ $main-content-bp--md: $bp--md;
 $main-content-item-max-w: 600px;
 $main-content-example-max-w: $bp--lg;
 $main-content-last-item-spacing: $spacing--md;
+$main-content-padding: $spacing--2xl;
 
 // component block
 .c-main-content {
+  @include remcalc(padding-top, $main-content-padding);
+
   > * {
     @media (min-width: $main-content-bp--md) {
       @include remcalc(max-width, $main-content-item-max-w);
