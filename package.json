@@ -1,6 +1,6 @@
 {
   "name": "cadesignsystem",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -11,8 +11,8 @@
     "minify-css": "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
     "compile-docs": "bundle exec jekyll build",
     "serve-docs": "bundle exec jekyll serve",
-    "copy-assets": "cp assets/images/* dist/images/",
-    "dist-framework": "npm-run-all --parallel compile-css minify-css copy-assets"
+    "copy-assets": "mkdir dist/images/ && cp -R assets/images/* dist/images/",
+    "dist-framework": "npm-run-all --parallel compile-css minify-css --sequential copy-assets"
   },
   "keywords": [],
   "author": "",
