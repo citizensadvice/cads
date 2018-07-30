@@ -10,12 +10,14 @@ $global-header-text-color: $monochrome--white;
 $global-header-bp--sm: $bp--sm;
 $global-header-layer-level: 100;
 $global-header-padding: $spacing--md;
+$global-header-spacing: $spacing--2xl * 2;
 
 
 
 // component block
 .c-global-header {
   background-color: $global-header-bg-color;
+  @include remcalc(margin-bottom, $global-header-spacing);
   position: relative;
   z-index: $global-header-layer-level;
 
@@ -34,5 +36,9 @@ $global-header-padding: $spacing--md;
       position: sticky;
       top: 0;
     }
+  }
+
+  &--flat {
+    margin: 0;
   }
 }
