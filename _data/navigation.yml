@@ -36,10 +36,12 @@
       url: /docs/1.0/components/input-fields.html
     - title: Fieldsets
       url: /docs/1.0/components/fieldsets.html
-    - title: Header
-      url: /docs/1.0/components/header.html
     - title: Footer
       url: /docs/1.0/components/footer.html
+    - title: Header
+      url: /docs/1.0/components/header.html
+    - title: Labels
+      url: /docs/1.0/components/labels.html
     - title: Links
       url: /docs/1.0/components/links.html
     - title: Radio buttons
