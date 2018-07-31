@@ -11,7 +11,7 @@ They appear at the top of a page, above the main section area and have a default
 <header class="c-global-header c-global-header--sticky">
   <div class="c-wrap c-wrap--full-width">
     <h1 class="c-global-header__product-title">
-        <img src="/ca-designsystem/assets/images/citizens_advice_logo.svg" alt="Citizens Advice logo">
+        <img src="./images/citizens_advice_logo.svg" alt="Citizens Advice logo">
     </h1>
   </div>
 </header>
