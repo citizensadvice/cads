@@ -40,7 +40,7 @@ There's also a minified version available, simply change `cabui.css` to `cabui.m
 You need to import the Citizens Advice frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules. To import all components, add the below to your Sass file:
 
 ```
-ca-boilerplate/
+application/
 └── src/
     ├── scss/
     │   ├── cabui.scss
