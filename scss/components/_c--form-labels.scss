@@ -1,0 +1,17 @@
+// ========================================================
+// @component: label
+// ========================================================
+//
+
+// component config
+//
+$label-spacing: $spacing--xs;
+
+// component block
+//
+label,
+.c-label {
+  display: block;
+  font-weight: 700;
+  @include remcalc(margin-bottom, $label-spacing);
+}

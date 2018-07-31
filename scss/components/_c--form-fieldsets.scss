@@ -1,0 +1,26 @@
+// ========================================================
+// @component: fieldset
+// ========================================================
+//
+
+// component config
+//
+$fieldset-spacing: $spacing--md;
+
+// component block
+//
+fieldset,
+.c-fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  @include remcalc(margin-bottom, $fieldset-spacing);
+}
+
+// component modifiers
+//
+.c-fieldset--inline {
+  .c-fieldset__item {
+    display: inline-block;
+  }
+}

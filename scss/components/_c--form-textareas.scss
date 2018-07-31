@@ -1,0 +1,13 @@
+// ========================================================
+// @component: textarea
+// @dependency: t--form-elements
+// ========================================================
+//
+
+// component block
+//
+textarea,
+.c-textarea {
+  @extend %form-elements;
+  resize: vertical;
+}

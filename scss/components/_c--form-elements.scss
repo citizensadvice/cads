@@ -1,0 +1,41 @@
+// ========================================================
+// @settings: form elements
+// @supports:
+// - <textarea>
+// - <input type="text">
+// - <input type="email">
+// - <input type="password">
+// - <input type="radio">
+// - <input type="checkbox">
+// ========================================================
+//
+
+// settings:
+//
+$form-elements-border-color:       $monochrome--lightGrey;
+$form-elements-border-color-focus: $brand--heritageYellow;
+$form-elements-line-height:        $spacing--lg;
+$form-elements-border:             2px;
+$form-elements-padding-top-btm:    $spacing--xs + 2;
+$form-elements-padding-left-right: $spacing--sm + 2;
+$form-elements-font-size:          $spacing--md;
+
+// module definitions:
+//
+%form-elements {
+  @include remcalc(border-width, $form-elements-border);
+  border-style: solid;
+  border-color: $form-elements-border-color;
+  @include remcalc(border-radius, $form-elements-border);
+  @include remcalc(font-size, $form-elements-font-size);
+  @include remcalc(line-height, $form-elements-line-height);
+  @include remcalc(padding-top, $form-elements-padding-top-btm);
+  @include remcalc(padding-bottom, $form-elements-padding-top-btm);
+  @include remcalc(padding-left, $form-elements-padding-left-right);
+  @include remcalc(padding-right, $form-elements-padding-left-right);
+
+  &:focus {
+    border-color: $form-elements-border-color-focus;
+    outline: none;
+  }
+}

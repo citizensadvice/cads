@@ -10,8 +10,8 @@
 // module definition:
 //
 @mixin font($font, $fontWeight) {
-    font-family: #{$font}, sans-serif;
-    font-weight: #{$fontWeight};
+  font-family: #{$font}, sans-serif;
+  font-weight: #{$fontWeight};
 }
 
 // module usage

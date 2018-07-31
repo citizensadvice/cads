@@ -1,0 +1,12 @@
+// ========================================================
+// @component: inputs
+// @dependency: t--form-elements
+// ========================================================
+//
+
+// component block
+//
+input,
+.c-input {
+  @extend %form-elements;
+}
