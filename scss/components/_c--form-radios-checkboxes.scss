@@ -1,0 +1,81 @@
+// ========================================================
+// @component: radios
+// @dependency: t--form-elements
+// ========================================================
+//
+
+// component config
+//
+$radio-border-radius:              $form-elements-border;
+$radio-border-width:               $form-elements-border;
+$radio-border-color:               $form-elements-border-color;
+$radio-border-color-checked:       $extended--bluePrimary;
+$radio-border-color-focus:         $brand--heritageYellow;
+$radio-spacing:                    $spacing--xs;
+$radio-bgcolor:                    $monochrome--paleGrey;
+$radio-bgcolor-hover:              $monochrome--grey;
+$radio-bgcolor-checked:            $extended--blueMid;
+$radio-bgcolor-focus:              $extended--blueMid;
+$radio-line-height:                $form-elements-line-height + ($radio-border-width * 2);
+$radio-check-spacing:              $radio-spacing / 2;
+$radio-check-size:                 14px;
+$radio-sibling-spacing:            $spacing--xs;
+
+// component block
+//
+.c-radio,
+.c-checkbox {
+  @extend %form-elements;
+  border: 0;
+  @include remcalc(border-radius, 2px);
+  background-color: $radio-bgcolor;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  @include remcalc(line-height, $radio-line-height);
+  @include remcalc(margin-right, $radio-spacing);
+  position: relative;
+  width: auto;
+  z-index: 1;
+
+  input {
+    display: inline-block;
+    @include remcalc(height, $radio-check-size);
+    @include remcalc(margin-right, $radio-check-spacing);
+    width: auto;
+
+    &:before {
+      background-color: $radio-bgcolor;
+      @include remcalc(border-width, $radio-border-width);
+      border-style: solid;
+      border-color: $radio-border-color;
+      @include remcalc(border-radius, $radio-border-radius);
+      content: '';
+      cursor: pointer;
+      box-sizing: border-box;
+      display: block;
+      height: 100%;
+      left: 0;
+      @include remcalc(margin-right, $radio-spacing);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      -webkit-user-select: none;
+    }
+
+    &:hover:before {
+      border-color: $radio-bgcolor-hover;
+    }
+
+    &:checked:before {
+      background: $radio-bgcolor-checked;
+      border-color: $radio-border-color-checked;
+    }
+
+    &:focus:before {
+      background: $radio-bgcolor-focus;
+      border-color: $radio-border-color-checked;
+    }
+  }
+}

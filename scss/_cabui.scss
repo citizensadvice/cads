@@ -15,7 +15,6 @@
 @import "tools/t--remcalc";
 @import "tools/t--clearfix";
 @import "tools/t--fonts";
-// @import "tools/t--make-link";
 
 // GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
 @import "generic/g--normalize";
@@ -24,7 +23,6 @@
 // ELEMENTS: unclassed HTML elements (type selectors)
 @import "elements/e--typography";
 @import "elements/e--links";
-@import "elements/e--forms";
 @import "elements/e--tables";
 
 // OBJECTS: cosmetic-free design patterns
@@ -39,6 +37,13 @@
 @import "components/c--button-group";
 @import "components/c--blockquote";
 @import "components/c--section-nav";
+@import "components/c--form-elements";
+@import "components/c--form-fieldsets";
+@import "components/c--form-inputs";
+@import "components/c--form-labels";
+@import "components/c--form-textareas";
+@import "components/c--form-selects";
+@import "components/c--form-radios-checkboxes";
 
 // UTILITIES: helpers and overrides
 @import "utilities/u--spacing";

@@ -19,9 +19,9 @@ To avoid dropdowns consider how to present the list of options
 - can you present it as a list of radio buttons. Even if the page is long users find these easier to use sometimes it's better to just let users type their response as free text can the long list be broken into multiple shorter lists by asking a few questions up-front to filter out options.
 
 {% capture example %}
-<div class="fieldset">
+<div class="c-fieldset">
   <label for="exampleSelect1">Example dropdown select</label>
-  <div class="select">
+  <div class="c-select">
     <select id="exampleSelect1">
       <option value="Please select">Please select</option>
       <option value="Option #1">Option #1</option>
@@ -36,9 +36,9 @@ To avoid dropdowns consider how to present the list of options
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="fieldset">
+<div class="c-fieldset">
   <label for="exampleSelect1">Example dropdown select</label>
-  <div class="select">
+  <div class="c-select">
     <select id="exampleSelect1">
       <option value="Please select">Please select</option>
       <option value="Option #1">Option #1</option>

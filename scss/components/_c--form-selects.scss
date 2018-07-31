@@ -1,0 +1,61 @@
+// ========================================================
+// @component: select
+// @dependency: t--form-elements
+// ========================================================
+//
+
+// component config
+//
+$select-bgcolor:                   $monochrome--white;
+$select-padding-top-btm:           $form-elements-padding-top-btm;
+$select-padding-left:              $form-elements-padding-left-right;
+$select-padding-right:             $spacing--2xl;
+$select-line-height:               $form-elements-line-height;
+$select-border-radius:             $form-elements-border;
+$select-border-width:              $form-elements-border;
+$select-border-color:              $form-elements-border-color;
+$select-focus-border-color:        $form-elements-border-color-focus;
+
+// component block
+//
+.c-select {
+  border: 0;
+  background-color: $select-bgcolor;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  width: auto;
+
+  select            {
+    background: none;
+    @include remcalc(border-radius, $select-border-radius);
+    @include remcalc(border, $select-border-width);
+    border-style: solid;
+    border-color: $select-border-color;
+    cursor: pointer;
+    @include remcalc(line-height, $select-line-height);
+    @include remcalc(padding-top, $select-padding-top-btm);
+    @include remcalc(padding-bottom, $select-padding-top-btm);
+    @include remcalc(padding-left, $select-padding-left);
+    @include remcalc(padding-right, $select-padding-right);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:focus {
+      border-color: $select-focus-border-color;
+      outline: none;
+    }
+  }
+
+  &:after {
+    content: '\1F893'; // NOTE: this will need amending when icons are in place.
+    text-align: center;
+    position: absolute;
+    pointer-events: none;
+    @include remcalc(right, 16px);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+  }
+}

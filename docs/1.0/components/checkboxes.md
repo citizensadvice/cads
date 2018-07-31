@@ -14,7 +14,7 @@ Where possible, give users the option to indicate that none of the options apply
 
 {% capture example %}
 <div class="fieldset">
-  <label class="checkbox" for="checkbox1">
+  <label class="c-checkbox" for="checkbox1">
     <input checked id="checkbox1" type="checkbox" name="checkbox" value="checkbox1" />
     Option one
   </label>
@@ -24,7 +24,7 @@ Where possible, give users the option to indicate that none of the options apply
 
 {% capture snippet %}
 <div class="fieldset">
-  <label class="checkbox" for="checkbox1">
+  <label class="c-checkbox" for="checkbox1">
     <input checked id="checkbox1" type="checkbox" name="checkbox" value="checkbox1" />
     Option one
   </label>

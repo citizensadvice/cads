@@ -12,28 +12,39 @@ When using radio buttons
 - if necessary two options can be placed horizontally stacked
 
 {% capture example %}
-<div className="fieldset">
-  <label class="radio" for="option1">
-    <input checked type="radio" id="option1" name="radio1" value="option1" />
-    Yes
-  </label>
-</div>
+<fieldset class="c-fieldset">
+  <div class="c-fieldset__item">
+    <label class="c-radio" for="option1">
+      <input checked type="radio" id="option1" name="radio1" value="option1" />
+      Yes
+    </label>
+  </div>
 
-<div className="fieldset">
-  <label class="radio" for="option2">
-    <input type="radio" id="option2" name="radio1" value="option2" />
-    No
-  </label>
-</div>
+  <div class="c-fieldset__item">
+    <label class="c-radio" for="option2">
+      <input type="radio" id="option2" name="radio1" value="option2" />
+      No
+    </label>
+  </div>
+</fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div className="fieldset">
-  <label class="radio" for="option1">
-    <input checked type="radio" id="option1" name="radio1" value="option1" />
-    Yes
-  </label>
-</div>
+<fieldset class="c-fieldset">
+  <div class="c-fieldset__item">
+    <label class="c-radio" for="option1">
+      <input checked type="radio" id="option1" name="radio1" value="option1" />
+      Yes
+    </label>
+  </div>
+
+  <div class="c-fieldset__item">
+    <label class="c-radio" for="option2">
+      <input type="radio" id="option2" name="radio1" value="option2" />
+      No
+    </label>
+  </div>
+</fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
