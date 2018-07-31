@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Inputs
+title: Input fields
 ---
 
 # Input fields

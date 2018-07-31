@@ -32,8 +32,8 @@
       url: /docs/1.0/components/date-input.html
     - title: Dropdowns
       url: /docs/1.0/components/dropdowns.html
-    - title: Inputs
-      url: /docs/1.0/components/inputs.html
+    - title: Input fields
+      url: /docs/1.0/components/input-fields.html
     - title: Fieldsets
       url: /docs/1.0/components/fieldsets.html
     - title: Header
