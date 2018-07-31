@@ -585,8 +585,8 @@ table th,
 
 @media (min-width: 555px) {
   .c-global-footer {
-    margin-top: 16px;
-    margin-top: 1rem;
+    margin-top: 160px;
+    margin-top: 10rem;
     padding: 40px;
     padding: 2.5rem;
   }
