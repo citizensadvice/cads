@@ -3,48 +3,55 @@ layout: docs
 title: Radios
 ---
 
-## Radio buttons
+# Radio buttons
 
 When using radio buttons
 
 - let users choose a single option from a list
 - radio buttons should be stacked
 - if necessary two options can be placed horizontally stacked
+- you'll need to use a `.c-label` component, but it won't be linked to a specific radio button. See the [label component]({{ site.baseurl }}/docs/1.0/components/labels) for further information.
 
 {% capture example %}
-<fieldset class="c-fieldset">
-  <div class="c-fieldset__item">
-    <label class="c-radio" for="option1">
-      <input checked type="radio" id="option1" name="radio1" value="option1" />
-      Yes
-    </label>
-  </div>
+<form>
+	<p class="c-label">Where did you buy it from?</p>
+	<fieldset class="c-fieldset">
+    <div class="c-fieldset__item">
+  	  <label class="c-radio" for="internet">
+  	    <input checked type="radio" id="internet" name="radio1" value="internet" />
+  	    Online
+  	  </label>
+    </div>
 
-  <div class="c-fieldset__item">
-    <label class="c-radio" for="option2">
-      <input type="radio" id="option2" name="radio1" value="option2" />
-      No
-    </label>
-  </div>
-</fieldset>
+    <div class="c-fieldset__item">
+  	  <label class="c-radio" for="shop">
+  	    <input checked type="radio" id="shop" name="radio1" value="shop" />
+  	    A shop
+  	  </label>
+    </div>
+	</fieldset>
+</form>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<fieldset class="c-fieldset">
-  <div class="c-fieldset__item">
-    <label class="c-radio" for="option1">
-      <input checked type="radio" id="option1" name="radio1" value="option1" />
-      Yes
-    </label>
-  </div>
+<form>
+  <p class="c-label">Where did you buy it from?</p>
+  <fieldset class="c-fieldset">
+    <div class="c-fieldset__item">
+      <label class="c-radio" for="internet">
+        <input checked type="radio" id="internet" name="radio1" value="internet" />
+        Online
+      </label>
+    </div>
 
-  <div class="c-fieldset__item">
-    <label class="c-radio" for="option2">
-      <input type="radio" id="option2" name="radio1" value="option2" />
-      No
-    </label>
-  </div>
-</fieldset>
+    <div class="c-fieldset__item">
+      <label class="c-radio" for="shop">
+        <input checked type="radio" id="shop" name="radio1" value="shop" />
+        A shop
+      </label>
+    </div>
+  </fieldset>
+</form>
 {% endcapture %}
 {% include snippet.html content=snippet %}

@@ -19,11 +19,13 @@ $highlight-spacing: $spacing--md;
   }
 }
 
+li > .highlighter-rouge,
 p > .highlighter-rouge,
 .highlight {
   color: #ff0000;
 }
 
+li > .highlighter-rouge,
 p > .highlighter-rouge {
   @include remcalc(border-radius, 2px);
   @include remcalc(padding-top, 1px);

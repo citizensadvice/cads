@@ -21,7 +21,7 @@ Labels should normally exist alongside input elements, but can also be used in a
     <div class="c-fieldset__item">
   	  <label class="c-radio" for="shop">
   	    <input checked type="radio" id="shop" name="radio1" value="shop" />
-  	    Shop
+  	    A shop
   	  </label>
     </div>
 	</fieldset>
@@ -43,7 +43,7 @@ Labels should normally exist alongside input elements, but can also be used in a
     <div class="c-fieldset__item">
       <label class="c-radio" for="shop">
         <input checked type="radio" id="shop" name="radio1" value="shop" />
-        Shop
+        A shop
       </label>
     </div>
   </fieldset>
