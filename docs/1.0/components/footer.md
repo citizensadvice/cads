@@ -8,6 +8,8 @@ title: Footer
 Footers help users find what they need after scrolling to the bottom of a page. They provide supplementary information such as legal information, contact details and links to other pages within the website.
 
 {% capture example %}
+<main>Site content will end here...</main>
+
 <footer class="c-global-footer u-spacingBottom--none">
   <p class="u-spacingBottom--none">
     Copyright &copy; 2018 Citizens Advice. All rights reserved.<br>

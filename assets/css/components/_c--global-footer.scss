@@ -6,12 +6,14 @@
 // component config
 //
 $global-footer-bp--sm:        $bp--sm;
+$global-footer-spacing-top:   $spacing--md;
 $global-footer-left-position: $grid-fixed-unit-width; // from framework > objects > grid
 
 // component block
 .c-global-footer {
   &--design-system {
     left: 0px;
+    @include remcalc(margin-top, $global-footer-spacing-top);
     position: absolute;
     @include remcalc(right, 0px);
 
