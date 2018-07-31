@@ -6,7 +6,6 @@
 // settings;
 //
 $section-nav-section-spacing:             $spacing--2xl;
-$section-nav-section-spacing--md:         $spacing--md;
 $section-nav-section-heading-color:       $brand--heritageBlue;
 $section-nav-section-heading-spacing:     $spacing--sm;
 $section-nav-section-heading-font-size:   24px;
@@ -24,14 +23,13 @@ $section-nav-sidebar-color:               $monochrome--grey;
 //
 .c-section-nav {
 
-
   // component elements
   //
   &__section {
     @include remcalc(margin-bottom, $section-nav-section-spacing);
 
     &:last-child {
-      @include remcalc(margin-bottom, $section-nav-section-spacing--md);
+      @include remcalc(margin-bottom, $section-nav-section-spacing);
     }
   }
 
