@@ -8,8 +8,8 @@ Headers help users understand what website they are visiting.
 They appear at the top of a page, above the main section area and have a default margin bottom of 80px. This can be removed by adding the modifier class `c-global-header--flat` where necessary.
 
 {% capture example %}
-<header class="c-global-header c-global-header--sticky">
-  <div class="c-wrap c-wrap--full-width">
+<header class="c-global-header">
+  <div class="c-wrap">
     <h1 class="c-global-header__product-title">
         <img src="/ca-designsystem/assets/images/citizens_advice_logo.svg" alt="Citizens Advice logo">
     </h1>
@@ -20,7 +20,7 @@ They appear at the top of a page, above the main section area and have a default
 {% include example.html content=example %}
 
 {% capture snippet %}
-<header class="c-global-header c-global-header--sticky">
+<header class="c-global-header">
   <div class="c-wrap">
     <h1 class="c-global-header__product-title">
     <img src="./images/citizens_advice_logo.svg"alt="Citizens Advice logo">
