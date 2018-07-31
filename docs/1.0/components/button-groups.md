@@ -14,7 +14,7 @@ Essentially it gives `$spacing--2xl` to the group of buttons and is often used w
 </p>
 
 <div class="c-btn-group">
-  <a class="c-btn c-btn--primary" href="#">Previous</a>
+  <a class="c-btn c-btn--primary c-btn--action-prev" href="#">Previous</a>
   <a class="c-btn c-btn--primary" href="#">Next</a>
 </div>
 {% endcapture %}
@@ -22,7 +22,7 @@ Essentially it gives `$spacing--2xl` to the group of buttons and is often used w
 
 {% capture snippet %}
 <div class="c-btn-group">
-  <a class="c-btn c-btn--primary" href="#">Previous</a>
+  <a class="c-btn c-btn--primary c-btn--action-prev" href="#">Previous</a>
   <a class="c-btn c-btn--primary" href="#">Next</a>
 </div>
 {% endcapture %}
