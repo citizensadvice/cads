@@ -11,7 +11,7 @@ Ensure that users can enter the information they need at smaller screen sizes.
 
 To allow users to enter information into your form, use a text entry field.
 
-If you’re using fields
+If you’re using fields:
 
 - always give them a label
 - labels should be aligned left above their fields
@@ -32,7 +32,7 @@ If a question needs extra clarification place hint text above the field.
 {% capture example %}
 <div class="fieldset">
   <label for="standardField">
-    Standard Field
+    Standard field
     <span class="h-optionalLabel">optional</span>
   </label>
   <span class="h-hintLabel">With additional help text</span>
@@ -44,7 +44,7 @@ If a question needs extra clarification place hint text above the field.
 {% capture snippet %}
 <div class="fieldset">
   <label for="standardField">
-    Standard Field
+    Standard field
     <span class="h-optionalLabel">optional</span>
   </label>
   <span class="h-hintLabel">With additional help text</span>
