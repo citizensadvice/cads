@@ -3,15 +3,30 @@ CA Design Sytem
 Citizens Advice Design System
 
 
-### <a name="requirements"></a>Requirements  
+## <a name="Prerequisites"></a>Prerequisites 
 
-* [Node.js](https://nodejs.org/en/ "Node.js") 
+We recommend using [Homebrew](http://brew.sh/ "Homebrew")
 
-OS X users can install Node with [Homebrew](http://brew.sh/ "Homebrew").
+### [Node.js](https://nodejs.org/en/ "Node.js") 
+
+or 
 
 ```shell
 $ brew install node
 ```
+
+### [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git "Git") 
+
+or
+
+```shell
+$ brew install git
+```
+
+### [Ruby](https://rvm.io/rvm/install "Ruby")  
+
+We recommend using [RVM](https://rvm.io/rvm/install "RVM")
+
 
 ### <a name="start"></a>Quick start  
 #### 1. Get the latest version  
@@ -24,6 +39,9 @@ $ cd ca-designsystem
 
 #### 2. Install dependencies
 Install our project dependencies and developer tools listed in `package.json`
+```shell
+$ npm install 
+```
 
 ```shell
 $ bundle install 
