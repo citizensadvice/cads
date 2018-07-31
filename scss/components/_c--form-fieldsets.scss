@@ -17,6 +17,12 @@ fieldset,
   @include remcalc(margin-bottom, $fieldset-spacing);
 }
 
+// components elements
+//
+.c-fieldset__item {
+  display: block;
+}
+
 // component modifiers
 //
 .c-fieldset--inline {
