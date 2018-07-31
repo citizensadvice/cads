@@ -35,13 +35,16 @@ The grid column widths are based on the viewport sizes. These are:
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="o-grid">
-  <div class="o-grid__unit">...</div>
+<div class="c-wrap">
+  <div class="o-grid">
+    <div class="o-grid__unit">...</div>
 
   or
 
-  <div class="o-grid__unit o-grid__unit--t-1-1">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-1">...</div>
+  </div>
 </div>
+
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
@@ -61,10 +64,13 @@ The grid column widths are based on the viewport sizes. These are:
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-1-2">...</div>
-  <div class="o-grid__unit o-grid__unit--t-1-2">...</div>
+<div class="c-wrap">
+  <div class="o-grid">
+    <div class="o-grid__unit o-grid__unit--t-1-2">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-2">...</div>
+  </div>
 </div>
+
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
@@ -98,15 +104,21 @@ The grid column widths are based on the viewport sizes. These are:
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
-  <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
-  <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
+<div class="c-wrap">
+  <div class="o-grid">
+    <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
+  </div>
 </div>
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-2-3">...</div>
-  <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
+
+<div class="c-wrap">
+  <div class="o-grid">
+    <div class="o-grid__unit o-grid__unit--t-2-3">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
+  </div>
 </div>
+
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
@@ -144,15 +156,19 @@ The grid column widths are based on the viewport sizes. These are:
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
-  <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
-  <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
-  <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
+<div class="c-wrap">
+  <div class="o-grid">
+    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
+  </div>
 </div>
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-3-4">...</div>
-  <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
+<div class="c-wrap">
+  <div class="o-grid">
+    <div class="o-grid__unit o-grid__unit--t-3-4">...</div>
+    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
+  </div>
 </div>
 {% endcapture %}
 {% include snippet.html content=snippet %}
