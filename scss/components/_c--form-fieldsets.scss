@@ -29,6 +29,10 @@ $fieldset-item-spacing: $fieldset-spacing / 2;
     display: block;
     @include remcalc(margin-bottom, $fieldset-item-spacing);
     @include remcalc(margin-right, $fieldset-item-spacing);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   // component modifiers
