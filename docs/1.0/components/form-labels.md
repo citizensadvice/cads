@@ -9,7 +9,7 @@ Labels should normally exist alongside input elements, but can also be used in a
 
 {% capture example %}
 <fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">Firstname:</label>
+  <label class="c-label" for="firstname">First name:</label>
   ...
 </fieldset>
 {% endcapture %}
@@ -17,7 +17,7 @@ Labels should normally exist alongside input elements, but can also be used in a
 
 {% capture snippet %}
 <fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">Firstname:</label>
+  <label class="c-label" for="firstname">First name:</label>
   ...
 </fieldset>
 {% endcapture %}
@@ -35,10 +35,10 @@ Whatever element/class combination you choose, they will all visually look the i
 
 {% capture example %}
 <fieldset class="c-fieldset">
-  <label for="firstname">Firstname:</label>
-  <label class="c-label" for="firstname">Surname:</label>
-  <legend for="firstname">Middlename:</legend>
-  <legend class="c-label" for="firstname">Other name(s):</legend>
+  <label for="">Label #1:</label>
+  <label class="c-label" for="">Label #2:</label>
+  <legend for="">Label #3:</legend>
+  <legend class="c-label" for="">Label #4:</legend>
   ...
 </fieldset>
 {% endcapture %}
@@ -46,10 +46,10 @@ Whatever element/class combination you choose, they will all visually look the i
 
 {% capture snippet %}
 <fieldset class="c-fieldset">
-  <label for="firstname">Firstname:</label>
-  <label class="c-label" for="firstname">Surname:</label>
-  <legend for="firstname">Middlename:</legend>
-  <legend class="c-label" for="firstname">Other name(s):</legend>
+  <label for="">Label #1:</label>
+  <label class="c-label" for="">Label #2:</label>
+  <legend for="">Label #3:</legend>
+  <legend class="c-label" for="">Label #4:</legend>
   ...
 </fieldset>
 {% endcapture %}
@@ -65,12 +65,12 @@ We also have a couple of extra components available within the `c-label` compone
 
 {% capture example %}
 <fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">
-    Firstname: <span class="c-label__tag c-label__tag--optional">optional</span>
+  <label class="c-label" for="surname">
+    Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
   </label>
   <span class="c-label__metainfo">With additional help text</span>
   <div class="c-input">
-    <input id="firstname" type="text" required>
+    <input id="surname" type="text" required>
   </div>
 </fieldset>
 {% endcapture %}
@@ -78,12 +78,12 @@ We also have a couple of extra components available within the `c-label` compone
 
 {% capture snippet %}
 <fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">
-    Firstname: <span class="c-label__tag c-label__tag--optional">optional</span>
+  <label class="c-label" for="surname">
+    Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
   </label>
   <span class="c-label__metainfo">With additional help text</span>
   <div class="c-input">
-    <input id="firstname" type="text" required>
+    <input id="surname" type="text" required>
   </div>
 </fieldset>
 {% endcapture %}

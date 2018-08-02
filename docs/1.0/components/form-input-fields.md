@@ -31,7 +31,7 @@ If a question needs extra clarification place hint text above the field.
 
 {% capture example %}
 <fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">Firstname:</label>
+  <label class="c-label" for="firstname">First name:</label>
   <div class="c-input">
     <input id="firstname" type="text" required>
   </div>
@@ -41,7 +41,7 @@ If a question needs extra clarification place hint text above the field.
 
 {% capture snippet %}
 <fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">Firstname:</label>
+  <label class="c-label" for="firstname">First name:</label>
   <div class="c-input">
     <input id="firstname" type="text" required>
   </div>
@@ -55,12 +55,12 @@ Let's look at an example with hint text and an optional flag.
 
 {% capture example %}
 <fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">
-    Firstname: <span class="c-label__tag c-label__tag--optional">optional</span>
+  <label class="c-label" for="surname">
+    Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
   </label>
   <span class="c-label__metainfo">With additional help text</span>
   <div class="c-input">
-    <input id="firstname" type="text" required>
+    <input id="surname" type="text" required>
   </div>
 </fieldset>
 {% endcapture %}
@@ -68,12 +68,12 @@ Let's look at an example with hint text and an optional flag.
 
 {% capture snippet %}
 <fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">
-    Firstname: <span class="c-label__tag c-label__tag--optional">optional</span>
+  <label class="c-label" for="surname">
+    Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
   </label>
   <span class="c-label__metainfo">With additional help text</span>
   <div class="c-input">
-    <input id="firstname" type="text" required>
+    <input id="surname" type="text" required>
   </div>
 </fieldset>
 {% endcapture %}
