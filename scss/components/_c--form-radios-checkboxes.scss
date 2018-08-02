@@ -6,76 +6,73 @@
 
 // component config
 //
-$radio-border-radius:              $form-elements-border;
-$radio-border-width:               $form-elements-border;
-$radio-border-color:               $form-elements-border-color;
-$radio-border-color-checked:       $extended--bluePrimary;
-$radio-border-color-focus:         $brand--heritageYellow;
-$radio-spacing:                    $spacing--xs;
-$radio-bgcolor:                    $monochrome--paleGrey;
-$radio-bgcolor-hover:              $monochrome--grey;
-$radio-bgcolor-checked:            $extended--blueMid;
-$radio-bgcolor-focus:              $extended--blueMid;
-$radio-line-height:                $form-elements-line-height + ($radio-border-width * 2);
-$radio-check-spacing:              $radio-spacing / 2;
-$radio-check-size:                 14px;
-$radio-sibling-spacing:            $spacing--xs;
+$radio-check-border-color-focus:     $form-elements-border-color-focus;
+$radio-check-input-dot-height:       $form-elements-line-height;
+$radio-check-input-padding-vertical: $form-elements-padding-vertical + $form-elements-border-width;
+$radio-check-label-font-weight:      400;
+$radio-check-label-spacing:          $spacing--xs / 2;
+$radio-check-border-color:           $form-elements-border-color;
+$radio-check-border-color-hover:     $monochrome--grey;
+$radio-check-border-color-focus:     $form-elements-border-color-focus;
+$radio-check-border-color-checked:   $extended--bluePrimary;
+$radio-check-bgcolor:                $monochrome--paleGrey;
+$radio-check-bgcolor-hover:          $radio-check-bgcolor;
+$radio-check-bgcolor-focus:          $extended--blueMid;
+$radio-check-bgcolor-checked:        $radio-check-bgcolor-focus;
 
 // component block
 //
 .c-radio,
 .c-checkbox {
-  @extend %form-elements;
+  @extend %form-elements-border;
+  @extend %form-elements-block;
+  @extend %form-elements-spacing;
   border: 0;
-  @include remcalc(border-radius, 2px);
-  background-color: $radio-bgcolor;
   cursor: pointer;
-  display: inline-block;
-  font-weight: 400;
-  @include remcalc(line-height, $radio-line-height);
-  @include remcalc(margin-right, $radio-spacing);
+  @include remcalc(padding-top, $radio-check-input-padding-vertical);
+  @include remcalc(padding-bottom, $radio-check-input-padding-vertical);
   position: relative;
-  width: auto;
   z-index: 1;
 
+  label {
+    cursor: pointer;
+    display: inline;
+    font-weight: $radio-check-label-font-weight;
+    margin: 0;
+    @include remcalc(margin-left, $radio-check-label-spacing);
+    padding: 0;
+  }
+
   input {
-    display: inline-block;
-    @include remcalc(height, $radio-check-size);
-    @include remcalc(margin-right, $radio-check-spacing);
-    width: auto;
+    height: $radio-check-input-dot-height;
+    vertical-align: top;
 
     &:before {
-      background-color: $radio-bgcolor;
-      @include remcalc(border-width, $radio-border-width);
-      border-style: solid;
-      border-color: $radio-border-color;
-      @include remcalc(border-radius, $radio-border-radius);
+      @extend %form-elements-border;
+      background-color: $radio-check-bgcolor;
       content: '';
-      cursor: pointer;
-      box-sizing: border-box;
-      display: block;
       height: 100%;
       left: 0;
-      @include remcalc(margin-right, $radio-spacing);
       position: absolute;
       top: 0;
       width: 100%;
       z-index: -1;
-      -webkit-user-select: none;
-    }
-
-    &:hover:before {
-      border-color: $radio-bgcolor-hover;
     }
 
     &:checked:before {
-      background: $radio-bgcolor-checked;
-      border-color: $radio-border-color-checked;
+      background-color: $radio-check-bgcolor-checked;
+      border-color: $radio-check-border-color-checked;
+    }
+
+    &:hover:before {
+      background-color: $radio-check-bgcolor-hover;
+      border-color: $radio-check-border-color-hover;
+      cursor: pointer;
     }
 
     &:focus:before {
-      background: $radio-bgcolor-focus;
-      border-color: $radio-border-color-checked;
+      background-color: $radio-check-bgcolor-focus;
+      border-color: $radio-check-border-color-focus;
     }
   }
 }

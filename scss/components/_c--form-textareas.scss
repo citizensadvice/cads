@@ -4,10 +4,21 @@
 // ========================================================
 //
 
+// component config
+//
+$textarea-border-color-focus: $form-elements-border-color-focus;
+
 // component block
 //
-textarea,
 .c-textarea {
-  @extend %form-elements;
-  resize: vertical;
+
+  // component elements
+  //
+  textarea {
+    @extend %form-elements;
+
+    &:focus {
+      border-color: $textarea-border-color-focus;
+    }
+  }
 }
