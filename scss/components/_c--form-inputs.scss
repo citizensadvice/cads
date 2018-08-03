@@ -21,4 +21,16 @@ $input-border-color-focus: $form-elements-border-color-focus;
       border-color: $input-border-color-focus;
     }
   }
+
+  // component modifiers
+  //
+  &--dateinput,
+  &--dateinput input {
+    @include remcalc(max-width, 72px);
+  }
+
+  &--dateinput-year,
+  &--dateinput-year input {
+    @include remcalc(max-width, 96px);
+  }
 }
