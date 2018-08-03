@@ -6,27 +6,42 @@
 // component config
 //
 $fieldset-spacing: $spacing--md;
+$fieldset-item-spacing: $fieldset-spacing / 2;
 
-// component block
+// shared component
 //
-fieldset,
-.c-fieldset {
-  border: 0;
-  margin: 0;
+%fieldset-element {
+  border: none;
   padding: 0;
+  margin: 0;
   @include remcalc(margin-bottom, $fieldset-spacing);
 }
 
-// components elements
-//
-.c-fieldset__item {
-  display: block;
-}
 
-// component modifiers
+// component block
 //
-.c-fieldset--inline {
-  .c-fieldset__item {
-    display: inline-block;
+.c-fieldset {
+  @extend %fieldset-element;
+
+  // component elements
+  //
+  &__item {
+    display: block;
+    @include remcalc(margin-bottom, $fieldset-item-spacing);
+    @include remcalc(margin-right, $fieldset-item-spacing);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // component modifiers
+  //
+  &--inline {
+    .c-fieldset__item {
+      display: inline-block;
+    }
   }
 }
+
+fieldset { @extend %fieldset-element }

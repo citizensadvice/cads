@@ -27,29 +27,31 @@
     - title: Button groups
       url: /docs/1.0/components/button-groups.html
     - title: Checkboxes
-      url: /docs/1.0/components/checkboxes.html
+      url: /docs/1.0/components/form-checkboxes.html
     - title: Date input
       url: /docs/1.0/components/date-input.html
     - title: Dropdowns
-      url: /docs/1.0/components/dropdowns.html
+      url: /docs/1.0/components/form-dropdowns.html
     - title: Input fields
-      url: /docs/1.0/components/input-fields.html
+      url: /docs/1.0/components/form-input-fields.html
     - title: Fieldsets
-      url: /docs/1.0/components/fieldsets.html
+      url: /docs/1.0/components/form-fieldsets.html
     - title: Footer
       url: /docs/1.0/components/footer.html
     - title: Header
       url: /docs/1.0/components/header.html
     - title: Labels
-      url: /docs/1.0/components/labels.html
+      url: /docs/1.0/components/form-labels.html
     - title: Links
       url: /docs/1.0/components/links.html
     - title: Radio buttons
-      url: /docs/1.0/components/radios.html
+      url: /docs/1.0/components/form-radios.html
     - title: Search
       url: /docs/1.0/components/search.html
     - title: Section navigation
       url: /docs/1.0/components/section-nav.html
+    - title: Textarea
+      url: /docs/1.0/components/form-textarea.html
     - title: Top level navigation
       url: /docs/1.0/components/top-nav.html
     - title: Validation

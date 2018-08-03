@@ -19,10 +19,10 @@ To avoid dropdowns consider how to present the list of options
 - can you present it as a list of radio buttons. Even if the page is long users find these easier to use sometimes it's better to just let users type their response as free text can the long list be broken into multiple shorter lists by asking a few questions up-front to filter out options.
 
 {% capture example %}
-<div class="c-fieldset">
-  <label for="exampleSelect1">Example dropdown select</label>
+<fieldset class="c-fieldset">
+  <label class="c-label" for="select1">Example dropdown select</label>
   <div class="c-select">
-    <select id="exampleSelect1">
+    <select id="select1">
       <option value="Please select">Please select</option>
       <option value="Option #1">Option #1</option>
       <option value="Option #2">Option #2</option>
@@ -31,15 +31,15 @@ To avoid dropdowns consider how to present the list of options
       <option value="Option #5">Option #5</option>
     </select>
   </div>
-</div>
+</fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="c-fieldset">
-  <label for="exampleSelect1">Example dropdown select</label>
+<fieldset class="c-fieldset">
+  <label class="c-label" for="select1">Example dropdown select</label>
   <div class="c-select">
-    <select id="exampleSelect1">
+    <select id="select1">
       <option value="Please select">Please select</option>
       <option value="Option #1">Option #1</option>
       <option value="Option #2">Option #2</option>
@@ -48,6 +48,6 @@ To avoid dropdowns consider how to present the list of options
       <option value="Option #5">Option #5</option>
     </select>
   </div>
-</div>
+</fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}

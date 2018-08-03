@@ -30,25 +30,51 @@ If a question needs extra clarification place hint text above the field.
 -   ensure hint text can be read correctly by screen readers
 
 {% capture example %}
-<div class="fieldset">
-  <label for="standardField">
-    Standard field
-    <span class="h-optionalLabel">optional</span>
-  </label>
-  <span class="h-hintLabel">With additional help text</span>
-  <input id="standardField" type="text" pattern=".{3,10}" required />
-</div>
+<fieldset class="c-fieldset">
+  <label class="c-label" for="firstname">First name:</label>
+  <div class="c-input">
+    <input id="firstname" type="text" required>
+  </div>
+</fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="fieldset">
-  <label for="standardField">
-    Standard field
-    <span class="h-optionalLabel">optional</span>
+<fieldset class="c-fieldset">
+  <label class="c-label" for="firstname">First name:</label>
+  <div class="c-input">
+    <input id="firstname" type="text" required>
+  </div>
+</fieldset>
+{% endcapture %}
+{% include snippet.html content=snippet %}
+
+## Optional inputs and hint text
+
+Let's look at an example with hint text and an optional flag.
+
+{% capture example %}
+<fieldset class="c-fieldset">
+  <label class="c-label" for="surname">
+    Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
   </label>
-  <span class="h-hintLabel">With additional help text</span>
-  <input id="standardField" type="text" pattern=".{3,10}" required />
-</div>
+  <span class="c-label__metainfo">With additional help text</span>
+  <div class="c-input">
+    <input id="surname" type="text" required>
+  </div>
+</fieldset>
+{% endcapture %}
+{% include example.html content=example %}
+
+{% capture snippet %}
+<fieldset class="c-fieldset">
+  <label class="c-label" for="surname">
+    Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
+  </label>
+  <span class="c-label__metainfo">With additional help text</span>
+  <div class="c-input">
+    <input id="surname" type="text" required>
+  </div>
+</fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}

@@ -1,61 +1,56 @@
 // ========================================================
 // @component: select
-// @dependency: t--form-elements
+// @dependency: c--form-elements
 // ========================================================
 //
 
 // component config
 //
-$select-bgcolor:                   $monochrome--white;
-$select-padding-top-btm:           $form-elements-padding-top-btm;
-$select-padding-left:              $form-elements-padding-left-right;
-$select-padding-right:             $spacing--2xl;
-$select-line-height:               $form-elements-line-height;
-$select-border-radius:             $form-elements-border;
-$select-border-width:              $form-elements-border;
-$select-border-color:              $form-elements-border-color;
-$select-focus-border-color:        $form-elements-border-color-focus;
+$select-border-color-focus:  $form-elements-border-color-focus;
+$select-padding-right:       $spacing--2xl;
+$select-icon-size:           6px;
+$select-icon-color:          $monochrome--black;
+$select-icon-position-right: $spacing--md;
 
 // component block
 //
 .c-select {
-  border: 0;
-  background-color: $select-bgcolor;
   display: inline-block;
-  padding: 0;
   position: relative;
-  width: auto;
 
-  select            {
-    background: none;
-    @include remcalc(border-radius, $select-border-radius);
-    @include remcalc(border, $select-border-width);
-    border-style: solid;
-    border-color: $select-border-color;
+
+  // component elements
+  //
+  select {
+    @extend %form-elements;
     cursor: pointer;
-    @include remcalc(line-height, $select-line-height);
-    @include remcalc(padding-top, $select-padding-top-btm);
-    @include remcalc(padding-bottom, $select-padding-top-btm);
-    @include remcalc(padding-left, $select-padding-left);
     @include remcalc(padding-right, $select-padding-right);
     -webkit-appearance: none;
     -moz-appearance: none;
 
+
     &:focus {
-      border-color: $select-focus-border-color;
+      border-color: $select-border-color-focus;
       outline: none;
     }
   }
 
   &:after {
-    content: '\1F893'; // NOTE: this will need amending when icons are in place.
-    text-align: center;
+    border: 0 solid transparent;
+    @include remcalc(border-left-width, $select-icon-size);
+    @include remcalc(border-right-width, $select-icon-size);
+    @include remcalc(border-top-width, $select-icon-size);
+    border-top-style: solid;
+    border-top-color: $select-icon-color;
+    content: '';
+    height: 0;
     position: absolute;
     pointer-events: none;
-    @include remcalc(right, 16px);
+    @include remcalc(right, $select-icon-position-right);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
+    width: 0;
   }
 }
