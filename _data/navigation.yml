@@ -29,7 +29,7 @@
     - title: Checkboxes
       url: /docs/1.0/components/form-checkboxes.html
     - title: Date input
-      url: /docs/1.0/components/date-input.html
+      url: /docs/1.0/components/form-dateinput.html
     - title: Dropdowns
       url: /docs/1.0/components/form-dropdowns.html
     - title: Input fields
