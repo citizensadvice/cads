@@ -19,6 +19,6 @@ Components are reusable and accessible building blocks used to create websites a
 
 ## Getting started
 
-You can get started by installing the [frontend framework](frontend-framework) or [downloading the Sketch template](sketch-template).
+You can get started by installing the [frontend framework](frontend-installation) or [downloading the Sketch template](sketch-template).
 
 You find guidance on how to use foundations and components throughout this website.
