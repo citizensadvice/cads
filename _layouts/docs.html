@@ -6,21 +6,16 @@
   </head>
   <body>
     {% include global-header.html %}
-
-    <div class="c-wrap c-wrap--full-width">
-      <div class="o-grid o-grid--fixed-col">
-        <div class="o-grid__unit">
-          <nav>{% include site-nav.html %}</nav>
-        </div>
-
-        <div class="o-grid__unit">
-          <main class="c-main-content">
-            {{ content }}
-            {% include global-footer.html %}
-          </main>
-        </div>
-
+    <div class="c-layout">
+      <div class="c-layout__item--static">
+        <nav>{% include site-nav.html %}</nav>
       </div>
+
+      <div class="c-layout__item--fluid">
+        <main class="c-main-content">{{ content }}</main>
+        {% include global-footer.html %}
+      </div>
+
     </div>
   </body>
 </html>

@@ -1,0 +1,48 @@
+// ========================================================
+// @component: flex container
+// ========================================================
+//
+
+// component config
+//
+$flex-navigation-width:     300px;
+$flex-main-content-padding: $spacing--xl;
+$flex-top-sticky-position:  64px;
+
+// component block
+//
+.c-flex {
+    &__container {
+      display: flex;
+    }
+
+    // component elements
+    //
+    &__item {
+
+      // component modifiers
+      //
+      &--static {
+        flex: 0 0 auto;
+        height: 100vh;
+        overflow: auto;
+        position: -webkit-sticky;
+        position: sticky;
+        @include remcalc(top, $flex-top-sticky-position);
+      }
+
+      &--fluid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      &--designsystem-nav {
+        flex: 0 0 $flex-navigation-width;
+      }
+
+      &--main-content {
+        @include remcalc(padding-left, $flex-main-content-padding);
+      }
+    }
+}
