@@ -3,7 +3,8 @@
 // ========================================================
 //
 
-$grid-fixed-unit-width: 300;
+// config
+//
 $grid-bp--sm: $bp--sm;
 $grid-bp--md: $bp--md;
 $grid-bp--lg: $bp--lg;
@@ -162,45 +163,5 @@ $grid-margin: 32px;
   // switch unit order
   &--rev {
     direction: rtl;
-  }
-
-  // give first unit a fixed width and next flexible, only built for
-  // a two unit layout. The width value is set in the config at the
-  // top of this file.
-  &--fixed-col {
-    @include clearfix();
-
-    > .o-grid__unit:first-child {
-      @media (min-width: $grid-bp--sm) {
-        float: left;
-        left: 0;
-      }
-    }
-
-    > .o-grid__unit:last-child {
-      @media (min-width: $grid-bp--sm) {
-        float: right;
-        margin-right: 0;
-        width: 100%;
-      }
-    }
-
-    &--#{$grid-fixed-unit-width} {
-      > .o-grid__unit:first-child {
-        @media (min-width: $grid-bp--sm) {
-          @include remcalc(width, #{$grid-fixed-unit-width}px);
-        }
-      }
-
-      > .o-grid__unit:last-child {
-        @media (min-width: $grid-bp--sm) {
-          @include remcalc(margin-left, -#{$grid-fixed-unit-width}px);
-
-          > * {
-            @include remcalc(margin-left, #{$grid-fixed-unit-width}px);
-          }
-        }
-      }
-    }
   }
 }

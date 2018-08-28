@@ -1,0 +1,49 @@
+// ========================================================
+// @component: layout
+// ========================================================
+//
+
+// component config
+//
+$layout-static-nav-width:                 300px;
+$layout-static-header-height:             64px;
+$layout-static-padding-horizontal-mobile: $spacing--md;
+$layout-static-padding-horizontal:        $spacing--xl;
+$layout-bp--sm:                           $bp--sm;
+
+// component block
+//
+.c-layout {
+
+  @media(min-width: $layout-bp--sm) {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__item {
+    &--static {
+      @include remcalc(padding-left, $layout-static-padding-horizontal-mobile);
+      @include remcalc(padding-right, $layout-static-padding-horizontal-mobile);
+
+      @media(min-width: $layout-bp--sm) {
+        bottom: 0;
+        left: 0;
+        overflow-y: auto;
+        @include remcalc(padding-left, $layout-static-padding-horizontal);
+        padding-right: 0;
+        position: fixed;
+        @include remcalc(top, $layout-static-header-height);
+        @include remcalc(width, $layout-static-nav-width);
+      }
+    }
+
+    &--fluid {
+      @media(min-width: $layout-bp--sm) {
+        flex: 1;
+        @include remcalc(margin-left, $layout-static-nav-width);
+      }
+    }
+  }
+}
