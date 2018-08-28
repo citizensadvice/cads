@@ -19,7 +19,8 @@ $btn-primary-bgcolor:                   $extended--turquoisePrimary;
 $btn-primary-bgcolor-hover:             $extended--turquoiseDark;
 $btn-primary-textcolor:                 $brand--heritageBlue;
 $btn-primary-line-height:               $spacing--lg;
-$btn-primary-padding:                   $spacing--sm;
+$btn-primary-padding-vertical:          $spacing--sm;
+$btn-primary-padding-horizontal:        $spacing--md;
 
 $btn-primary-action-prev-bgcolor:       $extended--turquoiseMid;
 $btn-primary-action-prev-hover-bgcolor: $extended--turquoisePrimary;
@@ -50,10 +51,10 @@ $btn-secondary-padding:                 $spacing--xs;
     background: $btn-primary-bgcolor;
     color: $btn-primary-textcolor;
     @include remcalc(line-height, $btn-primary-line-height);
-    @include remcalc(padding-top, $btn-primary-padding);
-    @include remcalc(padding-bottom, $btn-primary-padding);
-    @include remcalc(padding-left, $btn-primary-padding);
-    @include remcalc(padding-right, $btn-primary-padding);
+    @include remcalc(padding-top, $btn-primary-padding-vertical);
+    @include remcalc(padding-bottom, $btn-primary-padding-vertical);
+    @include remcalc(padding-left, $btn-primary-padding-horizontal);
+    @include remcalc(padding-right, $btn-primary-padding-horizontal);
 
     &:hover {
       background-color: $btn-primary-bgcolor-hover;
