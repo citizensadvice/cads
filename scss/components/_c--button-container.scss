@@ -1,13 +1,13 @@
 // ========================================================
-// @component: button group
+// @component: button container
 // ========================================================
 //
 
 // component config
 //
-$btn-group-spacing: $spacing--2xl;
+$btn-container-spacing: $spacing--2xl;
 
 // component block
-.c-btn-group {
-  @include remcalc(margin-top, $btn-group-spacing);
+.c-btn-container {
+  @include remcalc(margin-top, $btn-container-spacing);
 }

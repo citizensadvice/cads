@@ -8,8 +8,9 @@
 //
 $radio-check-border-color-focus:     $form-elements-border-color-focus;
 $radio-check-input-dot-height:       $form-elements-line-height;
-$radio-check-input-padding-vertical: $form-elements-padding-vertical + $form-elements-border-width;
-$radio-check-label-font-weight:      400;
+$radio-check-input-padding-vertical: $spacing--sm;
+$radio-check-input-padding-horizontal: $spacing--sm;
+$radio-check-label-font-weight:      600;
 $radio-check-label-spacing:          $spacing--xs / 2;
 $radio-check-border-color:           $form-elements-border-color;
 $radio-check-border-color-hover:     $monochrome--grey;
@@ -26,11 +27,12 @@ $radio-check-bgcolor-checked:        $radio-check-bgcolor-focus;
 .c-checkbox {
   @extend %form-elements-border;
   @extend %form-elements-block;
-  @extend %form-elements-spacing;
   border: 0;
   cursor: pointer;
   @include remcalc(padding-top, $radio-check-input-padding-vertical);
   @include remcalc(padding-bottom, $radio-check-input-padding-vertical);
+  @include remcalc(padding-left, $radio-check-input-padding-horizontal);
+  @include remcalc(padding-right, $radio-check-input-padding-horizontal);
   position: relative;
   z-index: 1;
 
