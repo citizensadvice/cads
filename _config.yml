@@ -1,23 +1,24 @@
 # Site settings
 title: Your awesome title
 email: your-email@example.com
-baseurl: /ca-designsystem
+baseurl: ""
 url: https://btomy.github.io/ca-designsystem
 twitter_username: jekyllrb
 github_username:  jekyll
-
 production_url : https://btomy.github.io/ca-designsystem
 
 # Build settings
+source: "site"
 current_version: 0.1.0
+docs_version: 1.0
 markdown: kramdown
 highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
-  
+
 sass:
-  sass_dir: assets/css
+  sass_dir: docs/1.0/assets/scss
 
 # Exclude from processing.
 exclude:
