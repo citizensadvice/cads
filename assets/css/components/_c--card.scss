@@ -33,8 +33,8 @@ $card-border-radius: $spacing--sm / 2;
     width: 100%;
 
     @media (min-width: $card-bp--sm) {
-      @include remcalc(min-width, 200px);
-      @include remcalc(max-width, 200px);
+      @include remcalc(min-width, 250px);
+      @include remcalc(max-width, 250px);
     }
   }
 
