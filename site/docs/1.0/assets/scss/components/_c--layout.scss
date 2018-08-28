@@ -15,11 +15,15 @@ $layout-bp--sm:                           $bp--sm;
 //
 .c-layout {
 
-  @media(min-width: $layout-bp--sm) {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    height: 100%;
+  // component elements
+  //
+  &__container {
+    @media(min-width: $layout-bp--sm) {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   &__item {
