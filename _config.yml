@@ -1,10 +1,7 @@
 # Site settings
-title: Your awesome title
-email: your-email@example.com
-baseurl: ""
+title: Citizens Advice Design System
+baseurl: "/ca-designsystem"
 url: https://btomy.github.io/ca-designsystem
-twitter_username: jekyllrb
-github_username:  jekyll
 production_url : https://btomy.github.io/ca-designsystem
 
 # Build settings
