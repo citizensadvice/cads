@@ -18,7 +18,7 @@ Essentially it gives `$spacing--2xl` to the button(s) and is often used when cre
   <a class="c-btn c-btn--primary" href="#">Next</a>
 </div>
 {% endcapture %}
-{% include example.html %}
+{% include example.html content=example %}
 
 {% capture snippet %}
 <div class="c-btn-container">
@@ -26,4 +26,4 @@ Essentially it gives `$spacing--2xl` to the button(s) and is often used when cre
   <a class="c-btn c-btn--primary" href="#">Next</a>
 </div>
 {% endcapture %}
-{% include snippet.html %}
+{% include snippet.html content=snippet %}
