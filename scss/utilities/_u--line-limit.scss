@@ -11,6 +11,5 @@ $line-limit-width: $spacing--md * 37;
 //
 .line-limit p,
 .line-limit .p {
-  @include remcalc(max-width, $line-limit-width)
-  ;
+  @include remcalc(max-width, $line-limit-width);
 }
