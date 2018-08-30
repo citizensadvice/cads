@@ -9,7 +9,7 @@ $line-limit-width: $spacing--md * 37;
 
 // component block
 //
-.line-limit p,
-.line-limit .p {
-  @include remcalc(max-width, $line-limit-width);
+.u-line-limit p,
+.u-line-limit .p {
+  @include remcalc(max-width, $line-limit-width !important);
 }
