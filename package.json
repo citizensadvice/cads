@@ -1,30 +1,40 @@
 {
-  "name": "cadesignsystem",
-  "version": "1.0.8",
-  "description": "",
-  "main": "index.js",
+  "name":                    "cadesignsystem",
+  "version":                 "1.0.8",
+  "description":             "",
+  "main":                    "index.js",
   "directories": {
-    "doc": "docs"
+    "doc":                   "docs"
   },
   "scripts": {
-    "compile-css": "node-sass --output-style expanded  scss/_cabui.scss dist/css/cabui.css",
-    "minify-css": "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
-    "compile-docs": "bundle exec jekyll build",
-    "serve-docs": "bundle exec jekyll serve",
-    "copy-assets": "mkdir dist/images/ && cp -R assets/images/* dist/images/",
-    "clean-framework": "rm -rf dist/",
-    "dist-framework": "npm-run-all --parallel clean-framework compile-css minify-css --sequential copy-assets"
+    "start":                 "npm-run-all --parallel watch-css serve-docs --sequential copy-css-docs",
+    "watch-css":             "npm-run-all --parallel watch-css-*",
+
+    "clean-framework":       "rm -rf dist/",
+    "compile-css-framework": "node-sass --output-style expanded scss/_cabui.scss dist/css/cabui.css",
+    "copy-assets-framework": "mkdir dist/images/ && cp -R site/docs/1.0/assets/images/* dist/images",
+    "distribute-framework":  "npm-run-all --parallel clean-framework compile-css-framework minify-css-framework --sequential copy-assets-framework",
+    "minify-css-framework":  "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
+    "watch-css-framework":   "nodemon --watch scss/ --ext scss --exec \"npm run compile-css-framework\"",
+
+    "build-docs":            "bundle exec jekyll build",
+    "clean-docs":            "rm -rf site/docs/1.0/assets/dist/",
+    "copy-css-docs":         "mkdir site/docs/1.0/assets/dist/ && cp -R dist/css/* site/docs/1.0/assets/dist/css/",
+    "compile-css-docs":      "node-sass --output-style expanded site/docs/1.0/assets/scss/docs.scss site/docs/1.0/assets/dist/css/docs.css",
+    "minify-css-docs":       "node-sass --output-style compressed site/docs/1.0/assets/scss site/docs/1.0/assets/dist/css/docs.min.css",
+    "serve-docs":            "bundle exec jekyll serve",
+    "watch-css-docs":        "nodemon --watch site/docs/1.0/assets/scss --ext scss --exec \"npm run compile-css-docs\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords":                [],
+  "author":                  "",
+  "license":                 "ISC",
   "files": [
     "dist",
     "scss"
   ],
   "devDependencies": {
-    "node-sass": "^4.9.0",
-    "nodemon": "^1.17.5",
-    "npm-run-all": "^4.1.3"
+    "node-sass":             "^4.9.0",
+    "nodemon":               "^1.17.5",
+    "npm-run-all":           "^4.1.3"
   }
 }
