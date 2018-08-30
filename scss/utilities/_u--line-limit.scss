@@ -1,0 +1,16 @@
+// ========================================================
+// @utility: line-limit
+// ========================================================
+//
+
+// component config
+//
+$line-limit-width: $spacing--md * 37;
+
+// component block
+//
+.line-limit p,
+.line-limit .p {
+  @include remcalc(max-width, $line-limit-width)
+  ;
+}
