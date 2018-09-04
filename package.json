@@ -18,6 +18,7 @@
     "copy-assets":                   "mkdir dist/images/ && cp -R site/docs/1.0/assets/images/* dist/images",
     "dist-framework":                "npm-run-all --sequential clean-framework compile-css-framework minify-css-framework copy-assets",
     "minify-css-framework":          "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
+    "publish-docs":                  "git subtree push --prefix _site/ origin gh-pages",
     "serve":                         "bundle exec jekyll serve",
     "watch":                         "npm-run-all --parallel watch-css-framework watch-css-docs",
     "watch-css-framework":           "nodemon --watch scss/ --ext scss --exec \"npm run compile-css\"",

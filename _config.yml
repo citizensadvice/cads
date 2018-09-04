@@ -5,7 +5,6 @@ url: https://btomy.github.io/ca-designsystem
 production_url : https://btomy.github.io/ca-designsystem
 
 # Build settings
-root: "/ca-designsystem"
 source: "site"
 current_version: 0.1.0
 docs_version: 1.0
