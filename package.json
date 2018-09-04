@@ -7,13 +7,21 @@
     "doc": "docs"
   },
   "scripts": {
-    "compile-css": "node-sass --output-style expanded  scss/_cabui.scss dist/css/cabui.css",
-    "minify-css": "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
-    "compile-docs": "bundle exec jekyll build",
-    "serve-docs": "bundle exec jekyll serve",
-    "copy-assets": "mkdir dist/images/ && cp -R assets/images/* dist/images/",
-    "clean-framework": "rm -rf dist/",
-    "dist-framework": "npm-run-all --parallel clean-framework compile-css minify-css --sequential copy-assets"
+    "start":                         "npm-run-all --sequential compile-css --parallel watch serve",
+    "compile-css-framework":         "node-sass --output-style expanded scss/_cabui.scss dist/css/cabui.css",
+    "compile-css-framework-to-docs": "node-sass --output-style expanded scss/_cabui.scss site/docs/1.0/assets/dist/css/cabui.css",
+    "compile-css-docs":              "node-sass --output-style expanded site/docs/1.0/assets/scss/docs.scss site/docs/1.0/assets/dist/css/docs.css",
+    "compile-css":                   "npm run compile-css-framework-to-docs && npm run compile-css-docs",
+    "clean-all":                     "npm-run-all --sequential clean-framework clean-docs",
+    "clean-framework":               "rm -rf dist/",
+    "clean-docs":                    "rm -rf site/docs/1.0/assets/dist/",
+    "copy-assets":                   "mkdir dist/images/ && cp -R site/docs/1.0/assets/images/* dist/images",
+    "dist-framework":                "npm-run-all --sequential clean-framework compile-css-framework minify-css-framework copy-assets",
+    "minify-css-framework":          "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
+    "serve":                         "bundle exec jekyll serve",
+    "watch":                         "npm-run-all --parallel watch-css-framework watch-css-docs",
+    "watch-css-framework":           "nodemon --watch scss/ --ext scss --exec \"npm run compile-css\"",
+    "watch-css-docs":                "nodemon --watch site/docs/1.0/assets/scss --ext scss --exec \"npm run compile-css\""
   },
   "keywords": [],
   "author": "",

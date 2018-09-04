@@ -1,10 +1,15 @@
----
----
+// ====================================================================
+// IMPORT FRAMEWORK SPECIFIC FILES
+// ====================================================================
 
-// ====================================================================
-// IMPORT CAB UI FRAMEWORK
-// ====================================================================
-@import "../../../../../scss/cabui";
+@import "../../../../../scss/settings/s--magicnumber";
+@import "../../../../../scss/settings/s--spacing";
+@import "../../../../../scss/settings/s--colors";
+@import "../../../../../scss/settings/s--breakpoints";
+@import "../../../../../scss/tools/t--remcalc";
+@import "../../../../../scss/tools/t--clearfix";
+@import "../../../../../scss/tools/t--fonts";
+
 
 // ====================================================================
 // IMPORT APPLICATION STYLES

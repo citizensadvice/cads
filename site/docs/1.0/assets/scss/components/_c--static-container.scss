@@ -9,7 +9,7 @@
 // component block
 .c-static-container {
   &__unit {
-    @media (min-width: $grid-bp--sm) {
+    @media (min-width: $bp--sm) {
       height: 100%;
       overflow: auto;
       position: fixed;
