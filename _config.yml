@@ -14,9 +14,6 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
 
-# sass:
-#   sass_dir: docs/1.0/assets/scss
-
 # Exclude from processing.
 exclude:
   - Gemfile
