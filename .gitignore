@@ -2,4 +2,5 @@
 package-lock.json
 Gemfile.lock
 .sass-cache
+_site/
 node_modules
