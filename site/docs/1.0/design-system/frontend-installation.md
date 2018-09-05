@@ -35,23 +35,6 @@ or linking to it directly in your `html`:
 
 There's also a minified version available, simply change `cabui.css` to `cabui.min.css`;
 
-## Folder structure
-
-You need to import the Citizens Advice frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules. To import all components, add the below to your Sass file:
-
-```
-application/
-└── src/
-    ├── scss/
-    │   ├── cabui.scss
-    │── js/
-    │   └── cab-script.js
-    │   ├── cab-script.js.map
-    │   ├── cab-script.min.js
-    ├── images/
-    │   ├── cabui.css
-    │   ├── cabui.css.map
-```
 ## Static assets
 
 Static assets can be accessed using:
