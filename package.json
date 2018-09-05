@@ -8,10 +8,12 @@
   },
   "scripts": {
     "start":                         "npm-run-all --sequential compile-css --parallel watch-docs serve-docs",
+    "start-sandbox":                 "npm-run-all --parallel watch-sandbox serve-sandbox",
     "build-docs":                    "bundle exec jekyll build",
     "compile-css-framework":         "node-sass --output-style expanded scss/_cabui.scss dist/css/cabui.css",
     "compile-css-framework-to-docs": "node-sass --output-style expanded scss/_cabui.scss site/docs/1.0/assets/dist/css/cabui.css",
     "compile-css-docs":              "node-sass --output-style expanded site/docs/1.0/assets/scss/docs.scss site/docs/1.0/assets/dist/css/docs.css",
+    "compile-css-sandbox":           "node-sass --output-style expanded sandbox/assets/scss/app.scss sandbox/assets/dist/css/app.css",
     "compile-css":                   "npm run compile-css-framework-to-docs && npm run compile-css-docs",
     "clean-all":                     "npm-run-all --sequential clean-framework clean-docs clean-site",
     "clean-framework":               "rm -rf dist/",
@@ -22,7 +24,9 @@
     "minify-css-framework":          "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
     "publish-docs":                  "npm run build-docs && git subtree push --prefix _site/ origin gh-pages",
     "serve-docs":                    "bundle exec jekyll serve",
+    "serve-sandbox":                 "http-server ./sandbox -p 5000",
     "watch-docs":                    "npm-run-all --parallel watch-css-framework watch-css-docs",
+    "watch-sandbox":                 "nodemon --watch sandbox/assets/scss/ --ext scss --exec \"npm run compile-css-sandbox\"",
     "watch-css-framework":           "nodemon --watch scss/ --ext scss --exec \"npm run compile-css\"",
     "watch-css-docs":                "nodemon --watch site/docs/1.0/assets/scss --ext scss --exec \"npm run compile-css\""
   },
@@ -34,6 +38,7 @@
     "scss"
   ],
   "devDependencies": {
+    "http-server": "^0.11.1",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
     "npm-run-all": "^4.1.3"
