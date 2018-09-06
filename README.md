@@ -1,58 +1,66 @@
-CA Design Sytem
-======
-Citizens Advice Design System
+# Citizens Advice Design System
 
+## Table of contents
 
-## <a name="Prerequisites"></a>Prerequisites 
+- [The NPM module](#The-NPM-module)
+  - [Getting started](#Getting-started)
+  - [Installation](#Installation)
+  - [Folder structure](#Folder-structure)
+  - [Usage](#Usage)
+- [The documentation repo](#The-documentation-repo)
 
-We recommend using [Homebrew](http://brew.sh/ "Homebrew")
+## The NPM module
 
-### [Node.js](https://nodejs.org/en/ "Node.js") 
+### Getting started
 
-or 
+We've made it pretty simple to get up and running with the latest Citizens Advice Design System framework. We use `npm` to allow you to bring the framework into your projects.
 
-```shell
-$ brew install node
+### Installation
+
+In order to get the framework make sure you're in your projects root directory:
+
+`cd project/directory`
+
+Then run:
+
+`npm install cadesignsystem`
+
+### Folder structure
+
+If you check in your `node_modules` directory you should now have a `cadesignsystem` module that contains a few key files and folders.
+
+```
+node_modules
+└── cadesignsystem
+  ├── dist
+  │ ├── css
+  │ └── images
+  └── scss
 ```
 
-### [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git "Git") 
+#### Dist directory
 
-or
+The first directory will be the `dist` folder that contains both **minified** and **un-minified** versions of the entire framework. We added this just for convenience.
 
-```shell
-$ brew install git
-```
+The `dist` folder also contains an `images` directory that should contain all images required for the framework.
 
-### [Ruby](https://rvm.io/rvm/install "Ruby")  
+#### SCSS directory
 
-We recommend using [RVM](https://rvm.io/rvm/install "RVM")
+Finally we have the meat of the framework. In the `scss` folder, you'll find all the source files that will get compiled using `sass`. This directory has a set structure which makes use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), an methodology from [Harry Roberts](https://csswizardry.com/). Let's take a look at this structure and concept:
 
+| **Settings**   | global variables, config switches                      |
+| -------------- | ------------------------------------------------------ |
+| **Tools**      | default mixins and functions                           |
+| **Generic**    | ground-zero styles (Normalize.css, resets, box-sizing) |
+| **Elements**   | unclassed HTML elements (type selectors)               |
+| **Objects**    | cosmetic-free design patterns                          |
+| **Components** | designed components, chunks of UI                      |
+| **Utilities**  | helpers and overrides (it's ok to use `!important`)    |
 
-### <a name="start"></a>Quick start  
-#### 1. Get the latest version  
-[Download](https://github.com/btomy/ca-designsystem.git "Download .zip") or clone the latest version of this boilerplate on your local machine by running:
+### Usage
 
-```shell
-$ git clone git@github.com:btomy/ca-designsystem.git   
-$ cd ca-designsystem
-```
+Now that you've `npm install` the framework into your `node_modules`, you'll need to link to it like you would any other `scss` file. We've purposely left this step missing from the documentation because each project and build step may be setup slightly differently and we don't want to pin you down to one method.
 
-#### 2. Install dependencies
-Install our project dependencies and developer tools listed in `package.json`
-```shell
-$ npm install 
-```
+**NOTE:** Don't forget to grab the `images/media` files during this build step too, it's easy to overlook these.
 
-```shell
-$ bundle install 
-```
-
-#### 3. Start developing
-When it's done installing, you can start developing by running:  
-
-```shell
-$ npm run serve-docs
-```
-This command will build a local version of our Jekyll project from the source files into a temporary folder (`_site/`). 
-
-> [http://localhost:4000](http://localhost:4000)
+## The documentation repo
