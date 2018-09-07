@@ -1,2 +1,4 @@
+package.json
 scss/_cabui.scss
-assets/css/app.scss
+sandbox/assets/scss/app.scss
+site/docs/1.0/assets/scss/docs.scss

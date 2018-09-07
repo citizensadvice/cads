@@ -26,9 +26,10 @@
     "serve-docs":                    "bundle exec jekyll serve",
     "serve-sandbox":                 "http-server ./sandbox -p 5000",
     "watch-docs":                    "npm-run-all --parallel watch-css-framework watch-css-docs",
-    "watch-sandbox":                 "nodemon --watch sandbox/assets/scss/ --ext scss --exec \"npm run compile-css-sandbox\"",
+    "watch-sandbox":                 "npm-run-all --parallel watch-css-framework watch-css-sandbox",
     "watch-css-framework":           "nodemon --watch scss/ --ext scss --exec \"npm run compile-css\"",
-    "watch-css-docs":                "nodemon --watch site/docs/1.0/assets/scss --ext scss --exec \"npm run compile-css\""
+    "watch-css-docs":                "nodemon --watch site/docs/1.0/assets/scss --ext scss --exec \"npm run compile-css\"",
+    "watch-css-sandbox":             "nodemon --watch sandbox/assets/scss/ --ext scss --exec \"npm run compile-css-sandbox\""
   },
   "keywords": [],
   "author": "",
