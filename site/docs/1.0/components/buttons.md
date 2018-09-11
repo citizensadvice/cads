@@ -15,7 +15,8 @@ Buttons should be aligned left and the left edge should align with the content o
 
 If links must be styled as buttons they should be calls to action, such as, Next, Start or Confirm.
 
-If you want to link users between pages of a website, use links instead. If the action is less popular or less important, you can use a link instead of a button.
+> **IMPORTANT:**
+> If you want to link users between pages of a website, use `<a class="btn" href="#"`, `<button class="btn"></button>` should be used for actions inside a form.
 
 ## Primary Buttons
 
@@ -28,7 +29,7 @@ In general, use primary buttons for actions that go to the next step
 
 {% capture snippet %}
 <button type="button" class="c-btn c-btn--primary">
-  Primary button
+Primary button
 </button>
 {% endcapture %}
 {% include snippet.html content=snippet %}
@@ -43,7 +44,7 @@ There are cases where certain actions require specific button styling. We deal w
 
 {% capture snippet %}
 <button type="button" class="c-btn c-btn--primary c-btn--action-prev">
-  Previous
+Previous
 </button>
 {% endcapture %}
 {% include snippet.html content=snippet %}
@@ -59,7 +60,7 @@ Use secondary buttons for actions that happen on the same page.
 
 {% capture snippet %}
 <button type="button" class="c-btn c-btn--secondary">
-  Secondary button
+Secondary button
 </button>
 {% endcapture %}
 {% include snippet.html content=snippet %}
