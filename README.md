@@ -2,11 +2,11 @@
 
 ## Table of contents
 
-- [Framework guide](#Framework-guide)
-- [Documentation guide](#Documentation-guide)
-- [Sandbox guide](#Sandbox-guide)
-- [How to contribution](#How-to-contribution)
-- [Git style guide](#Git-style-guide)
+- [Framework guide](#framework-guide)
+- [Documentation guide](#documentation-guide)
+- [Sandbox guide](#sandbox-guide)
+- [How to contribution](#how-to-contribution)
+- [Git style guide](#git-style-guide)
 
 ## Framework guide
 
@@ -66,6 +66,8 @@ Finally we have the meat of the framework. In the `scss` folder, you'll find all
 Now that you've `npm install` the framework into your `node_modules`, you'll need to link to it like you would any other `scss` file. We've purposely left this step missing from the documentation because each project and build step may be setup slightly differently and we don't want to pin you down to one method.
 
 **NOTE:** Don't forget to grab the `images/media` files during this build step too, it's easy to overlook these.
+
+[Back to top](#citizens-advice-design-system)
 
 ## Documentation guide
 
@@ -128,6 +130,8 @@ This will start Jekyll, compile the stylesheets and create a watcher for changes
 
 Now if you open a browser window at `http://localhost:4000` you should see the homepage.
 
+[Back to top](#citizens-advice-design-system)
+
 ## Sandbox guide
 
 This is a great area with which to start developing new features and components and to test them out.
@@ -153,6 +157,8 @@ You will find:
 
 If you need more pages, you can create them, if you need to add images or styles you can do that too in the `assets/images/` and `assets/scss/` directories respectively. Manage this area as you see fit, any `watch` / `compile` commands can be found in the `package.json` should you need them.
 
+[Back to top](#citizens-advice-design-system)
+
 ## How to contribute
 
 Anybody and everybody is welcome to get involved in contributing to the framework, but in order to stop it from becoming bloated, we usually only consider adding new components to the framework when one is being used on **more than one** application, site or service.
@@ -163,6 +169,8 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 - Use the sandbox to start hacking away at your new feature / fix.
 - If you're fixing the `framework`, make sure to make `CSS` changes in the `scss/` directory as these are the framework source files.
 - next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
+
+[Back to top](#citizens-advice-design-system)
 
 ## Git style guide
 
@@ -216,3 +224,5 @@ You'll make many different types of change to the codebase over time but most ch
 | `chore`    | updating build tasks, package manager configs, etc; no production code change |
 
 While this might feel overkill to dictate how to write commit messages, doing so also means when reviewing Pull Requests, we can quickly see which commit belongs to which ticket without having to match up commit messages to ticket titles.
+
+[Back to top](#citizens-advice-design-system)
