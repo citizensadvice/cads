@@ -24,7 +24,7 @@
     "minify-css-framework":          "node-sass --output-style compressed scss/_cabui.scss dist/css/cabui.min.css",
     "publish-docs":                  "npm run build-docs && git subtree push --prefix _site/ origin gh-pages",
     "serve-docs":                    "bundle exec jekyll serve",
-    "serve-sandbox":                 "http-server ./sandbox -p 5000",
+    "serve-sandbox":                 "browser-sync start --port 5000 --server 'sandbox/' --files 'sandbox/'",
     "watch-docs":                    "npm-run-all --parallel watch-css-framework watch-css-docs",
     "watch-sandbox":                 "npm-run-all --parallel watch-css-framework watch-css-sandbox",
     "watch-css-framework":           "nodemon --watch scss/ --ext scss --exec \"npm run compile-css\"",
@@ -39,7 +39,7 @@
     "scss"
   ],
   "devDependencies": {
-    "http-server": "^0.11.1",
+    "browser-sync": "^2.24.7",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
     "npm-run-all": "^4.1.3"
