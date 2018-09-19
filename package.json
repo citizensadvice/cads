@@ -7,10 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "start":                         "npm-run-all --sequential compile-css --parallel watch-docs serve-docs",
-    "start-sandbox":                 "npm-run-all --parallel watch-sandbox serve-sandbox",
-    "build-docs":                    "bundle exec jekyll build",
-    "compile-css-framework":         "node-sass --output-style expanded scss/_cabui.scss dist/css/cabui.css",
+    "start": "npm-run-all --sequential compile-css --parallel watch-docs serve-docs",
+    "start-sandbox": "npm-run-all --parallel watch-sandbox serve-sandbox",
+    "build-docs": "bundle exec jekyll build",
+    "compile-css-framework": "node-sass --output-style expanded scss/_cabui.scss dist/css/cabui.css",
     "compile-css-framework-to-docs": "node-sass --output-style expanded scss/_cabui.scss site/docs/1.0/assets/dist/css/cabui.css",
     "compile-css-docs":              "node-sass --output-style expanded site/docs/1.0/assets/scss/docs.scss site/docs/1.0/assets/dist/css/docs.css",
     "compile-css-sandbox":           "node-sass --output-style expanded sandbox/assets/scss/app.scss sandbox/assets/dist/css/app.css",
