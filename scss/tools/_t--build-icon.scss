@@ -1,0 +1,42 @@
+// ========================================================
+// @tools: build icon
+// @dependency: t--build-icon-path
+// ========================================================
+//
+
+// mixin config
+//
+$build-icon-width--default: 18px !default;
+$build-icon-height--default: 18px !default;
+$build-icon-location--default: after !default;
+
+// mixin definition
+//
+@mixin build-icon(
+  $build-icon-name,
+  $build-icon-color,
+  $build-icon-width: $build-icon-width--default,
+  $build-icon-height: $build-icon-height--default,
+  $build-icon-location: $build-icon-location--default
+) {
+  &.c-icon--#{$build-icon-name}::#{$build-icon-location} {
+    background-image: build-icon-path(
+      $build-icon-name,
+      $build-icon-color,
+      $build-icon-width,
+      $build-icon-height
+    );
+    @include remcalc(height, $build-icon-height);
+    @include remcalc(width, $build-icon-width);
+  }
+}
+
+// mixin usage:
+//
+// @include build-icon(
+//   [icon-name],
+//   [icon-color],
+//   [icon-width (optional)]
+//   [icon-height (optional)]
+//   [icon-location (optional)]
+// );

@@ -14,7 +14,7 @@
     "compile-css-framework-to-docs": "node-sass --output-style expanded scss/_cabui.scss site/docs/1.0/assets/dist/css/cabui.css",
     "compile-css-docs":              "node-sass --output-style expanded site/docs/1.0/assets/scss/docs.scss site/docs/1.0/assets/dist/css/docs.css",
     "compile-css-sandbox":           "node-sass --output-style expanded sandbox/assets/scss/app.scss sandbox/assets/dist/css/app.css",
-    "compile-css":                   "npm run compile-css-framework-to-docs && npm run compile-css-docs",
+    "compile-css":                   "npm run compile-css-framework-to-docs && npm run compile-css-docs && npm run compile-css-sandbox",
     "clean-all":                     "npm-run-all --sequential clean-framework clean-docs clean-site",
     "clean-framework":               "rm -rf dist/",
     "clean-docs":                    "rm -rf site/docs/1.0/assets/dist/",
