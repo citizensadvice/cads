@@ -14,29 +14,12 @@
 // component config
 //
 $icon-color--default: $brand--heritageBlue;
-$icon-spacing-horizontal: 3px;
 
 // component block
 //
 .c-icon {
   display: inline-block;
   position: relative;
-
-  // component elements
-  //
-  &::before,
-  &::after {
-    content: "";
-    display: inline-block;
-    left: -50%;
-    @include remcalc(padding-top, 0px);
-    @include remcalc(padding-bottom, 0px);
-    @include remcalc(padding-left, $icon-spacing-horizontal);
-    @include remcalc(padding-right, $icon-spacing-horizontal);
-    position: relative;
-    transform: translateX(50%);
-    vertical-align: middle;
-  }
 
   // component modifiers
   //
