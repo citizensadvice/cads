@@ -15,6 +15,9 @@
 @import "tools/t--remcalc";
 @import "tools/t--clearfix";
 @import "tools/t--fonts";
+@import "tools/t--build-svg";
+@import "tools/t--build-icon-path";
+@import "tools/t--build-icon";
 
 // GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
 @import "generic/g--normalize";
@@ -44,6 +47,7 @@
 @import "components/c--form-textareas";
 @import "components/c--form-selects";
 @import "components/c--form-radios-checkboxes";
+@import "components/c--icons";
 
 // UTILITIES: helpers and overrides
 @import "utilities/u--line-limit";
