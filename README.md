@@ -5,7 +5,7 @@
 - [Framework guide](#framework-guide)
 - [Documentation guide](#documentation-guide)
 - [Sandbox guide](#sandbox-guide)
-- [How to contribution](#how-to-contribution)
+- [How to contribute](#how-to-contribute)
 - [Git style guide](#git-style-guide)
 
 ## Framework guide
