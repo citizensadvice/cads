@@ -5,6 +5,7 @@
 
 // component config
 //
+$label-default-number: $magicNumber;
 $label-font-weight: 700;
 $label-spacing: $spacing--xs;
 $label-tag-font-weight: 400;
@@ -16,6 +17,7 @@ $label-tag-spacing: $spacing--xs / 2;
 %label-element {
   display: block;
   font-weight: $label-font-weight;
+  @include remcalc(line-height, $label-default-number * 1.5);
   @include remcalc(margin-bottom, $label-spacing);
 }
 
@@ -33,8 +35,13 @@ $label-tag-spacing: $spacing--xs / 2;
     @include remcalc(padding-left, $label-tag-spacing);
 
     &--optional {
-      &:before { content: '(' }
-      &:after  { content: ')' }
+      &:before {
+        content: '('
+      }
+
+      &:after {
+        content: ')'
+      }
     }
   }
 
@@ -46,4 +53,6 @@ $label-tag-spacing: $spacing--xs / 2;
 }
 
 label,
-legend { @extend %label-element }
+legend {
+  @extend %label-element
+}
