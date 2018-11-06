@@ -6,16 +6,22 @@
 // set specific widths on form elements such as <input />.
 
 // component config
-//
+// Max width + 3ex is for the right hand side icon on safari
 
 // component block
 //
-.u-charwidth--2 {
-  max-width: 7.2ex !important;
+.u-charwidth {
   width: 100% !important;
-}
-
-.u-charwidth--4 {
-  max-width: 10.8ex !important;
-  width: 100% !important;
+  &--2{
+    max-width: 7.2ex !important;
+  }
+  &--4{
+    max-width: 10.8ex !important;
+  }
+  &--8 {
+    max-width: 18ex + 3ex !important;
+  }
+  &--20 {
+    max-width: 38.4ex + 3ex !important;
+  }
 }
