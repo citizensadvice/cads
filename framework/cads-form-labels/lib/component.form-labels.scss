@@ -1,0 +1,49 @@
+// ========================================================
+// @component: label
+// ========================================================
+//
+
+// component config
+//
+$label-font-weight: 700;
+$label-spacing: $spacing--xs;
+$label-tag-font-weight: 400;
+$label-tag-color: $monochrome--midGrey;
+$label-tag-spacing: $spacing--xs / 2;
+
+// shared component
+//
+%label-element {
+  display: block;
+  font-weight: $label-font-weight;
+  @include remcalc(margin-bottom, $label-spacing);
+}
+
+// component block
+//
+.c-label,
+.c-legend {
+  @extend %label-element;
+
+  // component elements
+  //
+  &__tag {
+    color: $label-tag-color;
+    font-weight: $label-tag-font-weight;
+    @include remcalc(padding-left, $label-tag-spacing);
+
+    &--optional {
+      &:before { content: '(' }
+      &:after  { content: ')' }
+    }
+  }
+
+  &__metainfo {
+    @extend %label-element;
+    color: $label-tag-color;
+    font-weight: $label-tag-font-weight;
+  }
+}
+
+label,
+legend { @extend %label-element }

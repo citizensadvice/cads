@@ -1,0 +1,26 @@
+// ========================================================
+// @component: global footer
+// ========================================================
+//
+
+// component config
+//
+$global-footer-bp--sm:                    $bp--sm;
+$global-footer-spacing-vertical:          $spacing--md;
+$global-footer-spacing-horizontal-mobile: $spacing--md;
+$global-footer-spacing-horizontal:        $spacing--xl;
+$global-footer-left-position:             300px;
+
+// component block
+.c-global-footer {
+  &--design-system {
+    @include remcalc(padding-left, $global-footer-spacing-horizontal-mobile);
+
+    @media(min-width: $global-footer-bp--sm) {
+      @include remcalc(margin-top, $global-footer-spacing-vertical);
+      @include remcalc(padding-left, $global-footer-spacing-horizontal);
+      @include remcalc(padding-right, $global-footer-spacing-horizontal);
+      position: relative;
+    }
+  }
+}

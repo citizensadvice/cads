@@ -1,0 +1,19 @@
+// ========================================================
+// @tools: fonts
+// ========================================================
+//
+
+// setup:
+//
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+
+// module definition:
+//
+@mixin font($font, $fontWeight) {
+  font-family: #{$font}, sans-serif;
+  font-weight: #{$fontWeight};
+}
+
+// module usage
+//
+// @include font('Open Sans', 400);

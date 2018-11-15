@@ -1,0 +1,17 @@
+{
+  "name": "cads-links",
+  "version": "0.0.1",
+  "license": "MIT",
+  "cads": {
+    "component_type": "element"
+  },
+  "files": [
+    "index.scss",
+    "build",
+    "lib"
+  ],
+  "dependencies": {
+    "cads-support": "0.0.1"
+  },
+  "scripts": {}
+}

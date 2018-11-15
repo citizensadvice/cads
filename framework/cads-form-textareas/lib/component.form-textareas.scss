@@ -1,0 +1,24 @@
+// ========================================================
+// @component: textarea
+// @dependency: c--form-elements
+// ========================================================
+//
+
+// component config
+//
+$textarea-border-color-focus: $form-elements-border-color-focus;
+
+// component block
+//
+.c-textarea {
+
+  // component elements
+  //
+  textarea {
+    @extend %form-elements;
+
+    &:focus {
+      border-color: $textarea-border-color-focus;
+    }
+  }
+}

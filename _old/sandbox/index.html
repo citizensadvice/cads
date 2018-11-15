@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/dist/css/app.css">
+  <title>Sandbox Environment</title>
+</head>
+<body>
+  <h1>Welcome to the sandbox!</h1>
+
+  <script id="__bs_script__">
+    //<![CDATA[
+      document.write("<script async src='http://HOST:5000/browser-sync/browser-sync-client.js?v=2.24.7'><\/script>".replace("HOST", location.hostname));
+    //]]>
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+// ========================================================
+// @component: side navigation
+// ========================================================
+//
+
+// component config
+//
+$section-nav-section-spacing: $spacing--2xl;
+$section-nav-sidebar-color:   $monochrome--grey;
+$section-nav-bp--sm:          $bp--sm;
+$section-nav-item-padding:    $spacing--xl;
+
+// component block
+.c-section-nav {
+
+  // modifiers
+  //
+  &--design-system {
+    padding-top: $section-nav-section-spacing;
+
+    @media (min-width: $section-nav-bp--sm) {
+      @include remcalc(border-right-width, 1px);
+      border-right-style: solid;
+      border-right-color: $section-nav-sidebar-color;
+      @include remcalc(padding-bottom, $section-nav-section-spacing);
+    }
+
+    .c-section-nav__section {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .c-section-nav__section-items {
+      @include remcalc(margin-left, -$section-nav-item-padding);
+      margin-right: 0;
+    }
+
+    .c-section-nav__section-item {
+      a {
+        outline: none;
+        padding-left: $section-nav-item-padding;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "cads-form-elements",
+  "version": "0.0.1",
+  "license": "MIT",
+  "cads": {
+    "component_type": "component"
+  },
+  "files": [
+    "index.scss",
+    "build",
+    "lib"
+  ],
+  "dependencies": {
+    "cads-support": "0.0.1"
+  },
+  "scripts": {}
+}

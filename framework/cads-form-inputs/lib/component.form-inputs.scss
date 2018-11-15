@@ -1,0 +1,36 @@
+// ========================================================
+// @component: inputs
+// @dependency: c--form-elements
+// ========================================================
+//
+
+// component config
+//
+$input-border-color-focus: $form-elements-border-color-focus;
+
+// component block
+//
+.c-input {
+
+  // component elements
+  //
+  input {
+    @extend %form-elements;
+
+    &:focus {
+      border-color: $input-border-color-focus;
+    }
+  }
+
+  // component modifiers
+  //
+  &--dateinput,
+  &--dateinput input {
+    @include remcalc(max-width, 72px);
+  }
+
+  &--dateinput-year,
+  &--dateinput-year input {
+    @include remcalc(max-width, 96px);
+  }
+}
