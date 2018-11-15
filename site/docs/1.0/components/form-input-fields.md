@@ -60,8 +60,8 @@ Let's look at an example with hint text and an optional flag.
 <fieldset class="c-fieldset">
   <label class="c-label" for="surname">
     Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
+    <span class="c-label__metainfo">With additional help text</span>
   </label>
-  <span class="c-label__metainfo">With additional help text</span>
   <div class="c-input">
     <input id="surname" type="text" required>
   </div>
@@ -74,8 +74,8 @@ Let's look at an example with hint text and an optional flag.
 <fieldset class="c-fieldset">
   <label class="c-label" for="surname">
     Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
+   <span class="c-label__metainfo">With additional help text</span>
   </label>
-  <span class="c-label__metainfo">With additional help text</span>
   <div class="c-input">
     <input id="surname" type="text" required>
   </div>
