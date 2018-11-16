@@ -1,0 +1,17 @@
+{
+  "name": "@cads/form-radios-checkboxes",
+  "version": "0.0.1",
+  "license": "MIT",
+  "cads": {
+    "component_type": "component"
+  },
+  "files": [
+    "index.scss",
+    "build",
+    "lib"
+  ],
+  "dependencies": {
+    "@cads/form-elements": "0.0.1"
+  },
+  "scripts": {}
+}

@@ -1,11 +1,11 @@
 {
-  "name": "cads",
+  "name": "cadesignsystem",
   "description": "Citizens Advice Design System",
   "version": "0.0.1",
   "homepage": "https://citizensadvice.github.io/ca-designsystem/",
   "private": true,
   "workspaces": ["framework/*"],
   "scripts": {
-
+    "serve-docs": "cd documentation && bundle exec jekyll serve"
   }
 }

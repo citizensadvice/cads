@@ -1,13 +1,13 @@
 # Site settings
 title: Citizens Advice Design System
-baseurl: "/ca-designsystem"
-url: https://btomy.github.io/ca-designsystem
-production_url : https://btomy.github.io/ca-designsystem
+baseurl: "/cads"
+url: https://btomy.github.io/cads
+production_url: https://btomy.github.io/cads
 
 # Build settings
-source: "site"
-current_version: 0.1.0
-docs_version: 1.0
+source: "website"
+current_version: 0.0.1
+docs_version: 0.0.1
 markdown: kramdown
 highlighter: rouge
 plugins:

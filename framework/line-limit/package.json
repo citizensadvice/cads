@@ -1,0 +1,17 @@
+{
+  "name": "@cads/line-limit",
+  "version": "0.0.1",
+  "license": "MIT",
+  "cads": {
+    "component_type": "utility"
+  },
+  "files": [
+    "index.scss",
+    "build",
+    "lib"
+  ],
+  "dependencies": {
+    "@cads/support": "0.0.1"
+  },
+  "scripts": {}
+}
