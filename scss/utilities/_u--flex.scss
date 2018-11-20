@@ -1,0 +1,67 @@
+// ========================================================
+// @utility: flex
+// ========================================================
+//
+
+// Flex display
+.u-flex {
+  display: flex;
+}
+
+// Flex direction
+$_flex-direction-values: (row: row,
+row-reverse: row-reverse,
+column: column,
+column-reverse: column-reverse);
+
+@each $name in map-keys($_flex-direction-values) {
+  $value: map-get($_flex-direction-values, $name);
+
+  .u-flex-direction--#{$name} {
+    flex-direction: $value;
+  }
+}
+
+// Align items
+$_align-items-values: (start: flex-start,
+end: flex-end,
+center: center,
+baseline: baseline,
+stretch: stretch);
+
+@each $name in map-keys($_align-items-values) {
+  $value: map-get($_align-items-values, $name);
+
+  .u-align-items--#{$name} {
+    align-items: $value;
+  }
+}
+
+// Flex wrap
+$_flex-wrap-values: (no-wrap: nowrap,
+wrap: wrap,
+wrap-reverse: wrap-reverse);
+
+@each $name in map-keys($_flex-wrap-values) {
+  $value: map-get($_flex-wrap-values, $name);
+
+  .u-flex-wrap--#{$name} {
+    flex-wrap: $value;
+  }
+}
+
+
+// Justify content
+$_justify-content-values: (start: flex-start,
+end: flex-end,
+center: center,
+between: space-between,
+around: space-around);
+
+@each $name in map-keys($_justify-content-values) {
+  $value: map-get($_justify-content-values, $name);
+
+  .u-justify-content--#{$name} {
+    justify-content: $value;
+  }
+}
