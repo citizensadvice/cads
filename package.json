@@ -14,13 +14,14 @@
     "build-framework": "lerna run build",
     "clean-framework": "lerna run clean",
     "bump-framework": "lerna version --skip-git",
-    "clean": "rm -rf ./node_modules/ && rm -rf ./website/_site/ && rm -rf ./website/.sass-cache",
-    "fresh": "yarn && lerna bootstrap && npm run build-docs",
-    "predeploy": "npm run build-docs"
+    "clean": "yarn run clean-framework && rm -rf ./website/_site/ && rm -rf ./website/.sass-cache && rm -rf ./node_modules/ ",
+    "setup": "yarn && lerna bootstrap && yarn run build-docs",
+    "predeploy": "yarn run build-docs"
   },
   "devDependencies": {
     "@cads/cads": "0.0.1",
     "gh-pages": "^2.0.1",
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+    "node-sass": "^4.10.0"
   }
 }

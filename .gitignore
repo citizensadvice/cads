@@ -5,3 +5,4 @@ website/.sass-cache
 website/_site/
 website/.jekyll-metadata
 .sass-cache
+framework/*/build
