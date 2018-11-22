@@ -14,7 +14,7 @@ $ npm install cads-positioning
 ```
 
 ```scss
-@import "cads-positioning/index.scss";
+@import "@cads/cads-positioning/index.scss";
 ```
 
 ## Implementation

@@ -20,7 +20,7 @@ $ npm install cads-form-fieldsets
 ```
 
 ```scss
-@import "cads-form-fieldsets/index.scss";
+@import "@cads/cads-form-fieldsets/index.scss";
 ```
 
 ## Implementation

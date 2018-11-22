@@ -10,8 +10,11 @@
     "build",
     "lib"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@cads/support": "0.0.1"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "node-sass --output-style compressed ./index.scss ./build/cads.section-nav.css",
+    "clean": "rm -rf ./build"
+  }
 }

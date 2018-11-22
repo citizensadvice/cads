@@ -20,7 +20,7 @@ $ npm install cads-blockquote
 ```
 
 ```scss
-@import "cads-blockquote/index.scss";
+@import "@cads/cads-blockquote/index.scss";
 ```
 
 ## Implementation

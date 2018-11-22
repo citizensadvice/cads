@@ -20,7 +20,7 @@ $ npm install cads-form-radios-checkboxes
 ```
 
 ```scss
-@import "cads-form-radios-checkboxes/index.scss";
+@import "@cads/cads-form-radios-checkboxes/index.scss";
 ```
 
 ## Implementation (Radio buttons)

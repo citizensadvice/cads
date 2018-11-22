@@ -10,9 +10,12 @@
     "build",
     "lib"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@cads/normaliser": "0.0.1",
     "@cads/box-model": "0.0.1"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "node-sass --output-style compressed ./index.scss ./build/cads.support.css",
+    "clean": "rm -rf ./build"
+  }
 }

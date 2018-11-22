@@ -20,7 +20,7 @@ $ npm install cads-typography
 ```
 
 ```scss
-@import "cads-typography/index.scss";
+@import "@cads/cads-typography/index.scss";
 ```
 
 ## Implementation

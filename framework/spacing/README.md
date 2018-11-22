@@ -20,7 +20,7 @@ $ npm install cads-spacing
 ```
 
 ```scss
-@import "cads-spacing/index.scss";
+@import "@cads/cads-spacing/index.scss";
 ```
 
 ## Implementation

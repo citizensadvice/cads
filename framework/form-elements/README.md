@@ -20,7 +20,7 @@ $ npm install cads-form-elements
 ```
 
 ```scss
-@import "cads-form-elements/index.scss";
+@import "@cads/cads-form-elements/index.scss";
 ```
 
 ## Implementation

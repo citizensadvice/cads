@@ -10,6 +10,8 @@
     "build",
     "lib"
   ],
-  "dependencies": {},
-  "scripts": {}
+  "scripts": {
+    "build": "node-sass --output-style compressed ./index.scss ./build/cads.box-model.css",
+    "clean": "rm -rf ./build"
+  }
 }

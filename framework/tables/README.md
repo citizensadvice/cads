@@ -20,7 +20,7 @@ $ npm install cads-tables
 ```
 
 ```scss
-@import "cads-tables/index.scss";
+@import "@cads/cads-tables/index.scss";
 ```
 
 ## Implementation

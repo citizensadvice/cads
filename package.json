@@ -4,8 +4,23 @@
   "version": "0.0.1",
   "homepage": "https://citizensadvice.github.io/ca-designsystem/",
   "private": true,
-  "workspaces": ["framework/*"],
+  "workspaces": [
+    "framework/*"
+  ],
   "scripts": {
-    "serve-docs": "cd documentation && bundle exec jekyll serve"
+    "build-docs": "cd ./website/ && bundle exec jekyll build",
+    "deploy-docs": "gh-pages -d ./website/_site/",
+    "start-docs": "cd ./website/ && bundle exec jekyll serve",
+    "build-framework": "lerna run build",
+    "clean-framework": "lerna run clean",
+    "bump-framework": "lerna version --skip-git",
+    "clean": "rm -rf ./node_modules/ && rm -rf ./website/_site/",
+    "fresh": "lerna bootstrap && npm run build-docs",
+    "predeploy": "npm run build-docs"
+  },
+  "dependencies": {
+    "@cads/cads": "0.0.1",
+    "gh-pages": "^2.0.1",
+    "lerna": "^3.4.3"
   }
 }

@@ -20,7 +20,7 @@ $ npm install cads-wrapper
 ```
 
 ```scss
-@import "cads-wrapper/index.scss";
+@import "@cads/cads-wrapper/index.scss";
 ```
 
 ## Implementation

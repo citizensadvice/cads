@@ -1,0 +1,19 @@
+# site settings:
+title: Citizens Advice Design System
+baseurl: ""
+url: "https://citizensadvice.github.io/ca-designsystem/"
+production_url: "https://citizensadvice.github.io/ca-designsystem/"
+
+# build settings:
+source: "app"
+current_version: 0.0.1
+docs_version: 1.0
+markdown: kramdown
+highlighter: rouge
+sass: 
+  style: compressed
+  load_paths: 
+    - assets/styles/
+    - ../../node_modules/
+plugins:
+  - jekyll-feed

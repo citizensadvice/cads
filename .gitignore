@@ -1,8 +1,7 @@
-*.DS_Store
-package-lock.json
-Gemfile.lock
-.sass-cache
-_site/
 node_modules
-site/docs/1.0/assets/dist/
-sandbox/assets/dist/
+*.DS_Store
+website/Gemfile.lock
+website/.sass-cache
+website/_site/
+website/.jekyll-metadata
+.sass-cache

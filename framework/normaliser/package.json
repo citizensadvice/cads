@@ -10,6 +10,9 @@
     "build",
     "lib"
   ],
-  "dependencies": {},
-  "scripts": {}
+  "devDependencies": {},
+  "scripts": {
+    "build": "node-sass --output-style compressed ./index.scss ./build/cads.normaliser.css",
+    "clean": "rm -rf ./build"
+  }
 }

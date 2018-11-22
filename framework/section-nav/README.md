@@ -20,7 +20,7 @@ $ npm install cads-section-nav
 ```
 
 ```scss
-@import "cads-section-nav/index.scss";
+@import "@cads/cads-section-nav/index.scss";
 ```
 
 ## Implementation

@@ -20,7 +20,7 @@ $ npm install cads-form-labels
 ```
 
 ```scss
-@import "cads-form-labels/index.scss";
+@import "@cads/cads-form-labels/index.scss";
 ```
 
 ## Implementation

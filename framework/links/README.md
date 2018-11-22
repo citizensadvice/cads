@@ -20,7 +20,7 @@ $ npm install cads-links
 ```
 
 ```scss
-@import "cads-links/index.scss";
+@import "@cads/cads-links/index.scss";
 ```
 
 ## Implementation
