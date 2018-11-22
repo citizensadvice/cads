@@ -16,6 +16,7 @@ $color-block--blueLight:            $extended--blueLight;
 $color-block--turquoiseDark:        $extended--turquoiseDark;
 $color-block--turquoisePrimary:     $extended--turquoisePrimary;
 $color-block--turquoiseMid:         $extended--turquoiseMid;
+$color-block--turquoiseLight:       $extended--turquoiseLight;          
 $color-block--redPrimary:           $extended--redPrimary;
 $color-block--redLight:             $extended--redLight;
 $color-block--black:                $monochrome--black;
@@ -58,6 +59,7 @@ $color-block-example-bp--sm:        $bp--sm;
   &--turquoiseDark      { background-color: $color-block--turquoiseDark }
   &--turquoisePrimary   { background-color: $color-block--turquoisePrimary }
   &--turquoiseMid       { background-color: $color-block--turquoiseMid }
+  &--turquoiseLight     { background-color: $color-block--turquoiseLight }
   &--redPrimary         { background-color: $color-block--redPrimary }
   &--redLight           { background-color: $color-block--redLight }
   &--black              { background-color: $color-block--black }

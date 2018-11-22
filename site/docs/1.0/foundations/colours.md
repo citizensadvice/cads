@@ -146,6 +146,18 @@ The colour palette is designed to pass accessibility contrast ratios while still
 </div>
 
 <div class="c-card">
+  <div class="c-card__media c-color-block--turquoiseLight"></div>
+  <div class="c-card__body">
+    <p>
+      <strong>Turquoise light</strong><br>
+      $extended--turquoiseLight<br>
+      #EAF9F7<br>
+      rgba(234, 249, 247, 1)
+    </p>
+  </div>
+</div>
+
+<div class="c-card">
   <div class="c-card__media c-color-block--redPrimary"></div>
   <div class="c-card__body">
     <p>
