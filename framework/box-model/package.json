@@ -7,11 +7,11 @@
   },
   "files": [
     "index.scss",
-    "build",
-    "lib"
+    "build/",
+    "lib/"
   ],
   "scripts": {
-    "build": "node-sass --output-style compressed ./index.scss ./build/cads.box-model.css",
+    "build": "node-sass --output-style expanded ./build.scss ./build/cads.box-model.css",
     "clean": "rm -rf ./build"
   }
 }

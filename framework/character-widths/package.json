@@ -7,14 +7,14 @@
   },
   "files": [
     "index.scss",
-    "build",
-    "lib"
+    "build/",
+    "lib/"
   ],
   "devDependencies": {
     "@cads/support": "0.0.1"
   },
   "scripts": {
-    "build": "node-sass --output-style compressed ./index.scss ./build/cads.character-widths.css",
+    "build": "node-sass --output-style expanded ./build.scss ./build/cads.character-widths.css",
     "clean": "rm -rf ./build"
   }
 }

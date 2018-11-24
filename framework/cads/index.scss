@@ -5,8 +5,12 @@
 // ====================================================================
 //
 
-// SUPPORT: includes SETTINGS, TOOLS, GENERIC.
-@import "@cads/support/index.scss";
+// SUPPORT: includes - global variables, config switches, default mixins and functions
+@import "@cads/support/build.scss";
+
+// GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
+@import "@cads/normaliser/index.scss";
+@import "@cads/box-model/index.scss";
 
 // ELEMENTS: unclassed HTML elements (type selectors)
 @import "@cads/typography/index.scss";
