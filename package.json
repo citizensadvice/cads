@@ -19,7 +19,7 @@
     "predeploy": "yarn run build-docs"
   },
   "devDependencies": {
-    "@cads/cads": "0.0.1",
+    "@cads/system": "0.0.1",
     "gh-pages": "^2.0.1",
     "lerna": "^3.4.3",
     "node-sass": "^4.10.0"
