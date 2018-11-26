@@ -15,4 +15,4 @@ The Sketch template contains core components, colours, iconography and typograph
 
 
 
-![Sketch screenshot]({{ site.baseurl }}/assets/images/example--sketch_template.png)
+![Sketch screenshot]({{ site.baseurl }}/docs/assets/images/example--sketch_template.png)

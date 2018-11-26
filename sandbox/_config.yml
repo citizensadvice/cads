@@ -1,18 +1,15 @@
 # site settings:
-title: Citizens Advice Design System
+title: Citizens Advice Design System | Sandbox
 baseurl: ""
-url: "https://citizensadvice.github.io/ca-designsystem/"
-production_url: "https://citizensadvice.github.io/ca-designsystem/"
 
 # build settings:
 source: "app"
 current_version: 0.0.1
-docs_version: 1.0
 markdown: kramdown
 highlighter: rouge
+port: 5000
 sass: 
   style: compressed
   load_paths: 
-    - docs/assets/styles/
     - sandbox/assets/styles/
     - ../../node_modules/

@@ -12,11 +12,43 @@
 
 ### Getting started
 
-We've made it pretty simple to get up and running with the latest Citizens Advice Design System framework. We use `npm` to allow you to bring the framework into your projects.
+We've made it pretty simple to get up and running with the latest Citizens Advice Design System framework. We use `npm / yarn` and have split out our components into smaller packages that contain the relevant dependencies. This means you can either bring the entire framework into your project **OR** more importantly, only the components you need thus keeping style files to a minimum.
+
+### Framework packages
+
+| Name                           | Type    | Description                                             |
+| ------------------------------ | ------- | ------------------------------------------------------- |
+| `@cads/support`                | support | System-wide global variables and functions              |
+| `@cads/typography`             | generic | Generic typographic styling                             |
+| `@cads/links`                  | generic | Generic links styles                                    |
+| `@cads/tables`                 | generic | Generic table styling                                   |
+| `@cads/wrapper`                | object  | Component for container elements at a set width         |
+| `@cads/grid`                   | object  | Custom grid system                                      |
+| `@cads/list`                   | object  | Component for creating lists                            |
+| `@cads/global-header`          | module  | System-wide global header                               |
+| `@cads/global-footer`          | module  | System-wide global footer                               |
+| `@cads/buttons`                | module  | Custom button components                                |
+| `@cads/button-container`       | module  | Component for holding buttons                           |
+| `@cads/blockquote`             | module  | Custom styles for blockquotes                           |
+| `@cads/section-nav`            | module  | Side navigation component styling                       |
+| `@cads/form-elements`          | module  | Support tool for `form-` components                     |
+| `@cads/form-fieldsets`          | module  | Custom styling for form elements                        |
+| `@cads/form-inputs`            | module  | Custom styling for form elements                        |
+| `@cads/form-labels`            | module  | Custom styling for form elements                        |
+| `@cads/form-textareas`         | module  | Custom styling for form elements                        |
+| `@cads/form-selects`           | module  | Custom styling for form elements                        |
+| `@cads/form-radios-checkboxes` | module  | Custom styling for form elements                        |
+| `@cads/icons`                  | utility | Icon system                                             |
+| `@cads/line-limit`             | utility | Helper classes for limiting line length                 |
+| `@cads/positioning`            | utility | Helper classes for positioning elements                 |
+| `@cads/spacing`                | utility | Helper classes for spacing elements correctly           |
+| `@cads/charwidth`              | utility | Helper classes for setting character limits on elements |
+
+> More detail of each package can be seen in each packages own `README.md`.
 
 ### Installation
 
-In order to get the framework make sure you're in your projects root directory:
+In order to get the entire framework make sure you're in your projects root directory:
 
 ```shell
 $ cd project/directory
@@ -25,45 +57,48 @@ $ cd project/directory
 Then run:
 
 ```shell
-$ npm install cadesignsystem
+$ npm install @cads/system
 ```
 
 ### Folder structure
 
-If you check in your `node_modules` directory you should now have a `cadesignsystem` module that contains a few key files and folders.
+If you check in your `node_modules` directory you should now have a `@cads/` directory that contains all the packages required to get up and running.
 
 ```
-node_modules
-└── cadesignsystem
-  ├── dist
-  │ ├── css
-  │ └── images
-  └── scss
+node_modules/
+└── @cads/
+  ├── buttons/
+  │ ├── dist/  
+  │ ├── lib/
+  │ ├── index.scss
+  │ ├── package.json
+  │ └── README.md
+  ├── buttons/
+  │ ├── dist/  
+  │ ├── lib/
+  │ ├── index.scss
+  │ ├── package.json
+  │ └── README.md
+  └── ...
 ```
 
 #### `dist/`
 
-The first directory will be the `dist` folder that contains both **minified** and **un-minified** versions of the entire framework. We added this just for convenience.
+The first directory will be the `dist` folder that contains the **minified** version of the the package. We added this just for convenience.
 
-The `dist` folder also contains an `images` directory that should contain all images required for the framework.
+#### `lib/`
 
-#### `scss/`
-
-Finally we have the meat of the framework. In the `scss` folder, you'll find all the source files that will get compiled using `sass`. This directory has a set structure which makes use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), an methodology from [Harry Roberts](https://csswizardry.com/). Let's take a look at this structure and concept:
-
-| Directory    | Description                                            |
-| ------------ | ------------------------------------------------------ |
-| `Settings`   | global variables, config switches                      |
-| `tools`      | default mixins and functions                           |
-| `generic`    | ground-zero styles (Normalize.css, resets, box-sizing) |
-| `elements`   | unclassed HTML elements (type selectors)               |
-| `objects`    | cosmetic-free design patterns                          |
-| `components` | designed components, chunks of UI                      |
-| `utilitiess` | helpers and overrides (it's ok to use `!important`)    |
+Next we have the meat of the framework, the `lib` folder contains the source files that will get compiled using `sass`. We're making use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), a methodology from [Harry Roberts](https://csswizardry.com/), which can be better undertood by reading the `@cads/system` `README.md`.
 
 ### Usage
 
-Now that you've `npm install` the framework into your `node_modules`, you'll need to link to it like you would any other `scss` file. We've purposely left this step missing from the documentation because each project and build step may be setup slightly differently and we don't want to pin you down to one method.
+Now that you've `npm install` the framework / packages into your `node_modules`, you'll need to link to them like you would any other `scss` file. We've purposely left this step missing from the documentation because each project and build step may be setup slightly differently and we don't want to pin you down to one method. An example however would be:
+
+```scss
+@import "@cads/button-container";
+@import "@cads/buttons";
+...
+```
 
 **NOTE:** Don't forget to grab the `images/media` files during this build step too, it's easy to overlook these.
 
@@ -88,45 +123,41 @@ You need to have the following installed on your machine:
 
 #### Step #1
 
-Navigate to [the repo](https://github.com/btomy/ca-designsystem) and `clone` it by running either (it depends on how your security is setup).
+Navigate to [the repo](https://github.com/citizensadvice/ca-designsystem) and `clone` it by running either (it depends on how your security is setup).
 
 ##### `ssh`
 
 ```shell
-$ git clone git@github.com:btomy/ca-designsystem.git
+$ git clone git@github.com:citizensadvice/ca-designsystem.git
 ```
 
 ##### `http`
 
 ```shell
-$ git clone https://github.com/btomy/ca-designsystem.git
+$ git clone https://github.com/citizensadvice/ca-designsystem.git
 ```
 
 Great you have the repository on your machine now.
 
 #### Step #2
 
-`cd` into the `ca-designsystem` directory (the `root`), and continue to install our projects `npm` dependencies:
+`cd` into the `ca-designsystem` directory (the `root`), and install all necessary dependencies:
 
 ```shell
-$ npm install
+$ yarn setup
 ```
 
-We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, so you'll need to install it's dependencies too. You can do that by running:
-
-```shell
-$ bundle install
-```
+We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, but all that dependency management was handled with the above command
 
 #### Start the docs site
 
 When all the above is complete, we can get the docs up and running by running:
 
 ```shell
-$ npm run start
+$ yarn start-docs
 ```
 
-This will start Jekyll, compile the stylesheets and create a watcher for changes to those assets.
+This will start Jekyll and compile the stylesheets / scripts.
 
 Now if you open a browser window at `http://localhost:4000` you should see the homepage.
 
@@ -142,20 +173,21 @@ The files are located in the `root` of the repo under the directory `sandbox/`.
 
 Most of the hard work has already been taken care of by following the [Documentation guide](#Documentation-guide), installing all necessary dependencies in order to run the sandbox.
 
+```shell
+$ yarn setup
+```
+
 ### Starting the sandbox
 
 ```shell
-$ npm run start-sandbox
+$ yarn start-sandbox
 ```
 
-and navigate to `http://localhost:5000`, you should see a very basic page with a heading. This area is completely at the developers disposal.
+and navigate to `http://localhost:5000`, you should see a very basic page with a heading. 
 
-You will find:
+This is another Jekyll site that's running separately to the docs website.
 
-- an `index.html` file
-- an `assets/` directory
-
-If you need more pages, you can create them, if you need to add images or styles you can do that too in the `assets/images/` and `assets/scss/` directories respectively. Manage this area as you see fit, any `watch` / `compile` commands can be found in the `package.json` should you need them.
+If you need more pages or to simply edit the index page you will need to edit the `sandbox/app/index.html`. Styles are in the `sandbox/app/assets/...` directory and if needs be, you should place your images in here too.
 
 [Back to top](#citizens-advice-design-system)
 

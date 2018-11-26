@@ -11,6 +11,7 @@
     "build-docs": "cd ./website/ && bundle install && bundle exec jekyll build",
     "deploy-docs": "gh-pages -d ./website/_site/",
     "start-docs": "cd ./website/ && bundle install && bundle exec jekyll serve",
+    "start-sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll serve",
     "build-framework": "lerna run build",
     "clean-framework": "lerna run clean",
     "bump-framework": "lerna version --skip-git",

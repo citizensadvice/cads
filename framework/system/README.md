@@ -40,7 +40,7 @@
 ## Installation
 
 ```
-$ npm install cads
+$ npm install @cads/system
 ```
 
 ```scss
