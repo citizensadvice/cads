@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-buttons
+$ npm install @cads/buttons
 ```
 
 ```scss
-@import "@cads/cads-button-container/index.scss";
+@import "@cads/button-container/index.scss";
 ```
 
 ## Implementation

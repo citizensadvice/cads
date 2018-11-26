@@ -11,16 +11,16 @@
 
 | Name           | Description                                |
 | -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-spacing
+$ npm install @cads/spacing
 ```
 
 ```scss
-@import "@cads/cads-spacing/index.scss";
+@import "@cads/spacing/index.scss";
 ```
 
 ## Implementation

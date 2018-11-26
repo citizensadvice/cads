@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-links
+$ npm install @cads/links
 ```
 
 ```scss
-@import "@cads/cads-links/index.scss";
+@import "@cads/links/index.scss";
 ```
 
 ## Implementation

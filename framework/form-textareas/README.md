@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name                 | Description                                               |
-| -------------------- | --------------------------------------------------------- |
-| `cads-form-elements` | Placeholder classes for specific use across form elements |
+| Name                  | Description                                               |
+| --------------------- | --------------------------------------------------------- |
+| `@cads/form-elements` | Placeholder classes for specific use across form elements |
 
 ## Installation
 
 ```
-$ npm install cads-form-textareas
+$ npm install @cads/form-textareas
 ```
 
 ```scss
-@import "@cads/cads-form-textareas/index.scss";
+@import "@cads/form-textareas/index.scss";
 ```
 
 ## Implementation

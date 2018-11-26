@@ -10,11 +10,11 @@
 ## Installation
 
 ```
-$ npm install cads-character-widths
+$ npm install @cads/character-widths
 ```
 
 ```scss
-@import "@cads/cads-character-widths/index.scss";
+@import "@cads/character-widths/index.scss";
 ```
 
 ## Implementation

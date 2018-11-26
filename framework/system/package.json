@@ -9,9 +9,14 @@
     "index.scss",
     "build/",
     "lib/"
-  ],
+  ], 
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@cads/support": "0.0.1",
+    "@cads/normaliser": "0.0.1",
+    "@cads/box-model": "0.0.1",
     "@cads/typography": "0.0.1",
     "@cads/links": "0.0.1",
     "@cads/tables": "0.0.1",
@@ -35,9 +40,7 @@
     "@cads/line-limit": "0.0.1",
     "@cads/spacing": "0.0.1",
     "@cads/positioning": "0.0.1",
-    "@cads/character-widths": "0.0.1",
-    "@cads/normaliser": "0.0.1",
-    "@cads/box-model": "0.0.1"
+    "@cads/character-widths": "0.0.1"
   },
   "scripts": {
     "build": "node-sass --output-style expanded ./build.scss ./build/cads.css",

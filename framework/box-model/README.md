@@ -10,12 +10,12 @@
 ## Installation
 
 ```
-$ npm install cads-box-model
+$ npm install @cads/box-model
 
 ```
 
 ```scss
-@import "@cads/cads-box-model/index.scss";
+@import "@cads/box-model/index.scss";
 ```
 
 ## Implementation

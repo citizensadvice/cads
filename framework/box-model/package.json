@@ -9,7 +9,10 @@
     "index.scss",
     "build/",
     "lib/"
-  ],
+  ], 
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "node-sass --output-style expanded ./build.scss ./build/cads.box-model.css",
     "clean": "rm -rf ./build"

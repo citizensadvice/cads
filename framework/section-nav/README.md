@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-section-nav
+$ npm install @cads/section-nav
 ```
 
 ```scss
-@import "@cads/cads-section-nav/index.scss";
+@import "@cads/section-nav/index.scss";
 ```
 
 ## Implementation

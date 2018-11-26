@@ -9,7 +9,10 @@
     "index.scss",
     "build/",
     "lib/"
-  ],
+  ], 
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@cads/form-elements": "0.0.1"
   },

@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-line-limit
+$ npm install @cads/line-limit
 ```
 
 ```scss
-@import "@cads/cads-line-limit/index.scss";
+@import "@cads/line-limit/index.scss";
 ```
 
 ## Implementation

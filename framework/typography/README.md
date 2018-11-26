@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-typography
+$ npm install @cads/typography
 ```
 
 ```scss
-@import "@cads/cads-typography/index.scss";
+@import "@cads/typography/index.scss";
 ```
 
 ## Implementation

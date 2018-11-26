@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-icons
+$ npm install @cads/icons
 ```
 
 ```scss
-@import "@cads/cads-icons/index.scss";
+@import "@cads/icons/index.scss";
 ```
 
 ## Icon list

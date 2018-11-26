@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name                 | Description                                |
+| -------------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-blockquote
+$ npm install @cads/blockquote
 ```
 
 ```scss
-@import "@cads/cads-blockquote/index.scss";
+@import "@cads/blockquote/index.scss";
 ```
 
 ## Implementation

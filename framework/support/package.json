@@ -8,5 +8,8 @@
   "files": [
     "index.scss",
     "lib/"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
