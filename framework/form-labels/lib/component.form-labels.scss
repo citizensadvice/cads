@@ -5,6 +5,8 @@
 
 // component config
 //
+$label-default-number: $magicNumber;
+$label-default-line-height: $label-default-number * 1.5;
 $label-font-weight: 700;
 $label-spacing: $spacing--xs;
 $label-tag-font-weight: 400;
@@ -16,6 +18,7 @@ $label-tag-spacing: $spacing--xs / 2;
 %label-element {
   display: block;
   font-weight: $label-font-weight;
+  @include remcalc(line-height, $label-default-line-height);
   @include remcalc(margin-bottom, $label-spacing);
 }
 

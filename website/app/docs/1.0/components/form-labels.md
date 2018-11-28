@@ -67,8 +67,8 @@ We also have a couple of extra components available within the `c-label` compone
 <fieldset class="c-fieldset">
   <label class="c-label" for="surname">
     Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
+    <span class="c-label__metainfo">With additional help text</span>
   </label>
-  <span class="c-label__metainfo">With additional help text</span>
   <div class="c-input">
     <input id="surname" type="text" required>
   </div>
@@ -80,8 +80,8 @@ We also have a couple of extra components available within the `c-label` compone
 <fieldset class="c-fieldset">
   <label class="c-label" for="surname">
     Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
+    <span class="c-label__metainfo">With additional help text</span>
   </label>
-  <span class="c-label__metainfo">With additional help text</span>
   <div class="c-input">
     <input id="surname" type="text" required>
   </div>
