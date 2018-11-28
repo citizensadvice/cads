@@ -2,11 +2,24 @@
 
 ## Table of contents
 
+- [Introduction](#introduction)
 - [Framework guide](#framework-guide)
 - [Documentation guide](#documentation-guide)
 - [Sandbox guide](#sandbox-guide)
 - [How to contribute](#how-to-contribute)
 - [Git style guide](#git-style-guide)
+
+## Introduction
+
+Welcome to the Citizens Advice Design System. A tool that we hope will ease the building and styling of digital services and products throughout the organisation. We've tried to make the process one that's simple and efficient enough to get started building, but one that isn't prescriptive. We welcome discussions for new components, bugs and platform improvements, check out the [how to contribute](#how-to-contribute) section for this information.
+
+Our platform uses the "mono-repo" concept, where all aspects of the Design System can live together. This provides better management rather than splitting each out into their respective repositories. Currently we have:
+
+- the **framework** itself
+- the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**
+- a **sandbox** environment used as a playground for new component.
+
+We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they requie.
 
 ## Framework guide
 
@@ -16,33 +29,34 @@ We've made it pretty simple to get up and running with the latest Citizens Advic
 
 ### Framework packages
 
-| Name                           | Type    | Description                                             |
-| ------------------------------ | ------- | ------------------------------------------------------- |
-| `@cads/support`                | support | System-wide global variables and functions              |
-| `@cads/typography`             | generic | Generic typographic styling                             |
-| `@cads/links`                  | generic | Generic links styles                                    |
-| `@cads/tables`                 | generic | Generic table styling                                   |
-| `@cads/wrapper`                | object  | Component for container elements at a set width         |
-| `@cads/grid`                   | object  | Custom grid system                                      |
-| `@cads/list`                   | object  | Component for creating lists                            |
-| `@cads/global-header`          | module  | System-wide global header                               |
-| `@cads/global-footer`          | module  | System-wide global footer                               |
-| `@cads/buttons`                | module  | Custom button components                                |
-| `@cads/button-container`       | module  | Component for holding buttons                           |
-| `@cads/blockquote`             | module  | Custom styles for blockquotes                           |
-| `@cads/section-nav`            | module  | Side navigation component styling                       |
-| `@cads/form-elements`          | module  | Support tool for `form-` components                     |
-| `@cads/form-fieldsets`          | module  | Custom styling for form elements                        |
-| `@cads/form-inputs`            | module  | Custom styling for form elements                        |
-| `@cads/form-labels`            | module  | Custom styling for form elements                        |
-| `@cads/form-textareas`         | module  | Custom styling for form elements                        |
-| `@cads/form-selects`           | module  | Custom styling for form elements                        |
-| `@cads/form-radios-checkboxes` | module  | Custom styling for form elements                        |
-| `@cads/icons`                  | utility | Icon system                                             |
-| `@cads/line-limit`             | utility | Helper classes for limiting line length                 |
-| `@cads/positioning`            | utility | Helper classes for positioning elements                 |
-| `@cads/spacing`                | utility | Helper classes for spacing elements correctly           |
-| `@cads/charwidth`              | utility | Helper classes for setting character limits on elements |
+| Name                           | Type       | Description                                             |
+| ------------------------------ | ---------- | ------------------------------------------------------- |
+| `@cads/support`                | support    | System-wide global variables and functions              |
+| `@cads/typography`             | generic    | Generic typographic styling                             |
+| `@cads/links`                  | generic    | Generic links styles                                    |
+| `@cads/tables`                 | generic    | Generic table styling                                   |
+| `@cads/wrapper`                | object     | Component for container elements at a set width         |
+| `@cads/grid`                   | object     | Custom grid system                                      |
+| `@cads/list`                   | object     | Component for creating lists                            |
+| `@cads/global-header`          | component  | System-wide global header                               |
+| `@cads/global-footer`          | component  | System-wide global footer                               |
+| `@cads/buttons`                | component  | Custom button components                                |
+| `@cads/button-container`       | component  | Component for holding buttons                           |
+| `@cads/blockquote`             | component  | Custom styles for blockquotes                           |
+| `@cads/section-nav`            | component  | Side navigation component styling                       |
+| `@cads/form-elements`          | component  | Support tool for `form-` components                     |
+| `@cads/form-fieldsets`          | component  | Custom styling for form elements                        |
+| `@cads/form-inputs`            | component  | Custom styling for form elements                        |
+| `@cads/form-labels`            | component  | Custom styling for form elements                        |
+| `@cads/form-textareas`         | component  | Custom styling for form elements                        |
+| `@cads/form-selects`           | component  | Custom styling for form elements                        |
+| `@cads/form-radios-checkboxes` | component  | Custom styling for form elements                        |
+| `@cads/well`                   | component  | Component for separating chunks of content              |
+| `@cads/icons`                  | utility    | Icon system                                             |
+| `@cads/line-limit`             | utility    | Helper classes for limiting line length                 |
+| `@cads/positioning`            | utility    | Helper classes for positioning elements                 |
+| `@cads/spacing`                | utility    | Helper classes for spacing elements correctly           |
+| `@cads/charwidth`              | utility    | Helper classes for setting character limits on elements |
 
 > More detail of each package can be seen in each packages own `README.md`.
 
