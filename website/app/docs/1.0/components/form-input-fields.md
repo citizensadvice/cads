@@ -88,19 +88,21 @@ Let's look at an example with hint text and an optional flag.
 We also make available some utility classes to aid in the user experience of `<input />` elements.
 These classes limit the width of an element which in turn is based on the number of uppercase **W** that can fit inside the input.
 
-> **NOTE:** The important bit to note in the example is the **utility class** available on the input element, `.u-charwidth--2`.
+> **NOTE:** The important bit to note in the example is the **utility classes** available on the input element, `.u-charWidth` and `.u-charwidth--`.
 
-| Size (character width) | Class name        |
-| ---------------------- | ----------------- |
-| 2 characters           | `.u-charwidth--2` |
-| 4 characters           | `.u-charwidth--4` |
+| Size (character width)  | Class name         |
+| ----------------------- | ------------------ |
+| 2 characters            | `.u-charwidth--2`  |
+| 4 characters            | `.u-charwidth--4`  |
+| 8 characters            | `.u-charwidth--8`  |
+| 20 characters           | `.u-charwidth--20` |
 
 {% capture example %}
 
 <fieldset class="c-fieldset">
   <label class="c-label" for="year">Year:</label>
   <div class="c-input">
-    <input id="year" type="text" class="u-charwidth--4" required>
+    <input id="year" type="text" class="u-charwidth u-charwidth--4" required>
   </div>
 </fieldset>
 {% endcapture %}
@@ -111,7 +113,7 @@ These classes limit the width of an element which in turn is based on the number
 <fieldset class="c-fieldset">
   <label class="c-label" for="year">Year:</label>
   <div class="c-input">
-    <input id="year" type="text" class="u-charwidth--4" required>
+    <input id="year" type="text" class="u-charwidth u-charwidth--4" required>
   </div>
 </fieldset>
 {% endcapture %}
