@@ -11,16 +11,16 @@
 
 | Name           | Description                                |
 | -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-wrapper
+$ npm install @cads/wrapper
 ```
 
 ```scss
-@import "@cads/cads-wrapper/index.scss";
+@import "@cads/wrapper/index.scss";
 ```
 
 ## Implementation

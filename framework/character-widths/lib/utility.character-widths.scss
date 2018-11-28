@@ -4,18 +4,20 @@
 //
 // A few utility classes in order to allow developers to
 // set specific widths on form elements such as <input />.
+// 
+// The `... + 3ex` equates to the size of the auto form
+// filling icon in Apple's Safari browser.
 
 // component config
 //
 
 // component block
 //
-.u-charwidth--2 {
-  max-width: 7.2ex !important;
+.u-charwidth {
   width: 100% !important;
-}
 
-.u-charwidth--4 {
-  max-width: 10.8ex !important;
-  width: 100% !important;
+  &--2 {max-width: 7.2ex !important}
+  &--4 {max-width: 10.8ex !important}
+  &--8 {max-width: 18ex + 3ex !important}
+  &--20 {max-width: 38.4ex + 3ex !important}
 }

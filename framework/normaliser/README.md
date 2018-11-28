@@ -10,11 +10,11 @@
 ## Installation
 
 ```
-$ npm install cads-normaliser
+$ npm install @cads/normaliser
 ```
 
 ```scss
-@import "@cads/cads-normaliser/index.scss";
+@import "@cads/normaliser/index.scss";
 ```
 
 ## Implementation

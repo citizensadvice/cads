@@ -7,14 +7,17 @@
   },
   "files": [
     "index.scss",
-    "build",
-    "lib"
-  ],
+    "build/",
+    "lib/"
+  ], 
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@cads/support": "0.0.1"
   },
   "scripts": {
-    "build": "node-sass --output-style compressed ./index.scss ./build/cads.positioning.css",
+    "build": "node-sass --output-style expanded ./build.scss ./build/cads.positioning.css",
     "clean": "rm -rf ./build"
   }
 }

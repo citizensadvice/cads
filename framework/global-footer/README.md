@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-global-footer
+$ npm install @cads/global-footer
 ```
 
 ```scss
-@import "@cads/cads-global-footer/index.scss";
+@import "@cads/global-footer/index.scss";
 ```
 
 ## Implementation

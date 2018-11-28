@@ -10,11 +10,11 @@
 ## Installation
 
 ```
-$ npm install cads-positioning
+$ npm install @cads/positioning
 ```
 
 ```scss
-@import "@cads/cads-positioning/index.scss";
+@import "@cads/positioning/index.scss";
 ```
 
 ## Implementation

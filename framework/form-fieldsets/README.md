@@ -11,16 +11,16 @@
 
 | Name           | Description                                |
 | -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-form-fieldsets
+$ npm install @cads/form-fieldsets
 ```
 
 ```scss
-@import "@cads/cads-form-fieldsets/index.scss";
+@import "@cads/form-fieldsets/index.scss";
 ```
 
 ## Implementation

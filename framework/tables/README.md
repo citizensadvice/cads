@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-tables
+$ npm install @cads/tables
 ```
 
 ```scss
-@import "@cads/cads-tables/index.scss";
+@import "@cads/tables/index.scss";
 ```
 
 ## Implementation

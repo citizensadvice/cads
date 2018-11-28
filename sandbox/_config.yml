@@ -1,0 +1,15 @@
+# site settings:
+title: CADS | Sandbox
+baseurl: ""
+
+# build settings:
+source: "app"
+current_version: 0.0.1
+markdown: kramdown
+highlighter: rouge
+port: 5000
+sass: 
+  style: compressed
+  load_paths: 
+    - sandbox/assets/styles/
+    - ../../node_modules/

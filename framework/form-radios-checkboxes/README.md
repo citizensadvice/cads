@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name                 | Description                                               |
-| -------------------- | --------------------------------------------------------- |
-| `cads-form-elements` | Placeholder classes for specific use across form elements |
+| Name                  | Description                                               |
+| --------------------- | --------------------------------------------------------- |
+| `@cads/form-elements` | Placeholder classes for specific use across form elements |
 
 ## Installation
 
 ```
-$ npm install cads-form-radios-checkboxes
+$ npm install @cads/form-radios-checkboxes
 ```
 
 ```scss
-@import "@cads/cads-form-radios-checkboxes/index.scss";
+@import "@cads/form-radios-checkboxes/index.scss";
 ```
 
 ## Implementation (Radio buttons)

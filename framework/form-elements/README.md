@@ -9,23 +9,23 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-form-elements
+$ npm install @cads/form-elements
 ```
 
 ```scss
-@import "@cads/cads-form-elements/index.scss";
+@import "@cads/form-elements/index.scss";
 ```
 
 ## Implementation
 
-This package underpins the `cads-forms-` packages that handle:
+This package underpins the `forms-` packages that handle:
 
 - `inputs`
 - `textareas`

@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-grid
+$ npm install @cads/grid
 ```
 
 ```scss
-@import "@cads/cads-grid/index.scss";
+@import "@cads/grid/index.scss";
 ```
 
 ## Implementation

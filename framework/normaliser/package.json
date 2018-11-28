@@ -7,12 +7,14 @@
   },
   "files": [
     "index.scss",
-    "build",
-    "lib"
-  ],
-  "devDependencies": {},
+    "build/",
+    "lib/"
+  ], 
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "node-sass --output-style compressed ./index.scss ./build/cads.normaliser.css",
+    "build": "node-sass --output-style expanded ./build.scss ./build/cads.normaliser.css",
     "clean": "rm -rf ./build"
   }
 }

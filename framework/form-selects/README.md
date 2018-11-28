@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name                 | Description                                               |
-| -------------------- | --------------------------------------------------------- |
-| `cads-form-elements` | Placeholder classes for specific use across form elements |
+| Name                  | Description                                               |
+| --------------------- | --------------------------------------------------------- |
+| `@cads/form-elements` | Placeholder classes for specific use across form elements |
 
 ## Installation
 
 ```
-$ npm install cads-form-selects
+$ npm install @cads/form-selects
 ```
 
 ```scss
-@import "@cads/cads-form-selects/index.scss";
+@import "@cads/form-selects/index.scss";
 ```
 
 ## Implementation

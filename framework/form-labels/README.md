@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name           | Description                                |
-| -------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-form-labels
+$ npm install @cads/form-labels
 ```
 
 ```scss
-@import "@cads/cads-form-labels/index.scss";
+@import "@cads/form-labels/index.scss";
 ```
 
 ## Implementation

@@ -13,7 +13,6 @@ highlighter: rouge
 sass: 
   style: compressed
   load_paths: 
-    - assets/styles/
+    - docs/assets/styles/
+    - sandbox/assets/styles/
     - ../../node_modules/
-plugins:
-  - jekyll-feed
