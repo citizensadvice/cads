@@ -1,4 +1,4 @@
-# Form validation
+# Validation
 
 ![npm](https://img.shields.io/npm/v/:package.svg)
 ![AppVeyor branch](https://img.shields.io/appveyor/ci/:user/:repo/:branch.svg)
@@ -9,18 +9,18 @@
 
 ## Dependencies:
 
-| Name                 | Description                                               |
-| -------------------- | --------------------------------------------------------- |
-| `cads-form-elements` | Placeholder classes for specific use across form elements |
+| Name            | Description                                |
+| --------------- | ------------------------------------------ |
+| `@cads/support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-form-validation
+$ npm install @cads/validation
 ```
 
 ```scss
-@import "@cads/cads-form-validation/index.scss";
+@import "@cads/validation/index.scss";
 ```
 
 ## Implementation
@@ -40,7 +40,7 @@ Form validation helps us to ensure that users fill out forms in the correct form
         <input 
         id="postcode" 
         type="text" 
-        name="postcode"/>
+        name="postcode" required />
     </div>
     <label class="input--error" for="postcode">
         Please enter a valid postcode
