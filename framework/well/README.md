@@ -1,4 +1,4 @@
-# Blockquote
+# Well
 
 ![npm](https://img.shields.io/npm/v/:package.svg)
 ![AppVeyor branch](https://img.shields.io/appveyor/ci/:user/:repo/:branch.svg)
@@ -11,16 +11,16 @@
 
 | Name                 | Description                                |
 | -------------------- | ------------------------------------------ |
-| `@cads/support` | System-wide global variables and functions |
+| `@cads/support`      | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install @cads/blockquote
+$ npm install @cads/well
 ```
 
 ```scss
-@import "@cads/blockquote/index.scss";
+@import "@cads/well/index.scss";
 ```
 
 ## Implementation
