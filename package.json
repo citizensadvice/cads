@@ -8,18 +8,19 @@
     "framework/*"
   ],
   "scripts": {
-    "build-docs": "cd ./website/ && bundle install && bundle exec jekyll build",
-    "build-framework": "lerna run build",
-    "start-docs": "cd ./website/ && bundle install && bundle exec jekyll serve",
-    "start-sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll serve",
-    "clean-framework": "lerna run clean",
-    "clean-modules": "rm -rf ./node_modules/",
-    "clean": "yarn run clean-framework && rm -rf ./website/_site/ && rm -rf ./website/.sass-cache && rm -rf ./node_modules/ ",
-    "reset-modules": "yarn clean-modules && yarn setup",
-    "bump-framework": "lerna version --skip-git",
-    "deploy-docs": "gh-pages -d ./website/_site/",
     "setup": "yarn && lerna bootstrap",
-    "predeploy": "yarn run build-docs"
+    "clean": "yarn run clean-framework && rm -rf ./website/_site/ && rm -rf ./website/.sass-cache && rm -rf ./node_modules/ ",
+    "predeploy": "yarn run build-docs",
+    "clean-modules": "rm -rf ./node_modules/",
+    "reset-modules": "yarn clean-modules && yarn setup",
+    "build-docs": "cd ./website/ && bundle install && bundle exec jekyll build",
+    "start-docs": "cd ./website/ && bundle install && bundle exec jekyll serve",
+    "deploy-docs": "gh-pages -d ./website/_site/",
+    "start-sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll serve",
+    "build-framework": "lerna run build",
+    "clean-framework": "lerna run clean",
+    "bump-framework": "lerna version --skip-git",
+    "publish-framework": "lerna publish"
   },
   "devDependencies": {
     "@cads/system": "0.0.1",
