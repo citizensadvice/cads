@@ -25,9 +25,7 @@ We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dep
 
 ### Getting started
 
-We've made it pretty simple to get up and running with the latest Citizens Advice Design System framework. We use `npm / yarn` and have split out our components into smaller packages that contain the relevant dependencies. This means you can either bring the entire framework into your project **OR** more importantly, only the components you need thus keeping style files to a minimum.
-
-### Framework packages
+Firstly we need to introduce **ALL** packages available for installation:
 
 | Name                           | Type       | Description                                             |
 | ------------------------------ | ---------- | ------------------------------------------------------- |
@@ -62,16 +60,10 @@ We've made it pretty simple to get up and running with the latest Citizens Advic
 
 ### Installation
 
-In order to get the entire framework make sure you're in your projects root directory:
+Once you've decided on the package(s) you need, run:
 
 ```shell
-$ cd project/directory
-```
-
-Then run:
-
-```shell
-$ npm install @cads/system
+$ npm install @cads/[package-name]
 ```
 
 ### Folder structure
@@ -82,13 +74,13 @@ If you check in your `node_modules` directory you should now have a `@cads/` dir
 node_modules/
 └── @cads/
   ├── buttons/
-  │ ├── dist/  
+  │ ├── build/
   │ ├── lib/
   │ ├── index.scss
   │ ├── package.json
   │ └── README.md
-  ├── buttons/
-  │ ├── dist/  
+  ├── buttons/ 
+  │ ├── build/  
   │ ├── lib/
   │ ├── index.scss
   │ ├── package.json
@@ -96,25 +88,24 @@ node_modules/
   └── ...
 ```
 
-#### `dist/`
+#### `build/`
 
-The first directory will be the `dist` folder that contains the **minified** version of the the package. We added this just for convenience.
+For completeness, we've included an output `.css` file for each component. This serves a couple purposes, firstly we can test to see whether our components build correctly without errors. Secondly, should you not be able to use `sass` in your pipeline, we've still got you covered.
 
 #### `lib/`
 
-Next we have the meat of the framework, the `lib` folder contains the source files that will get compiled using `sass`. We're making use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), a methodology from [Harry Roberts](https://csswizardry.com/), which can be better undertood by reading the `@cads/system` `README.md`.
+This directory contains the source files that can be compiled using `sass` during your build process. 
+We're making use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), a methodology from [Harry Roberts](https://csswizardry.com/), which can be better undertood by reading the `@cads/system` `README.md`.
 
 ### Usage
 
-Now that you've `npm install` the framework / packages into your `node_modules`, you'll need to link to them like you would any other `scss` file. We've purposely left this step missing from the documentation because each project and build step may be setup slightly differently and we don't want to pin you down to one method. An example however would be:
+Now that you've `npm install` the packages into your `node_modules`, link to them like you would any other `scss` file.
 
 ```scss
 @import "@cads/button-container";
 @import "@cads/buttons";
 ...
 ```
-
-**NOTE:** Don't forget to grab the `images/media` files during this build step too, it's easy to overlook these.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -132,6 +123,7 @@ You need to have the following installed on your machine:
 - [git](https://git-scm.com/) (we recommend using [Homebrew](https://brew.sh/))
 - [ruby](https://www.ruby-lang.org/en/) (we recommend installing via [RVM](https://rvm.io/rvm/install))
 - [bundler](https://bundler.io/)
+- [yarn](https://yarnpkg.com) (Used for the mono-repo tooling)
 
 ### Setup documentation
 
@@ -142,20 +134,20 @@ Navigate to [the repo](https://github.com/citizensadvice/ca-designsystem) and `c
 ##### `ssh`
 
 ```shell
-$ git clone git@github.com:citizensadvice/ca-designsystem.git
+$ git clone git@github.com:citizensadvice/cads.git
 ```
 
 ##### `http`
 
 ```shell
-$ git clone https://github.com/citizensadvice/ca-designsystem.git
+$ git clone https://github.com/citizensadvice/cads.git
 ```
 
 Great you have the repository on your machine now.
 
 #### Step #2
 
-`cd` into the `ca-designsystem` directory (the `root`), and install all necessary dependencies:
+`cd` into the `cads` directory (the `root`), and install all necessary dependencies:
 
 ```shell
 $ yarn setup
@@ -165,7 +157,7 @@ We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, b
 
 #### Start the docs site
 
-When all the above is complete, we can get the docs up and running by running:
+When all the above is complete, we can get the docs up and going by running:
 
 ```shell
 $ yarn start-docs
@@ -174,6 +166,8 @@ $ yarn start-docs
 This will start Jekyll and compile the stylesheets / scripts.
 
 Now if you open a browser window at `http://localhost:4000` you should see the homepage.
+
+We do have a few extra scripts that can be run when developing the framework and the documentation. Open up the `root` `package.json` to see these.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -201,7 +195,7 @@ and navigate to `http://localhost:5000`, you should see a very basic page with a
 
 This is another Jekyll site that's running separately to the docs website.
 
-If you need more pages or to simply edit the index page you will need to edit the `sandbox/app/index.html`. Styles are in the `sandbox/app/assets/...` directory and if needs be, you should place your images in here too.
+If you need more pages or to simply edit the index page you will need to edit the `sandbox/app/index.html`. Styles are in the `sandbox/app/assets/...` directory and if needs be, you should place your images in here too. You have complete freedom to alter this as you see fit. It's essentially a playground for all things Design System, but try **NOT** to commit these changes in your Pull Requests.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -213,8 +207,31 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 
 - Create a new branch making sure you adhere to the [git style guidelines](#Git-style-guidelines).
 - Use the sandbox to start hacking away at your new feature / fix.
-- If you're fixing the `framework`, make sure to make `CSS` changes in the `scss/` directory as these are the framework source files.
-- next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
+- If you're fixing the `framework`, make sure to make `CSS` changes in the `framework/` directory as these are the framework source files.
+- If it's the website you're changing, make those updates in the `website/` directory.
+- Next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
+
+### Publishing a version of the framework
+
+If the changes to the framework have been successful, you'll need to publish these new changes/additions to the NPM registry.
+
+Start out by increasing the version number of your packages, this does it for **ALL**.
+
+```shell
+$ yarn bump-framework
+```
+
+Follow the instructions, we're following [semantic versioning](https://semver.org/) conventions.
+
+> You will also need to update the website with the new version of the framework. This can be done in `./website/_config.yml` by changing the string next to the key `framework_version`, after this, follow the details for ["Releasing a new version of the site"](#releasing-a-new-version-of-the-site).
+
+### Releasing a new version of the site
+
+Simply run
+
+```shell
+$ yarn deploy-docs
+```
 
 [Back to top](#citizens-advice-design-system)
 
@@ -262,12 +279,12 @@ You'll make many different types of change to the codebase over time but most ch
 | Issue type | Description                                                                   |
 | ---------- | ----------------------------------------------------------------------------- |
 | `feat`     | a new feature                                                                 |
-| `fix`      | a bug fix                                                                     |
+| `fix`       | a bug fix                                                                      |
 | `docs`     | changes to documentation                                                      |
 | `style`    | formatting, missing semi colons, etc; no code change                          |
 | `refactor` | refactoring production code                                                   |
 | `test`     | adding tests, refactoring test; no production code change                     |
-| `chore`    | updating build tasks, package manager configs, etc; no production code change |
+| `chore`    | updating build tasks, package manager configs, etc; no production code change  |
 
 While this might feel overkill to dictate how to write commit messages, doing so also means when reviewing Pull Requests, we can quickly see which commit belongs to which ticket without having to match up commit messages to ticket titles.
 
