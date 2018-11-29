@@ -3,7 +3,7 @@ title: CADS | Sandbox
 baseurl: ""
 
 # build settings:
-source: "app"
+source: "src"
 current_version: 0.0.1
 markdown: kramdown
 highlighter: rouge
