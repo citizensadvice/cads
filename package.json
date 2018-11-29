@@ -8,30 +8,25 @@
     "framework/*"
   ],
   "scripts": {
-    "clean": "yarn-run-all -s clean:framework clean:sandbox clean:website clean:modules",
+    "fresh": "yarn && lerna bootstrap",
+    "clean": "npm-run-all -s clean:framework clean:sandbox clean:website clean:modules",
     "clean:framework": "lerna run clean",
     "clean:sandbox": "rm -rf ./sandbox/_site/ && rm -rf ./sandbox/.sass-cache/",
-    "clean:website": "rm -rf ./website/_site/ && rm -rf ./sandbox/.sass-cache/",
+    "clean:website": "rm -rf ./website/_site/ && rm -rf ./website/.sass-cache/",
     "clean:modules": "rm -rf ./node_modules/",
-    
-    "serve:sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll serve --watch",
-    "serve:website": "cd ./website/ && bundle install && bundle exec jekyll serve --watch",
-    
+    "serve:sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll serve",
+    "serve:website": "cd ./website/ && bundle install && bundle exec jekyll serve",
     "build:framework": "lerna run build",
     "build:sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll build",
     "build:website": "cd ./website/ && bundle install && bundle exec jekyll build",
-    
     "framework:bump": "lerna version --skip-git",
     "framework:release": "yarn publish",
-    "framework:publish": "yarn-run-all -s build:framework framework:bump framework:release",
-
-    "fresh": "yarn && lerna bootstrap"
+    "framework:publish": "npm-run-all -s build:framework framework:bump framework:release"
   },
   "devDependencies": {
     "@cads/system": "0.0.1",
     "gh-pages": "^2.0.1",
     "lerna": "^3.4.3",
-    "node-sass": "^4.10.0",
-    "yarn-run-all": "^3.1.1"
+    "npm-run-all": "^4.1.5"
   }
 }

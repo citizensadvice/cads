@@ -14,5 +14,4 @@ sass:
   style: compressed
   load_paths: 
     - docs/assets/styles/
-    - sandbox/assets/styles/
-    - ../../node_modules/
+    - assets/styles/
