@@ -1,0 +1,9 @@
+# site settings:
+title: Citizens Advice Design System
+baseurl: ""
+
+# build settings:
+source: "src"
+markdown: kramdown
+highlighter: rouge
+port: 5000
