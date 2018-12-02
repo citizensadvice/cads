@@ -25,6 +25,7 @@
     "clean:sandbox": "rm -rf ./_sandbox/_site/ && rm -rf ./_sandbox/.sass-cache/",
     "clean:website": "rm -rf ./_website/_site/ && rm -rf ./_website/.sass-cache/",
     "clean:modules": "rm -rf ./node_modules/",
+    "compilecss:all": "npm-run-all compilecss:website compilecss:sandbox",
     "compilecss:website": "node-sass --output-style compressed --include-path ./node_modules/ --include-path ./_website/src/styles/ ./_website/src/styles/docs.scss ./_website/src/styles/docs.css",
     "compilecss:sandbox": "node-sass --output-style compressed --include-path ./node_modules/ --include-path ./_sandbox/src/styles/ ./_sandbox/src/styles/sandbox.scss ./_sandbox/src/styles/sandbox.css",
     "framework:bump": "lerna version --skip-git",
@@ -32,10 +33,8 @@
     "framework:publish": "npm-run-all -s build:framework framework:bump framework:release",
     "serve:sandbox": "cd ./_sandbox/ && bundle install && bundle exec jekyll serve",
     "serve:website": "cd ./_website/ && bundle install && bundle exec jekyll serve",
-    "start:sandbox": "npm-run-all -p watchcss:framework watchcss:sandbox serve:sandbox",
-    "start:website": "npm-run-all -p watchcss:framework watchcss:website serve:website",
-    "watchcss:framework": "nodemon --watch ./_framework --ext scss --exec \"npm run compilecss:sandbox\"",
-    "watchcss:website": "nodemon --watch ./_website/src/styles --ext scss --exec \"npm run compilecss:website\"",
-    "watchcss:sandbox": "nodemon --watch ./_sandbox/src/styles --ext scss --exec \"npm run compilecss:sandbox\""
+    "start:sandbox": "npm-run-all -p watchcss:all serve:sandbox",
+    "start:website": "npm-run-all -p watchcss:all serve:website",
+    "watchcss:all": "nodemon --watch ./_framework --watch ./_website/src/styles --watch ./_sandbox/src/styles --ext scss --exec \"npm run compilecss:all\""
   }
 }

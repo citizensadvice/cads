@@ -107,6 +107,8 @@ Now that you've `npm install` the packages into your `node_modules`, link to the
 ...
 ```
 
+> Be sure to add `node_modules` to your included-paths for the above to work correctly.
+
 [Back to top](#citizens-advice-design-system)
 
 ## Documentation guide
@@ -150,7 +152,7 @@ Great you have the repository on your machine now.
 `cd` into the `cads` directory (the `root`), and install all necessary dependencies:
 
 ```shell
-$ yarn setup
+$ yarn fresh
 ```
 
 We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, but all that dependency management was handled with the above command
@@ -160,7 +162,7 @@ We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, b
 When all the above is complete, we can get the docs up and going by running:
 
 ```shell
-$ yarn start-docs
+$ yarn start:website
 ```
 
 This will start Jekyll and compile the stylesheets / scripts.
@@ -175,27 +177,27 @@ We do have a few extra scripts that can be run when developing the framework and
 
 This is a great area with which to start developing new features and components and to test them out.
 
-The files are located in the `root` of the repo under the directory `sandbox/`.
+The files are located in the `root` of the repo under the directory `_sandbox/`.
 
 ### Sandbox installation
 
 Most of the hard work has already been taken care of by following the [Documentation guide](#Documentation-guide), installing all necessary dependencies in order to run the sandbox.
 
 ```shell
-$ yarn setup
+$ yarn fresh
 ```
 
 ### Starting the sandbox
 
 ```shell
-$ yarn start-sandbox
+$ yarn start:sandbox
 ```
 
 and navigate to `http://localhost:5000`, you should see a very basic page with a heading. 
 
 This is another Jekyll site that's running separately to the docs website.
 
-If you need more pages or to simply edit the index page you will need to edit the `sandbox/app/index.html`. Styles are in the `sandbox/app/assets/...` directory and if needs be, you should place your images in here too. You have complete freedom to alter this as you see fit. It's essentially a playground for all things Design System, but try **NOT** to commit these changes in your Pull Requests.
+If you need more pages or to simply edit the index page you will need to edit the `_sandbox/app/index.html`. Styles are in the `_sandbox/app/assets/...` directory and if needs be, you should place your images in here too. You have complete freedom to alter this as you see fit. It's essentially a playground for all things Design System, but try **NOT** to commit these changes in your Pull Requests.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -207,7 +209,7 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 
 - Create a new branch making sure you adhere to the [git style guidelines](#Git-style-guidelines).
 - Use the sandbox to start hacking away at your new feature / fix.
-- If you're fixing the `framework`, make sure to make `CSS` changes in the `framework/` directory as these are the framework source files.
+- If you're fixing the `framework`, make sure to make `CSS` changes in the `_framework/` directory as these are the framework source files.
 - If it's the website you're changing, make those updates in the `website/` directory.
 - Next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
 
@@ -218,19 +220,19 @@ If the changes to the framework have been successful, you'll need to publish the
 Start out by increasing the version number of your packages, this does it for **ALL**.
 
 ```shell
-$ yarn bump-framework
+$ yarn framework:publish
 ```
 
 Follow the instructions, we're following [semantic versioning](https://semver.org/) conventions.
 
-> You will also need to update the website with the new version of the framework. This can be done in `./website/_config.yml` by changing the string next to the key `framework_version`, after this, follow the details for ["Releasing a new version of the site"](#releasing-a-new-version-of-the-site).
+> You will also need to update the website with the new version of the framework. This can be done in `./_website/_config.yml` by changing the string next to the key `framework_version`, after this, follow the details for ["Releasing a new version of the site"](#releasing-a-new-version-of-the-site).
 
 ### Releasing a new version of the site
 
 Simply run
 
 ```shell
-$ yarn deploy-docs
+$ yarn build:framework
 ```
 
 [Back to top](#citizens-advice-design-system)
