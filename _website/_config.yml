@@ -1,0 +1,12 @@
+# site settings:
+title: Citizens Advice Design System
+url: "https://citizensadvice.github.io/ca-designsystem/"
+github_url: "https://github.com/citizensadvice/ca-designsystem"
+baseurl: ""
+
+# build settings:
+source: "src"
+framework_version: 0.0.1
+docs_version: 1.0
+markdown: kramdown
+highlighter: rouge

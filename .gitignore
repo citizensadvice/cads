@@ -1,8 +1,4 @@
-*.DS_Store
-package-lock.json
-Gemfile.lock
-.sass-cache
-_site/
 node_modules
-site/docs/1.0/assets/dist/
-sandbox/assets/dist/
+*.DS_Store
+.sass-cache
+yarn-error.log

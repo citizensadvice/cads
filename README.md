@@ -2,70 +2,112 @@
 
 ## Table of contents
 
+- [Introduction](#introduction)
 - [Framework guide](#framework-guide)
 - [Documentation guide](#documentation-guide)
 - [Sandbox guide](#sandbox-guide)
 - [How to contribute](#how-to-contribute)
 - [Git style guide](#git-style-guide)
 
+## Introduction
+
+Welcome to the Citizens Advice Design System. A tool that we hope will ease the building and styling of digital services and products throughout the organisation. We've tried to make the process one that's simple and efficient enough to get started building, but one that isn't prescriptive. We welcome discussions for new components, bugs and platform improvements, check out the [how to contribute](#how-to-contribute) section for this information.
+
+Our platform uses the "mono-repo" concept, where all aspects of the Design System can live together. This provides better management rather than splitting each out into their respective repositories. Currently we have:
+
+- the **framework** itself
+- the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**
+- a **sandbox** environment used as a playground for new component.
+
+We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they requie.
+
 ## Framework guide
 
 ### Getting started
 
-We've made it pretty simple to get up and running with the latest Citizens Advice Design System framework. We use `npm` to allow you to bring the framework into your projects.
+Firstly we need to introduce **ALL** packages available for installation:
+
+| Name                           | Type       | Description                                             |
+| ------------------------------ | ---------- | ------------------------------------------------------- |
+| `@cads/support`                | support    | System-wide global variables and functions              |
+| `@cads/typography`             | generic    | Generic typographic styling                             |
+| `@cads/links`                  | generic    | Generic links styles                                    |
+| `@cads/tables`                 | generic    | Generic table styling                                   |
+| `@cads/wrapper`                | object     | Component for container elements at a set width         |
+| `@cads/grid`                   | object     | Custom grid system                                      |
+| `@cads/list`                   | object     | Component for creating lists                            |
+| `@cads/global-header`          | component  | System-wide global header                               |
+| `@cads/global-footer`          | component  | System-wide global footer                               |
+| `@cads/buttons`                | component  | Custom button components                                |
+| `@cads/button-container`       | component  | Component for holding buttons                           |
+| `@cads/blockquote`             | component  | Custom styles for blockquotes                           |
+| `@cads/section-nav`            | component  | Side navigation component styling                       |
+| `@cads/form-elements`          | component  | Support tool for `form-` components                     |
+| `@cads/form-fieldsets`          | component  | Custom styling for form elements                        |
+| `@cads/form-inputs`            | component  | Custom styling for form elements                        |
+| `@cads/form-labels`            | component  | Custom styling for form elements                        |
+| `@cads/form-textareas`         | component  | Custom styling for form elements                        |
+| `@cads/form-selects`           | component  | Custom styling for form elements                        |
+| `@cads/form-radios-checkboxes` | component  | Custom styling for form elements                        |
+| `@cads/well`                   | component  | Component for separating chunks of content              |
+| `@cads/icons`                  | utility    | Icon system                                             |
+| `@cads/line-limit`             | utility    | Helper classes for limiting line length                 |
+| `@cads/positioning`            | utility    | Helper classes for positioning elements                 |
+| `@cads/spacing`                | utility    | Helper classes for spacing elements correctly           |
+| `@cads/charwidth`              | utility    | Helper classes for setting character limits on elements |
+
+> More detail of each package can be seen in each packages own `README.md`.
 
 ### Installation
 
-In order to get the framework make sure you're in your projects root directory:
+Once you've decided on the package(s) you need, run:
 
 ```shell
-$ cd project/directory
-```
-
-Then run:
-
-```shell
-$ npm install cadesignsystem
+$ npm install @cads/[package-name]
 ```
 
 ### Folder structure
 
-If you check in your `node_modules` directory you should now have a `cadesignsystem` module that contains a few key files and folders.
+If you check in your `node_modules` directory you should now have a `@cads/` directory that contains all the packages required to get up and running.
 
 ```
-node_modules
-└── cadesignsystem
-  ├── dist
-  │ ├── css
-  │ └── images
-  └── scss
+node_modules/
+└── @cads/
+  ├── buttons/
+  │ ├── build/
+  │ ├── lib/
+  │ ├── index.scss
+  │ ├── package.json
+  │ └── README.md
+  ├── buttons/ 
+  │ ├── build/  
+  │ ├── lib/
+  │ ├── index.scss
+  │ ├── package.json
+  │ └── README.md
+  └── ...
 ```
 
-#### `dist/`
+#### `build/`
 
-The first directory will be the `dist` folder that contains both **minified** and **un-minified** versions of the entire framework. We added this just for convenience.
+For completeness, we've included an output `.css` file for each component. This serves a couple purposes, firstly we can test to see whether our components build correctly without errors. Secondly, should you not be able to use `sass` in your pipeline, we've still got you covered.
 
-The `dist` folder also contains an `images` directory that should contain all images required for the framework.
+#### `lib/`
 
-#### `scss/`
-
-Finally we have the meat of the framework. In the `scss` folder, you'll find all the source files that will get compiled using `sass`. This directory has a set structure which makes use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), an methodology from [Harry Roberts](https://csswizardry.com/). Let's take a look at this structure and concept:
-
-| Directory    | Description                                            |
-| ------------ | ------------------------------------------------------ |
-| `Settings`   | global variables, config switches                      |
-| `tools`      | default mixins and functions                           |
-| `generic`    | ground-zero styles (Normalize.css, resets, box-sizing) |
-| `elements`   | unclassed HTML elements (type selectors)               |
-| `objects`    | cosmetic-free design patterns                          |
-| `components` | designed components, chunks of UI                      |
-| `utilitiess` | helpers and overrides (it's ok to use `!important`)    |
+This directory contains the source files that can be compiled using `sass` during your build process. 
+We're making use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), a methodology from [Harry Roberts](https://csswizardry.com/), which can be better undertood by reading the `@cads/system` `README.md`.
 
 ### Usage
 
-Now that you've `npm install` the framework into your `node_modules`, you'll need to link to it like you would any other `scss` file. We've purposely left this step missing from the documentation because each project and build step may be setup slightly differently and we don't want to pin you down to one method.
+Now that you've `npm install` the packages into your `node_modules`, link to them like you would any other `scss` file.
 
-**NOTE:** Don't forget to grab the `images/media` files during this build step too, it's easy to overlook these.
+```scss
+@import "@cads/button-container";
+@import "@cads/buttons";
+...
+```
+
+> Be sure to add `node_modules` to your included-paths for the above to work correctly.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -83,52 +125,51 @@ You need to have the following installed on your machine:
 - [git](https://git-scm.com/) (we recommend using [Homebrew](https://brew.sh/))
 - [ruby](https://www.ruby-lang.org/en/) (we recommend installing via [RVM](https://rvm.io/rvm/install))
 - [bundler](https://bundler.io/)
+- [yarn](https://yarnpkg.com) (Used for the mono-repo tooling)
 
 ### Setup documentation
 
 #### Step #1
 
-Navigate to [the repo](https://github.com/btomy/ca-designsystem) and `clone` it by running either (it depends on how your security is setup).
+Navigate to [the repo](https://github.com/citizensadvice/ca-designsystem) and `clone` it by running either (it depends on how your security is setup).
 
 ##### `ssh`
 
 ```shell
-$ git clone git@github.com:btomy/ca-designsystem.git
+$ git clone git@github.com:citizensadvice/cads.git
 ```
 
 ##### `http`
 
 ```shell
-$ git clone https://github.com/btomy/ca-designsystem.git
+$ git clone https://github.com/citizensadvice/cads.git
 ```
 
 Great you have the repository on your machine now.
 
 #### Step #2
 
-`cd` into the `ca-designsystem` directory (the `root`), and continue to install our projects `npm` dependencies:
+`cd` into the `cads` directory (the `root`), and install all necessary dependencies:
 
 ```shell
-$ npm install
+$ yarn fresh
 ```
 
-We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, so you'll need to install it's dependencies too. You can do that by running:
-
-```shell
-$ bundle install
-```
+We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, but all that dependency management was handled with the above command
 
 #### Start the docs site
 
-When all the above is complete, we can get the docs up and running by running:
+When all the above is complete, we can get the docs up and going by running:
 
 ```shell
-$ npm run start
+$ yarn start:website
 ```
 
-This will start Jekyll, compile the stylesheets and create a watcher for changes to those assets.
+This will start Jekyll and compile the stylesheets / scripts.
 
 Now if you open a browser window at `http://localhost:4000` you should see the homepage.
+
+We do have a few extra scripts that can be run when developing the framework and the documentation. Open up the `root` `package.json` to see these.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -136,26 +177,27 @@ Now if you open a browser window at `http://localhost:4000` you should see the h
 
 This is a great area with which to start developing new features and components and to test them out.
 
-The files are located in the `root` of the repo under the directory `sandbox/`.
+The files are located in the `root` of the repo under the directory `_sandbox/`.
 
 ### Sandbox installation
 
 Most of the hard work has already been taken care of by following the [Documentation guide](#Documentation-guide), installing all necessary dependencies in order to run the sandbox.
 
+```shell
+$ yarn fresh
+```
+
 ### Starting the sandbox
 
 ```shell
-$ npm run start-sandbox
+$ yarn start:sandbox
 ```
 
-and navigate to `http://localhost:5000`, you should see a very basic page with a heading. This area is completely at the developers disposal.
+and navigate to `http://localhost:5000`, you should see a very basic page with a heading. 
 
-You will find:
+This is another Jekyll site that's running separately to the docs website.
 
-- an `index.html` file
-- an `assets/` directory
-
-If you need more pages, you can create them, if you need to add images or styles you can do that too in the `assets/images/` and `assets/scss/` directories respectively. Manage this area as you see fit, any `watch` / `compile` commands can be found in the `package.json` should you need them.
+If you need more pages or to simply edit the index page you will need to edit the `_sandbox/app/index.html`. Styles are in the `_sandbox/app/assets/...` directory and if needs be, you should place your images in here too. You have complete freedom to alter this as you see fit. It's essentially a playground for all things Design System, but try **NOT** to commit these changes in your Pull Requests.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -167,8 +209,31 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 
 - Create a new branch making sure you adhere to the [git style guidelines](#Git-style-guidelines).
 - Use the sandbox to start hacking away at your new feature / fix.
-- If you're fixing the `framework`, make sure to make `CSS` changes in the `scss/` directory as these are the framework source files.
-- next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
+- If you're fixing the `framework`, make sure to make `CSS` changes in the `_framework/` directory as these are the framework source files.
+- If it's the website you're changing, make those updates in the `website/` directory.
+- Next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
+
+### Publishing a version of the framework
+
+If the changes to the framework have been successful, you'll need to publish these new changes/additions to the NPM registry.
+
+Start out by increasing the version number of your packages, this does it for **ALL**.
+
+```shell
+$ yarn framework:publish
+```
+
+Follow the instructions, we're following [semantic versioning](https://semver.org/) conventions.
+
+> You will also need to update the website with the new version of the framework. This can be done in `./_website/_config.yml` by changing the string next to the key `framework_version`, after this, follow the details for ["Releasing a new version of the site"](#releasing-a-new-version-of-the-site).
+
+### Releasing a new version of the site
+
+Simply run
+
+```shell
+$ yarn build:framework
+```
 
 [Back to top](#citizens-advice-design-system)
 
@@ -216,12 +281,12 @@ You'll make many different types of change to the codebase over time but most ch
 | Issue type | Description                                                                   |
 | ---------- | ----------------------------------------------------------------------------- |
 | `feat`     | a new feature                                                                 |
-| `fix`      | a bug fix                                                                     |
+| `fix`       | a bug fix                                                                      |
 | `docs`     | changes to documentation                                                      |
 | `style`    | formatting, missing semi colons, etc; no code change                          |
 | `refactor` | refactoring production code                                                   |
 | `test`     | adding tests, refactoring test; no production code change                     |
-| `chore`    | updating build tasks, package manager configs, etc; no production code change |
+| `chore`    | updating build tasks, package manager configs, etc; no production code change  |
 
 While this might feel overkill to dictate how to write commit messages, doing so also means when reviewing Pull Requests, we can quickly see which commit belongs to which ticket without having to match up commit messages to ticket titles.
 

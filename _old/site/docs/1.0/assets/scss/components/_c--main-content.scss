@@ -1,0 +1,38 @@
+// ========================================================
+// @component: main content
+// ========================================================
+//
+
+// component config
+//
+$main-content-bp--md:                    $bp--md;
+$main-content-bp--sm:                    $bp--sm;
+$main-content-item-max-w:                600px;
+$main-content-example-max-w:             $bp--lg;
+$main-content-last-item-spacing:         $spacing--md;
+$main-content-padding-vertical:          $spacing--2xl;
+$main-content-padding-horizontal-mobile: $spacing--md;
+$main-content-padding-horizontal:        $spacing--xl;
+
+// component block
+.c-main-content {
+  @include remcalc(padding-top, $main-content-padding-vertical);
+  @include remcalc(padding-left, $main-content-padding-horizontal-mobile);
+  @include remcalc(padding-right, $main-content-padding-horizontal-mobile);
+
+  @media(min-width: $main-content-bp--sm) {
+    @include remcalc(padding-left, $main-content-padding-horizontal);
+    @include remcalc(padding-right, $main-content-padding-horizontal);
+    position: relative;
+  }
+
+  > * {
+    @media (min-width: $main-content-bp--md) {
+      @include remcalc(max-width, $main-content-item-max-w);
+    }
+  }
+
+  > .c-example { max-width: $main-content-example-max-w }
+  > .highlighter-rouge { max-width: $main-content-example-max-w }
+  > .c-global-footer { max-width: 100%}
+}

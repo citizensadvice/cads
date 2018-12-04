@@ -1,0 +1,41 @@
+code,
+tt {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  font-family: Hack, monospace;
+  @include remcalc(font-size, 14px);
+  @include remcalc(line-height, 26px);
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+pre code {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+}
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 12px 20px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  line-height: 19px;
+  margin-top: 0;
+  overflow: auto;
+  padding: 20px;
+}
+
+pre code,
+pre tt {
+  background-color: transparent;
+  border: none;
+}

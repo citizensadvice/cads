@@ -1,0 +1,35 @@
+// ====================================================================
+// IMPORT FRAMEWORK SPECIFIC FILES
+// ====================================================================
+@import "@cads/system/index.scss";
+
+
+// ====================================================================
+// IMPORT APPLICATION STYLES
+// ====================================================================
+
+// SETTINGS: global variables, config switches
+// TOOLS: default mixins and functions
+// GENERIC: ground-zero styles - normalize.css, resets, box-sizing.
+
+// ELEMENTS: unclassed HTML elements (type selectors)
+@import "elements/e--code";
+
+// OBJECTS: cosmetic-free design patterns
+
+// COMPONENTS: designed components, chunks of UI
+@import "components/c--main-content";
+@import "components/c--static-container";
+@import "components/c--section-nav";
+@import "components/c--pygmentscss--borland";
+@import "components/c--highlight";
+@import "components/c--example";
+@import "components/c--card";
+@import "components/c--color-block";
+@import "components/c--hero";
+@import "components/c--global-footer";
+@import "components/c--global-header";
+@import "components/c--layout";
+
+// UTILITIES: helpers and overrides
+@import "utilities/u--testing";

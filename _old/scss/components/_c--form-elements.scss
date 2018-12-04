@@ -1,0 +1,52 @@
+// ========================================================
+// @settings: form elements
+// @supports:
+// - <textarea>
+// - <select>
+// - <input type="text">
+// - <input type="email">
+// - <input type="password">
+// - <input type="radio">
+// - <input type="checkbox">
+// ========================================================
+//
+
+// settings:
+//
+$form-elements-border-radius:      2px;
+$form-elements-border-width:       2px;
+$form-elements-border-color:       $monochrome--lightGrey;
+$form-elements-border-color-focus: $brand--heritageYellow;
+$form-elements-font-size:          16px;
+$form-elements-line-height:        24px;
+$form-elements-padding-vertical:   $spacing--xs + $form-elements-border-width;
+$form-elements-padding-horizontal: $spacing--sm + $form-elements-border-width;
+
+// module definitions:
+//
+%form-elements-block {
+  display: inline-block;
+  font-size: $form-elements-font-size;
+  line-height: $form-elements-line-height;
+  outline: none;
+}
+
+%form-elements-border {
+  @include remcalc(border-radius, $form-elements-border-radius);
+  @include remcalc(border-width, $form-elements-border-width);
+  border-style: solid;
+  border-color: $form-elements-border-color;
+}
+
+%form-elements-spacing {
+  @include remcalc(padding-top, $form-elements-padding-vertical);
+  @include remcalc(padding-bottom, $form-elements-padding-vertical);
+  @include remcalc(padding-left, $form-elements-padding-horizontal);
+  @include remcalc(padding-right, $form-elements-padding-horizontal);
+}
+
+%form-elements {
+  @extend %form-elements-border;
+  @extend %form-elements-block;
+  @extend %form-elements-spacing;
+}

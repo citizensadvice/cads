@@ -1,0 +1,19 @@
+// ========================================================
+// @tools: build SVG
+// ========================================================
+//
+
+// mixin definition:
+//
+@function build-svg(
+  $svg-content,
+  $svg-content__width: 24,
+  $svg-content__height: 24
+) {
+  $svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="#{$svg-content__width}" height="#{$svg-content__height}">#{$svg-content}</svg>';
+  @return $svg;
+}
+
+// mixin usage:
+//
+// background-image: build-svg( ... );

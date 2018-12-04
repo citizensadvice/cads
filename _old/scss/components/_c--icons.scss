@@ -1,0 +1,43 @@
+// ========================================================
+// @component: icons
+// @dependency: t--build-svg, t--build-icon
+// ========================================================
+//
+// @NOTE: Adding new icons
+//
+// it's important to add the new SVG <path /> elements to the $icon-map
+// in the above @dependency.
+//
+// next roll down to the component modifiers section in this file and
+// make use of the 'build-icon' mixin.
+
+// component config
+//
+$icon-color--default: $brand--heritageBlue;
+
+// component block
+//
+.c-icon {
+  display: inline-block;
+  position: relative;
+
+  // component modifiers
+  //
+
+  // all icons...
+  @include build-icon(arrow-right, $icon-color--default, 12px, 18px);
+  @include build-icon(arrow-left, $icon-color--default, 12px, 18px, before);
+  @include build-icon(print, $icon-color--default, 18px, 18px);
+
+  &--black {
+    @include build-icon(arrow-right, black, 12px, 18px);
+    @include build-icon(arrow-left, black, 12px, 18px, before);
+    @include build-icon(print, black, 18px, 18px);
+  }
+
+  &--white {
+    @include build-icon(arrow-right, white, 12px, 18px);
+    @include build-icon(arrow-left, white, 12px, 18px, before);
+    @include build-icon(print, white, 18px, 18px);
+  }
+}

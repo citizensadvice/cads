@@ -1,0 +1,15 @@
+// ========================================================
+// @tools: fonts
+// ========================================================
+//
+
+// module definition:
+//
+@mixin font($font, $fontWeight) {
+  font-family: #{$font}, sans-serif;
+  font-weight: #{$fontWeight};
+}
+
+// module usage
+//
+// @include font('Open Sans', 400);
