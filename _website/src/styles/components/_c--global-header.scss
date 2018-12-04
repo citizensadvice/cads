@@ -10,11 +10,13 @@
 $global-header-link-color: $monochrome--white;
 $global-header-link-color-hover: $brand--heritageBlue;
 $global-header-nav-item-spacing-horizontal: $spacing--xs / 2;
+$global-header-ds-z-index: 200;
 
 // component block
 .c-global-header {
   &--design-system {
     color: $global-header-link-color;
+    z-index: $global-header-ds-z-index;
 
     a { 
       color: inherit;
