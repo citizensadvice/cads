@@ -1,0 +1,13 @@
+// ========================================================
+// @component: button container
+// ========================================================
+//
+
+// component config
+//
+$btn-container-spacing: $spacing--2xl;
+
+// component block
+.c-btn-container {
+  @include remcalc(margin-top, $btn-container-spacing);
+}

@@ -1,0 +1,23 @@
+.c-fieldset, fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+.c-fieldset__item {
+  display: block;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+  margin-right: 8px;
+  margin-right: 0.5rem;
+}
+
+.c-fieldset__item:last-child {
+  margin-bottom: 0;
+}
+
+.c-fieldset--inline .c-fieldset__item {
+  display: inline-block;
+}

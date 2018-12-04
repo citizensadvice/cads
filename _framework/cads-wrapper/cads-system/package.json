@@ -1,0 +1,52 @@
+{
+  "name": "cads-system",
+  "version": "0.0.0",
+  "license": "MIT",
+  "cads": {
+    "component_type": "system"
+  },
+  "files": [
+    "index.scss",
+    "build/",
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "cads-blockquote": "0.0.0",
+    "cads-box-model": "0.0.0",
+    "cads-button-container": "0.0.0",
+    "cads-buttons": "0.0.0",
+    "cads-character-widths": "0.0.0",
+    "cads-form-elements": "0.0.0",
+    "cads-form-fieldsets": "0.0.0",
+    "cads-form-inputs": "0.0.0",
+    "cads-form-labels": "0.0.0",
+    "cads-form-radios-checkboxes": "0.0.0",
+    "cads-form-selects": "0.0.0",
+    "cads-form-textareas": "0.0.0",
+    "cads-global-footer": "0.0.0",
+    "cads-global-header": "0.0.0",
+    "cads-grid": "0.0.0",
+    "cads-icons": "0.0.0",
+    "cads-line-limit": "0.0.0",
+    "cads-links": "0.0.0",
+    "cads-lists": "0.0.0",
+    "cads-normaliser": "0.0.0",
+    "cads-positioning": "0.0.0",
+    "cads-section-nav": "0.0.0",
+    "cads-spacing": "0.0.0",
+    "cads-support": "0.0.0",
+    "cads-tables": "0.0.0",
+    "cads-typography": "0.0.0",
+    "cads-validation": "0.0.0",
+    "cads-wrapper": "0.0.0"
+  },
+  "scripts": {
+    "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
+    "buildcss:expanded": "node-sass --output-style expanded --include-path ../../node_modules/ ./index.scss ./build/cads.system.css",
+    "buildcss:compressed": "node-sass --output-style compressed --include-path ../../node_modules/ ./index.scss ./build/cads.system.min.css",
+    "clean": "rm -rf ./build"
+  }
+}

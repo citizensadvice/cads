@@ -1,0 +1,27 @@
+// ========================================================
+// @component: validation
+// @dependency: c--form-elements
+// ========================================================
+//
+
+// component config
+//
+$validation-border-color: $extended--redPrimary;
+$validation-message-margin-top: $spacing--xs;
+
+// component block
+//
+input:invalid {
+  border-color: $validation-border-color;
+}
+.input--error{
+  color: $validation-border-color;
+  font-weight: normal;
+  margin-top: $validation-message-margin-top;
+
+  //need to add the warning icon in here once the icons have been pushed
+  // &::before{
+  //     content:url('/assets/images/warning.svg');
+  //     margin-right: 5px;
+  // }
+}

@@ -1,0 +1,23 @@
+// ========================================================
+// @tools: clearfix
+// ========================================================
+//
+
+// mixin definition:
+// http://nicolasgallagher.com/micro-clearfix-hack/
+//
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// mixin usage:
+//
+// @include clearfix();

@@ -1,0 +1,25 @@
+{
+  "name": "cads-lists",
+  "version": "0.0.0",
+  "license": "MIT",
+  "cads": {
+    "component_type": "object"
+  },
+  "files": [
+    "index.scss",
+    "build/",
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "cads-support": "0.0.0"
+  },
+  "scripts": {
+    "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
+    "buildcss:expanded": "node-sass --output-style expanded --include-path ../../node_modules/ ./index.scss ./build/cads.lists.css",
+    "buildcss:compressed": "node-sass --output-style compressed --include-path ../../node_modules/ ./index.scss ./build/cads.lists.min.css",
+    "clean": "rm -rf ./build"
+  }
+}

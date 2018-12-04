@@ -1,0 +1,24 @@
+// ========================================================
+// @tools: rem calculator
+// ========================================================
+//
+
+// settings:
+//
+$global-font-size: 16px; // NOTE: change this once global variables file is set.
+
+// mixin definition:
+//
+@function calculateRem($size) {
+  $remSize: $size / $global-font-size;
+  @return #{$remSize}rem;
+}
+
+@mixin remcalc($element, $value) {
+  #{$element}: $value;
+  #{$element}: calculateRem($value);
+}
+
+// mixin usage:
+//
+// @include remcalc(margin-left, 10px);
