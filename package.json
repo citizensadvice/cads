@@ -1,14 +1,13 @@
 {
   "name": "cads",
   "description": "Citizens Advice Design System",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://citizensadvice.github.io/cads/",
-  "private": true,
   "workspaces": [
     "_framework/*"
   ],
   "devDependencies": {
-    "@cads/system": "0.0.1",
+    "cads-system": "0.0.0",
     "gh-pages": "^2.0.1",
     "lerna": "^3.4.3",
     "node-sass": "^4.10.0",
