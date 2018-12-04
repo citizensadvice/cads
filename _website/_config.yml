@@ -1,8 +1,8 @@
 # site settings:
 title: Citizens Advice Design System
-url: "https://citizensadvice.github.io/ca-designsystem/"
-github_url: "https://github.com/citizensadvice/ca-designsystem"
-baseurl: ""
+url: "https://citizensadvice.github.io/cads"
+github_url: "https://github.com/citizensadvice/cads"
+baseurl: "/cads"
 
 # build settings:
 source: "src"
