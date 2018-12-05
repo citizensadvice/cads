@@ -13,7 +13,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {
+  "dependencies": {
     "@citizensadvice/cads-blockquote": "^0.0.1",
     "@citizensadvice/cads-box-model": "^0.0.1",
     "@citizensadvice/cads-button-container": "^0.0.1",

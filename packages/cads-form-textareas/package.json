@@ -13,7 +13,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {
+  "dependencies": {
     "@citizensadvice/cads-form-elements": "^0.0.1"
   },
   "scripts": {

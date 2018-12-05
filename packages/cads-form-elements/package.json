@@ -13,7 +13,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {
+  "dependencies": {
     "@citizensadvice/cads-support": "^0.0.1"
   }
 }
