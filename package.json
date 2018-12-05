@@ -1,7 +1,6 @@
 {
   "name": "cads",
   "description": "Citizens Advice Design System",
-  "version": "0.0.0",
   "homepage": "https://citizensadvice.github.io/cads/",
   "private": true,
   "workspaces": [

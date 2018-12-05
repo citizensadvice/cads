@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/cads-well",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "cads": {
     "component_type": "component"
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/cads-support": "^0.0.1"
+    "@citizensadvice/cads-support": "^0.0.2"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",

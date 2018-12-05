@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/cads-normaliser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "cads": {
     "component_type": "generic"
@@ -18,5 +18,5 @@
     "buildcss:expanded": "node-sass --output-style expanded --include-path ../../node_modules/ ./index.scss ./build/cads.normaliser.css",
     "buildcss:compressed": "node-sass --output-style compressed --include-path ../../node_modules/ ./index.scss ./build/cads.normaliser.min.css",
     "clean": "rm -rf ./build"
-  }  
+  }
 }
