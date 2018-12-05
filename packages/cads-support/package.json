@@ -1,0 +1,15 @@
+{
+  "name": "@citizensadvice/cads-support",
+  "version": "0.0.3",
+  "license": "MIT",
+  "cads": {
+    "component_type": "support"
+  },
+  "files": [
+    "index.scss",
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,19 @@
+.c-global-footer {
+  background-color: #f2f8ff;
+  max-width: 100%;
+  padding: 16px;
+  padding: 1rem;
+}
+
+@media (min-width: 555px) {
+  .c-global-footer {
+    margin-top: 160px;
+    margin-top: 10rem;
+    padding: 40px;
+    padding: 2.5rem;
+  }
+}
+
+.c-global-footer .c-global-footer__body {
+  margin-bottom: 0;
+}

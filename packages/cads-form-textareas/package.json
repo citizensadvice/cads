@@ -1,0 +1,25 @@
+{
+  "name": "@citizensadvice/cads-form-textareas",
+  "version": "0.0.3",
+  "license": "MIT",
+  "cads": {
+    "component_type": "component"
+  },
+  "files": [
+    "index.scss",
+    "build/",
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@citizensadvice/cads-form-elements": "^0.0.3"
+  },
+  "scripts": {
+    "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
+    "buildcss:expanded": "node-sass --output-style expanded --include-path ../../node_modules/ ./index.scss ./build/cads.form-textareas.css",
+    "buildcss:compressed": "node-sass --output-style compressed --include-path ../../node_modules/ ./index.scss ./build/cads.form-textareas.min.css",
+    "clean": "rm -rf ./build"
+  }
+}

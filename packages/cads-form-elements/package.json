@@ -1,0 +1,19 @@
+{
+  "name": "@citizensadvice/cads-form-elements",
+  "version": "0.0.3",
+  "license": "MIT",
+  "cads": {
+    "component_type": "component"
+  },
+  "files": [
+    "index.scss",
+    "build/",
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@citizensadvice/cads-support": "^0.0.3"
+  }
+}

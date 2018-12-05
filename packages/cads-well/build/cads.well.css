@@ -1,0 +1,18 @@
+.c-well {
+  border-color: #004b88;
+  border-style: solid;
+  border-width: 2px;
+  border-width: 0.125rem;
+  border-radius: 2px;
+  border-radius: 0.125rem;
+  padding: 16px;
+  padding: 1rem;
+}
+
+.c-well *:first-child {
+  margin-top: 0;
+}
+
+.c-well *:last-child {
+  margin-bottom: 0;
+}

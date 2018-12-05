@@ -1,0 +1,47 @@
+// ====================================================================
+// @title: Citizens Advice Design System
+// @author: Citizens Advice
+// @created: 02/2018
+// ====================================================================
+//
+
+// SUPPORT: includes - global variables, config switches, default mixins and functions
+@import "@citizensadvice/cads-support/index.scss";
+
+// GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
+@import "@citizensadvice/cads-normaliser/index.scss";
+@import "@citizensadvice/cads-box-model/index.scss";
+
+// ELEMENTS: unclassed HTML elements (type selectors)
+@import "@citizensadvice/cads-typography/index.scss";
+@import "@citizensadvice/cads-links/index.scss";
+@import "@citizensadvice/cads-tables/index.scss";
+
+// OBJECTS: cosmetic-free design patterns
+@import "@citizensadvice/cads-wrapper/index.scss";
+@import "@citizensadvice/cads-grid/index.scss";
+@import "@citizensadvice/cads-lists/index.scss";
+
+// COMPONENTS: designed components, chunks of UI
+@import "@citizensadvice/cads-global-header/index.scss";
+@import "@citizensadvice/cads-global-footer/index.scss";
+@import "@citizensadvice/cads-buttons/index.scss";
+@import "@citizensadvice/cads-button-container/index.scss";
+@import "@citizensadvice/cads-blockquote/index.scss";
+@import "@citizensadvice/cads-section-nav/index.scss";
+@import "@citizensadvice/cads-form-elements/index.scss";
+@import "@citizensadvice/cads-form-fieldsets/index.scss";
+@import "@citizensadvice/cads-form-inputs/index.scss";
+@import "@citizensadvice/cads-form-labels/index.scss";
+@import "@citizensadvice/cads-form-textareas/index.scss";
+@import "@citizensadvice/cads-form-selects/index.scss";
+@import "@citizensadvice/cads-form-radios-checkboxes/index.scss";
+@import "@citizensadvice/cads-icons/index.scss";
+@import "@citizensadvice/cads-well/index.scss";
+@import "@citizensadvice/cads-validation/index.scss";
+
+// UTILITIES: helpers and overrides
+@import "@citizensadvice/cads-line-limit/index.scss";
+@import "@citizensadvice/cads-spacing/index.scss";
+@import "@citizensadvice/cads-positioning/index.scss";
+@import "@citizensadvice/cads-character-widths/index.scss";
