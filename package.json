@@ -15,7 +15,7 @@
   },
   "scripts": {
     "fresh": "yarn",
-    "clean": "npm-run-all -s clean:packages clean:sandbox clean:website clean:modules",
+    "clean": "npm-run-all -s clean:sandbox clean:website clean:modules",
     "build:packages": "lerna run build",
     "build:sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll build",
     "build:website": "cd ./website/ && bundle install && bundle exec jekyll build",
