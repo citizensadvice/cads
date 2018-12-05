@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/cads-support",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "cads": {
     "component_type": "support"
@@ -11,5 +11,6 @@
   ],
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "425fe1bf5f2f5d837c6af78f09a099a1a7ba7811"
 }

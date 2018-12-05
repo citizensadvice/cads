@@ -3,3 +3,4 @@ node_modules
 .sass-cache
 yarn-error.log
 .vscode
+packages/**/*.tgz
