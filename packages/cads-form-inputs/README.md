@@ -1,7 +1,7 @@
 # Form inputs
 
-![npm](https://img.shields.io/npm/v/:package.svg)
-![AppVeyor branch](https://img.shields.io/appveyor/ci/:user/:repo/:branch.svg)
+![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-form-inputs.svg)
+
 
 ## Component type
 
