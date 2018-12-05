@@ -10,7 +10,7 @@
 ## Installation
 
 ```
-$ npm install cads-box-model
+$ npm install @citizensadvice/cads-box-model
 
 ```
 

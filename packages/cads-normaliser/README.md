@@ -10,7 +10,7 @@
 ## Installation
 
 ```
-$ npm install cads-normaliser
+$ npm install @citizensadvice/cads-normaliser
 ```
 
 ```scss
@@ -21,4 +21,4 @@ $ npm install cads-normaliser
 
 We make use of [Normalize.css]() to bring each browser into line with one another and reset our styles to a base set of styles.
 
-> If you're using the `cads-support` package, you don't need to do anything to bring this package into your application, it's already a dependency.
+> If you're using the `@citizensadvice/cads-support` package, you don't need to do anything to bring this package into your application, it's already a dependency.

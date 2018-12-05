@@ -9,38 +9,38 @@
 
 ## Dependencies:
 
-| Name                           | Type    | Description                                             |
-| ------------------------------ | ------- | ------------------------------------------------------- |
-| `cads-support`                | support | System-wide global variables and functions              |
-| `cads-typography`             | generic | Generic typographic styling                             |
-| `cads-links`                  | generic | Generic links styles                                    |
-| `cads-tables`                 | generic | Generic table styling                                   |
-| `cads-wrapper`                | object  | Component for container elements at a set width         |
-| `cads-grid`                   | object  | Custom grid system                                      |
-| `cads-list`                   | object  | Component for creating lists                            |
-| `cads-global-header`          | module  | System-wide global header                               |
-| `cads-global-footer`          | module  | System-wide global footer                               |
-| `cads-buttons`                | module  | Custom button components                                |
-| `cads-button-container`       | module  | Component for holding buttons                           |
-| `cads-blockquote`             | module  | Custom styles for blockquotes                           |
-| `cads-section-nav`            | module  | Side navigation component styling                       |
-| `cads-form-elements`          | module  | Support tool for `form-` components                     |
-| `cads-form-fieldsets`          | module  | Custom styling for form elements                        |
-| `cads-form-inputs`            | module  | Custom styling for form elements                        |
-| `cads-form-labels`            | module  | Custom styling for form elements                        |
-| `cads-form-textareas`         | module  | Custom styling for form elements                        |
-| `cads-form-selects`           | module  | Custom styling for form elements                        |
-| `cads-form-radios-checkboxes` | module  | Custom styling for form elements                        |
-| `cads-icons`                  | utility | Icon system                                             |
-| `cads-line-limit`             | utility | Helper classes for limiting line length                 |
-| `cads-positioning`            | utility | Helper classes for positioning elements                 |
-| `cads-spacing`                | utility | Helper classes for spacing elements correctly           |
-| `cads-charwidth`              | utility | Helper classes for setting character limits on elements |
+| Name                                          | Type    | Description                                             |
+| --------------------------------------------- | ------- | ------------------------------------------------------- |
+| `@citizensadvice/cads-support`                | support | System-wide global variables and functions              |
+| `@citizensadvice/cads-typography`             | generic | Generic typographic styling                             |
+| `@citizensadvice/cads-links`                  | generic | Generic links styles                                    |
+| `@citizensadvice/cads-tables`                 | generic | Generic table styling                                   |
+| `@citizensadvice/cads-wrapper`                | object  | Component for container elements at a set width         |
+| `@citizensadvice/cads-grid`                   | object  | Custom grid system                                      |
+| `@citizensadvice/cads-list`                   | object  | Component for creating lists                            |
+| `@citizensadvice/cads-global-header`          | module  | System-wide global header                               |
+| `@citizensadvice/cads-global-footer`          | module  | System-wide global footer                               |
+| `@citizensadvice/cads-buttons`                | module  | Custom button components                                |
+| `@citizensadvice/cads-button-container`       | module  | Component for holding buttons                           |
+| `@citizensadvice/cads-blockquote`             | module  | Custom styles for blockquotes                           |
+| `@citizensadvice/cads-section-nav`            | module  | Side navigation component styling                       |
+| `@citizensadvice/cads-form-elements`          | module  | Support tool for `form-` components                     |
+| `@citizensadvice/cads-form-fieldsets`          | module  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-inputs`            | module  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-labels`            | module  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-textareas`         | module  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-selects`           | module  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-radios-checkboxes` | module  | Custom styling for form elements                        |
+| `@citizensadvice/cads-icons`                  | utility | Icon system                                             |
+| `@citizensadvice/cads-line-limit`             | utility | Helper classes for limiting line length                 |
+| `@citizensadvice/cads-positioning`            | utility | Helper classes for positioning elements                 |
+| `@citizensadvice/cads-spacing`                | utility | Helper classes for spacing elements correctly           |
+| `@citizensadvice/cads-charwidth`              | utility | Helper classes for setting character limits on elements |
 
 ## Installation
 
 ```
-$ npm install cads-system
+$ npm install @citizensadvice/cads-system
 ```
 
 ```scss

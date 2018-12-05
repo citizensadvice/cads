@@ -10,7 +10,7 @@
 ## Installation
 
 ```
-$ npm install cads-character-widths
+$ npm install @citizensadvice/cads-character-widths
 ```
 
 ```scss

@@ -10,7 +10,7 @@
 ## Installation
 
 ```
-$ npm install cads-positioning
+$ npm install @citizensadvice/cads-positioning
 ```
 
 ```scss

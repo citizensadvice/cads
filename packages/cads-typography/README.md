@@ -9,14 +9,14 @@
 
 ## Dependencies:
 
-| Name            | Description                                |
-| --------------- | ------------------------------------------ |
-| `cads-support` | System-wide global variables and functions |
+| Name                           | Description                                |
+| ------------------------------ | ------------------------------------------ |
+| `@citizensadvice/cads-support` | System-wide global variables and functions |
 
 ## Installation
 
 ```
-$ npm install cads-typography
+$ npm install @citizensadvice/cads-typography
 ```
 
 ```scss

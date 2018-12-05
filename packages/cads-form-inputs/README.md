@@ -9,14 +9,14 @@
 
 ## Dependencies:
 
-| Name                  | Description                                               |
-| --------------------- | --------------------------------------------------------- |
-| `cads-form-elements` | Placeholder classes for specific use across form elements |
+| Name                                 | Description                                               |
+| ------------------------------------ | --------------------------------------------------------- |
+| `@citizensadvice/cads-form-elements` | Placeholder classes for specific use across form elements |
 
 ## Installation
 
 ```
-$ npm install cads-form-inputs
+$ npm install @citizensadvice/cads-form-inputs
 ```
 
 ```scss

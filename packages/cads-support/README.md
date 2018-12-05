@@ -9,15 +9,15 @@
 
 ## Dependencies:
 
-| Name               | Description                                                                  |
-| ------------------ | ---------------------------------------------------------------------------- |
-| `cads-normaliser` | Normalises browsers stock UI                                                 |
-| `cads-box-model`  | Resets the box-model but allows each component to control it's own box-model |
+| Name                              | Description                                                                  |
+| --------------------------------- | ---------------------------------------------------------------------------- |
+| `@citizensadvice/cads-normaliser` | Normalises browsers stock UI                                                 |
+| `@citizensadvice/cads-box-model`  | Resets the box-model but allows each component to control it's own box-model |
 
 ## Installation
 
 ```
-$ npm install cads-support
+$ npm install @citizensadvice/cads-support
 ```
 
 ```scss
@@ -26,7 +26,7 @@ $ npm install cads-support
 
 ## Implementation
 
-The `cads-support` package makes available some global variables and functions that are heavily used across the framework.
+The `@citizensadvice/cads-support` package makes available some global variables and functions that are heavily used across the framework.
 
 ### Package contents:
 
