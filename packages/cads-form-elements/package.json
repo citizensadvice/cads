@@ -15,6 +15,5 @@
   },
   "devDependencies": {
     "@citizensadvice/cads-support": "^0.0.1"
-  },
-  
+  }
 }

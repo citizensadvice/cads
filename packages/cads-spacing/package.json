@@ -21,6 +21,5 @@
     "buildcss:expanded": "node-sass --output-style expanded --include-path ../../node_modules/ ./index.scss ./build/cads.spacing.css",
     "buildcss:compressed": "node-sass --output-style compressed --include-path ../../node_modules/ ./index.scss ./build/cads.spacing.min.css",
     "clean": "rm -rf ./build"
-  },
-  
+  }
 }
