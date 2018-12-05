@@ -1,0 +1,72 @@
+.c-btn {
+  background: #f2f2f2;
+  border: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: black;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 0;
+  padding: 8px;
+  padding: 0.5rem;
+  outline: none;
+  text-decoration: none;
+}
+
+.c-btn--primary {
+  border: none;
+  background: #81cec6;
+  color: #004b88;
+  line-height: 24px;
+  line-height: 1.5rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+
+.c-btn--primary:hover {
+  background-color: #5cc0b5;
+}
+
+.c-btn--secondary {
+  background: transparent;
+  border: 1px solid #229cff;
+  color: #004b88;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  padding: 8px;
+  padding: 0.5rem;
+}
+
+.c-btn--secondary:hover {
+  background: #caeaff;
+}
+
+.c-btn--action-prev {
+  background-color: #b8e3df;
+}
+
+.c-btn--action-prev:hover {
+  background-color: #81cec6;
+}
+
+.c-btn:focus {
+  outline-width: 2px;
+  outline-width: 0.125rem;
+  outline-style: solid;
+  outline-color: #fcbb69;
+}
+
+.c-btn + .c-btn {
+  margin-left: 8px;
+  margin-left: 0.5rem;
+}
