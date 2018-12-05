@@ -19,5 +19,5 @@
     "buildcss:compressed": "node-sass --output-style compressed --include-path ../../node_modules/ ./index.scss ./build/cads.normaliser.min.css",
     "clean": "rm -rf ./build"
   },
-  "gitHead": "425fe1bf5f2f5d837c6af78f09a099a1a7ba7811"
+  
 }
