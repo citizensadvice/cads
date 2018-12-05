@@ -14,7 +14,7 @@ $ npm install cads-normaliser
 ```
 
 ```scss
-@import "cads-normaliser/index.scss";
+@import "@citizensadvice/cads-normaliser/index.scss";
 ```
 
 ## Implementation

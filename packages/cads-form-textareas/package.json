@@ -1,5 +1,5 @@
 {
-  "name": "cads-form-textareas",
+  "name": "@citizensadvice/cads-form-textareas",
   "version": "0.0.0",
   "license": "MIT",
   "cads": {
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "cads-form-elements": "0.0.0"
+    "@citizensadvice/cads-form-elements": "0.0.0"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",

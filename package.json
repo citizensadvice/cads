@@ -8,7 +8,6 @@
     "packages/*"
   ],
   "devDependencies": {
-    "cads-system": "0.0.0",
     "gh-pages": "^2.0.1",
     "lerna": "^3.4.3",
     "node-sass": "^4.10.0",
@@ -16,7 +15,7 @@
     "npm-run-all": "^4.1.5"
   },
   "scripts": {
-    "fresh": "yarn && lerna bootstrap",
+    "fresh": "yarn",
     "clean": "npm-run-all -s clean:packages clean:sandbox clean:website clean:modules",
     "build:packages": "lerna run build",
     "build:sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll build",
@@ -29,13 +28,13 @@
     "compilecss:website": "node-sass --output-style compressed --include-path ./node_modules/ --include-path ./website/src/styles/ ./website/src/styles/docs.scss ./website/src/styles/docs.css",
     "compilecss:sandbox": "node-sass --output-style compressed --include-path ./node_modules/ --include-path ./sandbox/src/styles/ ./sandbox/src/styles/sandbox.scss ./sandbox/src/styles/sandbox.css",
     "packages:bump": "lerna version --skip-git",
-    "packages:release": "yarn publish --skip-git",
+    "packages:release": "lerna publish --skip-git",
     "serve:sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll serve",
     "serve:website": "cd ./website/ && bundle install && bundle exec jekyll serve",
     "start:sandbox": "npm-run-all -p watchcss:all serve:sandbox",
     "start:website": "npm-run-all -p watchcss:all serve:website",
     "watchcss:all": "nodemon --watch ./packages --watch ./website/src/styles --watch ./sandbox/src/styles --ext scss --exec \"npm run compilecss:all\"",
-    "publish:packages": "npm-run-all -s build:packages packages:bump packages:release",
+    "publish:packages": "npm login && lerna publish --skip-git",
     "publish:website": "yarn build:website && gh-pages -d ./website/_site"
   }
 }

@@ -20,7 +20,7 @@ $ npm install cads-lists
 ```
 
 ```scss
-@import "cads-lists/index.scss";
+@import "@citizensadvice/cads-lists/index.scss";
 ```
 
 ## Implementation

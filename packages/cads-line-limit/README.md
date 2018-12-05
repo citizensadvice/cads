@@ -20,7 +20,7 @@ $ npm install cads-line-limit
 ```
 
 ```scss
-@import "cads-line-limit/index.scss";
+@import "@citizensadvice/cads-line-limit/index.scss";
 ```
 
 ## Implementation

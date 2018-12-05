@@ -20,7 +20,7 @@ $ npm install cads-validation
 ```
 
 ```scss
-@import "cads-validation/index.scss";
+@import "@citizensadvice/cads-validation/index.scss";
 ```
 
 ## Implementation

@@ -20,7 +20,7 @@ $ npm install cads-global-footer
 ```
 
 ```scss
-@import "cads-global-footer/index.scss";
+@import "@citizensadvice/cads-global-footer/index.scss";
 ```
 
 ## Implementation

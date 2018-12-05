@@ -21,7 +21,7 @@ $ npm install cads-support
 ```
 
 ```scss
-@import "cads-support/index.scss";
+@import "@citizensadvice/cads-support/index.scss";
 ```
 
 ## Implementation

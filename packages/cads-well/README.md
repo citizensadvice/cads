@@ -20,7 +20,7 @@ $ npm install cads-well
 ```
 
 ```scss
-@import "cads-well/index.scss";
+@import "@citizensadvice/cads-well/index.scss";
 ```
 
 ## Implementation

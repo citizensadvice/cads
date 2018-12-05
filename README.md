@@ -27,34 +27,34 @@ We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dep
 
 Firstly we need to introduce **ALL** packages available for installation:
 
-| Name                           | Type       | Description                                             |
-| ------------------------------ | ---------- | ------------------------------------------------------- |
-| `@cads/support`                | support    | System-wide global variables and functions              |
-| `@cads/typography`             | generic    | Generic typographic styling                             |
-| `@cads/links`                  | generic    | Generic links styles                                    |
-| `@cads/tables`                 | generic    | Generic table styling                                   |
-| `@cads/wrapper`                | object     | Component for container elements at a set width         |
-| `@cads/grid`                   | object     | Custom grid system                                      |
-| `@cads/list`                   | object     | Component for creating lists                            |
-| `@cads/global-header`          | component  | System-wide global header                               |
-| `@cads/global-footer`          | component  | System-wide global footer                               |
-| `@cads/buttons`                | component  | Custom button components                                |
-| `@cads/button-container`       | component  | Component for holding buttons                           |
-| `@cads/blockquote`             | component  | Custom styles for blockquotes                           |
-| `@cads/section-nav`            | component  | Side navigation component styling                       |
-| `@cads/form-elements`          | component  | Support tool for `form-` components                     |
-| `@cads/form-fieldsets`          | component  | Custom styling for form elements                        |
-| `@cads/form-inputs`            | component  | Custom styling for form elements                        |
-| `@cads/form-labels`            | component  | Custom styling for form elements                        |
-| `@cads/form-textareas`         | component  | Custom styling for form elements                        |
-| `@cads/form-selects`           | component  | Custom styling for form elements                        |
-| `@cads/form-radios-checkboxes` | component  | Custom styling for form elements                        |
-| `@cads/well`                   | component  | Component for separating chunks of content              |
-| `@cads/icons`                  | utility    | Icon system                                             |
-| `@cads/line-limit`             | utility    | Helper classes for limiting line length                 |
-| `@cads/positioning`            | utility    | Helper classes for positioning elements                 |
-| `@cads/spacing`                | utility    | Helper classes for spacing elements correctly           |
-| `@cads/charwidth`              | utility    | Helper classes for setting character limits on elements |
+| Name                           | Type       | Description                                                            |
+| ------------------------------ | ---------- | ---------------------------------------------------------------------- |
+| `@citizensadvice/cads-support`                | support    | System-wide global variables and functions              |
+| `@citizensadvice/cads-typography`             | generic    | Generic typographic styling                             |
+| `@citizensadvice/cads-links`                  | generic    | Generic links styles                                    |
+| `@citizensadvice/cads-tables`                 | generic    | Generic table styling                                   |
+| `@citizensadvice/cads-wrapper`                | object     | Component for container elements at a set width         |
+| `@citizensadvice/cads-grid`                   | object     | Custom grid system                                      |
+| `@citizensadvice/cads-list`                   | object     | Component for creating lists                            |
+| `@citizensadvice/cads-global-header`          | component  | System-wide global header                               |
+| `@citizensadvice/cads-global-footer`          | component  | System-wide global footer                               |
+| `@citizensadvice/cads-buttons`                | component  | Custom button components                                |
+| `@citizensadvice/cads-button-container`       | component  | Component for holding buttons                           |
+| `@citizensadvice/cads-blockquote`             | component  | Custom styles for blockquotes                           |
+| `@citizensadvice/cads-section-nav`            | component  | Side navigation component styling                       |
+| `@citizensadvice/cads-form-elements`          | component  | Support tool for `form-` components                     |
+| `@citizensadvice/cads-form-fieldsets`          | component  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-inputs`            | component  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-labels`            | component  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-textareas`         | component  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-selects`           | component  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-radios-checkboxes` | component  | Custom styling for form elements                        |
+| `@citizensadvice/cads-well`                   | component  | Component for separating chunks of content              |
+| `@citizensadvice/cads-icons`                  | utility    | Icon system                                             |
+| `@citizensadvice/cads-line-limit`             | utility    | Helper classes for limiting line length                 |
+| `@citizensadvice/cads-positioning`            | utility    | Helper classes for positioning elements                 |
+| `@citizensadvice/cads-spacing`                | utility    | Helper classes for spacing elements correctly           |
+| `@citizensadvice/cads-charwidth`              | utility    | Helper classes for setting character limits on elements |
 
 > More detail of each package can be seen in each packages own `README.md`.
 
@@ -63,23 +63,23 @@ Firstly we need to introduce **ALL** packages available for installation:
 Once you've decided on the package(s) you need, run:
 
 ```shell
-$ npm install @cads/[package-name]
+$ npm install @citizensadvice/cads-[package-name]
 ```
 
 ### Folder structure
 
-If you check in your `node_modules` directory you should now have a `@cads/` directory that contains all the packages required to get up and running.
+If you check in your `node_modules` directory you should now have a `@citizensadvice/` directory that contains all the packages required to get up and running.
 
 ```
 node_modules/
-└── @cads/
-  ├── buttons/
+└── @citizensadvice/
+  ├── cads-buttons/
   │ ├── build/
   │ ├── lib/
   │ ├── index.scss
   │ ├── package.json
   │ └── README.md
-  ├── buttons/ 
+  ├── cads-buttons/ 
   │ ├── build/  
   │ ├── lib/
   │ ├── index.scss
@@ -95,15 +95,15 @@ For completeness, we've included an output `.css` file for each component. This 
 #### `lib/`
 
 This directory contains the source files that can be compiled using `sass` during your build process. 
-We're making use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), a methodology from [Harry Roberts](https://csswizardry.com/), which can be better undertood by reading the `@cads/system` `README.md`.
+We're making use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), a methodology from [Harry Roberts](https://csswizardry.com/), which can be better undertood by reading the `@citizensadvice/cads-system` `README.md`.
 
 ### Usage
 
 Now that you've `npm install` the packages into your `node_modules`, link to them like you would any other `scss` file.
 
 ```scss
-@import "@cads/button-container";
-@import "@cads/buttons";
+@import "@citizensadvice/cads-button-container";
+@import "@citizensadvice/cads-buttons";
 ...
 ```
 
@@ -152,7 +152,7 @@ Great you have the repository on your machine now.
 `cd` into the `cads` directory (the `root`), and install all necessary dependencies:
 
 ```shell
-$ yarn fresh
+$ yarn
 ```
 
 We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, but all that dependency management was handled with the above command
@@ -177,14 +177,14 @@ We do have a few extra scripts that can be run when developing the framework and
 
 This is a great area with which to start developing new features and components and to test them out.
 
-The files are located in the `root` of the repo under the directory `_sandbox/`.
+The files are located in the `root` of the repo under the directory `sandbox/`.
 
 ### Sandbox installation
 
 Most of the hard work has already been taken care of by following the [Documentation guide](#Documentation-guide), installing all necessary dependencies in order to run the sandbox.
 
 ```shell
-$ yarn fresh
+$ yarn
 ```
 
 ### Starting the sandbox
@@ -197,7 +197,7 @@ and navigate to `http://localhost:5000`, you should see a very basic page with a
 
 This is another Jekyll site that's running separately to the docs website.
 
-If you need more pages or to simply edit the index page you will need to edit the `_sandbox/app/index.html`. Styles are in the `_sandbox/app/assets/...` directory and if needs be, you should place your images in here too. You have complete freedom to alter this as you see fit. It's essentially a playground for all things Design System, but try **NOT** to commit these changes in your Pull Requests.
+If you need more pages or to simply edit the index page you will need to edit the `sandbox/app/index.html`. Styles are in the `sandbox/app/assets/...` directory and if needs be, you should place your images in here too. You have complete freedom to alter this as you see fit. It's essentially a playground for all things Design System, but try **NOT** to commit these changes in your Pull Requests.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -209,7 +209,7 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 
 - Create a new branch making sure you adhere to the [git style guidelines](#Git-style-guidelines).
 - Use the sandbox to start hacking away at your new feature / fix.
-- If you're fixing the `framework`, make sure to make `CSS` changes in the `_framework/` directory as these are the framework source files.
+- If you're fixing the `framework`, make sure to make `CSS` changes in the `packages/` directory as these are the framework source files.
 - If it's the website you're changing, make those updates in the `website/` directory.
 - Next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
 
@@ -220,19 +220,19 @@ If the changes to the framework have been successful, you'll need to publish the
 Start out by increasing the version number of your packages, this does it for **ALL**.
 
 ```shell
-$ yarn framework:publish
+$ yarn packages:publish
 ```
 
 Follow the instructions, we're following [semantic versioning](https://semver.org/) conventions.
 
-> You will also need to update the website with the new version of the framework. This can be done in `./_website/_config.yml` by changing the string next to the key `framework_version`, after this, follow the details for ["Releasing a new version of the site"](#releasing-a-new-version-of-the-site).
+> You will also need to update the website with the new version of the framework. This can be done in `./website/_config.yml` by changing the string next to the key `framework_version`, after this, follow the details for ["Releasing a new version of the site"](#releasing-a-new-version-of-the-site).
 
 ### Releasing a new version of the site
 
 Simply run
 
 ```shell
-$ yarn build:framework
+$ yarn build:packages
 ```
 
 [Back to top](#citizens-advice-design-system)

@@ -20,7 +20,7 @@ $ npm install cads-grid
 ```
 
 ```scss
-@import "cads-grid/index.scss";
+@import "@citizensadvice/cads-grid/index.scss";
 ```
 
 ## Implementation

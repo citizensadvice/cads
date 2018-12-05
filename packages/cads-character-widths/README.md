@@ -14,7 +14,7 @@ $ npm install cads-character-widths
 ```
 
 ```scss
-@import "cads-character-widths/index.scss";
+@import "@citizensadvice/cads-character-widths/index.scss";
 ```
 
 ## Implementation

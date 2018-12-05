@@ -20,7 +20,7 @@ $ npm install cads-icons
 ```
 
 ```scss
-@import "cads-icons/index.scss";
+@import "@citizensadvice/cads-icons/index.scss";
 ```
 
 ## Icon list

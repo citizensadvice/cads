@@ -20,7 +20,7 @@ $ npm install cads-global-header
 ```
 
 ```scss
-@import "cads-global-header/index.scss";
+@import "@citizensadvice/cads-global-header/index.scss";
 ```
 
 ## Implementation

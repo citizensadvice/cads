@@ -1,5 +1,5 @@
 {
-  "name": "cads-well",
+  "name": "@citizensadvice/cads-well",
   "version": "0.0.0",
   "license": "MIT",
   "cads": {
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "cads-support": "0.0.0"
+    "@citizensadvice/cads-support": "0.0.0"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",

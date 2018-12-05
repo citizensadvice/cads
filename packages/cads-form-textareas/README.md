@@ -20,7 +20,7 @@ $ npm install cads-form-textareas
 ```
 
 ```scss
-@import "cads-form-textareas/index.scss";
+@import "@citizensadvice/cads-form-textareas/index.scss";
 ```
 
 ## Implementation

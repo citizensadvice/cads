@@ -44,7 +44,7 @@ $ npm install cads-system
 ```
 
 ```scss
-@import "cads-system/index.scss";
+@import "@citizensadvice/cads-system/index.scss";
 ```
 
 ## Implementation

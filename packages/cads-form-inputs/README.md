@@ -20,7 +20,7 @@ $ npm install cads-form-inputs
 ```
 
 ```scss
-@import "cads-form-inputs/index.scss";
+@import "@citizensadvice/cads-form-inputs/index.scss";
 ```
 
 ## Implementation

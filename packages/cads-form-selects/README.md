@@ -20,7 +20,7 @@ $ npm install cads-form-selects
 ```
 
 ```scss
-@import "cads-form-selects/index.scss";
+@import "@citizensadvice/cads-form-selects/index.scss";
 ```
 
 ## Implementation

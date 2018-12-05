@@ -20,7 +20,7 @@ $ npm install cads-buttons
 ```
 
 ```scss
-@import "cads-button-container/index.scss";
+@import "@citizensadvice/cads-button-container/index.scss";
 ```
 
 ## Implementation
