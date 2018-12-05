@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/cads-form-fieldsets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "cads": {
     "component_type": "component"
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/cads-support": "^0.0.2"
+    "@citizensadvice/cads-support": "^0.0.3"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
