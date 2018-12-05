@@ -32,7 +32,7 @@
     "start:sandbox": "npm-run-all -p watchcss:all serve:sandbox",
     "start:website": "npm-run-all -p watchcss:all serve:website",
     "watchcss:all": "nodemon --watch ./packages --watch ./website/src/styles --watch ./sandbox/src/styles --ext scss --exec \"npm run compilecss:all\"",
-    "publish:packages": "npm login && lerna publish --skip-git",
+    "publish:packages": "yarn build:packages && npm login && lerna publish --skip-git",
     "publish:website": "yarn build:website && gh-pages -d ./website/_site"
   }
 }
