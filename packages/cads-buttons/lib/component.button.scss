@@ -55,6 +55,7 @@ $btn-secondary-padding:                 $spacing--xs;
     @include remcalc(padding-bottom, $btn-primary-padding-vertical);
     @include remcalc(padding-left, $btn-primary-padding-horizontal);
     @include remcalc(padding-right, $btn-primary-padding-horizontal);
+    border: 2px solid #81cec6;
 
     &:hover {
       background-color: $btn-primary-bgcolor-hover;
@@ -83,9 +84,7 @@ $btn-secondary-padding:                 $spacing--xs;
 
   // component states
   &:focus {
-    @include remcalc(outline-width, $btn-focus-outline-width);
-    outline-style: solid;
-    outline-color: $btn-focus-outline-color;
+    border: $btn-focus-outline-width solid $btn-focus-outline-color;
   }
 
   // two buttons next to one another
