@@ -14,23 +14,21 @@ $validation-message-margin-top: $spacing--sm;
 input:invalid {
   border-color: $validation-border-color;
 }
-.c-validation{
-  color: $validation-border-color;
-  font-weight: normal;
-  margin-top: $validation-message-margin-top;
-  
-  svg {
-    margin-right: 8px;
-    position: relative;
-    top: 1px;
-  }
-}
+.c-validation {
+  &--error {
+    color: $validation-border-color;
+    font-weight: normal;
+    margin-top: $validation-message-margin-top;
+    display: none;
 
-.input--error {
-  display: none;
-  
-  &.active {
-    display: block;
-    margin-top: 12px;
+    &.active {
+      display: block;
+    }
+
+    svg {
+      margin-right: 8px;
+      position: relative;
+      top: 1px;
+    }
   }
 }

@@ -8,16 +8,3 @@
 // IMPORT APPLICATION STYLES
 // ====================================================================
 // add your scss / css here...
-
-.input--error {
-    display: none;
-    svg {
-      margin-right: 8px;
-      position: relative;
-      top: 1px;
-    }
-    &.active {
-      display: block;
-      margin-top: 12px;
-    }
-  }
