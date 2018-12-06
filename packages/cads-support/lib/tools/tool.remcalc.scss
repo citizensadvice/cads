@@ -14,9 +14,13 @@ $global-font-size: 16px; // NOTE: change this once global variables file is set.
   @return #{$remSize}rem;
 }
 
-@mixin remcalc($element, $value) {
-  #{$element}: $value;
-  #{$element}: calculateRem($value);
+@mixin remcalc($element, $value, $imp: null) {
+  @if $imp == important {
+    $imp: !important;
+  }
+
+  #{$element}: $value $imp;
+  #{$element}: calculateRem($value) $imp;
 }
 
 // mixin usage:
