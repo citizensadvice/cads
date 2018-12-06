@@ -5,30 +5,32 @@
 
 // component config
 //
-$btn-focus-outline-color:               $brand--heritageYellow;
-$btn-focus-outline-width:               2px;
+$btn-focus-outline-color: $brand--heritageYellow;
+$btn-focus-outline-width: 2px;
 
-$btn-default-bgcolor:                   $monochrome--paleGrey;
-$btn-default-textcolor:                 $monochrome--black;
-$btn-default-border-width:              2px;
-$btn-default-radius:                    2px;
-$btn-default-padding:                   $spacing--xs;
-$btn-default-sibling-spacing:           $spacing--xs;
+$btn-default-bgcolor: $monochrome--paleGrey;
+$btn-default-textcolor: $monochrome--black;
+$btn-default-border-width: 2px;
+$btn-default-radius: 2px;
+$btn-default-padding: $spacing--xs;
+$btn-default-sibling-spacing: $spacing--xs;
 
-$btn-primary-bgcolor:                   $extended--turquoisePrimary;
-$btn-primary-bgcolor-hover:             $extended--turquoiseDark;
-$btn-primary-textcolor:                 $brand--heritageBlue;
-$btn-primary-line-height:               $spacing--lg;
-$btn-primary-padding-vertical:          $spacing--sm;
-$btn-primary-padding-horizontal:        $spacing--md;
+$btn-primary-bgcolor: $extended--turquoisePrimary;
+$btn-primary-bgcolor-hover: $extended--turquoiseDark;
+$btn-primary-textcolor: $brand--heritageBlue;
+$btn-primary-line-height: $spacing--lg;
+$btn-primary-padding-vertical: $spacing--sm;
+$btn-primary-padding-horizontal: $spacing--md;
 
-$btn-primary-action-prev-bgcolor:       $extended--turquoiseMid;
+$btn-primary-action-prev-bgcolor: $extended--turquoiseMid;
 $btn-primary-action-prev-hover-bgcolor: $extended--turquoisePrimary;
 
-$btn-secondary-bgcolor-hover:           $extended--blueMid;
-$btn-secondary-bordercolor:             $extended--blueDark;
-$btn-secondary-textcolor:               $brand--heritageBlue;
-$btn-secondary-padding:                 $spacing--xs;
+$btn-secondary-bgcolor-hover: $extended--blueMid;
+$btn-secondary-bordercolor: $extended--blueDark;
+$btn-secondary-textcolor: $brand--heritageBlue;
+$btn-secondary-padding: $spacing--xs;
+
+$btn-icon-spacing: $spacing--xs;
 
 // component block
 .c-btn {
@@ -59,6 +61,12 @@ $btn-secondary-padding:                 $spacing--xs;
     &:hover {
       background-color: $btn-primary-bgcolor-hover;
     }
+    svg {
+      position: relative;
+      top: 3px;
+      @include remcalc(margin-left, $btn-icon-spacing);
+      @include remcalc(margin-right, 0px);
+    }
   }
 
   &--secondary {
@@ -72,12 +80,25 @@ $btn-secondary-padding:                 $spacing--xs;
     &:hover {
       background: $btn-secondary-bgcolor-hover;
     }
+
+    svg {
+      position: relative;
+      top: 3px;
+      @include remcalc(margin-left, $btn-icon-spacing);
+      @include remcalc(margin-right, 0px);
+    }
   }
 
   &--action-prev {
     background-color: $btn-primary-action-prev-bgcolor;
     &:hover {
       background-color: $btn-primary-action-prev-hover-bgcolor;
+    }
+    svg {
+      position: relative;
+      top: 3px;
+      @include remcalc(margin-left, 0px);
+      @include remcalc(margin-right, $btn-icon-spacing);
     }
   }
 
