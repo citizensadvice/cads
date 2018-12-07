@@ -25,8 +25,8 @@ $btn-primary-padding-horizontal: $spacing--md;
 $btn-primary-action-prev-bgcolor: $extended--turquoiseMid;
 $btn-primary-action-prev-hover-bgcolor: $extended--turquoisePrimary;
 
-$btn-secondary-bgcolor-hover: $extended--blueMid;
-$btn-secondary-bordercolor: $extended--blueDark;
+$btn-secondary-bgcolor-hover:transparent;
+$btn-secondary-bordercolor: $extended--turquoiseDark;
 $btn-secondary-textcolor: $brand--heritageBlue;
 $btn-secondary-padding: $spacing--xs;
 
@@ -34,6 +34,7 @@ $btn-secondary-padding: $spacing--xs;
 .c-btn {
   @extend %form-elements;
   cursor: pointer;
+  font-weight: 600;
 
   // component modifiers
   &--primary {
@@ -53,23 +54,20 @@ $btn-secondary-padding: $spacing--xs;
 
   &--secondary {
     background: transparent;
-    border: 1px solid $btn-secondary-bordercolor;
+    border-color: $btn-primary-bgcolor-hover !important;
     color: $btn-secondary-textcolor;
-    @include remcalc(font-size, 14px);
-    @include remcalc(line-height, 20px);
-    @include remcalc(padding, $btn-secondary-padding);
 
     &:hover {
-      background: $btn-secondary-bgcolor-hover;
+      background: $extended--turquoiseMid;
+      border-color: $btn-primary-bgcolor-hover !important;
+    }
+    &:focus {
+      border-color: $btn-focus-outline-color !important;
     }
   }
 
   &--action-prev {
-    background-color: $btn-primary-action-prev-bgcolor;
-
-    &:hover {
-      background-color: $btn-primary-action-prev-hover-bgcolor;
-    }
+    background: transparent;
   }
 
   // component states
