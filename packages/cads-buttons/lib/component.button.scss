@@ -32,21 +32,22 @@ $btn-secondary-padding: $spacing--xs;
 
 // component block
 .c-btn {
-  border-radius: $btn-default-radius;
-  color: $btn-default-textcolor;
-  @include remcalc(font-size, 16px);
   @extend %form-elements;
+  cursor: pointer;
 
   // component modifiers
   &--primary {
     background: $btn-primary-bgcolor;
+    border-color: $btn-primary-bgcolor !important;
     color: $btn-primary-textcolor;
-    border-width: $btn-default-border-width;
-    border-style: solid;
-    border-color:$btn-primary-bgcolor;
 
     &:hover {
       background-color: $btn-primary-bgcolor-hover;
+      border-color: $btn-primary-bgcolor-hover !important;
+    }
+
+    &:focus {
+      border-color: $btn-focus-outline-color !important;
     }
   }
 
