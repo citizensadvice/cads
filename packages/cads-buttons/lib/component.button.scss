@@ -25,7 +25,7 @@ $btn-primary-padding-horizontal: $spacing--md;
 $btn-primary-action-prev-bgcolor: $extended--turquoiseMid;
 $btn-primary-action-prev-hover-bgcolor: $extended--turquoisePrimary;
 
-$btn-secondary-bgcolor-hover:transparent;
+$btn-secondary-bgcolor-hover: $extended--turquoiseLight;
 $btn-secondary-bordercolor: $extended--turquoiseDark;
 $btn-secondary-textcolor: $brand--heritageBlue;
 $btn-secondary-padding: $spacing--xs;
@@ -54,11 +54,11 @@ $btn-secondary-padding: $spacing--xs;
 
   &--secondary {
     background: transparent;
-    border-color: $btn-primary-bgcolor-hover !important;
+    border-color: $btn-secondary-bordercolor !important;
     color: $btn-secondary-textcolor;
 
     &:hover {
-      background: $extended--turquoiseMid;
+      background: $btn-secondary-bgcolor-hover;
       border-color: $btn-primary-bgcolor-hover !important;
     }
     &:focus {
