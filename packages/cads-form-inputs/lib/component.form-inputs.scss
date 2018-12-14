@@ -15,7 +15,9 @@ $input-border-color-focus: $form-elements-border-color-focus;
   // component elements
   //
   input {
-    @extend %form-elements;
+    @include input-block;
+    @include input-block-md;
+    @include input-block-outline;
 
     &:focus {
       border-color: $input-border-color-focus;
@@ -24,13 +26,10 @@ $input-border-color-focus: $form-elements-border-color-focus;
 
   // component modifiers
   //
-  &--dateinput,
-  &--dateinput input {
-    @include remcalc(max-width, 72px);
-  }
-
-  &--dateinput-year,
-  &--dateinput-year input {
-    @include remcalc(max-width, 96px);
+  &--sm {
+    input {
+      @include input-block-sm;
+      @include remcalc(border-width, 1px);
+    }
   }
 }
