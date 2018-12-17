@@ -22,7 +22,7 @@ Form validation helps us to ensure that users fill out forms in the correct form
         name="postcode" 
         required />
     </div>
-    <label class="input--error" for="postcode">
+    <label class="c-validation--error" for="postcode">
         Please enter a valid postcode
     </label>
 </fieldset>
@@ -45,7 +45,7 @@ Form validation helps us to ensure that users fill out forms in the correct form
         name="postcode"
         pattern="[a-z]{1,15}"/>
     </div>
-    <label class="input--error" for="postcode">
+    <label class="c-validation--error" for="postcode">
         Please enter a valid postcode
     </label>
 </fieldset>

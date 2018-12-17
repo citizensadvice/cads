@@ -21,7 +21,7 @@ input:invalid {
     margin-top: $validation-message-margin-top;
     display: none;
 
-    &.active {
+    &--active {
       display: block;
     }
 
