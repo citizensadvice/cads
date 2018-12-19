@@ -3,6 +3,7 @@ title: Citizens Advice Design System
 url: "https://citizensadvice.github.io/cads"
 github_url: "https://github.com/citizensadvice/cads"
 baseurl: "/cads"
+host: 0.0.0.0
 
 # build settings:
 source: "src"
