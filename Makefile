@@ -1,13 +1,18 @@
-NAME = cads
+NAME=nyzl/cads
+
+.PHONY: sandbox website
 
 build:
 	docker build . -t $(NAME)
 
 sandbox:
-	docker run -it -p=4000:4000 -e app=start:sandbox $(NAME)
+	docker run -it -p=5000:5000 --name=sandbox $(NAME) yarn start:sandbox
 
 website:
-	docker run -it -p=4000:4000 -e app=start:website $(NAME)
+	docker run -it -p=4000:4000 --name=website $(NAME) yarn start:website
 
 debug:
-	docker run -it $(NAME) /bin/bash
+	docker run -it --name=debug $(NAME) /bin/bash
+
+clean:
+	docker container prune
