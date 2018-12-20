@@ -16,3 +16,6 @@ debug:
 
 clean:
 	docker container prune
+
+pull:
+	docker pull $(NAME)
