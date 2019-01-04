@@ -1,12 +1,11 @@
 // ========================================================
 // @component: select
-// @dependency: c--form-elements
 // ========================================================
 //
 
 // component config
 //
-$select-border-color-focus: $form-elements-border-color-focus;
+$select-border-color-focus: $brand--heritageYellow;
 $select-padding-right: $spacing--2xl;
 $select-icon-size: 6px;
 $select-icon-color: $monochrome--black;
@@ -21,9 +20,9 @@ $select-icon-position-right: $spacing--md;
   // component elements
   //
   select {
-    @include input-block;
-    @include input-block-md;
-    @include input-block-outline;
+    @include interactive-block;
+    @include interactive-block-md;
+    @include interactive-block-outline;
     cursor: pointer;
     @include remcalc(padding-right, $select-padding-right);
     -webkit-appearance: none;
@@ -59,7 +58,7 @@ $select-icon-position-right: $spacing--md;
   //
   &--sm {
     select {
-      @include input-block-sm;
+      @include interactive-block-sm;
       @include remcalc(border-width, 1px);
       @include remcalc(padding-right, $select-padding-right);
     }

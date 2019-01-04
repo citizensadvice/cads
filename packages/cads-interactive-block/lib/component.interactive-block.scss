@@ -1,0 +1,41 @@
+// ========================================================
+// @tools: input-block
+// ========================================================
+//
+
+// settings:
+//
+$interactive-block-border-width: 2px;
+
+// mixin definition:
+//
+@mixin interactive-block {
+  display: inline-block;
+  font-weight: 600;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin interactive-block-outline {
+  @include remcalc(border-radius, $interactive-block-border-width);
+  @include remcalc(border-width, $interactive-block-border-width);
+  border-style: solid;
+  border-color: $monochrome--lightGrey;
+}
+
+@mixin interactive-block-sm {
+  @include remcalc(font-size, 14px);
+  @include remcalc(line-height, 20px);
+  @include remcalc(padding, 8px);
+}
+
+@mixin interactive-block-md {
+  @include remcalc(font-size, 16px);
+  @include remcalc(line-height, 24px);
+  @include remcalc(padding-top, 12px - $interactive-block-border-width);
+  @include remcalc(padding-bottom, 12px - $interactive-block-border-width);
+  @include remcalc(padding-right, 16px - $interactive-block-border-width);
+  @include remcalc(padding-left, 16px - $interactive-block-border-width);
+}

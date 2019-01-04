@@ -11,8 +11,8 @@
 //
 .c-radio,
 .c-checkbox {
-  @include input-block;
-  @include input-block-md;
+  @include interactive-block;
+  @include interactive-block-md;
   cursor: pointer;
   @include remcalc(line-height, 28px);
   position: relative;
@@ -32,7 +32,7 @@
     line-height: 24px;
 
     &:before {
-      @include input-block-outline;
+      @include interactive-block-outline;
       content: '';
       height: 100%;
       left: 0;
@@ -69,7 +69,7 @@
   // component modifiers
   //
   &--sm {
-    @include input-block-sm;
+    @include interactive-block-sm;
 
     label {
       @include remcalc(margin-left, 2px);

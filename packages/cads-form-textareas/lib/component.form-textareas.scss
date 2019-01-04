@@ -6,7 +6,7 @@
 
 // component config
 //
-$textarea-border-color-focus: $form-elements-border-color-focus;
+$textarea-border-color-focus: $brand--heritageYellow;
 
 // component block
 //
@@ -15,9 +15,9 @@ $textarea-border-color-focus: $form-elements-border-color-focus;
   // component elements
   //
   textarea {
-    @include input-block;
-    @include input-block-md;
-    @include input-block-outline;
+    @include interactive-block;
+    @include interactive-block-md;
+    @include interactive-block-outline;
 
     &:focus {
       border-color: $textarea-border-color-focus;
@@ -28,7 +28,7 @@ $textarea-border-color-focus: $form-elements-border-color-focus;
   //
   &--sm {
     textarea {
-      @include input-block-sm;
+      @include interactive-block-sm;
       @include remcalc(border-width, 1px);
     }
   }

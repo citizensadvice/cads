@@ -1,13 +1,12 @@
 {
-  "name": "@citizensadvice/cads-form-elements",
+  "name": "@citizensadvice/cads-interactive-block",
   "version": "0.0.3",
   "license": "MIT",
   "cads": {
-    "component_type": "component"
+    "component_type": "support"
   },
   "files": [
     "index.scss",
-    "build/",
     "lib/"
   ],
   "publishConfig": {

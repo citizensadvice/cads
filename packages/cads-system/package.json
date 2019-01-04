@@ -19,7 +19,6 @@
     "@citizensadvice/cads-button-container": "^0.0.3",
     "@citizensadvice/cads-buttons": "^0.0.3",
     "@citizensadvice/cads-character-widths": "^0.0.3",
-    "@citizensadvice/cads-form-elements": "^0.0.3",
     "@citizensadvice/cads-form-fieldsets": "^0.0.3",
     "@citizensadvice/cads-form-inputs": "^0.0.3",
     "@citizensadvice/cads-form-labels": "^0.0.3",
@@ -41,7 +40,9 @@
     "@citizensadvice/cads-tables": "^0.0.3",
     "@citizensadvice/cads-typography": "^0.0.3",
     "@citizensadvice/cads-validation": "^0.0.3",
-    "@citizensadvice/cads-wrapper": "^0.0.3"
+    "@citizensadvice/cads-well": "^0.0.3",
+    "@citizensadvice/cads-wrapper": "^0.0.3",
+    "@citizensadvice/cads-interactive-block": "^0.0.3"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",

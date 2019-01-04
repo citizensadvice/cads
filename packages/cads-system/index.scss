@@ -7,6 +7,7 @@
 
 // SUPPORT: includes - global variables, config switches, default mixins and functions
 @import "@citizensadvice/cads-support/index.scss";
+@import "@citizensadvice/cads-interactive-block/index.scss";
 
 // GENERIC: ground-zero styles (Normalize.css, resets, box-sizing)
 @import "@citizensadvice/cads-normaliser/index.scss";
@@ -29,7 +30,6 @@
 @import "@citizensadvice/cads-button-container/index.scss";
 @import "@citizensadvice/cads-blockquote/index.scss";
 @import "@citizensadvice/cads-section-nav/index.scss";
-@import "@citizensadvice/cads-form-elements/index.scss";
 @import "@citizensadvice/cads-form-fieldsets/index.scss";
 @import "@citizensadvice/cads-form-inputs/index.scss";
 @import "@citizensadvice/cads-form-labels/index.scss";
