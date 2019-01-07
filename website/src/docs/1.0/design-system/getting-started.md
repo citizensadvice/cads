@@ -19,6 +19,6 @@ Components are reusable and accessible building blocks used to create websites a
 
 ## Getting started
 
-You can get started by installing the [frontend framework](frontend-installation) or [downloading the Sketch template](sketch-template).
+You can get started by installing the [frontend framework](frontend-installation) or [using the Figma library](https://www.figma.com/file/BXpZ8oSZHB9sGMPDwahFaJ/Citizens-Advice-design-system-library?node-id=0%3A404).
 
 You find guidance on how to use foundations and components throughout this website.
