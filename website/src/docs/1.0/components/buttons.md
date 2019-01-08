@@ -22,48 +22,69 @@ If links must be styled as buttons they should be calls to action, such as, Next
 
 In general, use primary buttons for actions that go to the next step
 
+<!-- prettier-ignore-start -->
 {% capture example %}
-<button type="button" class="c-btn c-btn--primary">Primary button</button>
+<button type="button" class="c-btn c-btn--primary">
+   Primary button
+</button>
 {% endcapture %}
 {% include example.html content=example %}
+<!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
 {% capture snippet %}
 <button type="button" class="c-btn c-btn--primary">
-Primary button
+  Primary button
 </button>
 {% endcapture %}
 {% include snippet.html content=snippet %}
-
-There are cases where certain actions require specific button styling. We deal with this by creating modifier classes. An example of this can be seen below for a previous button which requires slightly different colours to a primary button. In this instance we've created the `c-btn--action-prev` class.
-
-{% capture example %}
-<button type="button" class="c-btn c-btn--primary c-btn--action-prev">Previous</button>
-<button type="button" class="c-btn c-btn--primary">Next</button>
-{% endcapture %}
-{% include example.html content=example %}
-
-{% capture snippet %}
-<button type="button" class="c-btn c-btn--primary c-btn--action-prev">
-Previous
-</button>
-{% endcapture %}
-{% include snippet.html content=snippet %}
+<!-- prettier-ignore-end -->
 
 ## Secondary Buttons
 
 Use secondary buttons for actions that happen on the same page.
 
+<!-- prettier-ignore-start -->
 {% capture example %}
-<button type="button" class="c-btn c-btn--secondary">Secondary button</button>
+<button type="button" class="c-btn c-btn--secondary">
+  Secondary button
+</button>
 {% endcapture %}
 {% include example.html content=example %}
+<!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
 {% capture snippet %}
 <button type="button" class="c-btn c-btn--secondary">
-Secondary button
+  Secondary button
 </button>
 {% endcapture %}
 {% include snippet.html content=snippet %}
+<!-- prettier-ignore-end -->
+
+## Tertiary buttons
+
+We also have tertiary buttons which are smaller in size and have a blue border.
+
+When creating a tertiary button, remember to add the `c-btn--sm` class. This is how we'd prefer to see them, but rather than making the `tertiary` class specify this, we'd prefer to use a modifier class which makes it more scalable in future in the code.
+
+<!-- prettier-ignore-start -->
+{% capture example %}
+<button type="button" class="c-btn c-btn--sm c-btn--tertiary">
+  Tertiary button
+</button>
+{% endcapture %}
+{% include example.html content=example %}
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+{% capture snippet %}
+<button type="button" class="c-btn c-btn--sm c-btn--tertiary">
+  Tertiary button
+</button>
+{% endcapture %}
+{% include snippet.html content=snippet %}
+<!-- prettier-ignore-end -->
 
 ## Icons in buttons
 

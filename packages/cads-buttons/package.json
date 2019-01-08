@@ -14,7 +14,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/cads-support": "^0.0.3"
+    "@citizensadvice/cads-support": "^0.0.3",
+    "@citizensadvice/cads-interactive-block": "^0.0.3"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",

@@ -8,9 +8,10 @@
 
 ## Dependencies:
 
-| Name                                 | Description                                               |
-| ------------------------------------ | --------------------------------------------------------- |
-| `@citizensadvice/cads-form-elements` | Placeholder classes for specific use across form elements |
+| Name                                     | Description                                               |
+| ---------------------------------------- | --------------------------------------------------------- |
+| `@citizensadvice/cads-support`           | System-wide global variables and functions                |
+| `@citizensadvice/cads-interactive-block` | Mixins for handling interactive element (buttons, inputs) |
 
 ## Installation
 
