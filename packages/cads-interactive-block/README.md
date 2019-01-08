@@ -1,11 +1,10 @@
-# Form elements
+# Interactive block
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-form-elements.svg)
-
+![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-interactive-block.svg)
 
 ## Component type
 
-- Component
+- Support
 
 ## Dependencies:
 
@@ -16,17 +15,18 @@
 ## Installation
 
 ```
-$ npm install @citizensadvice/cads-form-elements
+$ npm install @citizensadvice/cads-interactive-block
 ```
 
 ```scss
-@import "@citizensadvice/cads-form-elements/index.scss";
+@import "@citizensadvice/cads-interactive-block/index.scss";
 ```
 
 ## Implementation
 
-This package underpins the `forms-` packages that handle:
+This package underpins the `buttons` & `input element` packages that handle:
 
+- `buttons`
 - `inputs`
 - `textareas`
 - `radios / checkboxes`

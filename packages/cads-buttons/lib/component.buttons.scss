@@ -1,0 +1,61 @@
+// ========================================================
+// @component: buttons
+// ========================================================
+//
+
+// component config
+//
+
+// component block
+.c-btn {
+  @include interactive-block;
+  @include interactive-block-outline;
+  @include interactive-block-md;
+
+  // component elements
+  //
+  &:hover {
+    background-color: $extended--blueMid;
+    cursor: pointer;
+  }
+
+  &:focus {
+    border-color: $brand--heritageYellow;
+  }
+
+  // component modifiers
+  //
+  &--sm {
+    @include interactive-block-sm;
+    @include remcalc(border-width, 1px);
+  }
+
+  &--primary {
+    background-color: $extended--turquoisePrimary;
+    border-color: $extended--turquoisePrimary;
+    color: $brand--heritageBlue;
+
+    &:hover {
+      background-color: $extended--turquoiseDark;
+      border-color: $extended--turquoiseDark;
+    }
+
+    &:focus {
+      border-color: $brand--heritageYellow;
+    }
+  }
+
+  &--secondary {
+    border-color: $extended--turquoisePrimary;
+    color: $brand--heritageBlue;
+
+    &:hover {
+      background-color: $extended--turquoiseLight;
+    }
+  }
+
+  &--tertiary {
+    border-color: $extended--blueDark;
+    color: $brand--heritageBlue;
+  }
+}

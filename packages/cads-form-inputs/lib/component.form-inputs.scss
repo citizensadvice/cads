@@ -1,12 +1,11 @@
 // ========================================================
 // @component: inputs
-// @dependency: c--form-elements
 // ========================================================
 //
 
 // component config
 //
-$input-border-color-focus: $form-elements-border-color-focus;
+$input-border-color-focus: $brand--heritageYellow;
 
 // component block
 //
@@ -15,7 +14,9 @@ $input-border-color-focus: $form-elements-border-color-focus;
   // component elements
   //
   input {
-    @extend %form-elements;
+    @include interactive-block;
+    @include interactive-block-md;
+    @include interactive-block-outline;
 
     &:focus {
       border-color: $input-border-color-focus;
@@ -24,13 +25,10 @@ $input-border-color-focus: $form-elements-border-color-focus;
 
   // component modifiers
   //
-  &--dateinput,
-  &--dateinput input {
-    @include remcalc(max-width, 72px);
-  }
-
-  &--dateinput-year,
-  &--dateinput-year input {
-    @include remcalc(max-width, 96px);
+  &--sm {
+    input {
+      @include interactive-block-sm;
+      @include remcalc(border-width, 1px);
+    }
   }
 }
