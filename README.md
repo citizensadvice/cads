@@ -146,7 +146,7 @@ $ git clone https://github.com/citizensadvice/cads.git
 
 Great you have the repository on your machine now.
 
-#### Step #2
+#### Step #2 (only needed to if you want to up[date the base image)
 
 `cd` into the `cads` directory (the `root`), and build the Docker image:
 
@@ -160,7 +160,7 @@ Running the next command will start the Docker container and automatically attac
 Remember to pass the output `pwd` command to this command so it know's where to look for your `cads` directory when sharing with the VM.
 
 ```shell
-$ make start LOC=~/path/to/cads/directory
+$ make start LOC=~/root/path/to/cads/directory
 ```
 
 #### Step #4
