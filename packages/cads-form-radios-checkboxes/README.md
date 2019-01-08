@@ -23,6 +23,9 @@ $ npm install @citizensadvice/cads-form-radios-checkboxes
 @import "@citizensadvice/cads-form-radios-checkboxes/index.scss";
 ```
 
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-form-radios-checkboxes@latest/build/cads.form-radios-checkboxes.css" />`
+
 ## Implementation (Radio buttons)
 
 When using radio buttons:

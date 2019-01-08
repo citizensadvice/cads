@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-support.svg)
 
-
 ## Component type
 
 - Support
@@ -30,7 +29,7 @@ The `@citizensadvice/cads-support` package makes available some global variables
 
 ### Package contents:
 
-| Type       | Description                            |
-| ---------- | -------------------------------------- |
-| `settings` | System-wide variables                  |
-| `tools`    | System-wide functions                  |
+| Type       | Description           |
+| ---------- | --------------------- |
+| `settings` | System-wide variables |
+| `tools`    | System-wide functions |

@@ -23,6 +23,9 @@ $ npm install @citizensadvice/cads-form-textareas
 @import "@citizensadvice/cads-form-textareas/index.scss";
 ```
 
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-form-textareas@latest/build/cads.form-textareas.css" />`
+
 ## Implementation
 
 A textarea gives users a larger amount of space then just a single line text field to type their response. The height of your textarea will set expectations for the user on how much to enter. They may not know that the textarea can expand so make the height proportional to the amount of text to be entered.

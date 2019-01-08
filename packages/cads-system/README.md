@@ -46,6 +46,9 @@ $ npm install @citizensadvice/cads-system
 @import "@citizensadvice/cads-system/index.scss";
 ```
 
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-system@latest/build/cads.system.css" />`
+
 ## Implementation
 
 The Citizens Advice design system is a framework and set of tools to help designers and developers build digital products easily.

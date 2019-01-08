@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-normaliser.svg)
 
-
 ## Component type
 
 - Generic
@@ -16,6 +15,9 @@ $ npm install @citizensadvice/cads-normaliser
 ```scss
 @import "@citizensadvice/cads-normaliser/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-normaliser@latest/build/cads.normaliser.css" />`
 
 ## Implementation
 

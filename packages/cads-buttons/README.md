@@ -23,6 +23,9 @@ $ npm install @citizensadvice/cads-buttons
 @import "@citizensadvice/cads-buttons/index.scss";
 ```
 
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-buttons@latest/build/cads.buttons.css" />`
+
 ## Implementation
 
 Button components take on a couple different forms depending on use case. Pay careful attention of where and when to use specific examples.

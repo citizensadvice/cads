@@ -23,6 +23,9 @@ $ npm install @citizensadvice/cads-form-selects
 @import "@citizensadvice/cads-form-selects/index.scss";
 ```
 
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-form-selects@latest/build/cads.form-selects.css" />`
+
 ## Implementation
 
 > Selects can also be referred to as "Dropdowns".
