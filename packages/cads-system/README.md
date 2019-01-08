@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-system.svg)
 
-
 ## Component type
 
 - System
@@ -25,7 +24,7 @@
 | `@citizensadvice/cads-blockquote`             | module  | Custom styles for blockquotes                           |
 | `@citizensadvice/cads-section-nav`            | module  | Side navigation component styling                       |
 | `@citizensadvice/cads-form-elements`          | module  | Support tool for `form-` components                     |
-| `@citizensadvice/cads-form-fieldsets`          | module  | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-fieldsets`         | module  | Custom styling for form elements                        |
 | `@citizensadvice/cads-form-inputs`            | module  | Custom styling for form elements                        |
 | `@citizensadvice/cads-form-labels`            | module  | Custom styling for form elements                        |
 | `@citizensadvice/cads-form-textareas`         | module  | Custom styling for form elements                        |
@@ -46,6 +45,9 @@ $ npm install @citizensadvice/cads-system
 ```scss
 @import "@citizensadvice/cads-system/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-system@latest/build/cads.system.css" />`
 
 ## Implementation
 

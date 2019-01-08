@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-grid.svg)
 
-
 ## Component type
 
 - Object
@@ -22,6 +21,9 @@ $ npm install @citizensadvice/cads-grid
 ```scss
 @import "@citizensadvice/cads-grid/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-grid@latest/build/cads.grid.css" />`
 
 ## Implementation
 

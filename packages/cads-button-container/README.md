@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-button-container.svg)
 
-
 ## Component type
 
 - Component
@@ -22,6 +21,9 @@ $ npm install @citizensadvice/cads-button-container
 ```scss
 @import "@citizensadvice/cads-button-container/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-button-container@latest/build/cads.button-container.css" />`
 
 ## Implementation
 

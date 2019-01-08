@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-box-model.svg)
 
-
 ## Component Type
 
 - Generic
@@ -17,6 +16,9 @@ $ npm install @citizensadvice/cads-box-model
 ```scss
 @import "@citizensadvice/cads-box-model/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-box-model@latest/build/cads.box-model.css" />`
 
 ## Implementation
 

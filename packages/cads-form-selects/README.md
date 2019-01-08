@@ -2,15 +2,14 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-form-selects.svg)
 
-
 ## Component type
 
 - Component
 
 ## Dependencies:
 
-| Name                                 | Description                                              |
-| -----------------------------------  | -------------------------------------------------------- |
+| Name                                 | Description                                               |
+| ------------------------------------ | --------------------------------------------------------- |
 | `@citizensadvice/cads-form-elements` | Placeholder classes for specific use across form elements |
 
 ## Installation
@@ -22,6 +21,9 @@ $ npm install @citizensadvice/cads-form-selects
 ```scss
 @import "@citizensadvice/cads-form-selects/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-form-selects@latest/build/cads.form-selects.css" />`
 
 ## Implementation
 

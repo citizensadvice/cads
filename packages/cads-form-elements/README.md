@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-form-elements.svg)
 
-
 ## Component type
 
 - Component

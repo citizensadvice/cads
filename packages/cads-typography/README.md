@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-typography.svg)
 
-
 ## Component type
 
 - Element
@@ -22,6 +21,9 @@ $ npm install @citizensadvice/cads-typography
 ```scss
 @import "@citizensadvice/cads-typography/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-typography@latest/build/cads.typography.css" />`
 
 ## Implementation
 

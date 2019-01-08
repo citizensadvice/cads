@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-icons.svg)
 
-
 ## Component type
 
 - Component
@@ -22,6 +21,9 @@ $ npm install @citizensadvice/cads-icons
 ```scss
 @import "@citizensadvice/cads-icons/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-icons@latest/build/cads.icons.css" />`
 
 ## Icon list
 
