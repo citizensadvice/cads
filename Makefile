@@ -4,7 +4,7 @@ CONTAINER_NAME=design-system
 .PHONY: sandbox website
 
 start:
-	docker run -it -p=4000:4000 -p=5000:5000 --name=$(CONTAINER_NAME) -v $(LOC):/CADS $(NAME) 
+	docker run -it -p=4000:4000 -p=5000:5000 --name=$(CONTAINER_NAME) -v $(LOC):/CADS $(NAME) /bin/bash
 
 restart:
 	docker start $(CONTAINER_NAME) && docker attach $(CONTAINER_NAME)

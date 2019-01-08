@@ -19,7 +19,9 @@ Our platform uses the "mono-repo" concept, where all aspects of the Design Syste
 - the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**
 - a **sandbox** environment used as a playground for new component.
 
-We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they requie.
+We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they require.
+
+We also make use of Docker to make sure we avoid the "it works on my machine" statement. We detail the instructions for setting this up in each section, but make sure you've installed [Docker](https://www.docker.com/get-started) beforehand.
 
 ## Framework guide
 
@@ -27,34 +29,34 @@ We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dep
 
 Firstly we need to introduce **ALL** packages available for installation:
 
-| Name                           | Type       | Description                                                            |
-| ------------------------------ | ---------- | ---------------------------------------------------------------------- |
-| `@citizensadvice/cads-support`                | support    | System-wide global variables and functions              |
-| `@citizensadvice/cads-typography`             | generic    | Generic typographic styling                             |
-| `@citizensadvice/cads-links`                  | generic    | Generic links styles                                    |
-| `@citizensadvice/cads-tables`                 | generic    | Generic table styling                                   |
-| `@citizensadvice/cads-wrapper`                | object     | Component for container elements at a set width         |
-| `@citizensadvice/cads-grid`                   | object     | Custom grid system                                      |
-| `@citizensadvice/cads-list`                   | object     | Component for creating lists                            |
-| `@citizensadvice/cads-global-header`          | component  | System-wide global header                               |
-| `@citizensadvice/cads-global-footer`          | component  | System-wide global footer                               |
-| `@citizensadvice/cads-buttons`                | component  | Custom button components                                |
-| `@citizensadvice/cads-button-container`       | component  | Component for holding buttons                           |
-| `@citizensadvice/cads-blockquote`             | component  | Custom styles for blockquotes                           |
-| `@citizensadvice/cads-section-nav`            | component  | Side navigation component styling                       |
-| `@citizensadvice/cads-form-elements`          | component  | Support tool for `form-` components                     |
-| `@citizensadvice/cads-form-fieldsets`          | component  | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-inputs`            | component  | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-labels`            | component  | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-textareas`         | component  | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-selects`           | component  | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-radios-checkboxes` | component  | Custom styling for form elements                        |
-| `@citizensadvice/cads-well`                   | component  | Component for separating chunks of content              |
-| `@citizensadvice/cads-icons`                  | utility    | Icon system                                             |
-| `@citizensadvice/cads-line-limit`             | utility    | Helper classes for limiting line length                 |
-| `@citizensadvice/cads-positioning`            | utility    | Helper classes for positioning elements                 |
-| `@citizensadvice/cads-spacing`                | utility    | Helper classes for spacing elements correctly           |
-| `@citizensadvice/cads-charwidth`              | utility    | Helper classes for setting character limits on elements |
+| Name                                          | Type      | Description                                             |
+| --------------------------------------------- | --------- | ------------------------------------------------------- |
+| `@citizensadvice/cads-support`                | support   | System-wide global variables and functions              |
+| `@citizensadvice/cads-typography`             | generic   | Generic typographic styling                             |
+| `@citizensadvice/cads-links`                  | generic   | Generic links styles                                    |
+| `@citizensadvice/cads-tables`                 | generic   | Generic table styling                                   |
+| `@citizensadvice/cads-wrapper`                | object    | Component for container elements at a set width         |
+| `@citizensadvice/cads-grid`                   | object    | Custom grid system                                      |
+| `@citizensadvice/cads-list`                   | object    | Component for creating lists                            |
+| `@citizensadvice/cads-global-header`          | component | System-wide global header                               |
+| `@citizensadvice/cads-global-footer`          | component | System-wide global footer                               |
+| `@citizensadvice/cads-buttons`                | component | Custom button components                                |
+| `@citizensadvice/cads-button-container`       | component | Component for holding buttons                           |
+| `@citizensadvice/cads-blockquote`             | component | Custom styles for blockquotes                           |
+| `@citizensadvice/cads-section-nav`            | component | Side navigation component styling                       |
+| `@citizensadvice/cads-form-elements`          | component | Support tool for `form-` components                     |
+| `@citizensadvice/cads-form-fieldsets`         | component | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-inputs`            | component | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-labels`            | component | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-textareas`         | component | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-selects`           | component | Custom styling for form elements                        |
+| `@citizensadvice/cads-form-radios-checkboxes` | component | Custom styling for form elements                        |
+| `@citizensadvice/cads-well`                   | component | Component for separating chunks of content              |
+| `@citizensadvice/cads-icons`                  | utility   | Icon system                                             |
+| `@citizensadvice/cads-line-limit`             | utility   | Helper classes for limiting line length                 |
+| `@citizensadvice/cads-positioning`            | utility   | Helper classes for positioning elements                 |
+| `@citizensadvice/cads-spacing`                | utility   | Helper classes for spacing elements correctly           |
+| `@citizensadvice/cads-charwidth`              | utility   | Helper classes for setting character limits on elements |
 
 > More detail of each package can be seen in each packages own `README.md`.
 
@@ -79,8 +81,8 @@ node_modules/
   │ ├── index.scss
   │ ├── package.json
   │ └── README.md
-  ├── cads-buttons/ 
-  │ ├── build/  
+  ├── cads-buttons/
+  │ ├── build/
   │ ├── lib/
   │ ├── index.scss
   │ ├── package.json
@@ -94,7 +96,7 @@ For completeness, we've included an output `.css` file for each component. This 
 
 #### `lib/`
 
-This directory contains the source files that can be compiled using `sass` during your build process. 
+This directory contains the source files that can be compiled using `sass` during your build process.
 We're making use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), a methodology from [Harry Roberts](https://csswizardry.com/), which can be better undertood by reading the `@citizensadvice/cads-system` `README.md`.
 
 ### Usage
@@ -121,11 +123,8 @@ So you'd like to get the documentation up and running on your machine? There are
 
 You need to have the following installed on your machine:
 
-- [node.js](https://nodejs.org/en/) (we recommend installing via [NVM](https://github.com/creationix/nvm))
-- [git](https://git-scm.com/) (we recommend using [Homebrew](https://brew.sh/))
-- [ruby](https://www.ruby-lang.org/en/) (we recommend installing via [RVM](https://rvm.io/rvm/install))
-- [bundler](https://bundler.io/)
-- [yarn](https://yarnpkg.com) (Used for the mono-repo tooling)
+- [Docker](https://www.docker.com/)
+- [Git](https://git-scm.com/) (we recommend using [Homebrew](https://brew.sh/))
 
 ### Setup documentation
 
@@ -149,15 +148,32 @@ Great you have the repository on your machine now.
 
 #### Step #2
 
-`cd` into the `cads` directory (the `root`), and install all necessary dependencies:
+`cd` into the `cads` directory (the `root`), and build the Docker image:
 
 ```shell
-$ yarn
+$ make build
+```
+
+#### Step #3
+
+Running the next command will start the Docker container and automatically attach to it.
+Remember to pass the output `pwd` command to this command so it know's where to look for your `cads` directory when sharing with the VM.
+
+```shell
+$ make start LOC=~/path/to/cads/directory
+```
+
+#### Step #4
+
+If the above was successful, you'll now be inside the VM and can install all dependencies required with the below:
+
+```shell
+$ yarn fresh
 ```
 
 We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, but all that dependency management was handled with the above command
 
-#### Start the docs site
+### Start the docs site
 
 When all the above is complete, we can get the docs up and going by running:
 
@@ -183,8 +199,16 @@ The files are located in the `root` of the repo under the directory `sandbox/`.
 
 Most of the hard work has already been taken care of by following the [Documentation guide](#Documentation-guide), installing all necessary dependencies in order to run the sandbox.
 
+### Starting the Docker container
+
 ```shell
-$ yarn
+$ make start LOC=~/path/to/cads/directory
+```
+
+### Installing the dependencies
+
+```shell
+$ yarn fresh
 ```
 
 ### Starting the sandbox
@@ -193,7 +217,7 @@ $ yarn
 $ yarn start:sandbox
 ```
 
-and navigate to `http://localhost:5000`, you should see a very basic page with a heading. 
+and navigate to `http://localhost:5000`, you should see a very basic page with a heading.
 
 This is another Jekyll site that's running separately to the docs website.
 
@@ -281,12 +305,12 @@ You'll make many different types of change to the codebase over time but most ch
 | Issue type | Description                                                                   |
 | ---------- | ----------------------------------------------------------------------------- |
 | `feat`     | a new feature                                                                 |
-| `fix`       | a bug fix                                                                      |
+| `fix`      | a bug fix                                                                     |
 | `docs`     | changes to documentation                                                      |
 | `style`    | formatting, missing semi colons, etc; no code change                          |
 | `refactor` | refactoring production code                                                   |
 | `test`     | adding tests, refactoring test; no production code change                     |
-| `chore`    | updating build tasks, package manager configs, etc; no production code change  |
+| `chore`    | updating build tasks, package manager configs, etc; no production code change |
 
 While this might feel overkill to dictate how to write commit messages, doing so also means when reviewing Pull Requests, we can quickly see which commit belongs to which ticket without having to match up commit messages to ticket titles.
 
