@@ -123,7 +123,7 @@ So you'd like to get the documentation up and running on your machine? There are
 
 You need to have the following installed on your machine:
 
-- [Docker](https://www.docker.com/)
+- [Docker](https://www.docker.com/) (direct download available through the release notes https://docs.docker.com/docker-for-mac/release-notes/)
 - [Git](https://git-scm.com/) (we recommend using [Homebrew](https://brew.sh/))
 
 ### Setup documentation
