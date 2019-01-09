@@ -63,4 +63,10 @@ $select-icon-position-right: $spacing--md;
       @include remcalc(padding-right, $select-padding-right);
     }
   }
+
+  &--invalid {
+    select {
+      border-color: $extended--redPrimary;
+    }
+  }
 }

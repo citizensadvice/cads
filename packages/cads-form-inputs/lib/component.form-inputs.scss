@@ -6,6 +6,7 @@
 // component config
 //
 $input-border-color-focus: $brand--heritageYellow;
+$input-invalid-border-color-focus: $extended--redPrimary;
 
 // component block
 //
@@ -29,6 +30,12 @@ $input-border-color-focus: $brand--heritageYellow;
     input {
       @include interactive-block-sm;
       @include remcalc(border-width, 1px);
+    }
+  }
+
+  &--invalid {
+    input {
+      border-color: $input-invalid-border-color-focus
     }
   }
 }
