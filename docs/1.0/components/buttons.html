@@ -56,7 +56,7 @@
         
           
           <li class="c-section-nav__section-item">
-            <a href="/cads/docs/1.0/design-system/sketch-template.html">Sketch template</a>
+            <a href="/cads/docs/1.0/design-system/figma-library.html">Figma library</a>
           </li>
           
         
@@ -255,66 +255,99 @@ If you want to link users between pages of a website, use <code class="highlight
 
 <p>In general, use primary buttons for actions that go to the next step</p>
 
+<!-- prettier-ignore-start -->
+
 <div class="c-example">
   <span class="c-example__tag">Example</span>
   <div class="c-example__box">
-<button type="button" class="c-btn c-btn--primary">Primary button</button>
+<button type="button" class="c-btn c-btn--primary">
+   Primary button
+</button>
 </div>
 </div>
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
 
 <div class="c-example c-example--code-snippet">
   <span class="c-example__tag">HTML</span>
   <div class="c-example__box">
   
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn--primary"</span><span class="nt">&gt;</span>
-Primary button
+  Primary button
 <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   </div>
 </div>
 
-<p>There are cases where certain actions require specific button styling. We deal with this by creating modifier classes. An example of this can be seen below for a previous button which requires slightly different colours to a primary button. In this instance we’ve created the <code class="highlighter-rouge">c-btn--action-prev</code> class.</p>
-
-<div class="c-example">
-  <span class="c-example__tag">Example</span>
-  <div class="c-example__box">
-<button type="button" class="c-btn c-btn--primary c-btn--action-prev">Previous</button>
-<button type="button" class="c-btn c-btn--primary">Next</button>
-</div>
-</div>
-
-<div class="c-example c-example--code-snippet">
-  <span class="c-example__tag">HTML</span>
-  <div class="c-example__box">
-  
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn--primary c-btn--action-prev"</span><span class="nt">&gt;</span>
-Previous
-<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-
-  </div>
-</div>
+<!-- prettier-ignore-end -->
 
 <h2 id="secondary-buttons">Secondary Buttons</h2>
 
 <p>Use secondary buttons for actions that happen on the same page.</p>
 
+<!-- prettier-ignore-start -->
+
 <div class="c-example">
   <span class="c-example__tag">Example</span>
   <div class="c-example__box">
-<button type="button" class="c-btn c-btn--secondary">Secondary button</button>
+<button type="button" class="c-btn c-btn--secondary">
+  Secondary button
+</button>
 </div>
 </div>
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
 
 <div class="c-example c-example--code-snippet">
   <span class="c-example__tag">HTML</span>
   <div class="c-example__box">
   
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn--secondary"</span><span class="nt">&gt;</span>
-Secondary button
+  Secondary button
 <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   </div>
 </div>
+
+<!-- prettier-ignore-end -->
+
+<h2 id="tertiary-buttons">Tertiary buttons</h2>
+
+<p>We also have tertiary buttons which are smaller in size and have a blue border.</p>
+
+<p>When creating a tertiary button, remember to add the <code class="highlighter-rouge">c-btn--sm</code> class. This is how we’d prefer to see them, but rather than making the <code class="highlighter-rouge">tertiary</code> class specify this, we’d prefer to use a modifier class which makes it more scalable in future in the code.</p>
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example">
+  <span class="c-example__tag">Example</span>
+  <div class="c-example__box">
+<button type="button" class="c-btn c-btn--sm c-btn--tertiary">
+  Tertiary button
+</button>
+</div>
+</div>
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example c-example--code-snippet">
+  <span class="c-example__tag">HTML</span>
+  <div class="c-example__box">
+  
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn--sm c-btn--tertiary"</span><span class="nt">&gt;</span>
+  Tertiary button
+<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+  </div>
+</div>
+
+<!-- prettier-ignore-end -->
 
 <h2 id="icons-in-buttons">Icons in buttons</h2>
 
