@@ -30,30 +30,30 @@ $spacing-left--xl:   $spacing--xl;
 //
 .u-spacingAll--none    { margin: 0 !important }
 
-.u-spacingTop--xs      { @include remcalc(margin-top, $spacing-top--xs !important) }
-.u-spacingTop--sm      { @include remcalc(margin-top, $spacing-top--sm !important) }
-.u-spacingTop--md      { @include remcalc(margin-top, $spacing-top--md !important) }
-.u-spacingTop--lg      { @include remcalc(margin-top, $spacing-top--lg !important) }
-.u-spacingTop--xl      { @include remcalc(margin-top, $spacing-top--xl !important) }
+.u-spacingTop--xs      { @include remcalc(margin-top, $spacing-top--xs, !important) }
+.u-spacingTop--sm      { @include remcalc(margin-top, $spacing-top--sm, !important) }
+.u-spacingTop--md      { @include remcalc(margin-top, $spacing-top--md, !important) }
+.u-spacingTop--lg      { @include remcalc(margin-top, $spacing-top--lg, !important) }
+.u-spacingTop--xl      { @include remcalc(margin-top, $spacing-top--xl, !important) }
 .u-spacingTop--none    { margin-top: 0 !important }
 
-.u-spacingRight--xs    { @include remcalc(margin-right, $spacing-right--xs !important) }
-.u-spacingRight--sm    { @include remcalc(margin-right, $spacing-right--sm !important) }
-.u-spacingRight--md    { @include remcalc(margin-right, $spacing-right--md !important) }
-.u-spacingRight--lg    { @include remcalc(margin-right, $spacing-right--lg !important) }
-.u-spacingRight--xl    { @include remcalc(margin-right, $spacing-right--xl !important) }
+.u-spacingRight--xs    { @include remcalc(margin-right, $spacing-right--xs, !important) }
+.u-spacingRight--sm    { @include remcalc(margin-right, $spacing-right--sm, !important) }
+.u-spacingRight--md    { @include remcalc(margin-right, $spacing-right--md, !important) }
+.u-spacingRight--lg    { @include remcalc(margin-right, $spacing-right--lg, !important) }
+.u-spacingRight--xl    { @include remcalc(margin-right, $spacing-right--xl, !important) }
 .u-spacingRight--none  { margin-right: 0 !important }
 
-.u-spacingBottom--xs   { @include remcalc(margin-bottom, $spacing-bottom--xs !important) }
-.u-spacingBottom--sm   { @include remcalc(margin-bottom, $spacing-bottom--sm !important) }
-.u-spacingBottom--md   { @include remcalc(margin-bottom, $spacing-bottom--md !important) }
-.u-spacingBottom--lg   { @include remcalc(margin-bottom, $spacing-bottom--lg !important) }
-.u-spacingBottom--xl   { @include remcalc(margin-bottom, $spacing-bottom--xl !important) }
+.u-spacingBottom--xs   { @include remcalc(margin-bottom, $spacing-bottom--xs, !important) }
+.u-spacingBottom--sm   { @include remcalc(margin-bottom, $spacing-bottom--sm, !important) }
+.u-spacingBottom--md   { @include remcalc(margin-bottom, $spacing-bottom--md, !important) }
+.u-spacingBottom--lg   { @include remcalc(margin-bottom, $spacing-bottom--lg, !important) }
+.u-spacingBottom--xl   { @include remcalc(margin-bottom, $spacing-bottom--xl, !important) }
 .u-spacingBottom--none { margin-bottom: 0 !important }
 
-.u-spacingLeft--xs     { @include remcalc(margin-left, $spacing-left--xs !important) }
-.u-spacingLeft--sm     { @include remcalc(margin-left, $spacing-left--sm !important) }
-.u-spacingLeft--md     { @include remcalc(margin-left, $spacing-left--md !important) }
-.u-spacingLeft--lg     { @include remcalc(margin-left, $spacing-left--lg !important) }
-.u-spacingLeft--xl     { @include remcalc(margin-left, $spacing-left--xl !important) }
+.u-spacingLeft--xs     { @include remcalc(margin-left, $spacing-left--xs, !important) }
+.u-spacingLeft--sm     { @include remcalc(margin-left, $spacing-left--sm, !important) }
+.u-spacingLeft--md     { @include remcalc(margin-left, $spacing-left--md, !important) }
+.u-spacingLeft--lg     { @include remcalc(margin-left, $spacing-left--lg, !important) }
+.u-spacingLeft--xl     { @include remcalc(margin-left, $spacing-left--xl, !important) }
 .u-spacingLeft--none   { margin-left: 0 !important }

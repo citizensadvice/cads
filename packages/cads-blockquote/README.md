@@ -22,6 +22,9 @@ $ npm install @citizensadvice/cads-blockquote
 @import "@citizensadvice/cads-blockquote/index.scss";
 ```
 
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-blockquote@latest/build/cads.blockquote.css" />`
+
 ## Implementation
 
 > Documentation coming soon...

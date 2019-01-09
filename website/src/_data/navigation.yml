@@ -4,8 +4,8 @@
       url: /docs/1.0/design-system/getting-started.html
     - title: Frontend installation
       url: /docs/1.0/design-system/frontend-installation.html
-    - title: Sketch template
-      url: /docs/1.0/design-system/sketch-template.html
+    - title: Figma library
+      url: /docs/1.0/design-system/figma-library.html
 - title: Foundations
   sublinks:
     - title: Colours

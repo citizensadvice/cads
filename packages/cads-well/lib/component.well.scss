@@ -10,6 +10,7 @@ $well-border-color-default: $brand--heritageBlue;
 $well-border-width-default: 2px;
 $well-border-radius-default: 2px;
 $well-spacing-horiztonal-default: $spacing--md;
+$well-spacing-vertical-default: $spacing--lg;
 
 // component block
 //
@@ -19,6 +20,7 @@ $well-spacing-horiztonal-default: $spacing--md;
   @include remcalc(border-width, $well-border-width-default);
   @include remcalc(border-radius, $well-border-radius-default);
   @include remcalc(padding, $well-spacing-horiztonal-default);
+  @include remcalc(padding-bottom, $well-spacing-vertical-default);
 
   *:first-child {
     margin-top: 0;

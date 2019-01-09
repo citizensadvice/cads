@@ -2,16 +2,16 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-buttons.svg)
 
-
 ## Component type
 
 - Component
 
 ## Dependencies:
 
-| Name                           | Description                                |
-| ------------------------------ | ------------------------------------------ |
-| `@citizensadvice/cads-support` | System-wide global variables and functions |
+| Name                                     | Description                                               |
+| ---------------------------------------- | --------------------------------------------------------- |
+| `@citizensadvice/cads-support`           | System-wide global variables and functions                |
+| `@citizensadvice/cads-interactive-block` | Mixins for handling interactive element (buttons, inputs) |
 
 ## Installation
 
@@ -22,6 +22,9 @@ $ npm install @citizensadvice/cads-buttons
 ```scss
 @import "@citizensadvice/cads-buttons/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-buttons@latest/build/cads.buttons.css" />`
 
 ## Implementation
 
@@ -50,16 +53,6 @@ In general, use primary buttons for actions that go to the next step
 ```
 <!-- prettier-ignore-end -->
 
-There are cases where certain actions require specific button styling. We deal with this by creating modifier classes. An example of this can be seen below for a previous button which requires slightly different colours to a primary button. In this instance we’ve created the `c-btn--action-prev` class.
-
-<!-- prettier-ignore-start -->
-```html
-<button type="button" class="c-btn c-btn--primary c-btn--action-prev">
-  Previous
-</button>
-```
-<!-- prettier-ignore-end -->
-
 ### Secondary buttons
 
 Use secondary buttons for actions that happen on the same page.
@@ -68,6 +61,20 @@ Use secondary buttons for actions that happen on the same page.
 ```html
 <button type="button" class="c-btn c-btn--secondary">
   Secondary button
+</button>
+```
+<!-- prettier-ignore-end -->
+
+### Tertiary buttons
+
+We also have tertiary buttons which are smaller in size and have a blue border.
+
+When creating a tertiary button, remember to add the `c-btn--sm` class. This is how we'd prefer to see them, but rather than making the `tertiary` class specify this, we'd prefer to use a modifier class which makes it more scalable in future in the code.
+
+<!-- prettier-ignore-start -->
+```html
+<button type="button" class="c-btn c-btn--sm c-btn--tertiary">
+  Tertiary button
 </button>
 ```
 <!-- prettier-ignore-end -->

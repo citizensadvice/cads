@@ -6,7 +6,7 @@ baseurl: "/cads"
 
 # build settings:
 source: "src"
-framework_version: 0.0.1
+framework_version: 0.0.3
 docs_version: 1.0
 markdown: kramdown
 highlighter: rouge

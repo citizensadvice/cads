@@ -2,7 +2,6 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-wrapper.svg)
 
-
 ## Component type
 
 - Object
@@ -22,6 +21,9 @@ $ npm install @citizensadvice/cads-wrapper
 ```scss
 @import "@citizensadvice/cads-wrapper/index.scss";
 ```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/cads-wrapper@latest/build/cads.wrapper.css" />`
 
 ## Implementation
 
