@@ -43,13 +43,6 @@
     &:focus {
       border-color: $brand--heritageYellow;
     }
-
-    svg {
-      position: relative;
-      top: 3px;
-      @include remcalc(margin-left, $spacing--xs);
-      @include remcalc(margin-right, 0px);
-    }
   }
 
   &--secondary {
@@ -59,17 +52,29 @@
     &:hover {
       background-color: $extended--turquoiseLight;
     }
-    svg {
-      position: relative;
-      top: 3px;
-      @include remcalc(margin-left, 0px);
-      @include remcalc(margin-right, $spacing--xs);
-    }
-    
   }
 
   &--tertiary {
     border-color: $extended--blueDark;
     color: $brand--heritageBlue;
   }
+
+  &--w-icon{
+    svg {
+      position: relative;
+      top: 3px;
+      @include remcalc(margin-left, 0px);
+      @include remcalc(margin-right, $spacing--xs);
+    }
+    &__right{
+      svg {
+        position: relative;
+        top: 3px;
+        @include remcalc(margin-left, $spacing--xs);
+        @include remcalc(margin-right, 0px);
+      }
+    }
+  }
 }
+
+
