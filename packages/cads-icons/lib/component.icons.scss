@@ -18,26 +18,38 @@ $icon-color--default: $brand--heritageBlue;
 // component block
 //
 .c-icon {
-  display: inline-block;
-  position: relative;
+  // display: inline-block;
+  // position: relative;
 
-  // component modifiers
-  //
+  // // component modifiers
+  // //
 
-  // all icons...
-  @include build-icon(arrow-right, $icon-color--default, 12px, 18px);
-  @include build-icon(arrow-left, $icon-color--default, 12px, 18px, before);
-  @include build-icon(print, $icon-color--default, 18px, 18px);
+  // // all icons...
+  // @include build-icon(arrow-right, $icon-color--default, 12px, 18px);
+  // @include build-icon(arrow-left, $icon-color--default, 12px, 18px, before);
+  // @include build-icon(print, $icon-color--default, 18px, 18px);
 
-  &--black {
-    @include build-icon(arrow-right, black, 12px, 18px);
-    @include build-icon(arrow-left, black, 12px, 18px, before);
-    @include build-icon(print, black, 18px, 18px);
+  // &--black {
+  //   @include build-icon(arrow-right, black, 12px, 18px);
+  //   @include build-icon(arrow-left, black, 12px, 18px, before);
+  //   @include build-icon(print, black, 18px, 18px);
+  // }
+
+  // &--white {
+  //   @include build-icon(arrow-right, white, 12px, 18px);
+  //   @include build-icon(arrow-left, white, 12px, 18px, before);
+  //   @include build-icon(print, white, 18px, 18px);
+  // }
+
+    position: relative;
+    top: 3px;
+
+  &--left{
+      @include remcalc(margin-left, 0px);
+      @include remcalc(margin-right, $spacing--xs);
   }
-
-  &--white {
-    @include build-icon(arrow-right, white, 12px, 18px);
-    @include build-icon(arrow-left, white, 12px, 18px, before);
-    @include build-icon(print, white, 18px, 18px);
+  &--right{
+      @include remcalc(margin-right, 0px);
+      @include remcalc(margin-left, $spacing--xs);
   }
 }
