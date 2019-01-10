@@ -1,4 +1,4 @@
-# Line limit
+# Flexbox
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads-flexbox.svg)
 
