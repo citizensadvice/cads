@@ -28,7 +28,7 @@
             </g>
           </svg>
         </span>
-        <a class="c-global-header__nav-item" href="https://github.com/citizensadvice/cads/releases/tag/v0.0.3"><small>v</small>0.0.3</a>
+        <a class="c-global-header__nav-item" href="https://github.com/citizensadvice/cads/releases/tag/v0.0.4"><small>v</small>0.0.4</a>
       </div>
     </div>
   </div>
@@ -236,51 +236,230 @@
 
 <p>Form validation helps us to ensure that users fill out forms in the correct format, making sure that submitted data will work successfully with our applications.</p>
 
+<h2 id="input-elements">Input elements</h2>
+
+<p>For all inputs of type <code class="highlighter-rouge">text</code>, <code class="highlighter-rouge">password</code>, <code class="highlighter-rouge">email</code> and <code class="highlighter-rouge">number</code>.</p>
+
+<!-- prettier-ignore-start -->
+
 <div class="c-example">
   <span class="c-example__tag">Example</span>
   <div class="c-example__box">
+
 <fieldset class="c-fieldset">
-    <label class="c-label" for="postcode">
-        What's your postcode?
-    </label>
-    <span class="c-label__metainfo">
-        For example: SW1A 2AA
-    </span>
-    <div class="c-input">
-        <input id="postcode" type="text" name="postcode" required="" />
-    </div>
-    <label class="input--error" for="postcode">
-        Please enter a valid postcode
-    </label>
+  <label class="c-label" for="postcode">What's your postcode?</label>
+  <span class="c-label__metainfo">For example: SW1A 2AA</span>
+  <div class="c-input c-input--invalid">
+    <input id="postcode" type="text" name="postcode" pattern="[a-z]{1,15}" />
+  </div>
+  <span class="c-validation c-validation--invalid" for="postcode">Please enter a valid postcode</span>
 </fieldset>
 </div>
 </div>
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
 
 <div class="c-example c-example--code-snippet">
   <span class="c-example__tag">HTML</span>
   <div class="c-example__box">
   
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"c-fieldset"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-label"</span> <span class="na">for=</span><span class="s">"postcode"</span><span class="nt">&gt;</span>
-        What's your postcode?
-    <span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-label__metainfo"</span><span class="nt">&gt;</span>
-        For example: SW1A 2AA
-    <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-input"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> 
-        <span class="na">id=</span><span class="s">"postcode"</span> 
-        <span class="na">type=</span><span class="s">"text"</span> 
-        <span class="na">name=</span><span class="s">"postcode"</span>
-        <span class="na">pattern=</span><span class="s">"[a-z]{1,15}"</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"input--error"</span> <span class="na">for=</span><span class="s">"postcode"</span><span class="nt">&gt;</span>
-        Please enter a valid postcode
-    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-label"</span> <span class="na">for=</span><span class="s">"postcode"</span><span class="nt">&gt;</span>What's your postcode?<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-label__metainfo"</span><span class="nt">&gt;</span>For example: SW1A 2AA<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-input c-input--invalid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"postcode"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"postcode"</span> <span class="na">pattern=</span><span class="s">"[a-z]{1,15}"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-validation c-validation--invalid"</span> <span class="na">for=</span><span class="s">"postcode"</span><span class="nt">&gt;</span>Please enter a valid postcode<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/fieldset&gt;</span></code></pre></figure>
 
   </div>
 </div>
+
+<!-- prettier-ignore-end -->
+
+<h2 id="radio--checkboxes">Radio / Checkboxes</h2>
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example">
+  <span class="c-example__tag">Example</span>
+  <div class="c-example__box">
+
+<fieldset class="c-fieldset">
+  <legend class="c-label">Did this help?</legend>
+
+  <div class="c-fieldset__item">
+    <div class="c-radio c-radio--invalid">
+      <input checked="" id="yes" value="yes" name="feedback" type="radio" />
+      <label for="yes">Yes</label>
+    </div>
+  </div>
+
+  <div class="c-fieldset__item">
+    <div class="c-radio c-radio--invalid">
+      <input id="no" value="no" name="feedback" type="radio" />
+      <label for="no">No</label>
+    </div>
+  </div>
+  <div class="c-validation c-validation--invalid" for="postcode">Please select an option</div>
+</fieldset>
+</div>
+</div>
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example">
+  <span class="c-example__tag">Example</span>
+  <div class="c-example__box">
+
+<fieldset class="c-fieldset">
+  <legend class="c-fieldset__label">Right and/or left?</legend>
+
+  <div class="c-fieldset__item">
+    <div class="c-checkbox">
+      <input checked="" id="right" value="right" name="direction" type="checkbox" />
+      <label for="right">Right</label>
+    </div>
+  </div>
+
+  <div class="c-fieldset__item">
+    <div class="c-checkbox c-checkbox--invalid">
+      <input id="left" value="left" name="direction" type="checkbox" />
+      <label for="left">Left</label>
+    </div>
+  </div>
+  <div class="c-validation c-validation--invalid" for="postcode">Please select an option</div>
+</fieldset>
+</div>
+</div>
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example c-example--code-snippet">
+  <span class="c-example__tag">HTML</span>
+  <div class="c-example__box">
+  
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"c-fieldset"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"c-fieldset__label"</span><span class="nt">&gt;</span>Right and/or left?<span class="nt">&lt;/legend&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-fieldset__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">"right"</span> <span class="na">value=</span><span class="s">"right"</span> <span class="na">name=</span><span class="s">"direction"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"right"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-fieldset__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox c-checkbox--invalid"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"left"</span> <span class="na">value=</span><span class="s">"left"</span> <span class="na">name=</span><span class="s">"direction"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"left"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-validation c-validation--invalid"</span> <span class="na">for=</span><span class="s">"postcode"</span><span class="nt">&gt;</span>Please select an option<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span></code></pre></figure>
+
+  </div>
+</div>
+
+<!-- prettier-ignore-end -->
+
+<h2 id="select-menus-dropdowns">Select menus (Dropdowns)</h2>
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example">
+  <span class="c-example__tag">Example</span>
+  <div class="c-example__box">
+
+<fieldset class="c-fieldset">
+  <label class="c-label" for="select1">Example dropdown select</label>
+  <div class="c-select c-select--invalid">
+    <select id="select1">
+      <option value="Please select">Please select</option>
+      <option value="Option #1">Option #1</option>
+      <option value="Option #2">Option #2</option>
+      <option value="Option #3">Option #3</option>
+      <option value="Option #4">Option #4</option>
+      <option value="Option #5">Option #5</option>
+    </select>
+  </div>
+  <div class="c-validation c-validation--invalid" for="postcode">Please select one option</div>
+</fieldset>
+</div>
+</div>
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example c-example--code-snippet">
+  <span class="c-example__tag">HTML</span>
+  <div class="c-example__box">
+  
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"c-fieldset"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-label"</span> <span class="na">for=</span><span class="s">"select1"</span><span class="nt">&gt;</span>Example dropdown select<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-select c-select--invalid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Please select"</span><span class="nt">&gt;</span>Please select<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option #1"</span><span class="nt">&gt;</span>Option #1<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option #2"</span><span class="nt">&gt;</span>Option #2<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option #3"</span><span class="nt">&gt;</span>Option #3<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option #4"</span><span class="nt">&gt;</span>Option #4<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option #5"</span><span class="nt">&gt;</span>Option #5<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-validation c-validation--invalid"</span> <span class="na">for=</span><span class="s">"postcode"</span><span class="nt">&gt;</span>Please select one option<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span></code></pre></figure>
+
+  </div>
+</div>
+
+<!-- prettier-ignore-end -->
+
+<h2 id="textareas">Textareas</h2>
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example">
+  <span class="c-example__tag">Example</span>
+  <div class="c-example__box">
+
+<fieldset class="c-fieldset">
+  <label class="c-label" for="message">Message:</label>
+  <div class="c-textarea c-textarea--invalid">
+    <textarea id="message"></textarea>
+  </div>
+  <div class="c-validation c-validation--invalid" for="postcode">Please leave a message</div>
+</fieldset>
+</div>
+</div>
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+
+<div class="c-example c-example--code-snippet">
+  <span class="c-example__tag">HTML</span>
+  <div class="c-example__box">
+  
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"c-fieldset"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-label"</span> <span class="na">for=</span><span class="s">"message"</span><span class="nt">&gt;</span>Message:<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-textarea c-textarea--invalid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"message"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-validation c-validation--invalid"</span> <span class="na">for=</span><span class="s">"postcode"</span><span class="nt">&gt;</span>Please leave a message<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span></code></pre></figure>
+
+  </div>
+</div>
+
+<!-- prettier-ignore-end -->
 </main>
         <footer class="c-global-footer c-global-footer--design-system">
   <p class="c-global-footer__body">
