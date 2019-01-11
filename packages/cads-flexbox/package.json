@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/cads-flexbox",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "cads": {
     "component_type": "utility"

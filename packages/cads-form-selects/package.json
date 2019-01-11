@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/cads-form-selects",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "cads": {
     "component_type": "component"
@@ -14,8 +14,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/cads-interactive-block": "^0.0.4",
-    "@citizensadvice/cads-support": "^0.0.4"
+    "@citizensadvice/cads-interactive-block": "^0.0.5",
+    "@citizensadvice/cads-support": "^0.0.5"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
