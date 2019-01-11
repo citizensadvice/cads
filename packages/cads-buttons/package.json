@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/cads-buttons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "cads": {
     "component_type": "component"
@@ -14,8 +14,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/cads-support": "^0.0.3",
-    "@citizensadvice/cads-interactive-block": "^0.0.3"
+    "@citizensadvice/cads-interactive-block": "^0.0.4",
+    "@citizensadvice/cads-support": "^0.0.4"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
