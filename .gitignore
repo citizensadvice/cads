@@ -4,3 +4,4 @@ node_modules
 yarn-error.log
 .vscode
 packages/**/*.tgz
+packages/**/build/
