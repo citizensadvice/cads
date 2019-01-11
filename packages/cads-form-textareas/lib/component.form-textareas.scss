@@ -32,4 +32,10 @@ $textarea-border-color-focus: $brand--heritageYellow;
       @include remcalc(border-width, 1px);
     }
   }
+
+  &--invalid {
+    textarea {
+      border-color: $extended--redPrimary;
+    }
+  }
 }

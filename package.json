@@ -26,6 +26,7 @@
     "compilecss:all": "npm-run-all compilecss:website compilecss:sandbox",
     "compilecss:website": "node-sass --output-style compressed --include-path ./node_modules/ --include-path ./website/src/styles/ ./website/src/styles/docs.scss ./website/src/styles/docs.css",
     "compilecss:sandbox": "node-sass --output-style compressed --include-path ./node_modules/ --include-path ./sandbox/src/styles/ ./sandbox/src/styles/sandbox.scss ./sandbox/src/styles/sandbox.css",
+    "modules:reset": "npm-run-all -s clean:modules fresh",
     "packages:bump": "lerna version --skip-git",
     "serve:sandbox": "cd ./sandbox/ && bundle install && bundle exec jekyll serve",
     "serve:website": "cd ./website/ && bundle install && bundle exec jekyll serve",

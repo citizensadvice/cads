@@ -4,9 +4,6 @@
 // ========================================================
 //
 
-// component config
-//
-
 // component block
 //
 .c-radio,
@@ -33,6 +30,7 @@
 
     &:before {
       @include interactive-block-outline;
+      background-color: $monochrome--paleGrey;
       content: '';
       height: 100%;
       left: 0;
@@ -53,7 +51,6 @@
       cursor: pointer;
 
       &:before {
-        background-color: $monochrome--paleGrey;
         border-color: $monochrome--grey;
       }
     }
@@ -82,6 +79,12 @@
       &:before {
         @include remcalc(border-width, 1px);
       }
+    }
+  }
+
+  &--invalid {
+    input:before {
+      border-color: $extended--redPrimary;
     }
   }
 }

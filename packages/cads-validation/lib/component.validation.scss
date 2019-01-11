@@ -7,21 +7,16 @@
 // component config
 //
 $validation-border-color: $extended--redPrimary;
-$validation-message-margin-top: $spacing--xs;
+$validation-message-spacing-v: $spacing--sm;
 
 // component block
 //
-input:invalid {
-  border-color: $validation-border-color;
-}
-.input--error{
+.c-validation {
   color: $validation-border-color;
-  font-weight: normal;
-  margin-top: $validation-message-margin-top;
+  display: none;
+  margin-top: $validation-message-spacing-v;
 
-  //need to add the warning icon in here once the icons have been pushed
-  // &::before{
-  //     content:url('/assets/images/warning.svg');
-  //     margin-right: 5px;
-  // }
+  &--invalid {
+    display: block;
+  }
 }
