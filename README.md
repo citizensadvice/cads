@@ -111,6 +111,24 @@ Now that you've `npm install` the packages into your `node_modules`, link to the
 
 > Be sure to add `node_modules` to your included-paths for the above to work correctly.
 
+### Releasing packages
+
+We make use of [Lerna](https://lernajs.io/) in order to make the package releasing process a lot easier to manage. We're making use of the single release version for **ALL** packages, meaning that if one is updated to `v1.0.5` then they all are.
+
+To release a new version of the framework:
+
+- Create a new branch in the form `release/v0.0.0` (inputting the new version number).
+- Run `$ yarn publish:packages` and follow the in terminal commands.
+- With that done, you should have a bunch of file changes that need committing in your packages directories.
+- You'll now need to update the version of the framework displayed on the website in file `./website/_config.yml`.
+- Final task would be to commit and create a PR ready to be merged to `master`.
+
+Once the PR has been confirmed and merged, you can then release a new version of the website by running:
+
+```shell
+$ yarn publish:website
+```
+
 [Back to top](#citizens-advice-design-system)
 
 ## Documentation guide
