@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include helmet.html %}
-  </head>
-  <body>
-    <div class="c-hero">
-      <div class="c-hero__contents">
-        <h1 class="c-hero__title">Cabui</h1>
-        <h2 class="c-hero__subtitle">The Citizens Advice Design System</h2>
-      </div>
-    </div>
 
-    <div class="o-grid">
-      <div class="o-grid__unit">
-        <div class="u-center-contents">
-          <a class="c-btn c-btn--primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/design-system/getting-started">Getting started</a>
-          <a class="c-btn c-btn--primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/design-system/frontend-installation">Installation</a>
+<head>
+  {% include helmet.html %}
+</head>
+
+<body>
+  <div class="c-hero">
+    <div class="c-hero__contents">
+      <h1 class="c-hero__title">CADS</h1>
+      <h2 class="c-hero__subtitle">Citizens Advice Design System</h2>
+    </div>
+  </div>
+
+  <div class="o-grid">
+    <div class="o-grid__unit">
+      <div class="u-center-contents">
+        <div class="c-btn-container">
+          <a class="c-btn c-btn--primary u-spacingRight--xs" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/design-system/getting-started">Get
+            started</a>
+          <a class="c-btn c-btn--primary  u-spacingLeft--xs" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/design-system/frontend-installation">Installation</a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -20,7 +20,7 @@ $hero-spacing--2xl: $spacing--2xl;
     @include remcalc(padding-top, $hero-spacing--2xl * 2);
     @include remcalc(padding-bottom, $hero-spacing--2xl * 2);
   }
-  @include remcalc(margin-bottom, $hero-spacing--2xl);
+
   width: 100%;
 
   &__contents {
@@ -35,7 +35,8 @@ $hero-spacing--2xl: $spacing--2xl;
 
   &__subtitle {
     color: white;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
