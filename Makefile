@@ -6,6 +6,8 @@ CONTAINER_NAME=design-system
 
 start:
 	docker run -it -p=4000:4000 -p=5000:5000 --name=$(CONTAINER_NAME) -v $(LOC):/CADS $(NAME) /bin/bash
+	docker exec -dt design-system yarn
+	docker exec -it design-system /bin/bash
 
 start_local:
 	docker run -it -p=4000:4000 -p=5000:5000 --name=$(CONTAINER_NAME) -v $(LOC):/CADS $(LOCAL_NAME) /bin/bash
