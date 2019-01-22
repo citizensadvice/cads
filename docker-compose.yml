@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+
+
+
+  website:
+    container_name: cads_website
+    image: nyzl/cads
+    ports: ["4000:4000"]
+    volumes:
+      - .:/CADS
+    networks:
+      - new
+    command: [ "yarn", "start:website" ]
+
+  sandbox:
+    container_name: cads_sandbox
+    image: nyzl/cads
+    ports: ["5000:5000"]
+    volumes:
+      - .:/CADS
+    networks:
+      - new
+    command: [ "yarn", "start:sandbox" ]
+
+networks:
+  new:
