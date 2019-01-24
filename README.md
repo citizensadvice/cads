@@ -164,7 +164,7 @@ $ git clone https://github.com/citizensadvice/cads.git
 
 Great you have the repository on your machine now.
 
-#### Step #2 (only needed to if you want to up[date the base image)
+#### Step #2 (only needed to if you want to update the base image)
 
 `cd` into the `cads` directory (the `root`), and build the Docker image:
 
@@ -178,30 +178,31 @@ Running the next command will start the Docker container and automatically attac
 Remember to pass the output `pwd` command to this command so it know's where to look for your `cads` directory when sharing with the VM.
 
 ```shell
-$ make start LOC=~/root/path/to/cads/directory
+$ make start
 ```
 
 #### Step #4
 
-If the above was successful, you'll now be inside the VM and can install all dependencies required with the below:
+If the above was successful, you'll now have the website documentation and sandbox running locally:
+you can use the following to attach to the contains for installing new modules or debugging
 
 ```shell
-$ yarn fresh
+$ make attach-sandbox
+```
+
+or
+
+```shell
+$ make attach-website
 ```
 
 We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, but all that dependency management was handled with the above command
 
 ### Start the docs site
 
-When all the above is complete, we can get the docs up and going by running:
+When all the above is complete, we can get the docs up and going.
 
-```shell
-$ yarn start:website
-```
-
-This will start Jekyll and compile the stylesheets / scripts.
-
-Now if you open a browser window at `http://localhost:4000` you should see the homepage.
+Open a browser window at `http://localhost:4000` you should see the homepage.
 
 We do have a few extra scripts that can be run when developing the framework and the documentation. Open up the `root` `package.json` to see these.
 
@@ -220,19 +221,7 @@ Most of the hard work has already been taken care of by following the [Documenta
 ### Starting the Docker container
 
 ```shell
-$ make start LOC=~/path/to/cads/directory
-```
-
-### Installing the dependencies
-
-```shell
-$ yarn fresh
-```
-
-### Starting the sandbox
-
-```shell
-$ yarn start:sandbox
+$ make start
 ```
 
 and navigate to `http://localhost:5000`, you should see a very basic page with a heading.
