@@ -178,8 +178,15 @@ Running the next command will start the Docker container and automatically attac
 Remember to pass the output `pwd` command to this command so it know's where to look for your `cads` directory when sharing with the VM.
 
 ```shell
+$ make
+```
+
+or
+
+```shell
 $ make start
 ```
+
 
 #### Step #4
 
