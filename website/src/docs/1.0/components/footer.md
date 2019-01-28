@@ -10,7 +10,7 @@ Footers help users find what they need after scrolling to the bottom of a page. 
 {% capture example %}
 <main>Site content will end here...</main>
 
-<footer class="c-global-footer u-spacingBottom--none">
+<footer class="c-global-footer u-spacingBottom--none" role="contentinfo">
   <p class="u-spacingBottom--none">
     Copyright &copy; 2018 Citizens Advice. All rights reserved.<br>
     Citizens Advice is an operating name of the National Association of Citizens Advice Bureaux. Registered charity number 279057<br>
@@ -22,7 +22,7 @@ Footers help users find what they need after scrolling to the bottom of a page. 
 {% include example.html content=example %}
 
 {% capture snippet %}
-<footer class="c-global-footer u-spacingBottom--none">
+<footer class="c-global-footer u-spacingBottom--none" role="contentinfo" >
   <div class="c-wrap">
     <p class="u-spacingBottom--none">
       Copyright &copy; 2018 Citizens Advice. All rights reserved.<br>
