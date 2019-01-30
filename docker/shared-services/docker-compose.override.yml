@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  db:
+    ports:
+      - 5432:5432
+    volumes:
+      - ../../:/app
+
+  sidekiqweb:
+    image: markfletcher/sidekiqweb
+    container_name: sidekiqweb.test
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:sidekiqweb.test"
+      - "traefik.docker.network: cita"
+      - "traefik.port=3030"
+    links:
+      - redis
+    env_file: ./docker/default.env
+
+  searchhead:
+    image: mobz/elasticsearch-head:5
+    container_name: searchhead.test
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:searchhead.test"
+      - "traefik.docker.network: cita"
+      - "traefik.port=9100"
+    ports:
+      - 9100
+    links:
+      - search

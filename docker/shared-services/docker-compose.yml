@@ -1,0 +1,103 @@
+version: '3'
+
+services:
+  proxy:
+    image: traefik:alpine
+    command: --configFile=/traefik.toml
+    container_name: proxy.test
+    ports:
+      - "3000:3000"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.toml:/traefik.toml
+
+  wait-proxy:
+    image: citizensadvice/dockerize:0.6.1
+    command: dockerize -wait http://proxy:8080 -timeout 120s
+
+  wait:
+    image: citizensadvice/dockerize:0.6.1
+    command: dockerize -wait http://proxy:8080 --wait tcp://db:5432 -wait tcp://search:9200 -wait tcp://cache:6379 -wait tcp://redis:6379 -timeout 120s
+    links:
+      - db
+      - search
+      - cache
+      - redis
+
+  db:
+    image: postgres:9.6.11
+    ports:
+      - "5432"
+    container_name: db.test
+    volumes:
+      - data-db:/var/lib/postgresql/data
+    env_file: ./docker/default.env
+
+  cache:
+    image: redis:3.0.7
+    container_name: cache.test
+    command: redis-server --maxmemory 100mb --maxmemory-policy allkeys-lru
+
+  redis:
+    image: redis:3.0.7
+    container_name: queue.test
+    command: redis-server --maxmemory 100mb --maxmemory-policy noeviction
+
+  search:
+    image: citizensadvice/elasticsearch:6.2.4
+    container_name: search.test
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:search.test"
+      - "traefik.docker.network: cita"
+      - "traefik.port=9200"
+    volumes:
+      - ./config/elasticsearch/jvm.options:/usr/share/elasticsearch/config/jvm.options
+      - data-search:/usr/share/elasticsearch/data
+    environment:
+      - ES_HEAP_SIZE=
+
+  mailcatcher:
+    image: citizensadvice/mailcatcher
+    container_name: mailcatcher.test
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:mailcatcher.test"
+      - "traefik.docker.network: cita"
+      - "traefik.port=1080"
+    ports:
+      - "1025"
+      - "1080"
+
+  fakes3:
+    image: minio/minio:RELEASE.2017-02-16T01-47-30Z
+    container_name: fakes3.test
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:fakes3.test"
+    command: server /export
+    volumes:
+      - data-files:/export
+    ports:
+      - "9000"
+    env_file: ./docker/default.env
+
+  clamav:
+    image: citizensadvice/clamav
+    container_name: clamav.test
+    volumes:
+      - data-clamav:/var/lib/clamav
+    ports:
+      - "3310"
+
+volumes:
+  data-db: {}
+  data-search: {}
+  data-files: {}
+  data-clamav: {}
+
+networks:
+  default:
+    external:
+      name: cita

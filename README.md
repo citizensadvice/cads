@@ -164,46 +164,21 @@ $ git clone https://github.com/citizensadvice/cads.git
 
 Great you have the repository on your machine now.
 
-#### Step #2 (only needed to if you want to up[date the base image)
+#### Step #2
 
-`cd` into the `cads` directory (the `root`), and build the Docker image:
+You need to setup our shared services sub-project, we use this across different projects to offer a standard set of docker components.
 
-```shell
-$ make build
-```
+Follow the getting started steps in [shared services](docker/shared-services/README.md)
 
 #### Step #3
 
-Running the next command will start the Docker container and automatically attach to it.
-Remember to pass the output `pwd` command to this command so it know's where to look for your `cads` directory when sharing with the VM.
+To build the docker containers and start the local development environment run the following command:
 
 ```shell
-$ make start LOC=~/root/path/to/cads/directory
+$ bin/docker/reset
 ```
 
-#### Step #4
-
-If the above was successful, you'll now be inside the VM and can install all dependencies required with the below:
-
-```shell
-$ yarn fresh
-```
-
-We run the documentation site on the [Jekyll](https://jekyllrb.com/) platform, but all that dependency management was handled with the above command
-
-### Start the docs site
-
-When all the above is complete, we can get the docs up and going by running:
-
-```shell
-$ yarn start:website
-```
-
-This will start Jekyll and compile the stylesheets / scripts.
-
-Now if you open a browser window at `http://localhost:4000` you should see the homepage.
-
-We do have a few extra scripts that can be run when developing the framework and the documentation. Open up the `root` `package.json` to see these.
+Now if you open a browser window at [http://cads-website.test:3000](http://cads-website.test:3000) you should see the design system homepage.
 
 [Back to top](#citizens-advice-design-system)
 
@@ -213,29 +188,7 @@ This is a great area with which to start developing new features and components 
 
 The files are located in the `root` of the repo under the directory `sandbox/`.
 
-### Sandbox installation
-
-Most of the hard work has already been taken care of by following the [Documentation guide](#Documentation-guide), installing all necessary dependencies in order to run the sandbox.
-
-### Starting the Docker container
-
-```shell
-$ make start LOC=~/path/to/cads/directory
-```
-
-### Installing the dependencies
-
-```shell
-$ yarn fresh
-```
-
-### Starting the sandbox
-
-```shell
-$ yarn start:sandbox
-```
-
-and navigate to `http://localhost:5000`, you should see a very basic page with a heading.
+Once you have setup your environment navigate to [http://cads-sandbox.test:3000](http://cads-sandbox.test:3000), you should see a very basic page with a heading.
 
 This is another Jekyll site that's running separately to the docs website.
 
@@ -322,7 +275,7 @@ You'll make many different types of change to the codebase over time but most ch
 
 | Issue type | Description                                                                   |
 | ---------- | ----------------------------------------------------------------------------- |
-| `feat`     | a new feature                                                                 |
+| `feature`  | a new feature                                                                 |
 | `fix`      | a bug fix                                                                     |
 | `docs`     | changes to documentation                                                      |
 | `style`    | formatting, missing semi colons, etc; no code change                          |

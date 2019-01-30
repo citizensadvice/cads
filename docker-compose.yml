@@ -1,0 +1,52 @@
+version: "3"
+
+services:
+  cads:
+    build: .
+    image: "cads${CADS_VERSION_TAG}"
+    container_name: cads-shell.test
+    labels:
+      - "traefik.enable=false"
+    command: /bin/bash
+    env_file:
+      - ./docker/default.env
+
+  cads-website:
+    image: "cads${CADS_VERSION_TAG}"
+    container_name: cads-website.test
+    labels:
+      - "traefik.port=4000"
+      - "traefik.backend=cads-website"
+      - "traefik.frontend.rule=Host: cads-website.test"
+      - "traefik.enable=true"
+    working_dir: /cads/website
+    command: bundle exec puma -p 4000
+    ports:
+      - "4000"
+    env_file:
+      - ./docker/default.env
+    environment:
+      - JEKYLL_SITE=website
+
+  cads-sandbox:
+    image: "cads${CADS_VERSION_TAG}"
+    container_name: cads-sandbox.test
+    labels:
+      - "traefik.port=4000"
+      - "traefik.backend=cads-sandbox"
+      - "traefik.frontend.rule=Host: cads-sandbox.test"
+      - "traefik.enable=true"
+    working_dir: /cads/sandbox
+    command: bundle exec puma -p 4000
+    ports:
+      - "4000"
+    env_file:
+      - ./docker/default.env
+    environment:
+      - JEKYLL_SITE=sandbox
+    command: bundle exec puma -p 4000
+
+networks:
+  default:
+    external:
+      name: cita

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+CALL_LOCATION=`pwd`
+
+get_script_dir () {
+     SOURCE="${BASH_SOURCE[0]}"
+     while [ -h "$SOURCE" ]; do
+          DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+          SOURCE="$( readlink "$SOURCE" )"
+          [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+     done
+     DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+     echo "$DIR"
+}
+
+source $(get_script_dir)/compose_files
+
+cd $(get_script_dir)/..
+
+echo "$(date) - Pulling shared services containers"
+docker-compose ${COMPOSE_FILES[@]} pull --ignore-pull-failures --quiet proxy db cache redis search mailcatcher fakes3 clamav
+
+cd $CALL_LOCATION

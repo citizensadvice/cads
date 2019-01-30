@@ -1,0 +1,87 @@
+@startuml
+
+component dockerd [
+  Docker Daemon
+] 
+
+node "Docker Runtime" as dockerformac {
+  dockerd ->> dockerformac
+  node "Shared Services" as services {
+    frame "HTTP Reverse Proxy" as proxy {
+      queue proxy [
+        1. Traefik
+        ----
+        http://proxy.test:8080
+      ]
+    }
+    proxy ..>> dockerd : auto-configure\ncontainer routing
+
+    frame persistence  as "Persistence" {
+      database db [
+        2. Postgres
+        ----
+        db.test:5432
+      ]
+
+      database redis [
+        3. Redis
+        ----
+        cache.test:6379
+        ----
+        queue.test:6379
+      ]
+
+      database search [
+        4. Elastic Search
+        ----
+        http://search.test:3000
+      ]
+
+      storage fakes3 [
+        5. Minio
+        ----
+        http://fakes3.test:3000
+      ]
+    }
+
+    frame "Utility Services" as utils {
+      component clamav [
+        6. Clam Anti Virus
+        ----
+        clamav.test:3310
+      ]
+    }
+
+    frame "Developer Utilities" as utilities {
+      component sidekiqweb [
+        8. Sidekiq Web
+        ----
+        http://sidekiqweb.test:3000
+      ]
+      sidekiqweb ->> redis
+
+      component searchhead [
+        7. Elastic Search Head
+        ----
+        http:/searchhead.test:3000
+      ]
+
+      component mailcatcher [
+        9. Mailcatcher
+        ----
+        http://mailcatcher.test:3000
+        ----
+        mailcatcher.test:1025
+      ]
+      searchhead ->> search
+    }
+    proxy -left->> utilities
+
+    proxy -[hidden]- persistence
+
+    proxy ->> search
+    proxy ->> fakes3
+  }
+}
+
+@enduml

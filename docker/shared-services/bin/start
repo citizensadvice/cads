@@ -1,0 +1,28 @@
+#!/bin/bash
+
+CALL_LOCATION=`pwd`
+
+get_script_dir () {
+     SOURCE="${BASH_SOURCE[0]}"
+     while [ -h "$SOURCE" ]; do
+          DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+          SOURCE="$( readlink "$SOURCE" )"
+          [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+     done
+     DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+     echo "$DIR"
+}
+
+source $(get_script_dir)/network
+source $(get_script_dir)/compose_files
+
+cd $(get_script_dir)/..
+
+echo "$(date) - Starting shared services"
+docker-compose ${COMPOSE_FILES[@]} up --no-recreate -d proxy db cache redis search mailcatcher fakes3 clamav
+
+echo "$(date) - Waiting for shared services to finish launching"
+docker-compose ${COMPOSE_FILES[@]} run --rm wait
+
+cd $CALL_LOCATION
+echo "$(date) - Shared services launched"

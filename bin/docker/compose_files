@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+
+COMPOSE_FILES=(-f docker-compose.yml)
+
+if [[ "$PRODUCTION" != "true" ]]; then
+  COMPOSE_FILES+=( -f docker-compose.override.yml)
+fi
+
+if [[ "$MOCK_OKTA" == "true" ]]; then
+  COMPOSE_FILES+=( -f docker-compose.mock-okta.yml)
+fi
+
+if [[ "$TAG_MANAGER" == "true" ]]; then
+  COMPOSE_FILES+=( -f docker-compose.tag-manager.yml)
+fi
+
+if [[ "$REPORTS" == "true" ]]; then
+  COMPOSE_FILES+=( -f docker-compose.reports.yml)
+fi

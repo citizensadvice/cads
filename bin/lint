@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+echo 'Running stylelint'
+bundle exec npm run lint:styles --silent || (err=$?; echo "Stylelint failed" && (exit "$err"))
+echo 'Stylelint completed'

@@ -1,0 +1,67 @@
+@startuml
+
+actor developer
+
+node workstation {
+  component dnsmasq [
+    dnsmasq
+    ====
+    .test domain - resolve to localhost
+  ]
+
+  component browser
+  developer =down=>> browser
+  browser ~right~>> dnsmasq : dns\nlookups
+
+  node "Docker Tools" as docker {
+    component "Docker Compose"
+    component "Docker CLI"
+  }
+
+  developer =down=>> docker
+
+  browser -[hidden]right- docker
+
+  folder "Project Files" as appfolder {
+  }
+
+  component "IDE" as ide {
+  }
+
+  developer ->> ide
+  ide ->> appfolder
+
+  node "Docker Runtime" as dockerformac {
+    docker -down->> dockerformac : orchestrates
+
+    node "Application\nIn Development" as app
+    app ->> appfolder
+
+    node "shared\nservices" as services {
+      frame "HTTP Reverse Proxy" as proxy {
+      }
+
+      frame "Persistence" as persistence {
+      }
+
+      frame "Utility Services" as utils {
+      }
+
+      frame "Developer Utilities" as dev_utils {
+      }
+
+      proxy ->> dev_utils
+      proxy -down->> persistence
+      utils -[hidden]right- persistence
+    }
+
+    browser ->> proxy : http\nrequests
+
+    app <<-down->> proxy : http\nrequests
+
+    app -down->> persistence
+    app ->> utils
+  }
+}
+
+@enduml

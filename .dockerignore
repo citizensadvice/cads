@@ -1,0 +1,15 @@
+.git*
+.vscode
+.DS_Store
+
+Dockerfile
+docker
+bin/docker
+
+node_modules
+
+website/.sass-cache
+website/_site
+
+website/.sass-cache
+sandbox/_site

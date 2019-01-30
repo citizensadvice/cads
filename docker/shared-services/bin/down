@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo "Stopping shared services..."
+
+CALL_LOCATION=`pwd`
+
+get_script_dir () {
+     SOURCE="${BASH_SOURCE[0]}"
+     while [ -h "$SOURCE" ]; do
+          DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+          SOURCE="$( readlink "$SOURCE" )"
+          [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+     done
+     DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+     echo "$DIR"
+}
+
+source $(get_script_dir)/compose_files
+
+cd $(get_script_dir)/..
+
+docker-compose ${COMPOSE_FILES[@]} down $@
+
+cd $CALL_LOCATION
+
+echo "Shared services stopped..."

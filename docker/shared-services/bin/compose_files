@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+COMPOSE_FILES=(-f docker-compose.yml)
+
+if [[ "$PRODUCTION" != "true" ]]; then
+  COMPOSE_FILES+=( -f docker-compose.override.yml)
+fi

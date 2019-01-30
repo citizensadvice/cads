@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+source docker/shared-services/bin/network
+source bin/docker/compose_files
+
+docker-compose ${COMPOSE_FILES[@]} run --rm --no-deps cads bin/lint

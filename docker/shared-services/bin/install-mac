@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e  
+
+brew update
+brew bundle
+
+cp dnsmasq.conf /usr/local/etc/dnsmasq.conf
+sudo brew services start dnsmasq
+
+sudo mkdir -p /etc/resolver
+
+sudo tee /etc/resolver/test >/dev/null <<EOF
+nameserver 127.0.0.1
+EOF

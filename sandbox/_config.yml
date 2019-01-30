@@ -4,7 +4,5 @@ baseurl: ""
 host: 0.0.0.0
 
 # build settings:
-source: "src"
 markdown: kramdown
 highlighter: rouge
-port: 5000
