@@ -1,0 +1,8 @@
+// ========================================================
+// @cads-support: breakpoints
+// ========================================================
+//
+
+$breakpoint-not-small: "screen and (min-width: 48rem)"; // min 768px
+$breakpoint-medium: "screen and (min-width: 48rem) and (max-width: 64rem)"; // min 768px to max 1024px
+$breakpoint-large: "screen and (min-width: 64rem)"; // min 1024px

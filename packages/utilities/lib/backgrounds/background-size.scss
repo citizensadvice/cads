@@ -1,0 +1,42 @@
+// ========================================================
+// @cads-support: background-size
+// ========================================================
+//
+
+.bg-cover {
+  background-size: cover !important;
+}
+
+.bg-contain {
+  background-size: contain !important;
+}
+
+@media #{$breakpoint-not-small} {
+  .bg-cover-ns {
+    background-size: cover !important;
+  }
+
+  .bg-contain-ns {
+    background-size: contain !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .bg-cover-m {
+    background-size: cover !important;
+  }
+
+  .bg-contain-m {
+    background-size: contain !important;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .bg-cover-l {
+    background-size: cover !important;
+  }
+
+  .bg-contain-l {
+    background-size: contain !important;
+  }
+}

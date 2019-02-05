@@ -1,0 +1,90 @@
+// ========================================================
+// @cads-support: font-size
+// ========================================================
+//
+
+.font-size-1 {
+  font-size: $font-size-1 !important;
+}
+
+.font-size-2 {
+  font-size: $font-size-2 !important;
+}
+
+.font-size-3 {
+  font-size: $font-size-3 !important;
+}
+
+.font-size-4 {
+  font-size: $font-size-4 !important;
+}
+
+.font-size-5 {
+  font-size: $font-size-5 !important;
+}
+
+@media #{$breakpoint-not-small} {
+  .font-size-1-ns {
+    font-size: $font-size-1 !important;
+  }
+
+  .font-size-2-ns {
+    font-size: $font-size-2 !important;
+  }
+
+  .font-size-3-ns {
+    font-size: $font-size-3 !important;
+  }
+
+  .font-size-4-ns {
+    font-size: $font-size-4 !important;
+  }
+
+  .font-size-5-ns {
+    font-size: $font-size-5 !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .font-size-1-m {
+    font-size: $font-size-1 !important;
+  }
+
+  .font-size-2-m {
+    font-size: $font-size-2 !important;
+  }
+
+  .font-size-3-m {
+    font-size: $font-size-3 !important;
+  }
+
+  .font-size-4-m {
+    font-size: $font-size-4 !important;
+  }
+
+  .font-size-5-m {
+    font-size: $font-size-5 !important;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .font-size-1-l {
+    font-size: $font-size-1 !important;
+  }
+
+  .font-size-2-l {
+    font-size: $font-size-2 !important;
+  }
+
+  .font-size-3-l {
+    font-size: $font-size-3 !important;
+  }
+
+  .font-size-4-l {
+    font-size: $font-size-4 !important;
+  }
+
+  .font-size-5-l {
+    font-size: $font-size-5 !important;
+  }
+}

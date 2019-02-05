@@ -1,0 +1,29 @@
+// ========================================================
+// @cads-support: line-limit
+// ========================================================
+//
+
+/*
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+
+// Line limit width is 592px. This is based on the ideal words per line for readability.
+
+.line-limit-width {
+  max-width: $line-limit-width !important;
+}
+
+@media #{$breakpoint-not-small} {
+  max-width: $line-limit-width !important;
+}
+
+@media #{$breakpoint-medium} {
+  max-width: $line-limit-width !important;
+}
+
+@media #{$breakpoint-large} {
+  max-width: $line-limit-width !important;
+}

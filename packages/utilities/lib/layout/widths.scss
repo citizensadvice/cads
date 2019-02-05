@@ -1,0 +1,122 @@
+// ========================================================
+// @cads-support: widths
+// ========================================================
+//
+
+.char-width-2 {
+  max-width: $char-width-2 !important;
+}
+
+.char-width-4 {
+  max-width: $char-width-4 !important;
+}
+
+.char-width-8 {
+  max-width: $char-width-8 !important;
+}
+
+.char-width-20 {
+  max-width: $char-width-20 !important;
+}
+
+.w-quarter {
+  width: 25% !important;
+}
+
+.w-three-quarters {
+  width: 75% !important;
+}
+
+.w-third {
+  width: calc(100%/3) !important;
+}
+
+.w-two-thirds {
+  width: calc(100%/3*2) !important;
+}
+
+.w-half {
+  width: 50% !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+@media #{$breakpoint-not-small} {
+  .w-quarter-ns {
+    width: 25% !important;
+  }
+  
+  .w-three-quarters-ns {
+    width: 75% !important;
+  }
+  
+  .w-third-ns {
+    width: calc(100%/3) !important;
+  }
+  
+  .w-two-thirds-ns {
+    width: calc(100%/3*2) !important;
+  }
+  
+  .w-half-ns {
+    width: 50% !important;
+  }
+  
+  .w-full-ns {
+    width: 100% !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .w-quarter-m {
+    width: 25% !important;
+  }
+  
+  .w-three-quarters-m {
+    width: 75% !important;
+  }
+  
+  .w-third-m {
+    width: calc(100%/3) !important;
+  }
+  
+  .w-two-thirds-m {
+    width: calc(100%/3*2) !important;
+  }
+  
+  .w-half-m {
+    width: 50% !important;
+  }
+  
+  .w-full-m {
+    width: 100% !important;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .w-quarter-l {
+    width: 25% !important;
+  }
+  
+  .w-three-quarters-l {
+    width: 75% !important;
+  }
+  
+  .w-third-l {
+    width: calc(100%/3) !important;
+  }
+  
+  .w-two-thirds-l {
+    width: calc(100%/3*2) !important;
+  }
+  
+  .w-half-l {
+    width: 50% !important;
+  }
+  
+  .w-full-l {
+    width: 100% !important;
+  }
+}

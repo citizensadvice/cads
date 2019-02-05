@@ -1,0 +1,74 @@
+// ========================================================
+// @cads-support: text-align
+// ========================================================
+//
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media #{$breakpoint-not-small} {
+  .text-left-ns {
+    text-align: left;
+  }
+
+  .text-right-ns {
+    text-align: right;
+  }
+
+  .text-center-ns {
+    text-align: center;
+  }
+
+  .text-justify-ns {
+    text-align: justify;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .text-left-m {
+    text-align: left;
+  }
+
+  .text-right-m {
+    text-align: right;
+  }
+
+  .text-center-m {
+    text-align: center;
+  }
+
+  .text-justify-m {
+    text-align: justify;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .text-left-l {
+    text-align: left;
+  }
+
+  .text-right-l {
+    text-align: right;
+  }
+
+  .text-center-l {
+    text-align: center;
+  }
+
+  .text-justify-l {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,30 @@
+// ========================================================
+// @cads-support: gutter
+// ========================================================
+//
+
+.gutter {
+  margin-left: -$spacing-2;
+  margin-right: -$spacing-2;
+}
+
+@media #{$breakpoint-not-small} {
+.gutter-ns {
+  margin-left: -$spacing-2;
+  margin-right: -$spacing-2;
+}
+}
+
+@media #{$breakpoint-medium} {
+  .gutter-m {
+    margin-left: -$spacing-2;
+    margin-right: -$spacing-2;
+  }
+  }
+
+@media #{$breakpoint-large} {
+  .gutter-l {
+    margin-left: -$spacing-2;
+    margin-right: -$spacing-2;
+  }
+  }

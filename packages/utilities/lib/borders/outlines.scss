@@ -1,0 +1,12 @@
+// ========================================================
+// @cads-support: outlines
+// ========================================================
+//
+
+.outline-none {
+  outline: 0;
+}
+
+.outline-heritage-yellow {
+  outline: $border-scale-1 solid $heritage-yellow;
+}

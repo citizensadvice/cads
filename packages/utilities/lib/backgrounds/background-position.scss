@@ -1,0 +1,110 @@
+// ========================================================
+// @cads-support: background-position
+// ========================================================
+//
+
+.bg-center {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.bg-top {
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+}
+
+.bg-right {
+  background-repeat: no-repeat !important;
+  background-position: center right !important;
+}
+
+.bg-bottom {
+  background-repeat: no-repeat !important;
+  background-position: bottom center !important;
+}
+
+.bg-left {
+  background-repeat: no-repeat !important;
+  background-position: center left !important;
+}
+
+@media #{$breakpoint-not-small} {
+  .bg-center-ns {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+
+  .bg-top-ns {
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+  }
+
+  .bg-right-ns {
+    background-repeat: no-repeat !important;
+    background-position: center right !important;
+  }
+
+  .bg-bottom-ns {
+    background-repeat: no-repeat !important;
+    background-position: bottom center !important;
+  }
+
+  .bg-left-ns {
+    background-repeat: no-repeat !important;
+    background-position: center left !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .bg-center-m {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+
+  .bg-top-m {
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+  }
+
+  .bg-right-m {
+    background-repeat: no-repeat !important;
+    background-position: center right !important;
+  }
+
+  .bg-bottom-m {
+    background-repeat: no-repeat !important;
+    background-position: bottom center !important;
+  }
+
+  .bg-left-m {
+    background-repeat: no-repeat !important;
+    background-position: center left !important;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .bg-center-l {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+
+  .bg-top-l {
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+  }
+
+  .bg-right-l {
+    background-repeat: no-repeat !important;
+    background-position: center right !important;
+  }
+
+  .bg-bottom-l {
+    background-repeat: no-repeat !important;
+    background-position: bottom center !important;
+  }
+
+  .bg-left-l {
+    background-repeat: no-repeat !important;
+    background-position: center left !important;
+  }
+}

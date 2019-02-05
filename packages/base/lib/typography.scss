@@ -1,0 +1,74 @@
+// ========================================================
+// @cads-base: typography
+// ========================================================
+//
+
+html {
+  font-size: $font-size-2;
+}
+
+body {
+  color: $heritage-blue;
+  font-family: $font-family;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+p,
+.p {
+  margin: $spacing-0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  color: $heritage-blue;
+}
+
+h1,
+.h1 {
+  font-size: $font-size-5;
+  line-height: $line-height-5;
+  margin-bottom: $spacing-7;
+  font-weight: $font-weight-extra-bold;
+}
+
+h2,
+.h2 {
+  font-size: $font-size-4;
+  line-height: $line-height-4;
+  margin-top: $spacing-7;
+  margin-bottom: $spacing-4;
+  font-weight: $font-weight-bold;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-3;
+  line-height: $line-height-3;
+  margin-top: $spacing-7;
+  margin-bottom: $spacing-4;
+  font-weight: $font-weight-semi-bold;
+}
+
+p,
+.p {
+  font-size: $font-size-2;
+  line-height: $line-height-2;
+  margin-bottom: $spacing-4;
+}
+
+em {
+  font-style: italic
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}

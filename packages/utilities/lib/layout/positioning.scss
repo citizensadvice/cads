@@ -1,0 +1,586 @@
+// ========================================================
+// @cads-support: positioning
+// ========================================================
+//
+
+.static {
+  position: static !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.top-0 {
+  top: $spacing-0 !important;
+}
+
+.top-1 {
+  top: $spacing-1 !important;
+}
+
+.top-2 {
+  top: $spacing-2 !important;
+}
+
+.top-3 {
+  top: $spacing-3 !important;
+}
+
+.top-4 {
+  top: $spacing-4 !important;
+}
+
+.top-5 {
+  top: $spacing-5 !important;
+}
+
+.top-6 {
+  top: $spacing-6 !important;
+}
+
+.top-7 {
+  top: $spacing-7 !important;
+}
+
+.right-0 {
+  right: $spacing-0 !important;
+}
+
+.right-1 {
+  right: $spacing-1 !important;
+}
+
+.right-2 {
+  right: $spacing-2 !important;
+}
+
+.right-3 {
+  right: $spacing-3 !important;
+}
+
+.right-4 {
+  right: $spacing-4 !important;
+}
+
+.right-5 {
+  right: $spacing-5 !important;
+}
+
+.right-6 {
+  right: $spacing-6 !important;
+}
+
+.right-7 {
+  right: $spacing-7 !important;
+}
+
+.bottom-0 {
+  bottom: $spacing-0 !important;
+}
+
+.bottom-1 {
+  bottom: $spacing-1 !important;
+}
+
+.bottom-2 {
+  bottom: $spacing-2 !important;
+}
+
+.bottom-3 {
+  bottom: $spacing-3 !important;
+}
+
+.bottom-4 {
+  bottom: $spacing-4 !important;
+}
+
+.bottom-5 {
+  bottom: $spacing-5 !important;
+}
+
+.bottom-6 {
+  bottom: $spacing-6 !important;
+}
+
+.bottom-7 {
+  bottom: $spacing-7 !important;
+}
+
+.left-0 {
+  left: $spacing-0 !important;
+}
+
+.left-1 {
+  left: $spacing-1 !important;
+}
+
+.left-2 {
+  left: $spacing-2 !important;
+}
+
+.left-3 {
+  left: $spacing-3 !important;
+}
+
+.left-4 {
+  left: $spacing-4 !important;
+}
+
+.left-5 {
+  left: $spacing-5 !important;
+}
+
+.left-6 {
+  left: $spacing-6 !important;
+}
+
+.left-7 {
+  left: $spacing-7 !important;
+}
+
+@media #{$breakpoint-not-small} {
+  .static-ns {
+    position: static !important;
+  }
+
+  .relative-ns {
+    position: relative !important;
+  }
+
+  .absolute-ns {
+    position: absolute !important;
+  }
+
+  .fixed-ns {
+    position: fixed !important;
+  }
+
+  .top-0-ns {
+    top: $spacing-0 !important;
+  }
+
+  .top-1-ns {
+    top: $spacing-1 !important;
+  }
+
+  .top-2-ns {
+    top: $spacing-2 !important;
+  }
+
+  .top-3-ns {
+    top: $spacing-3 !important;
+  }
+
+  .top-4-ns {
+    top: $spacing-4 !important;
+  }
+
+  .top-5-ns {
+    top: $spacing-5 !important;
+  }
+
+  .top-6-ns {
+    top: $spacing-6 !important;
+  }
+
+  .top-7-ns {
+    top: $spacing-7 !important;
+  }
+
+  .right-0-ns {
+    right: $spacing-0 !important;
+  }
+
+  .right-1-ns {
+    right: $spacing-1 !important;
+  }
+
+  .right-2-ns {
+    right: $spacing-2 !important;
+  }
+
+  .right-3-ns {
+    right: $spacing-3 !important;
+  }
+
+  .right-4-ns {
+    right: $spacing-4 !important;
+  }
+
+  .right-5-ns {
+    right: $spacing-5 !important;
+  }
+
+  .right-6-ns {
+    right: $spacing-6 !important;
+  }
+
+  .right-7-ns {
+    right: $spacing-7 !important;
+  }
+
+  .bottom-0-ns {
+    bottom: $spacing-0 !important;
+  }
+
+  .bottom-1-ns {
+    bottom: $spacing-1 !important;
+  }
+
+  .bottom-2-ns {
+    bottom: $spacing-2 !important;
+  }
+
+  .bottom-3-ns {
+    bottom: $spacing-3 !important;
+  }
+
+  .bottom-4-ns {
+    bottom: $spacing-4 !important;
+  }
+
+  .bottom-5-ns {
+    bottom: $spacing-5 !important;
+  }
+
+  .bottom-6-ns {
+    bottom: $spacing-6 !important;
+  }
+
+  .bottom-7-ns {
+    bottom: $spacing-7 !important;
+  }
+
+  .left-0-ns {
+    left: $spacing-0 !important;
+  }
+
+  .left-1-ns {
+    left: $spacing-1 !important;
+  }
+
+  .left-2-ns {
+    left: $spacing-2 !important;
+  }
+
+  .left-3-ns {
+    left: $spacing-3 !important;
+  }
+
+  .left-4-ns {
+    left: $spacing-4 !important;
+  }
+
+  .left-5-ns {
+    left: $spacing-5 !important;
+  }
+
+  .left-6-ns {
+    left: $spacing-6 !important;
+  }
+
+  .left-7-ns {
+    left: $spacing-7 !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .static-m {
+    position: static !important;
+  }
+
+  .relative-m {
+    position: relative !important;
+  }
+
+  .absolute-m {
+    position: absolute !important;
+  }
+
+  .fixed-m {
+    position: fixed !important;
+  }
+
+  .top-0-m {
+    top: $spacing-0 !important;
+  }
+
+  .top-1-m {
+    top: $spacing-1 !important;
+  }
+
+  .top-2-m {
+    top: $spacing-2 !important;
+  }
+
+  .top-3-m {
+    top: $spacing-3 !important;
+  }
+
+  .top-4-m {
+    top: $spacing-4 !important;
+  }
+
+  .top-5-m {
+    top: $spacing-5 !important;
+  }
+
+  .top-6-m {
+    top: $spacing-6 !important;
+  }
+
+  .top-7-m {
+    top: $spacing-7 !important;
+  }
+
+  .right-0-m {
+    right: $spacing-0 !important;
+  }
+
+  .right-1-m {
+    right: $spacing-1 !important;
+  }
+
+  .right-2-m {
+    right: $spacing-2 !important;
+  }
+
+  .right-3-m {
+    right: $spacing-3 !important;
+  }
+
+  .right-4-m {
+    right: $spacing-4 !important;
+  }
+
+  .right-5-m {
+    right: $spacing-5 !important;
+  }
+
+  .right-6-m {
+    right: $spacing-6 !important;
+  }
+
+  .right-7-m {
+    right: $spacing-7 !important;
+  }
+
+  .bottom-0-m {
+    bottom: $spacing-0 !important;
+  }
+
+  .bottom-1-m {
+    bottom: $spacing-1 !important;
+  }
+
+  .bottom-2-m {
+    bottom: $spacing-2 !important;
+  }
+
+  .bottom-3-m {
+    bottom: $spacing-3 !important;
+  }
+
+  .bottom-4-m {
+    bottom: $spacing-4 !important;
+  }
+
+  .bottom-5-m {
+    bottom: $spacing-5 !important;
+  }
+
+  .bottom-6-m {
+    bottom: $spacing-6 !important;
+  }
+
+  .bottom-7-m {
+    bottom: $spacing-7 !important;
+  }
+
+  .left-0-m {
+    left: $spacing-0 !important;
+  }
+
+  .left-1-m {
+    left: $spacing-1 !important;
+  }
+
+  .left-2-m {
+    left: $spacing-2 !important;
+  }
+
+  .left-3-m {
+    left: $spacing-3 !important;
+  }
+
+  .left-4-m {
+    left: $spacing-4 !important;
+  }
+
+  .left-5-m {
+    left: $spacing-5 !important;
+  }
+
+  .left-6-m {
+    left: $spacing-6 !important;
+  }
+
+  .left-7-m {
+    left: $spacing-7 !important;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .static-l {
+    position: static !important;
+  }
+
+  .relative-l {
+    position: relative !important;
+  }
+
+  .absolute-l {
+    position: absolute !important;
+  }
+
+  .fixed-l {
+    position: fixed !important;
+  }
+
+  .top-0-l {
+    top: $spacing-0 !important;
+  }
+
+  .top-1-l {
+    top: $spacing-1 !important;
+  }
+
+  .top-2-l {
+    top: $spacing-2 !important;
+  }
+
+  .top-3-l {
+    top: $spacing-3 !important;
+  }
+
+  .top-4-l {
+    top: $spacing-4 !important;
+  }
+
+  .top-5-l {
+    top: $spacing-5 !important;
+  }
+
+  .top-6-l {
+    top: $spacing-6 !important;
+  }
+
+  .top-7-l {
+    top: $spacing-7 !important;
+  }
+
+  .right-0-l {
+    right: $spacing-0 !important;
+  }
+
+  .right-1-l {
+    right: $spacing-1 !important;
+  }
+
+  .right-2-l {
+    right: $spacing-2 !important;
+  }
+
+  .right-3-l {
+    right: $spacing-3 !important;
+  }
+
+  .right-4-l {
+    right: $spacing-4 !important;
+  }
+
+  .right-5-l {
+    right: $spacing-5 !important;
+  }
+
+  .right-6-l {
+    right: $spacing-6 !important;
+  }
+
+  .right-7-l {
+    right: $spacing-7 !important;
+  }
+
+  .bottom-0-l {
+    bottom: $spacing-0 !important;
+  }
+
+  .bottom-1-l {
+    bottom: $spacing-1 !important;
+  }
+
+  .bottom-2-l {
+    bottom: $spacing-2 !important;
+  }
+
+  .bottom-3-l {
+    bottom: $spacing-3 !important;
+  }
+
+  .bottom-4-l {
+    bottom: $spacing-4 !important;
+  }
+
+  .bottom-5-l {
+    bottom: $spacing-5 !important;
+  }
+
+  .bottom-6-l {
+    bottom: $spacing-6 !important;
+  }
+
+  .bottom-7-l {
+    bottom: $spacing-7 !important;
+  }
+
+  .left-0-l {
+    left: $spacing-0 !important;
+  }
+
+  .left-1-l {
+    left: $spacing-1 !important;
+  }
+
+  .left-2-l {
+    left: $spacing-2 !important;
+  }
+
+  .left-3-l {
+    left: $spacing-3 !important;
+  }
+
+  .left-4-l {
+    left: $spacing-4 !important;
+  }
+
+  .left-5-l {
+    left: $spacing-5 !important;
+  }
+
+  .left-6-l {
+    left: $spacing-6 !important;
+  }
+
+  .left-7-l {
+    left: $spacing-7 !important;
+  }
+}

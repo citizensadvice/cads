@@ -1,0 +1,27 @@
+// ========================================================
+// @cads-base: lists
+// ========================================================
+//
+
+ul,
+.ul,
+ol,
+.ol {
+  line-height: $line-height-2;
+  margin-bottom: $spacing-4;
+  padding-left: $spacing-6;
+}
+
+ul,
+.ul {
+  list-style-type: disc
+}
+
+ol,
+.ol {
+  list-style-type: decimal;
+}
+
+.list-style-none{
+  list-style: none !important;
+}

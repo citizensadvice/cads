@@ -1,0 +1,289 @@
+// ========================================================
+// @cads-support: heights
+// ========================================================
+//
+
+// Height Scale
+.height-1 {
+  height: $height-1 !important;
+}
+
+.height-2 {
+  height: $height-2 !important;
+}
+
+.height-3 {
+  height: $height-3 !important;
+}
+
+.height-4 {
+  height: $height-4 !important;
+}
+
+.height-5 {
+  height: $height-5 !important;
+}
+
+// Height Percentages - Based off of height of parent
+
+.height-25 {
+  height: 25% !important;
+}
+
+.height-50 {
+  height: 50% !important;
+}
+
+.height-75 {
+  height: 75% !important;
+}
+
+.height-100 {
+  height: 100% !important;
+}
+
+.min-height-100 {
+  min-height: 100% !important;
+}
+
+/* Screen Height Percentage */
+
+.vh-25 {
+  height: 25vh !important;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-75 {
+  height: 75vh !important;
+}
+
+.vh-100 {
+  height: 100vh !important;
+}
+
+.min-vh-100 {
+  min-height: 100vh !important;
+}
+
+/* String Properties */
+
+.height-auto {
+  height: auto !important;
+}
+
+.height-inherit {
+  height: inherit !important;
+}
+
+@media #{$breakpoint-not-small} {
+  .height-1-ns {
+    height: $height-1 !important;
+  }
+
+  .height-2-ns {
+    height: $height-2 !important;
+  }
+
+  .height-3-ns {
+    height: $height-3 !important;
+  }
+
+  .height-4-ns {
+    height: $height-4 !important;
+  }
+
+  .height-5-ns {
+    height: $height-5 !important;
+  }
+
+  .height-25-ns {
+    height: 25% !important;
+  }
+
+  .height-50-ns {
+    height: 50% !important;
+  }
+
+  .height-75-ns {
+    height: 75% !important;
+  }
+
+  .height-100-ns {
+    height: 100% !important;
+  }
+
+  .min-h-100-ns {
+    min-height: 100% !important;
+  }
+
+  .vh-25-ns {
+    height: 25vh !important;
+  }
+
+  .vh-50-ns {
+    height: 50vh !important;
+  }
+
+  .vh-75-ns {
+    height: 75vh !important;
+  }
+
+  .vh-100-ns {
+    height: 100vh !important;
+  }
+
+  .min-vh-100-ns {
+    min-height: 100vh !important;
+  }
+
+  .height-auto-ns {
+    height: auto !important;
+  }
+
+  .height-inherit-ns {
+    height: inherit !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .height-1-m {
+    height: $height-1 !important;
+  }
+
+  .height-2-m {
+    height: $height-2 !important;
+  }
+
+  .height-3-m {
+    height: $height-3 !important;
+  }
+
+  .height-4-m {
+    height: $height-4 !important;
+  }
+
+  .height-5-m {
+    height: $height-5 !important;
+  }
+
+  .height-25-m {
+    height: 25% !important;
+  }
+
+  .height-50-m {
+    height: 50% !important;
+  }
+
+  .height-75-m {
+    height: 75% !important;
+  }
+
+  .height-100-m {
+    height: 100% !important;
+  }
+
+  .min-h-100-m {
+    min-height: 100% !important;
+  }
+
+  .vh-25-m {
+    height: 25vh !important;
+  }
+
+  .vh-50-m {
+    height: 50vh !important;
+  }
+
+  .vh-75-m {
+    height: 75vh !important;
+  }
+
+  .vh-100-m {
+    height: 100vh !important;
+  }
+
+  .min-vh-100-m {
+    min-height: 100vh !important;
+  }
+
+  .height-auto-m {
+    height: auto !important;
+  }
+
+  .height-inherit-m {
+    height: inherit !important;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .height-1-l {
+    height: $height-1 !important;
+  }
+
+  .height-2-l {
+    height: $height-2 !important;
+  }
+
+  .height-3-l {
+    height: $height-3 !important;
+  }
+
+  .height-4-l {
+    height: $height-4 !important;
+  }
+
+  .height-5-l {
+    height: $height-5 !important;
+  }
+
+  .height-25-l {
+    height: 25% !important;
+  }
+
+  .height-50-l {
+    height: 50% !important;
+  }
+
+  .height-75-l {
+    height: 75% !important;
+  }
+
+  .height-100-l {
+    height: 100% !important;
+  }
+
+  .min-h-100-l {
+    min-height: 100% !important;
+  }
+
+  .vh-25-l {
+    height: 25vh !important;
+  }
+
+  .vh-50-l {
+    height: 50vh !important;
+  }
+
+  .vh-75-l {
+    height: 75vh !important;
+  }
+
+  .vh-100-l {
+    height: 100vh !important;
+  }
+
+  .min-vh-100-l {
+    min-height: 100vh !important;
+  }
+
+  .height-auto-l {
+    height: auto !important;
+  }
+
+  .height-inherit-l {
+    height: inherit !important;
+  }
+}

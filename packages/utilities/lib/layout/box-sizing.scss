@@ -1,0 +1,18 @@
+// ========================================================
+// @cads-support: box-sizing
+// ========================================================
+//
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+.content-box {
+  box-sizing: content-box !important;
+}

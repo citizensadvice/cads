@@ -1,0 +1,35 @@
+// ========================================================
+// @cads-support: typography
+// ========================================================
+//
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+
+$font-size-1: 14px;
+$font-size-2: 16px;
+$font-size-3: 20px;
+$font-size-4: 28px;
+$font-size-5: 36px;
+
+$line-height-1: 20px;
+$line-height-2: 24px;
+$line-height-3: 28px;
+$line-height-4: 36px;
+$line-height-5: 48px;
+
+$letter-spacing-tight: -0.05em !default;
+$letter-spacing-1: 0.1em !default;
+$letter-spacing-2: 0.25em !default;
+
+$font-family: "Open Sans",
+helvetica,
+"helvetica neue",
+arial,
+sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+$line-limit-width: 592px;

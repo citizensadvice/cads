@@ -1,0 +1,58 @@
+// ========================================================
+// @cads-support: floats
+// ========================================================
+//
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-none {
+  float: none !important;
+}
+
+@media #{$breakpoint-not-small} {
+  .float-left-ns {
+    float: left !important;
+  }
+
+  .float-right-ns {
+    float: right !important;
+  }
+
+  .float-none-ns {
+    float: none !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .float-left-m {
+    float: left !important;
+  }
+
+  .float-right-m {
+    float: right !important;
+  }
+
+  .float-none-m {
+    float: none !important;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .float-left-l {
+    float: left !important;
+  }
+
+  .float-right-l {
+    float: right !important;
+  }
+
+  .float-none-l {
+    float: none !important;
+  }
+}
