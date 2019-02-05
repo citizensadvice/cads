@@ -39,7 +39,12 @@ body{
 .nm-l-6{
     margin-left: -2rem !important;
 }
-
+.pb-100{
+    padding-bottom: 100% !important;
+}
+.height-0{
+    height: 0 !important
+}
 
 
 main .highlighter-rouge {
@@ -79,6 +84,10 @@ code , tt{
     }
     .nav-ml-300-ns{
         margin-left: 300px !important;
+    }
+    .mw-250-ns{
+        min-width: 250px !important;
+        max-width: 250px !important;
     }
 }
 
