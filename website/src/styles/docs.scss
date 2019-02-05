@@ -6,6 +6,13 @@
 @import "../packages/utilities/index.scss";
 @import "../packages/radio-checkbox/index.scss";
 
+main > *{
+    @extend .line-limit-width;
+}
+body{
+    color:$black;
+}
+
 .sticky {
     position: sticky !important;
     top: 0 !important;
@@ -31,6 +38,35 @@
 }
 .nm-l-6{
     margin-left: -2rem !important;
+}
+
+
+
+main .highlighter-rouge {
+    max-width: 1024px !important;
+}
+.highlight{
+    margin-bottom: 1rem !important;
+}
+.highlight pre{
+    margin: 0;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 12px 20px;
+}
+code , tt{
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-family: Hack, monospace;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    margin: 0 2px;
+    padding: 0 5px;
+    white-space: nowrap;
 }
 
 
