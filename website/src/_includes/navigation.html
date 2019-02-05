@@ -1,16 +1,16 @@
-<ul class="o-list o-list--flat-recursive c-section-nav c-section-nav--design-system">
+<ul class="list-style-none m-0 p-0 b-right b-grey pt-7">
   {% for link in site.data.navigation %}
-    <li class="c-section-nav__section">
-      <span class="c-section-nav__section-heading">{{ link.title }} </span>
-      <ul class="c-section-nav__section-items">
+    <li class="mb-7">
+      <span class="text-heritage-blue inline-block h2 mb-2 mt-0">{{ link.title }} </span>
+      <ul class="m-0 p-0 mr-0 nm-l-6 black list-style-none">
         {% for sublink in link.sublinks %}
           {% if page.url == sublink.url %}
-          <li class="c-section-nav__section-item c-section-nav__section-item--active">
-            <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+          <li class="m-0 p-0 w-full block">
+            <a class="outline-none pl-6 b-none inline-block black p-2 w-full hover-bg-blue-light"  href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
           </li>
           {% else %}
-          <li class="c-section-nav__section-item">
-            <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+          <li class="m-0 p-0 w-full block">
+            <a class="outline-none pl-6 b-none inline-block black p-2 w-full hover-bg-blue-light" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
           </li>
           {% endif %}
         {% endfor %}

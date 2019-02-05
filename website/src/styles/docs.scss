@@ -10,11 +10,9 @@
     position: sticky !important;
     top: 0 !important;
 }
-
 .lh-0{
     line-height: 0 !important;
 }
-
 .m-auto{
     margin-left: auto !important;
     margin-right: auto !important;
@@ -25,10 +23,34 @@
 .mr-auto{
     margin-right: auto !important;
 }
-
 .focus-outline-heritage-yellow:focus {
     outline: 2px solid #fcbb69;
 }
+.nav-top{
+    top: 4rem !important; //64px;
+}
+.nm-l-6{
+    margin-left: -2rem !important;
+}
+
+
+@media #{$breakpoint-not-small} {
+    .nav-width-ns {
+        width : 300px !important;
+    }
+    .overflow-y-auto-ns{
+        overflow-y: auto !important;
+    }
+    .nav-ml-300-ns{
+        margin-left: 300px !important;
+    }
+}
+
+
+
+
+
+
 // ====================================================================
 // IMPORT APPLICATION STYLES
 // ====================================================================

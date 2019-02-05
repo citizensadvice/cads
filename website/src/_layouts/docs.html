@@ -7,13 +7,13 @@
   </head>
   <body>
     {% include header.html %}
-    <div class="c-layout__container">
-      <div class="c-layout__item--static">
+    <div class="flex-ns flex-row flex-column-ns height-100-ns relative ">
+      <div class="left-0-ns bottom-0-ns pl-6 pr-0 fixed-ns nav-width-ns nav-top overflow-y-auto-ns">
         <nav>{% include navigation.html %}</nav>
       </div>
 
-      <div class="c-layout__item--fluid">
-        <main class="c-main-content">{{ content }}</main>
+      <div class="flex-grow-1 flex-shrink-1 nav-ml-300-ns">
+        <main class="ph-6 relative pt-7">{{ content }}</main>
         {% include footer.html %}
       </div>
 
