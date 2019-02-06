@@ -9,7 +9,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
 
 ## Brand
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-heritage-blue"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -21,7 +21,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-heritage-yellow"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -35,7 +35,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
 
 ## Brand tints
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-heritage-blue-40"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -47,7 +47,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-heritage-yellow-40"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -61,7 +61,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
 
 ## Extended palette
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-blue-dark"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -73,7 +73,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-blue-primary"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -85,7 +85,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-blue-mid"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -97,7 +97,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-blue-light"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -109,7 +109,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-turquoise-dark"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -121,7 +121,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-turquoise-primary"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -133,7 +133,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-turquoise-mid"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -145,7 +145,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-turquoise-light"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -157,7 +157,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-red-primary"></div>
   <div class="b-top b-width-1 b-light-grey p-3">
     <p>
@@ -169,7 +169,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-red-light">
   </div>
   <div class="b-top b-width-1 b-light-grey p-3">
@@ -184,7 +184,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
 
 ## Monochrome palette
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-black">
   </div>
   <div class="b-top b-width-1 b-light-grey p-3">
@@ -197,7 +197,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-dark-grey">
   </div>
   <div class="b-top b-width-1 b-light-grey p-3">
@@ -210,7 +210,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-mid-grey">
   </div>
   <div class="b-top b-width-1 b-light-grey p-3">
@@ -223,7 +223,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-grey">
   </div>
   <div class="b-top b-width-1 b-light-grey p-3">
@@ -236,7 +236,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-light-grey">
   </div>
   <div class="b-top b-width-1 b-light-grey p-3">
@@ -249,7 +249,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-pale-grey">
   </div>
   <div class="b-top b-width-1 b-light-grey p-3">
@@ -262,7 +262,7 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="inline-flex-ns flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
   <div class="block height-0 pb-100 w-full mw-250-ns bg-white">
   </div>
   <div class="b-top b-width-1 b-light-grey p-3">

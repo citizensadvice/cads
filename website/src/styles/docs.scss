@@ -6,6 +6,8 @@
 @import "../packages/utilities/index.scss";
 @import "../packages/radio-checkbox/index.scss";
 
+@import "./application.scss";
+
 main > *{
     @extend .line-limit-width;
 }
@@ -45,33 +47,14 @@ body{
 .height-0{
     height: 0 !important
 }
-
-
-main .highlighter-rouge {
+.overflow-hidden{
+    overflow:hidden !important;
+}
+.mw-1024{
     max-width: 1024px !important;
 }
-.highlight{
-    margin-bottom: 1rem !important;
-}
-.highlight pre{
-    margin: 0;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-    line-height: 19px;
-    overflow: auto;
-    padding: 12px 20px;
-}
-code , tt{
-    background-color: #f8f8f8;
-    border-radius: 4px;
-    font-family: Hack, monospace;
-    font-size: 14px;
-    font-size: .875rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin: 0 2px;
-    padding: 0 5px;
-    white-space: nowrap;
+.bb-none{
+    border-bottom: none !important;
 }
 
 
@@ -90,38 +73,3 @@ code , tt{
         max-width: 250px !important;
     }
 }
-
-
-
-
-
-
-// ====================================================================
-// IMPORT APPLICATION STYLES
-// ====================================================================
-
-// SETTINGS: global variables, config switches
-// TOOLS: default mixins and functions
-// GENERIC: ground-zero styles - normalize.css, resets, box-sizing.
-
-// ELEMENTS: unclassed HTML elements (type selectors)
-// @import "elements/e--code";
-
-// // OBJECTS: cosmetic-free design patterns
-
-// // COMPONENTS: designed components, chunks of UI
-// @import "components/c--main-content";
-// @import "components/c--static-container";
-// @import "components/c--section-nav";
-// @import "components/c--pygmentscss--borland";
-// @import "components/c--highlight";
-// @import "components/c--example";
-// @import "components/c--card";
-// @import "components/c--color-block";
-// @import "components/c--hero";
-// @import "components/c--global-footer";
-// @import "components/c--global-header";
-// @import "components/c--layout";
-
-// // UTILITIES: helpers and overrides
-// @import "utilities/u--testing";
