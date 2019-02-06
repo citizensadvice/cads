@@ -1,0 +1,14 @@
+{
+    "extends": "stylelint-config-recommended-scss",
+    "rules": {
+      "number-leading-zero" : "never",
+      "indentation": 2,
+      "unit-whitelist": ["em", "rem", "%", "deg", "s", "vh", "ms"],
+      "color-no-hex": true,
+      "function-blacklist": ["rgb", "rgba", "hsl", "hsla", "hbw", "gray", "lighten", "darken"],
+      "color-named": "never",
+      "no-descending-specificity": null,
+      font-family-no-missing-generic-family-keyword: null,
+      no-duplicate-selectors: null
+    }
+}
