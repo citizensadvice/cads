@@ -68,25 +68,25 @@ The grid column widths are based on the viewport sizes. These are:
 
 {% capture example %}
 <div class="flex flex-wrap gutter">
-  <div class="flex w-third ph-2 mb-0">
+  <div class="w-third ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 
-  <div class="flex w-third ph-2 mb-0">
+  <div class="w-third ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 
-  <div class="flex w-third ph-2 mb-0">
+  <div class="w-third ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 </div>
 <br/>
 <div class="flex flex-wrap gutter">
-  <div class="flex w-two-thirds ph-2 mb-0">
+  <div class="w-two-thirds ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Two thirds</div>
   </div>
 
-  <div class="flex w-third ph-2 mb-0">
+  <div class="w-third ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 </div>
@@ -95,14 +95,14 @@ The grid column widths are based on the viewport sizes. These are:
 
 {% capture snippet %}
 <div class="flex flex-wrap gutter">
-    <div class="flex w-third ph-2 mb-0">...</div>
-    <div class="flex w-third ph-2 mb-0">...</div>
-    <div class="flex w-third ph-2 mb-0">...</div>
+    <div class="w-third ph-2 mb-0">...</div>
+    <div class="w-third ph-2 mb-0">...</div>
+    <div class="w-third ph-2 mb-0">...</div>
 </div>
 
 <div class="flex flex-wrap gutter">
-    <div class="flex w-two-thirds ph-2 mb-0">...</div>
-    <div class="flex w-third ph-2 mb-0">...</div>
+    <div class="w-two-thirds ph-2 mb-0">...</div>
+    <div class="w-third ph-2 mb-0">...</div>
 </div>
 
 {% endcapture %}
