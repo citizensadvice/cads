@@ -220,7 +220,12 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 
 - Create a new branch making sure you adhere to the [git style guidelines](#Git-style-guidelines).
 - Use the sandbox to start hacking away at your new feature / fix.
-- If you're fixing the `framework`, make sure to make `CSS` changes in the `packages/` directory as these are the framework source files.
+- If you're fixing the `framework`, make sure to make `CSS` changes in the `packages/` directory as these are the framework source files:
+
+```shell
+$ bin/docker/run yarn build:packages
+```
+
 - If it's the website you're changing, make those updates in the `website/` directory.
 - Next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
 
