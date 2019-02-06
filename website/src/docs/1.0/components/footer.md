@@ -10,8 +10,8 @@ Footers help users find what they need after scrolling to the bottom of a page. 
 {% capture example %}
 <main>Site content will end here...</main>
 
-<footer class="c-global-footer u-spacingBottom--none">
-  <p class="u-spacingBottom--none">
+<footer class="cmt-4 p-7 relative bg-blue-light w-full mt-7">
+  <p class="mb-0 black">
     Copyright &copy; 2018 Citizens Advice. All rights reserved.<br>
     Citizens Advice is an operating name of the National Association of Citizens Advice Bureaux. Registered charity number 279057<br>
     VAT number 726 0202 76 Company limited by guarantee. Registered number 01436945 England <br>
@@ -22,9 +22,9 @@ Footers help users find what they need after scrolling to the bottom of a page. 
 {% include example.html content=example %}
 
 {% capture snippet %}
-<footer class="c-global-footer u-spacingBottom--none">
+<footer class="cmt-4 p-7 relative bg-blue-light w-full mt-7">
   <div class="c-wrap">
-    <p class="u-spacingBottom--none">
+    <p class="mb-0 black">
       Copyright &copy; 2018 Citizens Advice. All rights reserved.<br>
       Citizens Advice is an operating name of the National Association of Citizens Advice Bureaux. Registered charity number 279057 <br>
       VAT number 726 0202 76 Company limited by guarantee. Registered number 01436945 England<br>
