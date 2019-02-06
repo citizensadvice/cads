@@ -27,14 +27,14 @@ The grid column widths are based on the viewport sizes. These are:
 
 {% capture example %}
 <div class="flex">
-    <div class="w-full bg-blue-mid w-s text-center bold p-4 b-radius-4">Full</div>
+    <div class="w-full bg-blue-mid text-center bold p-4 b-radius-4">Full</div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
 <div class="flex">
-    <div class="w-full bg-blue-mid w-s text-center bold p-4 b-radius-4">...</div>
+    <div class="w-full bg-blue-mid text-center bold p-4 b-radius-4">...</div>
 </div>
 
 {% endcapture %}
@@ -43,12 +43,12 @@ The grid column widths are based on the viewport sizes. These are:
 ## Halves
 
 {% capture example %}
-<div class="flex flex-wrap gutter-ns">
-  <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+<div class="flex flex-wrap gutter">
+  <div class="w-half ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Half</div>
   </div>
 
-  <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+  <div class="w-half ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Half</div>
   </div>
 </div>
@@ -56,9 +56,9 @@ The grid column widths are based on the viewport sizes. These are:
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="flex flex-wrap gutter-ns">
-    <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">...</div>
-    <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">...</div>
+<div class="flex flex-wrap gutter">
+    <div class="w-half ph-2 mb-0">...</div>
+    <div class="w-half ph-2 mb-0">...</div>
 </div>
 
 {% endcapture %}
@@ -67,26 +67,26 @@ The grid column widths are based on the viewport sizes. These are:
 ## Thirds
 
 {% capture example %}
-<div class="flex flex-wrap gutter-ns">
-  <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+<div class="flex flex-wrap gutter">
+  <div class="flex w-third ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 
-  <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+  <div class="flex w-third ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 
-  <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+  <div class="flex w-third ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 </div>
 <br/>
-<div class="flex flex-wrap gutter-ns">
-  <div class="flex w-full w-two-thirds-ns ph-2-ns mb-4 mb-0-ns">
+<div class="flex flex-wrap gutter">
+  <div class="flex w-two-thirds ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Two thirds</div>
   </div>
 
-  <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+  <div class="flex w-third ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 </div>
@@ -94,15 +94,15 @@ The grid column widths are based on the viewport sizes. These are:
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="flex flex-wrap gutter-ns">
-    <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">...</div>
-    <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">...</div>
-    <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">...</div>
+<div class="flex flex-wrap gutter">
+    <div class="flex w-third ph-2 mb-0">...</div>
+    <div class="flex w-third ph-2 mb-0">...</div>
+    <div class="flex w-third ph-2 mb-0">...</div>
 </div>
 
-<div class="flex flex-wrap gutter-ns">
-    <div class="flex w-full w-two-thirds-ns ph-2-ns mb-4 mb-0-ns">...</div>
-    <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">...</div>
+<div class="flex flex-wrap gutter">
+    <div class="flex w-two-thirds ph-2 mb-0">...</div>
+    <div class="flex w-third ph-2 mb-0">...</div>
 </div>
 
 {% endcapture %}
@@ -111,30 +111,30 @@ The grid column widths are based on the viewport sizes. These are:
 ## Quarters
 
 {% capture example %}
-<div class="flex flex-wrap gutter-ns">
-  <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+<div class="flex flex-wrap gutter">
+  <div class="w-quarter ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 
-  <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+  <div class="w-quarter ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 
-  <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+  <div class="w-quarter ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 
-  <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+  <div class="w-quarter ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 </div>
 <br/>
-<div class="flex flex-wrap gutter-ns">
-  <div class="w-full w-three-quarters-ns ph-2-ns mb-4 mb-0-ns">
+<div class="flex flex-wrap gutter">
+  <div class="w-three-quarters ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Three quarters</div>
   </div>
 
-  <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+  <div class="w-quarter ph-2 mb-0">
     <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 </div>
@@ -142,15 +142,15 @@ The grid column widths are based on the viewport sizes. These are:
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="flex flex-wrap gutter-ns">
-    <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">...</div>
-    <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">...</div>
-    <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">...</div>
-    <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">...</div>
+<div class="flex flex-wrap gutter">
+    <div class="w-quarter ph-2 mb-0">...</div>
+    <div class="w-quarter ph-2 mb-0">...</div>
+    <div class="w-quarter ph-2 mb-0">...</div>
+    <div class="w-quarter ph-2 mb-0">...</div>
 </div>
-<div class="flex flex-wrap gutter-ns">
-    <div class="w-full w-three-quarters-ns ph-2-ns mb-4 mb-0-ns">...</div>
-    <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">...</div>
+<div class="flex flex-wrap gutter">
+    <div class="w-three-quarters ph-2 mb-0">...</div>
+    <div class="w-quarter ph-2 mb-0">...</div>
 </div>
 {% endcapture %}
 {% include snippet.html content=snippet %}
