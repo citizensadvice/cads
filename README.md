@@ -196,6 +196,22 @@ If you need more pages or to simply edit the index page you will need to edit th
 
 [Back to top](#citizens-advice-design-system)
 
+## Command line shell
+
+To run a command line shell in the project via docker, run the following command:
+
+```shell
+$ bin/docker/run bash
+```
+
+Other command line utilities can also be executed via that script:
+
+```shell
+$ bin/docker/run ls -la
+```
+
+[Back to top](#citizens-advice-design-system)
+
 ## How to contribute
 
 Anybody and everybody is welcome to get involved in contributing to the framework, but in order to stop it from becoming bloated, we usually only consider adding new components to the framework when one is being used on **more than one** application, site or service.
