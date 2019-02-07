@@ -210,6 +210,20 @@ Other command line utilities can also be executed via that script:
 $ bin/docker/run ls -la
 ```
 
+## Linting and testing
+
+To launch the linting tool run:
+i
+```shell
+$ bin/docker/lint
+```
+
+We also have a link checker - this crawls the design system site to detect any broken links:
+
+```shell
+$ bin/docker/linkchecker
+```
+
 [Back to top](#citizens-advice-design-system)
 
 ## How to contribute
