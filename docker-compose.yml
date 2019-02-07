@@ -46,6 +46,13 @@ services:
       - JEKYLL_SITE=sandbox
     command: bundle exec puma -p 4000
 
+
+  cads-linkchecker:
+    image: citizensadvice/linkchecker
+    command: linkchecker http://cads-website.test:4000
+    links:
+      - cads-website
+
 networks:
   default:
     external:
