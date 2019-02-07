@@ -1,0 +1,25 @@
+// ========================================================
+// @component: buttons
+// ========================================================
+//
+.button {
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+
+  &-secondary {
+    box-shadow: inset 0 0 0 $border-scale-2 $turqouise-primary !important;
+
+    &:hover {
+      box-shadow: inset 0 0 0 $border-scale-2 $turquoise-dark !important
+    }
+  }
+
+  &-tertiary {
+    box-shadow: inset 0 0 0 $border-scale-1 $blue-dark !important;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 $border-scale-2 $heritage-yellow !important;
+  }
+}

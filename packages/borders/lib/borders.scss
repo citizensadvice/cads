@@ -1,0 +1,33 @@
+// ========================================================
+// @utility: borders
+// ========================================================
+//
+.ba {
+  border-style: solid !important;
+  border-width: $border-scale-1 !important;
+}
+
+.b-top {
+  border-top-style: solid !important;
+  border-top-width: $border-scale-1 !important;
+}
+
+.b-right {
+  border-right-style: solid !important;
+  border-right-width: $border-scale-1 !important;
+}
+
+.b-bottom {
+  border-bottom-style: solid !important;
+  border-bottom-width: $border-scale-1 !important;
+}
+
+.b-left {
+  border-left-style: solid !important;
+  border-left-width: $border-scale-1 !important;
+}
+
+.b-none {
+  border-style: none !important;
+  border-width: $border-scale-none !important;
+}

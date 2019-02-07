@@ -1,47 +1,53 @@
 // ========================================================
-// @cads-utilities
+// @group: utilities
 // ========================================================
 //
+// support
+@import "../support/index.scss";
 
-@import "../support/index.scss"; // order matters
+// backgrounds
+@import "../background-colors/index.scss";
+@import "../background-position/index.scss";
+@import "../background-size/index.scss";
 
-@import "./lib/backgrounds/background-colors";
-@import "./lib/backgrounds/background-position";
-@import "./lib/backgrounds/background-size";
+// borders
+@import "../borders/index.scss";
+@import "../border-colors/index.scss";
+@import "../border-radius/index.scss";
+@import "../border-style/index.scss";
+@import "../border-width/index.scss";
+@import "../outlines/index.scss";
 
-@import "./lib/borders/borders"; // order matters
-@import "./lib/borders/border-colors";
-@import "./lib/borders/border-radius";
-@import "./lib/borders/border-style";
-@import "./lib/borders/border-width";
-@import "./lib/borders/outlines";
+// interactivity
+@import "../hovers/index.scss";
+@import "../focus/index.scss";
+@import "../cursor/index.scss";
 
-@import "./lib/interactive/hovers"; // order matters
-@import "./lib/interactive/focus"; // order matters
-@import "./lib/interactive/cursor";
+// layout
+@import "../box-sizing/index.scss";
+@import "../flexbox/index.scss";
+@import "../floats/index.scss";
+@import "../gutters/index.scss";
+@import "../heights/index.scss";
+@import "../positioning/index.scss";
+@import "../widths/index.scss";
+@import "../z-index/index.scss";
 
-@import "./lib/layout/box-sizing";
-@import "./lib/layout/clear-fix";
-@import "./lib/layout/flexbox";
-@import "./lib/layout/floats";
-@import "./lib/layout/gutter";
-@import "./lib/layout/heights";
-@import "./lib/layout/positioning";
-@import "./lib/layout/widths";
-@import "./lib/layout/z-index";
+// spacing
+@import "../margins/index.scss";
+@import "../padding/index.scss";
 
-@import "./lib/spacing/margins";
-@import "./lib/spacing/padding";
+// typography
+@import "../font-family/index.scss";
+@import "../font-size/index.scss";
+@import "../font-style/index.scss";
+@import "../font-weight/index.scss";
+@import "../letter-spacing/index.scss";
+@import "../line-height/index.scss";
+@import "../line-limit/index.scss";
+@import "../text-align/index.scss";
+@import "../text-colors/index.scss";
+@import "../text-decoration/index.scss";
 
-@import "./lib/typography/font-family";
-@import "./lib/typography/font-size";
-@import "./lib/typography/font-style";
-@import "./lib/typography/font-weight";
-@import "./lib/typography/letter-spacing";
-@import "./lib/typography/line-height";
-@import "./lib/typography/line-limit";
-@import "./lib/typography/text-align";
-@import "./lib/typography/text-colors";
-@import "./lib/typography/text-decoration";
-
-@import "./lib/visibility/display";
+// visibility
+@import "../display/index.scss";
