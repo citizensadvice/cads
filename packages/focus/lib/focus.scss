@@ -170,6 +170,10 @@
   border-color: $red-primary !important;
 }
 
+.focus-outline-heritage-yellow:focus {
+  outline: $border-scale-2 solid $heritage-yellow !important;
+}
+
 .focus-bg-heritage-blue:focus {
   background-color: $heritage-blue !important;
 }

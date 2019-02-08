@@ -3,6 +3,10 @@
 // ========================================================
 //
 // height scale
+.height-0 {
+  height: 0 !important;
+}
+
 .height-1 {
   height: $height-1 !important;
 }
@@ -76,6 +80,10 @@
 }
 
 @media #{$breakpoint-not-small} {
+  .height-0-ns {
+    height: 0 !important;
+  }
+
   .height-1-ns {
     height: $height-1 !important;
   }
@@ -146,6 +154,10 @@
 }
 
 @media #{$breakpoint-medium} {
+  .height-0-m {
+    height: 0 !important;
+  }
+
   .height-1-m {
     height: $height-1 !important;
   }
@@ -216,6 +228,10 @@
 }
 
 @media #{$breakpoint-large} {
+  .height-0-l {
+    height: 0 !important;
+  }
+
   .height-1-l {
     height: $height-1 !important;
   }

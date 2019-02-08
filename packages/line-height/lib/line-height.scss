@@ -2,6 +2,10 @@
 // @utility: line-height
 // ========================================================
 //
+.lh-0 {
+  line-height: 0 !important;
+}
+
 .lh-1 {
   line-height: $line-height-1 !important;
 }
@@ -24,6 +28,10 @@
 
 
 @media #{$breakpoint-not-small} {
+  .lh-0-ns {
+    line-height: 0 !important;
+  }
+
   .lh-1-ns {
     line-height: $line-height-1 !important;
   }
@@ -46,6 +54,10 @@
 }
 
 @media #{$breakpoint-medium} {
+  .lh-0-m {
+    line-height: 0 !important;
+  }
+
   .lh-1-m {
     line-height: $line-height-1 !important;
   }
@@ -68,6 +80,10 @@
 }
 
 @media #{$breakpoint-large} {
+  .lh-0-l {
+    line-height: 0 !important;
+  }
+
   .lh-1-l {
     line-height: $line-height-1 !important;
   }
