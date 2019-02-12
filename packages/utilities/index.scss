@@ -1,5 +1,6 @@
 // ========================================================
-// @group: utilities
+// @name: utilities
+// @type: meta
 // ========================================================
 //
 // support
@@ -25,6 +26,7 @@
 
 // layout
 @import "../box-sizing/index.scss";
+@import "../clearfix/index.scss";
 @import "../flexbox/index.scss";
 @import "../floats/index.scss";
 @import "../gutters/index.scss";

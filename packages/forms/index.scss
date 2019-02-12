@@ -1,10 +1,11 @@
 // ========================================================
-// @group: forms
+// @name: forms
+// @type: meta
 // ========================================================
 //
 @import "../support/index.scss";
-@import "./lib/text-inputs.scss";
-@import "./lib/radios-checkboxes.scss";
-@import "./lib/selects.scss";
-@import "./lib/buttons.scss";
-@import "./lib/validation.scss";
+@import "../text-inputs/index.scss";
+@import "../radios-checkboxes/index.scss";
+@import "../selects/index.scss";
+@import "../buttons/index.scss";
+@import "../validation/index.scss";
