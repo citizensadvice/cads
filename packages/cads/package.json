@@ -16,7 +16,8 @@
   "dependencies": {
     "@citizensadvice/core": "^0.0.0",
     "@citizensadvice/typography": "^0.0.0",
-    "@citizensadvice/forms": "^0.0.0"
+    "@citizensadvice/forms": "^0.0.0",
+    "@citizensadvice/rich-content": "^0.0.0"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",

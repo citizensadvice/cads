@@ -3,8 +3,10 @@
 // @type: meta
 // ========================================================
 //
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+// foundations
 @import "../support/index.scss";
+
+// components
 @import "../typesetting/index.scss";
 @import "../lists/index.scss";
 @import "../links/index.scss";
