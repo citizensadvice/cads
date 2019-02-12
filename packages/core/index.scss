@@ -1,10 +1,13 @@
 // ========================================================
 // @name: core
 // @type: meta
-// @desc: key packages for citizens advice  design system
+// @desc: key packages for citizens advice design system
 // this package DOES NOT include the components.
 // ========================================================
 //
+// foundations
 @import "../support/index.scss";
 @import "../normalize/index.scss";
+
+// utilities
 @import "../utilities/index.scss";
