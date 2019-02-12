@@ -14,8 +14,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/support": "^0.0.0",
-    "@citizensadvice/utilities": "^0.0.0",
+    "@citizensadvice/core": "^0.0.0",
     "@citizensadvice/typography": "^0.0.0",
     "@citizensadvice/forms": "^0.0.0"
   },

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "cads": {
-    "package_type": "meta"
+    "package_type": "foundation"
   },
   "files": [
     "index.scss",
