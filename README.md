@@ -75,13 +75,13 @@ If you check in your `node_modules` directory you should now have a `@citizensad
 ```
 node_modules/
 └── @citizensadvice/
-  ├── cads-buttons/
+  ├── buttons/
   │ ├── build/
   │ ├── lib/
   │ ├── index.scss
   │ ├── package.json
   │ └── README.md
-  ├── cads-buttons/
+  ├── utilities/
   │ ├── build/
   │ ├── lib/
   │ ├── index.scss
