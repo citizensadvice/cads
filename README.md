@@ -15,7 +15,7 @@ Welcome to the Citizens Advice Design System. A tool that we hope will ease the 
 Our platform uses the "mono-repo" concept, where all aspects of the Design System can live together. This provides better management rather than splitting each out into their respective repositories. Currently we have:
 
 - the **packages** which are the framework itself,
-- the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**.
+- the documentation **[website](https://citizensadvice.github.io/cads/)**.
 
 We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they require.
 
