@@ -29,4 +29,36 @@ $ npm install @citizensadvice/backround-colors
 
 ## Implementation
 
-> Documentation coming soon...
+Background colors are most commonly used for filling large blocks of content or areas with a color. 
+
+```scss
+.bg-bg-heritage-blue { background-color: #004B88 }
+```
+
+How to use this in your HTML markup
+> Some Examples
+```html
+<div class="bg-heritage-blue">
+  A block with background colour of #004B88
+</div>
+```
+
+```html
+<div class="bg-heritage-yellow">
+  A block with background colour of #FCBB69
+</div>
+```
+
+```html
+<div class="bg-black">
+  A block with background colour of #000000
+</div>
+```
+
+```html
+<div class="bg-grey">
+  A block with background colour of #9F9F9F
+</div>
+```
+
+
