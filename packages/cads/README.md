@@ -2,28 +2,33 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads.svg)
 
-## Component Type
+## Package type
 
 - Meta
 
-## Dependencies:
+## Dependencies
 
-| Name                      | Description                  |
-| ------------------------- | ---------------------------- |
-| `@citizensadvice/support` | System-wide global variables |
+| Name                           | Description                 |
+| ------------------------------ | --------------------------- |
+| `@citizensadvice/core`         | TBC                         |
+| `@citizensadvice/typography`   | TBC                         |
+| `@citizensadvice/forms`        | TBC                         |
+| `@citizensadvice/rich-content` | TBC                         |
 
 ## Installation
 
-```
+```shell
 $ npm install @citizensadvice/cads
 ```
+
+## Usage
 
 ```scss
 @import "@citizensadvice/cads/index.scss";
 ```
 
 > You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/cads@latest/build/cads.min.css" />`
+> `<link src="https://unpkg.com/@citizensadvice/cads@latest/build/cads.css" />`
 
 ## Implementation
 
