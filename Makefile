@@ -2,7 +2,7 @@ NAME=nyzl/cads
 LOCAL_NAME=cads
 CONTAINER_NAME=design-system
 
-.PHONY: sandbox website
+.PHONY: website
 
 start:
 	docker run -it -p=4000:4000 -p=5000:5000 --name=$(CONTAINER_NAME) -v $(LOC):/CADS $(NAME) /bin/bash
