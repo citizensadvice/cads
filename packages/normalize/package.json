@@ -13,9 +13,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "@citizensadvice/support": "^0.0.0"
-  },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
     "buildcss:expanded": "node-sass --output-style expanded --include-path ../../node_modules/ ./index.scss ./build/normalize.css",

@@ -1,0 +1,32 @@
+# Widths
+
+![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/widths.svg)
+
+## Package type
+
+- Utility
+
+## Dependencies
+
+| Name                      | Description                 |
+|---------------------------|-----------------------------|
+| `@citizensadvice/support` | System wide settings/config |
+
+## Installation
+
+```shell
+$ npm install @citizensadvice/widths
+```
+
+## Usage
+
+```scss
+@import "@citizensadvice/widths/index.scss";
+```
+
+> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+> `<link src="https://unpkg.com/@citizensadvice/widths@latest/build/widths.css" />`
+
+## Implementation
+
+> Documentation coming soon...
