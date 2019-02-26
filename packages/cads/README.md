@@ -8,12 +8,12 @@
 
 ## Dependencies
 
-| Name                           | Description                 |
-| ------------------------------ | --------------------------- |
-| `@citizensadvice/core`         | TBC                         |
-| `@citizensadvice/typography`   | TBC                         |
-| `@citizensadvice/forms`        | TBC                         |
-| `@citizensadvice/rich-content` | TBC                         |
+| Name                           | Description |
+|--------------------------------|-------------|
+| `@citizensadvice/core`         | TBC         |
+| `@citizensadvice/typography`   | TBC         |
+| `@citizensadvice/forms`        | TBC         |
+| `@citizensadvice/rich-content` | TBC         |
 
 ## Installation
 
