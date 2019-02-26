@@ -5,7 +5,6 @@
 - [Introduction](#introduction)
 - [Framework guide](#framework-guide)
 - [Documentation guide](#documentation-guide)
-- [Sandbox guide](#sandbox-guide)
 - [How to contribute](#how-to-contribute)
 - [Git style guide](#git-style-guide)
 
@@ -15,9 +14,8 @@ Welcome to the Citizens Advice Design System. A tool that we hope will ease the 
 
 Our platform uses the "mono-repo" concept, where all aspects of the Design System can live together. This provides better management rather than splitting each out into their respective repositories. Currently we have:
 
-- the **framework** itself
-- the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**
-- a **sandbox** environment used as a playground for new component.
+- the **packages** which are the framework itself,
+- the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**.
 
 We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they require.
 
@@ -207,42 +205,6 @@ We do have a few extra scripts that can be run when developing the framework and
 
 [Back to top](#citizens-advice-design-system)
 
-## Sandbox guide
-
-This is a great area with which to start developing new features and components and to test them out.
-
-The files are located in the `root` of the repo under the directory `sandbox/`.
-
-### Sandbox installation
-
-Most of the hard work has already been taken care of by following the [Documentation guide](#Documentation-guide), installing all necessary dependencies in order to run the sandbox.
-
-### Starting the Docker container
-
-```shell
-$ make start LOC=~/path/to/cads/directory
-```
-
-### Installing the dependencies
-
-```shell
-$ yarn fresh
-```
-
-### Starting the sandbox
-
-```shell
-$ yarn start:sandbox
-```
-
-and navigate to `http://localhost:5000`, you should see a very basic page with a heading.
-
-This is another Jekyll site that's running separately to the docs website.
-
-If you need more pages or to simply edit the index page you will need to edit the `sandbox/app/index.html`. Styles are in the `sandbox/app/assets/...` directory and if needs be, you should place your images in here too. You have complete freedom to alter this as you see fit. It's essentially a playground for all things Design System, but try **NOT** to commit these changes in your Pull Requests.
-
-[Back to top](#citizens-advice-design-system)
-
 ## How to contribute
 
 Anybody and everybody is welcome to get involved in contributing to the framework, but in order to stop it from becoming bloated, we usually only consider adding new components to the framework when one is being used on **more than one** application, site or service.
@@ -250,7 +212,6 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 ### Process
 
 - Create a new branch making sure you adhere to the [git style guidelines](#Git-style-guidelines).
-- Use the sandbox to start hacking away at your new feature / fix.
 - If you're fixing the `framework`, make sure to make `CSS` changes in the `packages/` directory as these are the framework source files.
 - If it's the website you're changing, make those updates in the `website/` directory.
 - Next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
