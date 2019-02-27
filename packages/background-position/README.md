@@ -45,7 +45,7 @@ Don't forget that should you want to have specific sizes for specific screen res
 |-----------------------|---------------------------------------------|
 | `[aboveClassName]-ns` | Screens with a min-width of `48rem`         |
 | `[aboveClassName]-m`  | Screens with widths from `48rem` to `64rem` |
-| `[aboveClassName]-lg` | Screens with a min-width of `64rem`         |
+| `[aboveClassName]-l` | Screens with a min-width of `64rem`         |
 
 
 ### Example markup

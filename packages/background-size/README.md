@@ -29,4 +29,24 @@ $ npm install @citizensadvice/backround-size
 
 ## Implementation
 
-> Documentation coming soon...
+The background-size property specifies the size of the background images.This can only be used with a background image. 
+
+| Available classes|
+|------------------|
+| `.bg-cover`      |
+| `.bg-contain`    |
+
+Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
+
+| Available classes     | Description                                 |
+|-----------------------|---------------------------------------------|
+| `[aboveClassName]-ns` | Screens with a min-width of `48rem`         |
+| `[aboveClassName]-m`  | Screens with widths from `48rem` to `64rem` |
+| `[aboveClassName]-l` | Screens with a min-width of `64rem`         |
+
+
+### Example markup
+```html
+<div class="bg-contain bg-cover-ns">...</div>
+```
+
