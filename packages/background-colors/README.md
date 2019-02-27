@@ -31,8 +31,8 @@ $ npm install @citizensadvice/backround-colors
 
 Background colors are most commonly used for filling large blocks of content or areas with a color. 
 
-| Available classes  |
-|--------------------|
+| Available classes         |
+|---------------------------|
 | `.bg-heritage-blue`       |
 | `.bg-heritage-blue-40`    |
 | `.bg-heritage-yellow-40`  |
