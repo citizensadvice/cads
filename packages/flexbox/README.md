@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -29,4 +29,58 @@ $ npm install @citizensadvice/flexbox
 
 ## Implementation
 
-> Documentation coming soon...
+
+| Available classes      |
+|------------------------|
+| `.flex`                |
+| `.inline-flex`         |
+| `.flex-auto`           |
+| `.flex-none`           |
+| `.flex-column`         |
+| `.flex-row`            |
+| `.flex-wrap`           |
+| `.flex-nowrap`         |
+| `.flex-wrap-reverse`   |
+| `.flex-column-reverse` |
+| `.flex-row-reverse`    |
+| `.items-start `        |
+| `.items-end`           |
+| `.items-center`        |
+| `.items-baseline`      |
+| `.items-stretch`       |
+| `.self-start `         |
+| `.self-end `           |
+| `.self-center`         |
+| `.self-baseline`       |
+| `.self-stretch`        |
+| `.justify-start`       |
+| `.justify-end`         |
+| `.justify-center`      |
+| `.justify-between`     |
+| `.justify-around`      |
+| `.content-start`       |
+| `.content-end`         |
+| `.content-center`      |
+| `.content-between`     |
+| `.content-around`      |
+| `.content-stretch`     |
+| `.flex-grow-0`         |
+| `.flex-grow-1`         |
+| `.flex-shrink-0`       |
+| `.flex-shrink-1`       |
+
+
+Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
+
+| Available classes     | Description                                 |
+|-----------------------|---------------------------------------------|
+| `[aboveClassName]-ns` | Screens with a min-width of `48rem`         |
+| `[aboveClassName]-m`  | Screens with widths from `48rem` to `64rem` |
+| `[aboveClassName]-l`  | Screens with a min-width of `64rem`         |
+
+
+### Example markup
+```html
+<div class="flex flex-column flex-row-ns items-center-ns">...</div>
+<div class="flex flex-auto justify-between-l">...</div>
+```
