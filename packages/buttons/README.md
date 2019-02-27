@@ -33,7 +33,7 @@ $ npm install @citizensadvice/buttons
 |---------------------|
 | `.button `          |
 | `.button-secondary` |
-| `.button-tertiary` |
+| `.button-tertiary`  |
 
 ### Example markup
 ```html
