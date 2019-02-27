@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -29,4 +29,13 @@ $ npm install @citizensadvice/cursor
 
 ## Implementation
 
-> Documentation coming soon...
+| Available classes |
+|-------------------|
+| `.pointer `       |
+| `.hover-pointer ` |
+
+### Example markup
+```html
+<a href="#" class="pointer">...</a>
+<a href="#" class="hover-pointer">...</a>
+```
