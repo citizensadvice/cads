@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -29,4 +29,22 @@ $ npm install @citizensadvice/borders
 
 ## Implementation
 
-> Documentation coming soon...
+The border CSS property sets an element's border
+
+| Available classes |
+|-------------------|
+| `.b-0 `           |
+| `.ba`             |
+| `.b-top`          |
+| `.b-top-0`        |
+| `.b-right`        |
+| `.b-right-0`      |
+| `.b-bottom`       |
+| `.b-bottom-0`     |
+| `.b-left`         |
+| `.b-left-0`       |
+
+### Example markup
+```html
+<div class="ba">...</div>
+<div class="ba b-right-0">...</div>
