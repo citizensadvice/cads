@@ -29,4 +29,11 @@ $ npm install @citizensadvice/clearfix
 
 ## Implementation
 
-> Documentation coming soon...
+| Available classes   |
+|---------------------|
+| `.clearfix `       |
+
+### Example markup
+```html
+<div class="clearfix">...</div>
+```
