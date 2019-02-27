@@ -61,9 +61,6 @@ Background colors are most commonly used for filling large blocks of content or 
 <div class="bg-heritage-blue">
   A block with background colour of #004B88
 </div>
-```
-
-```html
 <div class="bg-heritage-yellow">
   A block with background colour of #FCBB69
 </div>
