@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -29,4 +29,18 @@ $ npm install @citizensadvice/border-style
 
 ## Implementation
 
-> Documentation coming soon...
+The border-style CSS property is a shorthand property that sets the line style for all four sides of an element's border.
+
+| Available classes |
+|-------------------|
+| `.b-dotted`       |
+| `.b-dashed`       |
+| `.b-solid`        |
+| `.b-none`         |
+
+### Example markup
+```html
+<div class="b-width-1 b-solid b-heritage-yellow">...</div>
+<div class="b-dotted">...</div>
+```
+
