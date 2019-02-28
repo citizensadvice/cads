@@ -61,34 +61,40 @@ Background colors are most commonly used for filling large blocks of content or 
 <div class="p-5">Lorem ipsum</div>
 <div class="p-6">Lorem ipsum</div>
 <div class="p-7">Lorem ipsum</div>
+
+// This will give a padding of x to all sides.
 ```
-> This will give a `padding` of `x` to **all** sides.
 
 ## Directional padding
 
 ```html
 <div class="pt-4">Lorem ipsum</div>
+
+// This will give a padding-top of 16px.
 ```
-> This will give a `padding-top` of `16px`.
 
 ```html
 <div class="pr-3">Lorem ipsum</div>
+
+// This will give a padding-right of 12px.
 ```
-> This will give a `padding-right` of `12px`.
 
 ```html
 <div class="pb-5">Lorem ipsum</div>
+
+// This will give a padding-bottom of 24px.
 ```
-> This will give a `padding-bottom` of `24px`.
 
 ```html
 <div class="pl-7">Lorem ipsum</div>
+
+// This will give a padding-left of 40px.
 ```
-> This will give a `padding-left` of `40px`.
 
 ## Responsive padding
 
 ```html
 <div class="pl-7-l pl-5-ns pl-3">Lorem ipsum</div>
+
+// This will give a padding-left of 40px on device widths over 64rem, 24px on devices with a width of 48rem and finally 12px on devices with a width up to 48rem.
 ```
-> This will give a `padding-left` of `40px` on device widths **over** `64rem`, `24px` on devices with a width of `48rem` and finally `12px` on devices with a width up to `48rem`.
