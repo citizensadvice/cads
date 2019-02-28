@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -29,4 +29,28 @@ $ npm install @citizensadvice/display
 
 ## Implementation
 
-> Documentation coming soon...
+| Available classes  |
+|--------------------|
+| `.hidden`          |
+| `.inline`          |
+| `.block`           |
+| `.inline-block`    |
+| `.table`           |
+| `.table-cell`      |
+| `.table-row`       |
+| `.table-fixed`     |
+
+Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
+
+| Available classes     | Description                                 |
+|-----------------------|---------------------------------------------|
+| `[aboveClassName]-ns` | Screens with a min-width of `48rem`         |
+| `[aboveClassName]-m`  | Screens with widths from `48rem` to `64rem` |
+| `[aboveClassName]-l`  | Screens with a min-width of `64rem`         |
+
+
+### Example markup
+```html
+<div class="hidden inline-block-ns">...</div>
+<div class="block  inline-block-l inline-block-ns">...</div>
+```

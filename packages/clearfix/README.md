@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -29,4 +29,11 @@ $ npm install @citizensadvice/clearfix
 
 ## Implementation
 
-> Documentation coming soon...
+| Available classes |
+|-------------------|
+| `.clearfix `      |
+
+### Example markup
+```html
+<div class="clearfix">...</div>
+```

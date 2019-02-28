@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -29,4 +29,14 @@ $ npm install @citizensadvice/buttons
 
 ## Implementation
 
-> Documentation coming soon...
+| Available classes   |
+|---------------------|
+| `.button `          |
+| `.button-secondary` |
+| `.button-tertiary`  |
+
+### Example markup
+```html
+<button type="button" class="button">Click Me!</button>
+<button type="button" class="button-secondary">Click Me!</button>
+```

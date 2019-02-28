@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -29,4 +29,21 @@ $ npm install @citizensadvice/border-radius
 
 ## Implementation
 
-> Documentation coming soon...
+The border-radius CSS property rounds the corners of an element's outer border edge. 
+
+| Available classes |
+|-------------------|
+| `.b-radius-0`     |
+| `.b-radius-1`     |
+| `.b-radius-2`     |
+| `.b-radius-3`     |
+| `.b-radius-4`     |
+| `.b-radius-5`     |
+| `.b-radius-6`     |
+
+
+### Example markup
+```html
+<div class="b-width-1 b-solid b-heritage-yellow b-radius-0">...</div>
+<div class="b-radius-1">...</div>
+```

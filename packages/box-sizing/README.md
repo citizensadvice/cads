@@ -29,4 +29,12 @@ $ npm install @citizensadvice/box-sizing
 
 ## Implementation
 
-> Documentation coming soon...
+The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+
+| Available classes |
+|-------------------|
+| `.content-box `           |
+
+### Example markup
+```html
+<div class="content-box">...</div>

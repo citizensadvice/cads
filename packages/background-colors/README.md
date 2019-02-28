@@ -9,7 +9,7 @@
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -31,34 +31,41 @@ $ npm install @citizensadvice/backround-colors
 
 Background colors are most commonly used for filling large blocks of content or areas with a color. 
 
-```scss
-.bg-bg-heritage-blue { background-color: #004B88 }
-```
+| Available classes        |
+|--------------------------|
+| `.bg-heritage-blue`      |
+| `.bg-heritage-blue-40`   |
+| `.bg-heritage-yellow-40` |
+| `.bg-blue-dark`          |
+| `.bg-blue-primary`       |
+| `.bg-blue-mid`           |
+| `.bg-blue-light`         |
+| `.bg-turquoise-dark`     |
+| `.bg-turquoise-primary`  |
+| `.bg-turquoise-mid `     |
+| `.bg-turquoise-light`    |
+| `.bg-red-light`          |
+| `.bg-black`              |
+| `.bg-dark-grey`          |
+| `.bg-mid-grey`           |
+| `.bg-grey`               |
+| `.bg-light-grey`         |
+| `.bg-pale-grey`          |
+| `.bg-heritage-yellow`    |
+| `.bg-red-primary`        |
 
-How to use this in your HTML markup
-> Some Examples
+
+
+### Example markup
 ```html
 <div class="bg-heritage-blue">
   A block with background colour of #004B88
 </div>
-```
-
-```html
 <div class="bg-heritage-yellow">
   A block with background colour of #FCBB69
 </div>
 ```
 
-```html
-<div class="bg-black">
-  A block with background colour of #000000
-</div>
-```
 
-```html
-<div class="bg-grey">
-  A block with background colour of #9F9F9F
-</div>
-```
 
 
