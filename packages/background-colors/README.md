@@ -32,6 +32,7 @@ OR
 ## Introduction
 Background colors are most commonly used for filling large blocks of content or areas with a color.
 
+### Background Colours
 | Available classes        | Value                           |
 |--------------------------|---------------------------------|
 | `.bg-heritage-blue`      | `$heritage-blue (#004B88)`      |
@@ -58,7 +59,7 @@ Background colors are most commonly used for filling large blocks of content or 
 
 
 
-### Background Colours
+
 ```html
 <div class="bg-heritage-blue">
   A block with background colour of #004B88
