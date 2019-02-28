@@ -1,10 +1,9 @@
 # Background-position
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/background-position.svg)
+| Name                                | Type   | Version                                                                             |
+|-------------------------------------|--------|-------------------------------------------------------------------------------------|
+| `@citizensadvice/background-position` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/background-position.svg) |
 
-## Package type
-
-- Utility
 
 ## Dependencies
 
@@ -13,10 +12,12 @@
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
+Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/backround-position
 ```
+Then bring into your stylesheets with...
 
 ## Usage
 
@@ -24,15 +25,19 @@ $ npm install @citizensadvice/backround-position
 @import "@citizensadvice/background-position/index.scss";
 ```
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/background-position@latest/build/background-position.css" />`
+### OR
 
-## Implementation
+> You can also make use of the [unpkg](https://unpkg.com/@citizensadvice/padding@latest/build/padding.css) service, try adding the link below to the head of your `HTML` file
+```html
+<link src="https://unpkg.com/@citizensadvice/padding@latest/build/padding.css" />
+```
+
+## Introduction
 
 The background-position property sets the starting position of a background image. This can only be used with a background image. 
 
-| Available classes |
-|-------------------|
+| Available classes | Value|
+|-------------------|------|
 | `.bg-center`      |
 | `.bg-top`         |
 | `.bg-right`       |
