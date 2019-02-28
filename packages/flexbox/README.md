@@ -38,11 +38,14 @@ $ npm install @citizensadvice/flexbox
     </thead>
     <tbody>
         <tr>
-            <td rowspan=2> <code>.flex</code></td>
-            <td> display : flex </td>
+            <td rowspan=3> <code>.flex-auto</code></td>
+            <td> <code>flex: 1 1 auto !important;</code> </td>
         </tr>
         <tr>
-            <td> display : flex </td>
+            <td> <code> min-width: 0 !important; </code> </td>
+        </tr>
+        <tr>
+            <td> <code> min-height: 0 !important; </code> </td>
         </tr>
     </tbody>
 </table>
@@ -51,44 +54,44 @@ $ npm install @citizensadvice/flexbox
 
 
 
-| Available classes      | Properties            |
-|------------------------|-----------------------|
-| `.flex`                | display : flex;       |
-| `.inline-flex`         | display : inline-flex |
-| `.flex-auto`           |                       |
-| `.flex-none`           |                       |
-| `.flex-column`         |                       |
-| `.flex-row`            |                       |
-| `.flex-wrap`           |                       |
-| `.flex-nowrap`         |                       |
-| `.flex-wrap-reverse`   |                       |
-| `.flex-column-reverse` |                       |
-| `.flex-row-reverse`    |                       |
-| `.items-start `        |                       |
-| `.items-end`           |                       |
-| `.items-center`        |                       |
-| `.items-baseline`      |                       |
-| `.items-stretch`       |                       |
-| `.self-start `         |                       |
-| `.self-end `           |                       |
-| `.self-center`         |                       |
-| `.self-baseline`       |                       |
-| `.self-stretch`        |                       |
-| `.justify-start`       |                       |
-| `.justify-end`         |                       |
-| `.justify-center`      |                       |
-| `.justify-between`     |                       |
-| `.justify-around`      |                       |
-| `.content-start`       |                       |
-| `.content-end`         |                       |
-| `.content-center`      |                       |
-| `.content-between`     |                       |
-| `.content-around`      |                       |
-| `.content-stretch`     |                       |
-| `.flex-grow-0`         |                       |
-| `.flex-grow-1`         |                       |
-| `.flex-shrink-0`       |                       |
-| `.flex-shrink-1`       |                       |
+| Available classes      | Properties              |
+|------------------------|-------------------------|
+| `.flex`                | `display : flex; `      |
+| `.inline-flex`         | `display : inline-flex` |
+| `.flex-auto`           |                         |
+| `.flex-none`           |                         |
+| `.flex-column`         |                         |
+| `.flex-row`            |                         |
+| `.flex-wrap`           |                         |
+| `.flex-nowrap`         |                         |
+| `.flex-wrap-reverse`   |                         |
+| `.flex-column-reverse` |                         |
+| `.flex-row-reverse`    |                         |
+| `.items-start `        |                         |
+| `.items-end`           |                         |
+| `.items-center`        |                         |
+| `.items-baseline`      |                         |
+| `.items-stretch`       |                         |
+| `.self-start `         |                         |
+| `.self-end `           |                         |
+| `.self-center`         |                         |
+| `.self-baseline`       |                         |
+| `.self-stretch`        |                         |
+| `.justify-start`       |                         |
+| `.justify-end`         |                         |
+| `.justify-center`      |                         |
+| `.justify-between`     |                         |
+| `.justify-around`      |                         |
+| `.content-start`       |                         |
+| `.content-end`         |                         |
+| `.content-center`      |                         |
+| `.content-between`     |                         |
+| `.content-around`      |                         |
+| `.content-stretch`     |                         |
+| `.flex-grow-0`         |                         |
+| `.flex-grow-1`         |                         |
+| `.flex-shrink-0`       |                         |
+| `.flex-shrink-1`       |                         |
 
 
 Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
