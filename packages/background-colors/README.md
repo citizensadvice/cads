@@ -32,10 +32,6 @@ OR
 ## Introduction
 Background colors are most commonly used for filling large blocks of content or areas with a color.
 
-
-## Abbreviations
-
-
 | Available classes        | Value                           |
 |--------------------------|---------------------------------|
 | `.bg-heritage-blue`      | `$heritage-blue (#004B88)`      |
