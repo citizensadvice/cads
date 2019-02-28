@@ -38,7 +38,7 @@ $ npm install @citizensadvice/flexbox
     </thead>
     <tbody>
         <tr>
-            <td rowspan=2> .flex      </td>
+            <td rowspan=2> <code>.flex</code></td>
             <td> display : flex </td>
         </tr>
         <tr>
