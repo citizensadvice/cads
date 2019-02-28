@@ -29,4 +29,10 @@ $ npm install @citizensadvice/validation
 
 ## Implementation
 
-> Documentation coming soon...
+Giving form elements the status of valid or invalid is often needed. Seeing as a lot of our work is form based, we've created a class that can handle `.text-input`, `.radio`, `.checkbox` and `.select` elements and give them an `.is-invalid` status where necessary.
+
+Try something like:
+
+```html
+<input class="text-input is-invalid" type="password" id="password" />
+```
