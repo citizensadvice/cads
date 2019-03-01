@@ -1,10 +1,8 @@
 # Box-sizing
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/box-sizing.svg)
-
-## Package type
-
-- Utility
+| Name                         | Type   | Version                                                                      |
+| ---------------------------- | ------ | ---------------------------------------------------------------------------- |
+| `@citizensadvice/box-sizing` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/box-sizing.svg) |
 
 ## Dependencies
 
@@ -14,27 +12,38 @@
 
 ## Installation
 
+Using your package manager of choice...
+
 ```shell
 $ npm install @citizensadvice/box-sizing
 ```
 
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/box-sizing/index.scss";
 ```
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/box-sizing@latest/build/box-sizing.css" />`
+### OR
 
-## Implementation
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
+```html
+<link
+  src="https://unpkg.com/@citizensadvice/box-sizing@latest/build/box-sizing.css"
+/>
+```
+
+## Introduction
 
 The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
 
-| Available classes |
-|-------------------|
-| `.content-box `           |
+| Available classes | Value       |
+| ----------------- | ----------- |
+| `.content-box`    | content-box |
 
 ### Example markup
+
 ```html
 <div class="content-box">...</div>
+```
