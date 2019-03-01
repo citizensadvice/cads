@@ -16,7 +16,7 @@ Using your package manager of choice...
 
 
 ```shell
-$ npm install @citizensadvice/backround-colors
+$ npm install @citizensadvice/background-colors
 ```
 
 Then bring into your stylesheets with...
@@ -30,9 +30,11 @@ OR
 > `<link src="https://unpkg.com/@citizensadvice/background-colors@latest/build/background-colors.css" />`
 
 ## Introduction
+
 Background colors are most commonly used for filling large blocks of content or areas with a color.
 
 ### Background Colours
+
 | Available classes        | Value                           |
 |--------------------------|---------------------------------|
 | `.bg-heritage-blue`      | `$heritage-blue (#004B88)`      |
@@ -57,9 +59,6 @@ Background colors are most commonly used for filling large blocks of content or 
 | `.bg-heritage-yellow`    | `$heritage-yellow (#fcbb69)`    |
 | `.bg-red-primary`        | `$red-primary (#df3034)`        |
 
-
-
-
 ```html
 <div class="bg-heritage-blue">
   A block with background colour of #004B88
@@ -70,7 +69,6 @@ Background colors are most commonly used for filling large blocks of content or 
 <div class="bg-heritage-yellow">
   A block with background colour of #fcbb69
 </div>
-
 ```
 
 
