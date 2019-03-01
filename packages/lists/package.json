@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "cads": {
-    "package_type": "utility"
+    "package_type": "component"
   },
   "files": [
     "index.scss",
