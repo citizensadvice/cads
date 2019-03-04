@@ -1,8 +1,8 @@
 # Buttons
 
-| Name                         | Type   | Version                                                                      |
-| ---------------------------- | ------ | ---------------------------------------------------------------------------- |
-| `@citizensadvice/buttons` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/buttons.svg) |
+| Name                      | Type   | Version                                                                   |
+|---------------------------|--------|---------------------------------------------------------------------------|
+| `@citizensadvice/buttons` | Module | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/buttons.svg) |
 
 ## Dependencies
 
@@ -29,6 +29,8 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 ```
 
 ## Introduction
+
+Buttons are an isolated module that relies on nothing more than the support package.
 
 | Available classes   |
 |---------------------|
