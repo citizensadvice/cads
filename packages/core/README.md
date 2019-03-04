@@ -1,10 +1,9 @@
 # Core
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/core.svg)
+| Name                   | Type | Version                                                                |
+|------------------------|------|------------------------------------------------------------------------|
+| `@citizensadvice/core` | Meta | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/core.svg) |
 
-## Package type
-
-- Meta
 
 ## Dependencies
 
@@ -15,20 +14,24 @@
 | `@citizensadvice/utilitie`  | TBC         |
 
 ## Installation
+Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/core
 ```
+Then bring into your stylesheets with...
 
-## Usage
 
 ```scss
 @import "@citizensadvice/core/index.scss";
 ```
+### OR
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/core@latest/build/core.css" />`
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+```html
+<link src="https://unpkg.com/@citizensadvice/core@latest/build/core.css" />
+```
 
-## Implementation
+## Introduction
 
 > Documentation coming soon...

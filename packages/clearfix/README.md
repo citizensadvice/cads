@@ -1,10 +1,9 @@
 # Clearfix
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/clearfix.svg)
+| Name                      | Type   | Version                                                                    |
+|---------------------------|--------|----------------------------------------------------------------------------|
+| `@citizensadvice/clearfix` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/clearfix.svg) |
 
-## Package type
-
-- Utility
 
 ## Dependencies
 
@@ -14,20 +13,26 @@
 
 ## Installation
 
+Using your package manager of choice...
+
+
 ```shell
 $ npm install @citizensadvice/clearfix
 ```
 
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/clearfix/index.scss";
 ```
+### OR
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/clearfix@latest/build/clearfix.css" />`
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+```html
+<link src="https://unpkg.com/@citizensadvice/clearfix@latest/build/clearfix.css" />
+```
 
-## Implementation
+## Introduction
 
 | Available classes |
 |-------------------|

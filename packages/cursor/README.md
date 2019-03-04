@@ -1,10 +1,9 @@
 # Cursor
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cursor.svg)
+| Name                     | Type   | Version                                                                  |
+|--------------------------|--------|--------------------------------------------------------------------------|
+| `@citizensadvice/cursor` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cursor.svg) |
 
-## Package type
-
-- Utility
 
 ## Dependencies
 
@@ -13,26 +12,29 @@
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
+Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/cursor
 ```
-
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/cursor/index.scss";
 ```
+### OR
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/cursor@latest/build/cursor.css" />`
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+```html
+<link src="https://unpkg.com/@citizensadvice/cursor@latest/build/cursor.css" />
+```
 
-## Implementation
+## Introduction
 
-| Available classes |
-|-------------------|
-| `.pointer `       |
-| `.hover-pointer ` |
+| Available classes | Value           |
+|-------------------|-----------------|
+| `.pointer `       | pointer         |
+| `.hover-pointer ` | pointer (hover) |
 
 ### Example markup
 ```html

@@ -29,9 +29,7 @@ Then bring into your stylesheets with...
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
 ```html
-<link
-  src="https://unpkg.com/@citizensadvice/box-sizing@latest/build/box-sizing.css"
-/>
+<link src="https://unpkg.com/@citizensadvice/box-sizing@latest/build/box-sizing.css"/>
 ```
 
 ## Introduction

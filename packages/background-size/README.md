@@ -24,13 +24,11 @@ Then bring into your stylesheets with...
 @import "@citizensadvice/background-size/index.scss";
 ```
 
-###OR
+### OR
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
 ```html
-<link
-  src="https://unpkg.com/@citizensadvice/background-size@latest/build/background-size.css"
-/>
+<link src="https://unpkg.com/@citizensadvice/background-size@latest/build/background-size.css"/>
 ```
 
 ## Introduction
