@@ -1,10 +1,9 @@
 # Display
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/display.svg)
+| Name                      | Type   | Version                                                                   |
+|---------------------------|--------|---------------------------------------------------------------------------|
+| `@citizensadvice/display` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/display.svg) |
 
-## Package type
-
-- Utility
 
 ## Dependencies
 
@@ -13,32 +12,39 @@
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
+Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/display
 ```
-
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/display/index.scss";
 ```
+### OR
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/display@latest/build/display.css" />`
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+```html
+<link src="https://unpkg.com/@citizensadvice/display@latest/build/display.css" />
+```
 
-## Implementation
+## Introduction
 
-| Available classes  |
-|--------------------|
-| `.hidden`          |
-| `.inline`          |
-| `.block`           |
-| `.inline-block`    |
-| `.table`           |
-| `.table-cell`      |
-| `.table-row`       |
-| `.table-fixed`     |
+| Available classes | Value        |
+|-------------------|--------------|
+| `.hidden`         | none         |
+| `.inline`         | inline       |
+| `.block`          | block        |
+| `.inline-block`   | inline-block |
+| `.table`          | table        |
+| `.table-cell`     | table-cell   |
+| `.table-row`      | table-row    |
+| `.table-fixed`    | fixed        |
+
+```css
+.table-fixed  { table-layout: fixed; width: 100% }
+```
 
 Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
 
