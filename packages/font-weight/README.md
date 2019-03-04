@@ -1,32 +1,51 @@
 # Font-weight
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/font-weight.svg)
+| Name                          | Type   | Version                                                                       |
+|-------------------------------|--------|-------------------------------------------------------------------------------|
+| `@citizensadvice/font-weight` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/font-weight.svg) |
 
-## Package type
-
-- Utility
 
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
+
+Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/font-weight
 ```
 
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/font-weight/index.scss";
 ```
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/font-weight@latest/build/font-weight.css" />`
+### OR
 
-## Implementation
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
-> Documentation coming soon...
+```html
+<link src="https://unpkg.com/@citizensadvice/font-weight@latest/build/font-weight.css" />
+```
+
+## Introduction
+
+| Available classes     | Value            |
+|-----------------------|------------------|
+| `.font-weight-normal` | Normal           |
+| `.regular`            | regular (400)    |
+| `.semi-bold`          | semi-bold (600)  |
+| `.bold`               | bold   (700)     |
+| `.extra-bold `        | extra-bold (700) |
+
+
+### Example markup
+```html
+<p class="font-weight-normal">...</p>
+<p class="extra-bold">...</p>
+```
