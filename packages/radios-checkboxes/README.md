@@ -4,12 +4,12 @@
 
 ## Package type
 
-- Component
+- Module
 
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation

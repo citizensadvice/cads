@@ -4,7 +4,7 @@
 
 ## Package type
 
-- Component
+- Module
 
 ## Dependencies
 
