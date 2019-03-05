@@ -102,3 +102,16 @@ components
 ├── typesetting
 └── validation
 ```
+
+## Design system maintenance
+
+If you're a developer maintaining the Design System repo then there are a few things worth noting.
+
+All packages are seperated out to make it easier to create smaller CSS bundle sizes when releasing code into a production environment. To make it easier on developers we have a few different types of package to help with making the decision of where to put new code.
+
+| Package type | Description                       | Examples                     |
+|--------------|-----------------------------------|------------------------------|
+| `Meta`       | Groups other packages together    | `forms`, `core`, etc         |
+| `Foundation` | Some configuration or scaffolding | `support`, `normalize`       |
+| `Utility`    | A single resposiblity package     | `box-sizing`, `padding`, etc |
+| `Module`     | An isolated package               | `buttons`, `selects`, etc    |
