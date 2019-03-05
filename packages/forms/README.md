@@ -6,14 +6,14 @@
 
 ## Dependencies
 
-| Name                                | Description |
-|-------------------------------------|-------------|
-| `@citizensadvice/support`           | TBC         |
-| `@citizensadvice/text-inputs`       | TBC         |
-| `@citizensadvice/radios-checkboxes` | TBC         |
-| `@citizensadvice/selects`           | TBC         |
-| `@citizensadvice/buttons`           | TBC         |
-| `@citizensadvice/validatio`         | TBC         |
+| Name                                |
+|-------------------------------------|
+| `@citizensadvice/support`           |
+| `@citizensadvice/text-inputs`       |
+| `@citizensadvice/radios-checkboxes` |
+| `@citizensadvice/selects`           |
+| `@citizensadvice/buttons`           |
+| `@citizensadvice/validatio`         |
 
 ## Installation
 
@@ -37,4 +37,6 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-> Documentation coming soon...
+This meta package handles the inclusion of all form component styling.
+
+> For more documentation on a specific package, please refer to it's package `README.md`.
