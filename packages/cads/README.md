@@ -4,27 +4,23 @@
 |------------------------|------|------------------------------------------------------------------------|
 | `@citizensadvice/cads` | Meta | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cads.svg) |
 
-
 ## Dependencies
 
-| Name                           | Description |
-|--------------------------------|-------------|
-| `@citizensadvice/core`         | TBC         |
-| `@citizensadvice/typography`   | TBC         |
-| `@citizensadvice/forms`        | TBC         |
-| `@citizensadvice/rich-content` | TBC         |
+| Name                           | Description                                                  |
+|--------------------------------|--------------------------------------------------------------|
+| `@citizensadvice/core`         | Key packages for cads, DOES NOT include the components.      |
+| `@citizensadvice/typography`   | Typography packages that are key to stying text.             |
+| `@citizensadvice/forms`        | Form packages that are fundamental to form styling           |
+| `@citizensadvice/rich-content` | A package to allow rich content to utilise cads type styling |
 
 ## Installation
+
 Using your package manager of choice...
-
-
 
 ```shell
 $ npm install @citizensadvice/cads
 ```
-
 Then bring into your stylesheets with...
-
 
 ```scss
 @import "@citizensadvice/cads/index.scss";
@@ -32,11 +28,77 @@ Then bring into your stylesheets with...
 
 ### OR
 
-You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
+
 ```html
 <link src="https://unpkg.com/@citizensadvice/cads@latest/build/cads.css" />
 ```
 
 ## Introduction
 
-> Documentation coming soon...
+This is a meta package that contains all packages within the Citizens Advice Design System.
+
+From the perspective of a developer building a product/service using the Citizens Advice Design System, you'll need to understand that we split our code into two concepts.
+
+### Utilities
+
+These are classes that adhere to the "Single Responsibility Principle" theory that states that every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+
+```
+utilities
+├── background-colors
+├── background-position
+├── background-size
+├── border-colors
+├── border-radius
+├── border-style
+├── border-width
+├── borders
+├── box-sizing
+├── cursor
+├── display
+├── flexbox
+├── floats
+├── focus
+├── font-family
+├── font-size
+├── font-style
+├── font-weight
+├── gutters
+├── heights
+├── hovers
+├── letter-spacing
+├── line-height
+├── line-limit
+├── margins
+├── normalize
+├── outlines
+├── overflow
+├── padding
+├── positioning
+├── text-align
+├── text-colors
+├── text-decoration
+├── widths
+└── z-index
+```
+
+### Components
+
+These can be either:
+
+* made of a series of utility classes,
+* or a custom class that encapsulates the component properties.
+
+```
+components
+├── buttons
+├── links
+├── lists
+├── rich-content
+├── radios-checkboxes
+├── selects
+├── text-inputs
+├── typesetting
+└── validation
+```

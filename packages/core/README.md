@@ -11,7 +11,7 @@
 |-----------------------------|-------------|
 | `@citizensadvice/support`   | TBC         |
 | `@citizensadvice/normalize` | TBC         |
-| `@citizensadvice/utilitie`  | TBC         |
+| `@citizensadvice/utilities` | TBC         |
 
 ## Installation
 Using your package manager of choice...
