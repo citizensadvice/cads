@@ -26,8 +26,7 @@ Then bring into your stylesheets with...
 @import "@citizensadvice/background-colors/index.scss";
 ```
 ### OR 
-> You can also make use of the [unpkg](https://unpkg.com/@citizensadvice/background-colors@latest/build/background-colors.css) service, try adding the link below to the head of your `HTML` file
-> 
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
 ```html
 <link src="https://unpkg.com/@citizensadvice/background-colors@latest/build/background-colors.css" />
