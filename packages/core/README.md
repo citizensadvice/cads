@@ -7,11 +7,11 @@
 
 ## Dependencies
 
-| Name                        | Description |
-|-----------------------------|-------------|
-| `@citizensadvice/support`   | TBC         |
-| `@citizensadvice/normalize` | TBC         |
-| `@citizensadvice/utilities` | TBC         |
+| Name                        |
+|-----------------------------|
+| `@citizensadvice/support`   |
+| `@citizensadvice/normalize` |
+| `@citizensadvice/utilities` |
 
 ## Installation
 Using your package manager of choice...
@@ -34,4 +34,6 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-> Documentation coming soon...
+A meta package to group together the core packages required to begin building with the Citizens Advice Design System, it **DOES NOT** include any component packages.
+
+> For more documentation on a specific package, please refer to it's package `README.md`.

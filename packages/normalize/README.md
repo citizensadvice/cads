@@ -1,32 +1,32 @@
 # Normalize
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/normalize.svg)
-
-## Package type
-
-- Foundation
-
-## Dependencies
-
-| Name                      | Description                 |
-| ------------------------- | --------------------------- |
-| `@citizensadvice/support` | System wide settings/config |
+| Name                        | Type       | Version                                                                     |
+|-----------------------------|------------|-----------------------------------------------------------------------------|
+| `@citizensadvice/normalize` | Foundation | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/normalize.svg) |
 
 ## Installation
+
+Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/normalize
 ```
-
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/normalize/index.scss";
 ```
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/normalize@latest/build/normalize.css" />`
+### OR
 
-## Implementation
+You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
 
-> Documentation coming soon...
+```html
+<link src="https://unpkg.com/@citizensadvice/normalize@latest/build/normalize.css" />
+```
+
+## Introduction
+
+Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
+
+[Code source](https://necolas.github.io/normalize.css/)

@@ -1,26 +1,36 @@
 # Support
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/support.svg)
-
-## Package type
-
-- Foundation
+| Name                      | Type       | Version                                                                   |
+|---------------------------|------------|---------------------------------------------------------------------------|
+| `@citizensadvice/support` | Foundation | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/support.svg) |
 
 ## Installation
+Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/support
 ```
 
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/support/index.scss";
 ```
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/support@latest/build/support.css" />`
+## Introduction
 
-## Implementation
+A foundation package that groups together all settings/config needed to support **ALL** other packages.
 
-> Documentation coming soon...
+It's primarily made up of variables that specify important values for things like spacing, font-sizing and colours etc.
+
+```
+support
+├── borders
+├── breakpoints
+├── colours
+├── heights
+├── spacing
+├── typography
+├── widths
+└── z-index
+```
