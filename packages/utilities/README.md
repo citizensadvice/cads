@@ -1,67 +1,74 @@
 # Utilities
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/utilities.svg)
-
-## Package type
-
-- Meta
+| Name                       | Type | Version                                                                    |
+|----------------------------|------|----------------------------------------------------------------------------|
+| `@citizensadvice/utilties` | Meta | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/utilties.svg) |
 
 ## Dependencies
 
-| Name                                  | Description |
-|---------------------------------------|-------------|
-| `@citizensadvice/support`             | TBC         |
-| `@citizensadvice/background-colors`   | TBC         |
-| `@citizensadvice/background-position` | TBC         |
-| `@citizensadvice/background-size`     | TBC         |
-| `@citizensadvice/borders`             | TBC         |
-| `@citizensadvice/border-colors`       | TBC         |
-| `@citizensadvice/border-radius`       | TBC         |
-| `@citizensadvice/border-style`        | TBC         |
-| `@citizensadvice/border-width`        | TBC         |
-| `@citizensadvice/outlines`            | TBC         |
-| `@citizensadvice/hovers`              | TBC         |
-| `@citizensadvice/focus`               | TBC         |
-| `@citizensadvice/cursor`              | TBC         |
-| `@citizensadvice/box-sizing`          | TBC         |
-| `@citizensadvice/clearfix`            | TBC         |
-| `@citizensadvice/flexbox`             | TBC         |
-| `@citizensadvice/floats`              | TBC         |
-| `@citizensadvice/gutters`             | TBC         |
-| `@citizensadvice/heights`             | TBC         |
-| `@citizensadvice/positioning`         | TBC         |
-| `@citizensadvice/widths`              | TBC         |
-| `@citizensadvice/z-index`             | TBC         |
-| `@citizensadvice/overflow`            | TBC         |
-| `@citizensadvice/margins`             | TBC         |
-| `@citizensadvice/padding`             | TBC         |
-| `@citizensadvice/font-family`         | TBC         |
-| `@citizensadvice/font-size`           | TBC         |
-| `@citizensadvice/font-style`          | TBC         |
-| `@citizensadvice/font-weight`         | TBC         |
-| `@citizensadvice/letter-spacing`      | TBC         |
-| `@citizensadvice/line-height`         | TBC         |
-| `@citizensadvice/line-limit`          | TBC         |
-| `@citizensadvice/text-align`          | TBC         |
-| `@citizensadvice/text-colors`         | TBC         |
-| `@citizensadvice/text-decoration`     | TBC         |
-| `@citizensadvice/display`             | TBC         |
+| Name                                  |
+|---------------------------------------|
+| `@citizensadvice/background-colors`   |
+| `@citizensadvice/background-position` |
+| `@citizensadvice/background-size`     |
+| `@citizensadvice/border-colors`       |
+| `@citizensadvice/border-radius`       |
+| `@citizensadvice/border-style`        |
+| `@citizensadvice/border-width`        |
+| `@citizensadvice/borders`             |
+| `@citizensadvice/box-sizing`          |
+| `@citizensadvice/cursor`              |
+| `@citizensadvice/display`             |
+| `@citizensadvice/flexbox`             |
+| `@citizensadvice/floats`              |
+| `@citizensadvice/focus`               |
+| `@citizensadvice/font-family`         |
+| `@citizensadvice/font-size`           |
+| `@citizensadvice/font-style`          |
+| `@citizensadvice/font-weight`         |
+| `@citizensadvice/gutters`             |
+| `@citizensadvice/heights`             |
+| `@citizensadvice/hovers`              |
+| `@citizensadvice/letter-spacing`      |
+| `@citizensadvice/line-height`         |
+| `@citizensadvice/line-limit`          |
+| `@citizensadvice/margins`             |
+| `@citizensadvice/normalize`           |
+| `@citizensadvice/outlines`            |
+| `@citizensadvice/overflow`            |
+| `@citizensadvice/padding`             |
+| `@citizensadvice/positioning`         |
+| `@citizensadvice/text-align`          |
+| `@citizensadvice/text-colors`         |
+| `@citizensadvice/text-decoration`     |
+| `@citizensadvice/widths`              |
+| `@citizensadvice/z-index`             |
 
 ## Installation
 
-```shell
-$ npm install @citizensadvice/utilities
-```
+Using your package manager of choice...
 
-## Usage
+```shell
+$ npm install @citizensadvice/utilties
+```
+Then bring into your stylesheets with...
 
 ```scss
-@import "@citizensadvice/utilities/index.scss";
+@import "@citizensadvice/utilties/index.scss";
 ```
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/utilities@latest/build/utilities.css" />`
+### OR
 
-## Implementation
+You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
 
-> Documentation coming soon...
+```html
+<link src="https://unpkg.com/@citizensadvice/utilties@latest/build/utilties.css" />
+```
+
+## Introduction
+
+This is a meta package that contains all utility packages.
+
+Utility classes adhere to the "Single Responsibility Principle" theory that states that every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+
+> For more documentation on a specific utility class, please refer to it's package `README.md`.
