@@ -1,8 +1,8 @@
 # Utilities
 
-| Name                       | Type | Version                                                                    |
-|----------------------------|------|----------------------------------------------------------------------------|
-| `@citizensadvice/utilties` | Meta | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/utilties.svg) |
+| Name                        | Type | Version                                                                     |
+|-----------------------------|------|-----------------------------------------------------------------------------|
+| `@citizensadvice/utilities` | Meta | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/utilities.svg) |
 
 ## Dependencies
 
@@ -49,12 +49,12 @@
 Using your package manager of choice...
 
 ```shell
-$ npm install @citizensadvice/utilties
+$ npm install @citizensadvice/utilities
 ```
 Then bring into your stylesheets with...
 
 ```scss
-@import "@citizensadvice/utilties/index.scss";
+@import "@citizensadvice/utilities/index.scss";
 ```
 
 ### OR
@@ -62,7 +62,7 @@ Then bring into your stylesheets with...
 You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
 
 ```html
-<link src="https://unpkg.com/@citizensadvice/utilties@latest/build/utilties.css" />
+<link src="https://unpkg.com/@citizensadvice/utilities@latest/build/utilities.css" />
 ```
 
 ## Introduction
