@@ -1,6 +1,6 @@
 // ========================================================
 // @name: select menus
-// @type: component
+// @type: module
 // ========================================================
 //
 // @note:
@@ -10,13 +10,18 @@
 .select {
   display: inline-block;
   position: relative;
+  font-weight: $font-weight-semi-bold;
 
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    box-shadow: inset 0 0 0 $border-scale-2 $light-grey;
     outline: none;
+    box-shadow: inset 0 0 0 $border-scale-2 $light-grey;
+    border: none;
+    border-radius: $border-scale-1;
+    padding: $spacing-3 $spacing-7 $spacing-3 $spacing-4;
+    line-height: $line-height-2;
 
     &:hover {
       box-shadow: inset 0 0 0 $border-scale-2 $grey;

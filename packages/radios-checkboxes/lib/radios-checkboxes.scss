@@ -1,16 +1,22 @@
 // ========================================================
 // @name: radios / checkboxes
-// @type: component
+// @type: module
 // ========================================================
 //
 // @note:
 // this helper sits on a container element around the 
 // <input type="radio/checkbox" /> element itself.
 //
+
 .radio,
 .checkbox {
   align-items: baseline;
+  color: $black;
   display: inline-flex;
+  font-family: 'Open Sans', helvetica, 'helvetica neue', arial, sans-serif;
+  font-weight: $font-weight-bold;
+  margin: $spacing-0 $spacing-0 $spacing-0 $spacing-1;
+  padding: $spacing-3 $spacing-4;
   position: relative;
   z-index: $z-index-100;
 
