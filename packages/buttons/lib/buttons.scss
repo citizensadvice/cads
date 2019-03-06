@@ -3,28 +3,23 @@
 // @type: module
 // ========================================================
 //
-.button,
-.button-secondary,
-.button-tertiary {
-  display: inline-flex;
+%button {
   align-items: center;
-  cursor: pointer;
-  outline: none;
-  border: none;
   border-radius: $border-scale-2;
+  border: none;
   color: $heritage-blue;
+  cursor: pointer;
+  display: inline-flex;
   font-family: 'Open Sans', helvetica, 'helvetica neue', arial, sans-serif;
+  font-size: $font-size-2;
   font-weight: $font-weight-semi-bold;
   line-height: $line-height-2;
-}
-
-.button,
-.button-secondary {
+  outline: none;
   padding: $spacing-3 $spacing-4;
-  font-size: $font-size-2;
 }
 
 .button {
+  @extend %button;
   background-color: $turquoise-primary;
   box-shadow: inset 0 0 0 $border-scale-2 $turquoise-primary;
 
@@ -38,6 +33,7 @@
   }
 
   &-secondary {
+    @extend %button;
     background-color: $white;
     box-shadow: inset 0 0 0 $border-scale-2 $turquoise-primary;
 
@@ -52,10 +48,11 @@
   }
 
   &-tertiary {
+    @extend %button;
     box-shadow: inset 0 0 0 $border-scale-1 $blue-dark;
-    padding: $spacing-2;
     font-size: $font-size-1;
     line-height: $line-height-1;
+    padding: $spacing-2;
 
     &:hover {
       background-color: $blue-mid;
@@ -65,5 +62,4 @@
       box-shadow: inset 0 0 0 $border-scale-2 $heritage-yellow;
     }
   }
-
 }
