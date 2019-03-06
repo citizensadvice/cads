@@ -10,15 +10,15 @@
 
 .radio,
 .checkbox {
-  display: inline-flex;
   align-items: baseline;
-  position: relative;
-  z-index: $z-index-100;
-  margin: $spacing-0 $spacing-0 $spacing-0 $spacing-1;
-  padding: $spacing-3 $spacing-4;
+  color: $black;
+  display: inline-flex;
   font-family: 'Open Sans', helvetica, 'helvetica neue', arial, sans-serif;
   font-weight: $font-weight-bold;
-  color: $black;
+  margin: $spacing-0 $spacing-0 $spacing-0 $spacing-1;
+  padding: $spacing-3 $spacing-4;
+  position: relative;
+  z-index: $z-index-100;
 
   input[type="radio"],
   input[type="checkbox"] {
