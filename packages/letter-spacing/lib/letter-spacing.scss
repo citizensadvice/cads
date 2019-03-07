@@ -1,0 +1,16 @@
+// ========================================================
+// @name: letter-spacing
+// @type: utility
+// ========================================================
+//
+.tracking {
+  letter-spacing: $letter-spacing-1 !important;
+}
+
+.tracking-tight {
+  letter-spacing: $letter-spacing-tight !important;
+}
+
+.tracking-mega {
+  letter-spacing: $letter-spacing-2 !important;
+}

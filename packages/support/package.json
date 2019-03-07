@@ -1,0 +1,16 @@
+{
+  "name": "@citizensadvice/support",
+  "version": "0.0.0",
+  "license": "MIT",
+  "cads": {
+    "package_type": "foundation"
+  },
+  "files": [
+    "index.scss",
+    "build/",
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

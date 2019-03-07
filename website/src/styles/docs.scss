@@ -1,35 +1,91 @@
-// ====================================================================
-// IMPORT FRAMEWORK SPECIFIC FILES
-// ====================================================================
-@import "@citizensadvice/cads-system/index.scss";
+// framework styles
+@import "@citizensadvice/cads/index.scss";
 
+// application styles
+@import "components/pygments.borland.scss";
+@import "components/main-content.scss";
+@import "components/code.scss";
+@import "components/highlight.scss";
+@import "components/tables.scss";
 
-// ====================================================================
-// IMPORT APPLICATION STYLES
-// ====================================================================
+//table styling
 
-// SETTINGS: global variables, config switches
-// TOOLS: default mixins and functions
-// GENERIC: ground-zero styles - normalize.css, resets, box-sizing.
+// li>.highlighter-rouge,
+// p>.highlighter-rouge {
+//   border-radius: 2px;
+//   border-radius: 0.125rem;
+//   padding-top: 1px;
+//   padding-top: 0.0625rem;
+//   padding-bottom: 1px;
+//   padding-bottom: 0.0625rem;
+// }
 
-// ELEMENTS: unclassed HTML elements (type selectors)
-@import "elements/e--code";
+// .highlighter-rouge .highlight {
+//   margin-bottom: 16px;
+//   margin-bottom: 1rem;
+// }
 
-// OBJECTS: cosmetic-free design patterns
+blockquote {
+  border-left: solid 4px #fcbb69;
+  background: #fde5c4;
+  color: #000;
+  margin: 1.5em 0px;
+  padding: 0.5em 10px;
+  quotes: "“""”""‘""’"
+}
 
-// COMPONENTS: designed components, chunks of UI
-@import "components/c--main-content";
-@import "components/c--static-container";
-@import "components/c--section-nav";
-@import "components/c--pygmentscss--borland";
-@import "components/c--highlight";
-@import "components/c--example";
-@import "components/c--card";
-@import "components/c--color-block";
-@import "components/c--hero";
-@import "components/c--global-footer";
-@import "components/c--global-header";
-@import "components/c--layout";
+blockquote p {
+  display: inline
+}
 
-// UTILITIES: helpers and overrides
-@import "utilities/u--testing";
+body {
+  color: $black;
+}
+
+.sticky {
+  position: sticky !important;
+  top: 0 !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.nav-top {
+  top: 4rem !important; //64px;
+}
+
+.nm-l-6 {
+  margin-left: -2rem !important;
+}
+
+.pb-100 {
+  padding-bottom: 100% !important;
+}
+
+.mw-1024 {
+  max-width: 1024px !important;
+}
+
+@media #{$breakpoint-not-small} {
+  .nav-width-ns {
+    width: 300px !important;
+  }
+
+  .overflow-y-auto-ns {
+    overflow-y: auto !important;
+  }
+
+  .nav-ml-300-ns {
+    margin-left: 300px !important;
+  }
+
+  .mw-250-ns {
+    min-width: 250px !important;
+    max-width: 250px !important;
+  }
+}

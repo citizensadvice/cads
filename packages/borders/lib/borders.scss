@@ -1,0 +1,49 @@
+// ========================================================
+// @name: borders
+// @type: utility
+// ========================================================
+//
+.b-0 {
+  border-style: none !important;
+}
+
+.ba {
+  border-style: solid !important;
+  border-width: $border-scale-1 !important;
+}
+
+.b-top {
+  border-top-style: solid !important;
+  border-top-width: $border-scale-1 !important;
+}
+
+.b-top-0 {
+  border-top-style: none !important;
+}
+
+.b-right {
+  border-right-style: solid !important;
+  border-right-width: $border-scale-1 !important;
+}
+
+.b-right-0 {
+  border-right-style: none !important;
+}
+
+.b-bottom {
+  border-bottom-style: solid !important;
+  border-bottom-width: $border-scale-1 !important;
+}
+
+.b-bottom-0 {
+  border-bottom-style: none !important;
+}
+
+.b-left {
+  border-left-style: solid !important;
+  border-left-width: $border-scale-1 !important;
+}
+
+.b-left-0 {
+  border-left-style: none !important;
+}

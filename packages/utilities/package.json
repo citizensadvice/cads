@@ -1,0 +1,60 @@
+{
+  "name": "@citizensadvice/utilities",
+  "version": "0.0.0",
+  "license": "MIT",
+  "cads": {
+    "package_type": "meta"
+  },
+  "files": [
+    "index.scss",
+    "build/",
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@citizensadvice/support": "^0.0.0",
+    "@citizensadvice/background-colors": "^0.0.0",
+    "@citizensadvice/background-position": "^0.0.0",
+    "@citizensadvice/background-size": "^0.0.0",
+    "@citizensadvice/borders": "^0.0.0",
+    "@citizensadvice/border-colors": "^0.0.0",
+    "@citizensadvice/border-radius": "^0.0.0",
+    "@citizensadvice/border-style": "^0.0.0",
+    "@citizensadvice/border-width": "^0.0.0",
+    "@citizensadvice/outlines": "^0.0.0",
+    "@citizensadvice/hovers": "^0.0.0",
+    "@citizensadvice/focus": "^0.0.0",
+    "@citizensadvice/cursor": "^0.0.0",
+    "@citizensadvice/box-sizing": "^0.0.0",
+    "@citizensadvice/clearfix": "^0.0.0",
+    "@citizensadvice/flexbox": "^0.0.0",
+    "@citizensadvice/floats": "^0.0.0",
+    "@citizensadvice/gutters": "^0.0.0",
+    "@citizensadvice/heights": "^0.0.0",
+    "@citizensadvice/positioning": "^0.0.0",
+    "@citizensadvice/widths": "^0.0.0",
+    "@citizensadvice/z-index": "^0.0.0",
+    "@citizensadvice/overflow": "^0.0.0",
+    "@citizensadvice/margins": "^0.0.0",
+    "@citizensadvice/padding": "^0.0.0",
+    "@citizensadvice/font-family": "^0.0.0",
+    "@citizensadvice/font-size": "^0.0.0",
+    "@citizensadvice/font-style": "^0.0.0",
+    "@citizensadvice/font-weight": "^0.0.0",
+    "@citizensadvice/letter-spacing": "^0.0.0",
+    "@citizensadvice/line-height": "^0.0.0",
+    "@citizensadvice/line-limit": "^0.0.0",
+    "@citizensadvice/text-align": "^0.0.0",
+    "@citizensadvice/text-colors": "^0.0.0",
+    "@citizensadvice/text-decoration": "^0.0.0",
+    "@citizensadvice/display": "^0.0.0"
+  },
+  "scripts": {
+    "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
+    "buildcss:expanded": "node-sass --output-style expanded --include-path ../../node_modules/ ./index.scss ./build/utilities.css",
+    "buildcss:compressed": "node-sass --output-style compressed --include-path ../../node_modules/ ./index.scss ./build/utilities.min.css",
+    "clean": "rm -rf ./build"
+  }
+}

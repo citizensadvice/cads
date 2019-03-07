@@ -1,0 +1,83 @@
+// ========================================================
+// @name: rich content
+// @type: component
+// ========================================================
+//
+.rich-content {
+  font-family: $font-family;
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: $spacing-0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $heritage-blue;
+  }
+
+  h1 {
+    font-size: $font-size-5;
+    line-height: $line-height-5;
+    margin-bottom: $spacing-7;
+    font-weight: $font-weight-extra-bold;
+  }
+
+  h2 {
+    font-size: $font-size-4;
+    line-height: $line-height-4;
+    margin-top: $spacing-7;
+    margin-bottom: $spacing-4;
+    font-weight: $font-weight-bold;
+  }
+
+  h3 {
+    font-size: $font-size-3;
+    line-height: $line-height-3;
+    margin-top: $spacing-7;
+    margin-bottom: $spacing-4;
+    font-weight: $font-weight-semi-bold;
+  }
+
+  p {
+    font-size: $font-size-2;
+    line-height: $line-height-2;
+    margin-bottom: $spacing-4;
+  }
+
+  em {
+    font-style: italic
+  }
+
+  ul,
+  ol {
+    line-height: $line-height-2;
+    margin-bottom: $spacing-4;
+    padding-left: $spacing-6;
+  }
+
+  ul {
+    list-style-type: disc
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  a {
+    border-bottom: 1px solid currentColor;
+    color: $heritage-blue;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $blue-mid;
+    }
+
+    &:focus {
+      outline: $border-scale-2 solid $heritage-yellow;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// ========================================================
+// @name: core
+// @type: meta
+// @desc: key packages for citizens advice design system
+// this package DOES NOT include the components.
+// ========================================================
+//
+// foundations
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@import "../support/index.scss";
+@import "../normalize/index.scss";
+
+// utilities
+@import "../utilities/index.scss";

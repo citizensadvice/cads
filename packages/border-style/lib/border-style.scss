@@ -1,0 +1,20 @@
+// ========================================================
+// @name: border-style
+// @type: utility
+// ========================================================
+//
+.b-dotted {
+  border-style: dotted !important;
+}
+
+.b-dashed {
+  border-style: dashed !important;
+}
+
+.b-solid {
+  border-style: solid !important;
+}
+
+.b-none {
+  border-style: none !important;
+}

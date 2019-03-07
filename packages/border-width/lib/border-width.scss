@@ -1,0 +1,49 @@
+// ========================================================
+// @name: border-width
+// @type: utility
+// ========================================================
+//
+.b-width-0 {
+  border-width: $border-scale-none !important;
+}
+
+.b-width-1 {
+  border-width: $border-scale-1 !important;
+}
+
+.b-width-2 {
+  border-width: $border-scale-2 !important;
+}
+
+.b-width-3 {
+  border-width: $border-scale-3 !important;
+}
+
+.b-width-4 {
+  border-width: $border-scale-4 !important;
+}
+
+.b-width-5 {
+  border-width: $border-scale-5 !important;
+}
+
+.b-width-6 {
+  border-width: $border-scale-6 !important;
+}
+
+/* Resets */
+.b-top-width-0 {
+  border-top-width: $border-scale-none !important;
+}
+
+.b-right-width-0 {
+  border-right-width: $border-scale-none !important;
+}
+
+.b-bottom-width-0 {
+  border-bottom-width: $border-scale-none !important;
+}
+
+.b-left-width-0 {
+  border-left-width: $border-scale-none !important;
+}

@@ -9,9 +9,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
 
 ## Brand
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--heritageBlue"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-heritage-blue"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Heritage blue</strong><br>
       $brand--heritageBlue<br>
@@ -21,9 +21,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--heritageYellow"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-heritage-yellow"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Heritage yellow</strong><br>
       $brand--heritageYellow<br>
@@ -35,9 +35,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
 
 ## Brand tints
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--heritageBlueTint"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-heritage-blue-40"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Heritage blue 40</strong><br>
       $brand--heritageBlueTint<br>
@@ -47,9 +47,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--heritageYellowTint"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-heritage-yellow-40"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Heritage yellow 40</strong><br>
       $brand--heritageYellowTint<br>
@@ -61,9 +61,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
 
 ## Extended palette
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--blueDark"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-blue-dark"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Blue dark</strong><br>
       $extended--blueDark<br>
@@ -73,9 +73,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--bluePrimary"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-blue-primary"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Blue primary</strong><br>
       $extended--bluePrimary<br>
@@ -85,9 +85,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--blueMid"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-blue-mid"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Blue mid</strong><br>
       $extended--blueMid<br>
@@ -97,9 +97,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--blueLight"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-blue-light"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Blue light</strong><br>
       $extended--blueLight<br>
@@ -109,9 +109,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--turquoiseDark"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-turquoise-dark"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Turquoise dark</strong><br>
         $extended--turquoiseDark<br>
@@ -121,9 +121,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--turquoisePrimary"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-turquoise-primary"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Turquoise primary</strong><br>
       $extended--turquoisePrimary<br>
@@ -133,9 +133,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--turquoiseMid"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-turquoise-mid"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Turquoise mid</strong><br>
       $extended--turquoiseMid<br>
@@ -145,9 +145,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--turquoiseLight"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-turquoise-light"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Turquoise light</strong><br>
       $extended--turquoiseLight<br>
@@ -157,9 +157,9 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--redPrimary"></div>
-  <div class="c-card__body">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-red-primary"></div>
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Red primary</strong><br>
       $extended--redPrimary<br>
@@ -169,10 +169,10 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--redLight">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-red-light">
   </div>
-  <div class="c-card__body">
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Red light</strong><br>
       $extended--redLight<br>
@@ -184,10 +184,10 @@ The colour palette is designed to pass accessibility contrast ratios while still
 
 ## Monochrome palette
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--black">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-black">
   </div>
-  <div class="c-card__body">
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Black</strong><br>
       $monochrome--black<br>
@@ -197,10 +197,10 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--darkGrey">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-dark-grey">
   </div>
-  <div class="c-card__body">
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Dark grey</strong><br>
       $monochrome--darkGrey<br>
@@ -210,10 +210,10 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--midGrey">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-mid-grey">
   </div>
-  <div class="c-card__body">
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Mid grey</strong><br>
       $monochrome--midGrey<br>
@@ -223,10 +223,10 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--grey">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-grey">
   </div>
-  <div class="c-card__body">
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Grey</strong><br>
       $monochrome--grey<br>
@@ -236,10 +236,10 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--lightGrey">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-light-grey">
   </div>
-  <div class="c-card__body">
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Light grey</strong><br>
       $monochrome--lightGrey<br>
@@ -249,10 +249,10 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--paleGrey">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-pale-grey">
   </div>
-  <div class="c-card__body">
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>Pale grey</strong><br>
       $monochrome--paleGrey<br>
@@ -262,10 +262,10 @@ The colour palette is designed to pass accessibility contrast ratios while still
   </div>
 </div>
 
-<div class="c-card">
-  <div class="c-card__media c-color-block--white">
+<div class="inline-flex-ns overflow-hidden flex-column-ns mr-4-ns ba b-width-1 b-radius-4 b-light-grey mb-4">
+  <div class="block height-0 pb-100 w-full mw-250-ns bg-white">
   </div>
-  <div class="c-card__body">
+  <div class="b-top b-width-1 b-light-grey p-3">
     <p>
       <strong>White</strong><br>
       $monochrome--white<br>

@@ -1,0 +1,40 @@
+// ========================================================
+// @name: code
+// @type: component
+// ========================================================
+//
+code,
+tt {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  font-family: Hack, monospace;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+pre code {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+}
+
+pre {
+  background-color: #f8f8f8;
+  line-height: 19px;
+  margin-top: 0;
+  overflow: auto;
+  padding: 20px;
+}
+
+pre code,
+pre tt {
+  background-color: transparent;
+  border: none;
+}

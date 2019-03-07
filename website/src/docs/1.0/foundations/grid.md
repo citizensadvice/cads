@@ -26,23 +26,15 @@ The grid column widths are based on the viewport sizes. These are:
 ## Full width
 
 {% capture example %}
-<div class="o-grid">
-  <div class="o-grid__unit">
-    <div class="c-color-block--example c-color-block--blueMid">Full</div>
-  </div>
+<div class="flex">
+    <div class="w-full bg-blue-mid text-center bold p-4 b-radius-4">Full</div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="c-wrap">
-  <div class="o-grid">
-    <div class="o-grid__unit">...</div>
-
-  or
-
-    <div class="o-grid__unit o-grid__unit--t-1-1">...</div>
-  </div>
+<div class="flex">
+    <div class="w-full bg-blue-mid text-center bold p-4 b-radius-4">...</div>
 </div>
 
 {% endcapture %}
@@ -51,24 +43,22 @@ The grid column widths are based on the viewport sizes. These are:
 ## Halves
 
 {% capture example %}
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-1-2">
-    <div class="c-color-block--example c-color-block--blueMid">Half</div>
+<div class="flex flex-wrap gutter">
+  <div class="w-half ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Half</div>
   </div>
 
-  <div class="o-grid__unit o-grid__unit--t-1-2">
-    <div class="c-color-block--example c-color-block--blueMid">Half</div>
+  <div class="w-half ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Half</div>
   </div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="c-wrap">
-  <div class="o-grid">
-    <div class="o-grid__unit o-grid__unit--t-1-2">...</div>
-    <div class="o-grid__unit o-grid__unit--t-1-2">...</div>
-  </div>
+<div class="flex flex-wrap gutter">
+    <div class="w-half ph-2 mb-0">...</div>
+    <div class="w-half ph-2 mb-0">...</div>
 </div>
 
 {% endcapture %}
@@ -77,46 +67,42 @@ The grid column widths are based on the viewport sizes. These are:
 ## Thirds
 
 {% capture example %}
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-1-3">
-    <div class="c-color-block--example c-color-block--blueMid">Third</div>
+<div class="flex flex-wrap gutter">
+  <div class="w-third ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 
-  <div class="o-grid__unit o-grid__unit--t-1-3">
-    <div class="c-color-block--example c-color-block--blueMid">Third</div>
+  <div class="w-third ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 
-  <div class="o-grid__unit o-grid__unit--t-1-3">
-    <div class="c-color-block--example c-color-block--blueMid">Third</div>
+  <div class="w-third ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 </div>
 <br/>
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-2-3">
-    <div class="c-color-block--example c-color-block--blueMid">Two thirds</div>
+<div class="flex flex-wrap gutter">
+  <div class="w-two-thirds ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Two thirds</div>
   </div>
 
-  <div class="o-grid__unit o-grid__unit--t-1-3">
-    <div class="c-color-block--example c-color-block--blueMid">Third</div>
+  <div class="w-third ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
   </div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="c-wrap">
-  <div class="o-grid">
-    <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
-    <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
-    <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
-  </div>
+<div class="flex flex-wrap gutter">
+    <div class="w-third ph-2 mb-0">...</div>
+    <div class="w-third ph-2 mb-0">...</div>
+    <div class="w-third ph-2 mb-0">...</div>
 </div>
 
-<div class="c-wrap">
-  <div class="o-grid">
-    <div class="o-grid__unit o-grid__unit--t-2-3">...</div>
-    <div class="o-grid__unit o-grid__unit--t-1-3">...</div>
-  </div>
+<div class="flex flex-wrap gutter">
+    <div class="w-two-thirds ph-2 mb-0">...</div>
+    <div class="w-third ph-2 mb-0">...</div>
 </div>
 
 {% endcapture %}
@@ -125,50 +111,46 @@ The grid column widths are based on the viewport sizes. These are:
 ## Quarters
 
 {% capture example %}
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-1-4">
-    <div class="c-color-block--example c-color-block--blueMid">Quarter</div>
+<div class="flex flex-wrap gutter">
+  <div class="w-quarter ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 
-  <div class="o-grid__unit o-grid__unit--t-1-4">
-    <div class="c-color-block--example c-color-block--blueMid">Quarter</div>
+  <div class="w-quarter ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 
-  <div class="o-grid__unit o-grid__unit--t-1-4">
-    <div class="c-color-block--example c-color-block--blueMid">Quarter</div>
+  <div class="w-quarter ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 
-  <div class="o-grid__unit o-grid__unit--t-1-4">
-    <div class="c-color-block--example c-color-block--blueMid">Quarter</div>
+  <div class="w-quarter ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 </div>
 <br/>
-<div class="o-grid">
-  <div class="o-grid__unit o-grid__unit--t-3-4">
-    <div class="c-color-block--example c-color-block--blueMid">Three quarters</div>
+<div class="flex flex-wrap gutter">
+  <div class="w-three-quarters ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Three quarters</div>
   </div>
 
-  <div class="o-grid__unit o-grid__unit--t-1-4">
-    <div class="c-color-block--example c-color-block--blueMid">Quarter</div>
+  <div class="w-quarter ph-2 mb-0">
+    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
   </div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="c-wrap">
-  <div class="o-grid">
-    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
-    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
-    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
-    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
-  </div>
+<div class="flex flex-wrap gutter">
+    <div class="w-quarter ph-2 mb-0">...</div>
+    <div class="w-quarter ph-2 mb-0">...</div>
+    <div class="w-quarter ph-2 mb-0">...</div>
+    <div class="w-quarter ph-2 mb-0">...</div>
 </div>
-<div class="c-wrap">
-  <div class="o-grid">
-    <div class="o-grid__unit o-grid__unit--t-3-4">...</div>
-    <div class="o-grid__unit o-grid__unit--t-1-4">...</div>
-  </div>
+<div class="flex flex-wrap gutter">
+    <div class="w-three-quarters ph-2 mb-0">...</div>
+    <div class="w-quarter ph-2 mb-0">...</div>
 </div>
 {% endcapture %}
 {% include snippet.html content=snippet %}

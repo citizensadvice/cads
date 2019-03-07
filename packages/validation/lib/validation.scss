@@ -1,0 +1,36 @@
+// ========================================================
+// @name: form validation
+// @type: component
+// ========================================================
+//
+.text-input {
+  &.is-invalid {
+
+    textarea,
+    input {
+      -webkit-box-shadow: inset 0 0 0 $border-scale-2 $red-primary;
+      box-shadow: inset 0 0 0 $border-scale-2 $red-primary;
+    }
+  }
+}
+
+.radio,
+.checkbox {
+  &.is-invalid {
+
+    input[type="radio"]::before,
+    input[type="checkbox"]::before {
+      -webkit-box-shadow: inset 0 0 0 $border-scale-2 $red-primary;
+      box-shadow: inset 0 0 0 $border-scale-2 $red-primary;
+    }
+  }
+}
+
+.select {
+  &.is-invalid {
+    select {
+      -webkit-box-shadow: inset 0 0 0 $border-scale-2 $red-primary;
+      box-shadow: inset 0 0 0 $border-scale-2 $red-primary;
+    }
+  }
+}

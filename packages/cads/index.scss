@@ -1,0 +1,14 @@
+// ========================================================
+// @name: citizens advice design system
+// @type: meta
+// @desc: all packages available as part of the entire
+// design system. Core / Components
+// ========================================================
+//
+// foundations & utilities
+@import "../core/index.scss";
+
+// components
+@import "../typography/index.scss";
+@import "../forms/index.scss";
+@import "../rich-content/index.scss";

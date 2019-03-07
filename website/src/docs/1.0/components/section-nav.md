@@ -19,40 +19,98 @@ The parent title of the collection of pages should be placed at the top of the c
 
 
 {% capture example %}
-<ul class="o-list o-list--flat-recursive c-section-nav">
-  <li class="c-section-nav__before">In this section</li>
-  <li class="c-section-nav__section">
-    <span class="c-section-nav__section-heading">Something's wrong with a purchase</span>
-    <ul class="c-section-nav__section-items">
-      <li class="c-section-nav__section-item c-section-nav__section-item--active"><a href="#">Link to current page visited</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A much much much longer link to another page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-    </ul>
-  </li>
-</ul>
+<ul class="m-0 p-0 list-style-none">
+    <li class="mb-3">In this section</li>
+    <li class="mb-7">
+      <span class="h2 block mt-0 mb-2">Something's wrong with a purchase</span>
+      <ul class="m-0 p-0 list-style-none">
+        <li>
+          <a href="#" class="bg-blue-light p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            Link to current page visited
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A much much much longer link to another page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<ul class="o-list o-list--flat-recursive c-section-nav">
-  <li class="c-section-nav__before">In this section</li>
-  <li class="c-section-nav__section">
-    <span class="c-section-nav__section-heading">Something's wrong with a purchase</span>
-    <ul class="c-section-nav__section-items">
-      <li class="c-section-nav__section-item c-section-nav__section-item--active"><a href="#">Link to current page visited</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A much much much longer link to another page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-      <li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
-    </ul>
-  </li>
-</ul>
+<ul class="m-0 p-0 list-style-none">
+    <li class="mb-3">In this section</li>
+    <li class="mb-7">
+      <span class="h2 block mt-0 mb-2">Something's wrong with a purchase</span>
+      <ul class="m-0 p-0 list-style-none">
+        <li>
+          <a href="#" class="bg-blue-light p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            Link to current page visited
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A much much much longer link to another page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+        <li>
+          <a href="#" class="p-2 inline-block no-underline b-bottom-width-0 black hover-bg-blue-light w-full">
+            A link to a page
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
 {% endcapture %}
 {% include snippet.html content=snippet %}
 

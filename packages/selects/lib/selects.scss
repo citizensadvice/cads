@@ -1,0 +1,55 @@
+// ========================================================
+// @name: select menus
+// @type: module
+// ========================================================
+//
+// @note:
+// this helper sits on a container element around the <select /> 
+// element itself.
+//
+.select {
+  display: inline-block;
+  position: relative;
+  font-weight: $font-weight-semi-bold;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-box-shadow: inset 0 0 0 $border-scale-2 $light-grey;
+    box-shadow: inset 0 0 0 $border-scale-2 $light-grey;
+    border: none;
+    border-radius: $border-scale-1;
+    padding: $spacing-3 $spacing-7 $spacing-3 $spacing-4;
+    line-height: $line-height-2;
+
+    &:hover {
+      -webkit-box-shadow: inset 0 0 0 $border-scale-2 $grey;
+      box-shadow: inset 0 0 0 $border-scale-2 $grey;
+    }
+
+    &:focus {
+      -webkit-box-shadow: inset 0 0 0 $border-scale-2 $heritage-yellow;
+      box-shadow: inset 0 0 0 $border-scale-2 $heritage-yellow;
+    }
+  }
+
+  &::after {
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-left-width: $spacing-3 / 2;
+    border-right-width: $spacing-3 / 2;
+    border-top-width: $spacing-3 / 2;
+    border-top-style: solid;
+    border-top-color: rgb(0, 0, 0);
+    content: '';
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    right: $spacing-4;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    width: 0;
+  }
+}
