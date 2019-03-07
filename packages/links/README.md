@@ -1,10 +1,9 @@
 # Links
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/links.svg)
+| Name                    | Type   | Version                                                                 |
+|-------------------------|--------|-------------------------------------------------------------------------|
+| `@citizensadvice/links` | Module | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/links.svg) |
 
-## Package type
-
-- Module
 
 ## Dependencies
 
@@ -14,19 +13,28 @@
 
 ## Installation
 
+Using your package manager of choice...
+
 ```shell
 $ npm install @citizensadvice/links
 ```
 
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/links/index.scss";
 ```
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/links@latest/build/links.css" />`
+### OR
 
-## Implementation
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
-> Documentation coming soon...
+```html
+<link src="https://unpkg.com/@citizensadvice/links@latest/build/links.css" />
+```
+
+## Introduction
+
+```css
+.a { border-bottom: 1px solid currentColor; color: $heritage-blue; text-decoration: none;}
+```
