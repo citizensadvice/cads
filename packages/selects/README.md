@@ -16,23 +16,25 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/selects
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/selects/index.scss";
 ```
+
 ### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
 ```html
 <link src="https://unpkg.com/@citizensadvice/selects@latest/build/selects.css" />
 ```
 
 ## Introduction
 
-Selects are an isolated module that handle how the `<select/>` elements look. They come with predefined styling to control their overall look and state, but you can override this styling by adding utility classes to control spacing and border colours for example too.
-
-All form elements are constructed in the same vein. In the case of selects, we enclose them within an element with the class `select`.
+Selects is an isolated module.
+We enclose them in a `<div/>` with either the class `radio` **OR** `checkbox`.
 
 ### Example markup
 

@@ -35,4 +35,34 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-> Documentation coming soon...
+Default styling for lists.
+
+```html
+<ul class="ul">
+  <li>Item #1</li>
+  <li>Item #2</li>
+  <li>Item #3</li>
+</ul>
+
+<ol class="ol">
+  <li>Item #1</li>
+  <li>Item #2</li>
+  <li>Item #3</li>
+</ol>
+```
+
+## Removing list / list-item styling
+
+```html
+<ul class="ul list-style-none">
+  <li>Item #1</li>
+  <li>Item #2</li>
+  <li>Item #3</li>
+</ul>
+
+<ol class="ol">
+  <li class="list-style-none">Item #1</li>
+  <li class="list-style-none">Item #2</li>
+  <li class="list-style-none">Item #3</li>
+</ol>
+```

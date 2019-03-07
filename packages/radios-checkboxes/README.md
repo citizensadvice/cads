@@ -11,6 +11,7 @@
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
+
 Using your package manager of choice...
 
 ```shell
@@ -26,16 +27,14 @@ Then bring into your stylesheets with...
 ### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
 ```html
 <link src="https://unpkg.com/@citizensadvice/radios-checkboxes@latest/build/radios-checkboxes.css" />
 ```
 
 ## Introduction
 
-Both radios and checkboxes have been grouped together because they're markup, design and behaviour is almost identical to one another.
-We've created two different classes to make it easier to spot very quickly what component you're looking at when gleaning the markup.
-This module is an isolated package meaning that it depends solely on one other package, the `support` package.
-All form elements are constructed in the same vein. In the case of radios/checkboxes, we enclose them within an element with either the class `radio` **OR** `checkbox`.
+Both radios and checkboxes have been grouped together because they're markup and behaviour is identical. We enclose them in a `<div/>` with either the class `radio` **OR** `checkbox`.
 
 ### Example checkbox markup
 
