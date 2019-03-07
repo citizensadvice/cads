@@ -180,20 +180,6 @@ Now if you open a browser window at [http://cads-website.test:3000](http://cads-
 
 [Back to top](#citizens-advice-design-system)
 
-## Sandbox guide
-
-This is a great area with which to start developing new features and components and to test them out.
-
-The files are located in the `root` of the repo under the directory `sandbox/`.
-
-Once you have setup your environment navigate to [http://cads-sandbox.test:3000](http://cads-sandbox.test:3000), you should see a very basic page with a heading.
-
-This is another Jekyll site that's running separately to the docs website.
-
-If you need more pages or to simply edit the index page you will need to edit the `sandbox/app/index.html`. Styles are in the `sandbox/app/assets/...` directory and if needs be, you should place your images in here too. You have complete freedom to alter this as you see fit. It's essentially a playground for all things Design System, but try **NOT** to commit these changes in your Pull Requests.
-
-[Back to top](#citizens-advice-design-system)
-
 ## Command line shell
 
 To run a command line shell in the project via docker, run the following command:
