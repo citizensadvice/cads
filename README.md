@@ -223,7 +223,6 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 $ bin/docker/run yarn build:packages
 ```
 
-- If it's the website you're changing, make those updates in the `website/` directory.
 - Next create a [pull request](https://github.com/btomy/ca-designsystem/pulls) where upon some discussion around the PR will happen.
 
 ### Publishing a version of the framework
