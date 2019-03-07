@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/lists",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "cads": {
     "package_type": "module"
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/support": "^0.0.0"
+    "@citizensadvice/support": "^1.0.0"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",

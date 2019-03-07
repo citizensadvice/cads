@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/typography",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "cads": {
     "package_type": "meta"
@@ -14,10 +14,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/support": "^0.0.0",
-    "@citizensadvice/typesetting": "^0.0.0",
-    "@citizensadvice/lists": "^0.0.0",
-    "@citizensadvice/links": "^0.0.0"
+    "@citizensadvice/links": "^1.0.0",
+    "@citizensadvice/lists": "^1.0.0",
+    "@citizensadvice/support": "^1.0.0",
+    "@citizensadvice/typesetting": "^1.0.0"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
