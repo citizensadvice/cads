@@ -7,7 +7,7 @@ host: 0.0.0.0
 
 # build settings:
 source: "src"
-framework_version: 0.0.5
+framework_version: 1.0.0
 docs_version: 1.0
 markdown: kramdown
 highlighter: rouge
