@@ -5,3 +5,8 @@ yarn-error.log
 .vscode
 packages/**/*.tgz
 packages/**/build/
+_site
+.sass-cache
+.jekyll-metadata
+**/*.css
+

@@ -5,10 +5,8 @@ services:
     volumes:
       - .:/cads
       - cads-node_modules:/cads/node_modules
-      - cads-jekyll_website:/cads/website/_site
-      - cads-website_sass_cache:/cads/website/.sass-cache
-      - cads-jekyll_sandbox:/cads/sandbox/_site
-      - cads-sandbox_sass_cache:/cads/sandbox/.sass-cache
+      - cads-jekyll:/cads/_site
+      - cads-sass_cache:/cads/.sass-cache
     user: root
     env_file:
       - ./docker/dev.env
@@ -17,18 +15,8 @@ services:
     volumes:
       - .:/cads
       - cads-node_modules:/cads/node_modules
-      - cads-jekyll_website:/cads/website/_site
-      - cads-website_sass_cache:/cads/website/.sass-cache
-    user: root
-    env_file:
-      - ./docker/dev.env
-
-  cads-sandbox:
-    volumes:
-      - .:/cads
-      - cads-node_modules:/cads/node_modules
-      - cads-jekyll_sandbox:/cads/sandbox/_site
-      - cads-sandbox_sass_cache:/cads/sandbox/.sass-cache
+      - cads-jekyll:/cads/_site
+      - cads-sass_cache:/cads/.sass-cache
     user: root
     env_file:
       - ./docker/dev.env
@@ -38,21 +26,17 @@ services:
     container_name: cads-watch.test
     labels:
       - "traefik.enable=false"
-    command: yarn watchcss:all
+    command: yarn watchcss
     volumes:
       - .:/cads
       - cads-node_modules:/cads/node_modules
-      - cads-jekyll_website:/cads/website/_site
-      - cads-website_sass_cache:/cads/website/.sass-cache
-      - cads-jekyll_sandbox:/cads/sandbox/_site
-      - cads-sandbox_sass_cache:/cads/sandbox/.sass-cache
+      - cads-jekyll:/cads/_site
+      - cads-sass_cache:/cads/.sass-cache
     user: root
     env_file:
       - ./docker/dev.env
 
 volumes:
   cads-node_modules: {}
-  cads-jekyll_website: {}
-  cads-website_sass_cache: {}
-  cads-jekyll_sandbox: {}
-  cads-sandbox_sass_cache: {}
+  cads-jekyll: {}
+  cads-sass_cache: {}

@@ -17,21 +17,18 @@
     "stylelint-scss": "^3.5.2"
   },
   "scripts": {
-    "clean": "npm-run-all -s clean:sandbox clean:website",
+    "clean": "rm -rf ./_site/ && rm -rf ./.sass-cache/",
     "build:packages": "lerna run build",
-    "build:website": "cd ./website/ && bundle install && bundle exec jekyll build",
+    "build:website": "bundle exec jekyll build",
     "clean:packages": "lerna run clean",
-    "clean:website": "rm -rf ./website/_site/ && rm -rf ./website/.sass-cache/",
-    "compilecss:all": "npm-run-all compilecss:website compilecss:sandbox",
-    "compilecss:website": "node-sass --output-style compressed --include-path ./node_modules/ --include-path ./website/src/styles/ ./website/src/styles/docs.scss ./website/src/styles/docs.css",
-    "compilecss:all": "npm-run-all compilecss:website",
+    "compilecss": "node-sass --output-style compressed --include-path ./node_modules/ --include-path ./src/styles/ ./src/styles/docs.scss ./src/styles/docs.css",
     "lint:styles": "stylelint \"packages/**/*.scss\" --syntax scss --quiet",
     "modules:reset": "npm-run-all -s clean:modules fresh",
     "packages:bump": "lerna version --skip-git",
-    "serve:website": "cd ./website/ && bundle install && bundle exec jekyll serve",
-    "start:website": "npm-run-all -p watchcss:all serve:website",
-    "watchcss:all": "nodemon --watch ./packages --watch ./website/src/styles --ext scss --exec \"npm run compilecss:all\"",
+    "serve": "bundle exec jekyll serve",
+    "start": "npm-run-all -p watchcss serve",
+    "watchcss": "nodemon --watch ./packages --watch ./src/styles --ext scss --exec \"npm run compilecss\"",
     "publish:packages": "yarn build:packages && npm login && lerna publish --skip-git && lerna version --skip-git",
-    "publish:website": "yarn build:website && gh-pages -d ./website/_site"
+    "publish:website": "yarn build:website && gh-pages -d ./_site"
   }
 }

@@ -6,6 +6,6 @@ source docker/shared-services/bin/start-proxy
 source bin/docker/compose_files
 
 echo "$(date) - Starting application..."
-docker-compose ${COMPOSE_FILES[@]} up --no-recreate -d cads-website cads-sandbox cads-watch
+docker-compose ${COMPOSE_FILES[@]} up --no-recreate -d cads-website cads-watch
 
 echo "$(date) - Application started..."

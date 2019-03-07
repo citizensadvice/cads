@@ -14,9 +14,8 @@ ADD . /cads/
 # Install js packages
 RUN yarn && \
     yarn build:packages && \
-    yarn compilecss:all
+    yarn compilecss
 
 # Build jekyll sites
 ENV JEKYLL_ENV production
-RUN bundle exec jekyll build --source /cads/website/src --destination /cads/website/_site --config /cads/website/_config.yml && \
-    bundle exec jekyll build --source /cads/sandbox/src --destination /cads/sandbox/_site --config /cads/sandbox/_config.yml
+RUN bundle exec jekyll build --source /cads/src --destination /cads/_site --config /cads/_config.yml

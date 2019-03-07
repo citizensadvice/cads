@@ -19,33 +19,11 @@ services:
       - "traefik.backend=cads-website"
       - "traefik.frontend.rule=Host: cads-website.test"
       - "traefik.enable=true"
-    working_dir: /cads/website
     command: bundle exec puma -p 4000
     ports:
       - "4000"
     env_file:
       - ./docker/default.env
-    environment:
-      - JEKYLL_SITE=website
-
-  cads-sandbox:
-    image: "cads${CADS_VERSION_TAG}"
-    container_name: cads-sandbox.test
-    labels:
-      - "traefik.port=4000"
-      - "traefik.backend=cads-sandbox"
-      - "traefik.frontend.rule=Host: cads-sandbox.test"
-      - "traefik.enable=true"
-    working_dir: /cads/sandbox
-    command: bundle exec puma -p 4000
-    ports:
-      - "4000"
-    env_file:
-      - ./docker/default.env
-    environment:
-      - JEKYLL_SITE=sandbox
-    command: bundle exec puma -p 4000
-
 
   cads-linkchecker:
     image: citizensadvice/linkchecker
