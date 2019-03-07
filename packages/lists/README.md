@@ -1,10 +1,9 @@
 # Lists
 
-![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/lists.svg)
+| Name                    | Type   | Version                                                                 |
+|-------------------------|--------|-------------------------------------------------------------------------|
+| `@citizensadvice/lists` | Module | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/lists.svg) |
 
-## Package type
-
-- Module
 
 ## Dependencies
 
@@ -14,19 +13,26 @@
 
 ## Installation
 
+Using your package manager of choice...
+
 ```shell
 $ npm install @citizensadvice/lists
 ```
 
-## Usage
+Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/lists/index.scss";
 ```
 
-> You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-> `<link src="https://unpkg.com/@citizensadvice/lists@latest/build/lists.css" />`
+### OR
 
-## Implementation
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
+```html
+<link src="https://unpkg.com/@citizensadvice/lists@latest/build/lists.css" />
+```
+
+## Introduction
 
 > Documentation coming soon...
