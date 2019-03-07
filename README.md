@@ -5,7 +5,6 @@
 - [Introduction](#introduction)
 - [Framework guide](#framework-guide)
 - [Documentation guide](#documentation-guide)
-- [Sandbox guide](#sandbox-guide)
 - [How to contribute](#how-to-contribute)
 - [Git style guide](#git-style-guide)
 
@@ -15,9 +14,8 @@ Welcome to the Citizens Advice Design System. A tool that we hope will ease the 
 
 Our platform uses the "mono-repo" concept, where all aspects of the Design System can live together. This provides better management rather than splitting each out into their respective repositories. Currently we have:
 
-- the **framework** itself
-- the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**
-- a **sandbox** environment used as a playground for new component.
+- the **packages** which are the framework itself,
+- the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**.
 
 We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they require.
 
@@ -233,7 +231,6 @@ Anybody and everybody is welcome to get involved in contributing to the framewor
 ### Process
 
 - Create a new branch making sure you adhere to the [git style guidelines](#Git-style-guidelines).
-- Use the sandbox to start hacking away at your new feature / fix.
 - If you're fixing the `framework`, make sure to make `CSS` changes in the `packages/` directory as these are the framework source files:
 
 ```shell
