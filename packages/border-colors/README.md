@@ -1,13 +1,13 @@
 # Border-colors
 
 | Name                            | Type   | Version                                                                         |
-| ------------------------------- | ------ | ------------------------------------------------------------------------------- |
+|---------------------------------|--------|---------------------------------------------------------------------------------|
 | `@citizensadvice/border-colors` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/border-colors.svg) |
 
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -34,10 +34,10 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-The border-color shorthand CSS property sets the color of all sides of an element's border.
+Defines the color of the element's borders.
 
 | Available classes       | Value                           |
-| ----------------------- | ------------------------------- |
+|-------------------------|---------------------------------|
 | `.b-heritage-blue`      | `$heritage-blue (#004B88)`      |
 | `.b-heritage-blue-40`   | `$heritage-blue-40 (#97a8cc)`   |
 | `.b-heritage-yellow-40` | `$heritage-yellow-40 (#fde5c4)` |

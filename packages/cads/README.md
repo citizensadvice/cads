@@ -8,7 +8,7 @@
 
 | Name                           | Description                                                  |
 |--------------------------------|--------------------------------------------------------------|
-| `@citizensadvice/core`         | Key packages for cads, DOES NOT include the components.      |
+| `@citizensadvice/core`         | Key packages for cads, **DOES NOT** include the components.  |
 | `@citizensadvice/typography`   | Typography packages that are key to stying text.             |
 | `@citizensadvice/forms`        | Form packages that are fundamental to form styling           |
 | `@citizensadvice/rich-content` | A package to allow rich content to utilise cads type styling |
@@ -20,6 +20,7 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/cads
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
@@ -42,7 +43,8 @@ From the perspective of a developer building a product/service using the Citizen
 
 ### Utilities
 
-These are classes that adhere to the "Single Responsibility Principle" theory that states that every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+Utilties provide the building blocks for common layout and styling, to avoid writing custom classes.
+They adhere to the "Single Responsibility Principle" theory that states that every module, class or function should have one responsibility and that the responsibility should be entirely encapsulated by the class.
 
 ```
 utilities

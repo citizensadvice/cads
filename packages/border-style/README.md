@@ -1,13 +1,13 @@
 # Border-style
 
 | Name                           | Type   | Version                                                                        |
-| ------------------------------ | ------ | ------------------------------------------------------------------------------ |
+|--------------------------------|--------|--------------------------------------------------------------------------------|
 | `@citizensadvice/border-style` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/border-style.svg) |
 
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -34,14 +34,16 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-The border-style CSS property is a shorthand property that sets the line style for all four sides of an element's border.
+Defines the style of the element's borders.
 
-| Available classes | Value  |
-| ----------------- | ------ |
-| `.b-dotted`       | dotted |
-| `.b-dashed`       | dashed |
-| `.b-solid`        | solid  |
-| `.b-none`         | none   |
+### CSS
+
+```css
+.b-dotted { border-style: dotted }
+.b-dashed { border-style: dashed }
+.b-solid  { border-style: solid  }
+.b-none   { border-style: none   }
+```
 
 ### Example markup
 

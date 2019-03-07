@@ -18,32 +18,36 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/gutters
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/gutters/index.scss";
 ```
+
 ### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
 ```html
 <link src="https://unpkg.com/@citizensadvice/gutters@latest/build/gutters.css" />
 ```
 
-## Implementation
-
-
 ## Introduction
+
+Creates negative horizontal margins when combined with the widths utility classes to build grids.
 
 | Available classes | Value                        |
 |-------------------|------------------------------|
 | `.gutter`         | $spacing-2 (0.5rem) or (8px) |
 
 ```css
-.gutter  { margin-left: -8px; margin-right: -8px }
+.gutter { margin-left: -8px; margin-right: -8px }
 ```
 
-Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
+## Responsive gutter classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Available classes     | Description                                 |
 |-----------------------|---------------------------------------------|
@@ -53,6 +57,7 @@ Don't forget that should you want to have specific sizes for specific screen res
 
 
 ### Example markup
+
 ```html
 <div class="gutter gutter-ns">...</div>
 ```

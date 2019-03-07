@@ -33,21 +33,20 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Sets the line-height on an element.
+Defines the height of a single line of text.
 
-## Abbreviations
+| Available classes | Value                   |
+|-------------------|-------------------------|
+| `.lh-0`           | `$line-height-0` (0px)  |
+| `.lh-1`           | `$line-height-1` (20px) |
+| `.lh-2`           | `$line-height-2` (24px) |
+| `.lh-3`           | `$line-height-3` (28px) |
+| `.lh-4`           | `$line-height-4` (36px) |
+| `.lh-5`           | `$line-height-5` (48px) |
 
-| Abbr  | Value                   |
-|-------|-------------------------|
-| `lh-` | `line-height:`          |
-| `0`   | (0px)                   |
-| `1`   | `$line-height-1` (20px) |
-| `2`   | `$line-height-2` (24px) |
-| `3`   | `$line-height-3` (28px) |
-| `4`   | `$line-height-4` (36px) |
-| `5`   | `$line-height-5` (48px) |
+## Responsive line-height classes
 
-## Responsive padding
+To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|

@@ -17,6 +17,7 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/heights
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
@@ -33,30 +34,26 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Height classes are useful when setting some predefined heights on elements. We've got a couple of options available to use when we're setting our heights which include 
-
-* set heights in `rem` or `px` values
-* percentage based heights
-* screen height percentages using the `vh` unit
+Defines the height of an element.
 
 ## Abbreviations
 
-| Abbr          | Value                                                               |
-|---------------|---------------------------------------------------------------------|
-| `height-`     |                                                                     |
-| `min-height-` |                                                                     |
-| `vh-`         | Screen height percentage (to be used with percentage classes below) |
-| `min-vh-`     | Minimum screen height percentage                                    |
-| `0`           |                                                                     |
-| `1`           | `$height-1` 0.25rem (4px)                                           |
-| `2`           | `$height-2` 0.5rem (8px)                                            |
-| `3`           | `$height-3` 0.75rem (12px)                                          |
-| `4`           | `$height-4` 1rem (16px)                                             |
-| `5`           | `$height-5` 1.5rem (24px)                                           |
-| `25`          | 25%                                                                 |
-| `50`          | 50%                                                                 |
-| `75`          | 75%                                                                 |
-| `100`         | 100%                                                                |
+| Abbr          | Value                                                                        |
+|---------------|------------------------------------------------------------------------------|
+| `height-`     | Prefix                                                                       |
+| `min-height-` | Prefix                                                                       |
+| `vh-`         | Prefix - Screen height percentage (to be used with percentage classes below) |
+| `min-vh-`     | Prefix - Minimum screen height percentage                                    |
+| `0`           | 0rem (0px)                                                                   |
+| `1`           | `$height-1` 0.25rem (4px)                                                    |
+| `2`           | `$height-2` 0.5rem (8px)                                                     |
+| `3`           | `$height-3` 0.75rem (12px)                                                   |
+| `4`           | `$height-4` 1rem (16px)                                                      |
+| `5`           | `$height-5` 1.5rem (24px)                                                    |
+| `25`          | 25%                                                                          |
+| `50`          | 50%                                                                          |
+| `75`          | 75%                                                                          |
+| `100`         | 100%                                                                         |
 
 ```html
 <div class="height-5">Lorem ipsum</div>
@@ -64,7 +61,9 @@ Height classes are useful when setting some predefined heights on elements. We'v
 // This will give our element a height of 24px
 ```
 
-## Responsive heights
+## Responsive height classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|

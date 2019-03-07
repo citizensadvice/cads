@@ -11,6 +11,7 @@
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
+
 Using your package manager of choice...
 
 ```shell
@@ -33,13 +34,16 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-| Available classes    | Value  |
-|----------------------|--------|
-| `.font-style-normal` | Normal |
-| `.italic`            | Italic |
+Defines if the text is slanted.
+
+```css
+.italic { font-style: italic }
+```
 
 ### Example markup
+
 ```html
-<p class="font-style-normal">...</p>
-<p class="italic">...</p>
+<p>
+  Lorem ipsum dolar sit <span class="italic">amet</span>, consectetur...
+</p>
 ```

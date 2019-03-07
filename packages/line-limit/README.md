@@ -42,7 +42,9 @@ Line limit width is 592px. This is based on the ideal words per line for readabi
 .line-limit-width { max-width: $line-limit-width }
 ```
 
-## Responsive line-limit
+## Responsive line-limit classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|

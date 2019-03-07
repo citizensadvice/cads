@@ -3,6 +3,7 @@
 | Name                    | Type   | Version                                                                 |
 |-------------------------|--------|-------------------------------------------------------------------------|
 | `@citizensadvice/focus` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/focus.svg) |
+
 ## Dependencies
 
 | Name                      | Description                 |
@@ -10,6 +11,7 @@
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
+
 Using your package manager of choice...
 
 ```shell
@@ -21,17 +23,20 @@ Then bring into your stylesheets with...
 ```scss
 @import "@citizensadvice/focus/index.scss";
 ```
+
 ### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
 ```html
 <link src="https://unpkg.com/@citizensadvice/focus@latest/build/focus.css" />
 ```
 
 ## Introduction
+
 The `:focus` selector is used to select the element that has focus.
 
-## Text focus
+## Text colour focus state
 
 | Available classes                | Value                           |
 |----------------------------------|---------------------------------|
@@ -63,8 +68,7 @@ The `:focus` selector is used to select the element that has focus.
 <p class="focus-text-turquoise-dark">Text colour of #5cc0b5 on Focus</p>
 ```
 
-
-## Border focus
+## Border focus state
 
 | Available classes             | Value                           |
 |-------------------------------|---------------------------------|
@@ -96,7 +100,7 @@ The `:focus` selector is used to select the element that has focus.
 <p class="focus-b-pale-grey">Border colour of #f2f2f2 on Focus</p>
 ```
 
-## Background focus
+## Background-colour focus state
 
 | Available classes              | Value                           |
 |--------------------------------|---------------------------------|

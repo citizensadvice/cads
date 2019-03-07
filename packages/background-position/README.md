@@ -31,30 +31,21 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 <link src="https://unpkg.com/@citizensadvice/background-position@latest/build/background-position.css" />
 ```
 
-
 ## Introduction
 
 The background-position property sets the starting position of a background image. This can only be used with a background image. 
 
-
 ```CSS
-.bg-center   { background-repeat: no-repeat; background-position: center center   }
-.bg-top { background-repeat: no-repeat; background-position: top center  }
-.bg-right { background-repeat: no-repeat; background-position: center right }
+.bg-center    { background-repeat: no-repeat; background-position: center center    }
+.bg-top       { background-repeat: no-repeat; background-position: top center       }
+.bg-right     { background-repeat: no-repeat; background-position: center right     }
 .bg-bottom    { background-repeat: no-repeat; background-position: bottom center    }
-.bg-left   { background-repeat: no-repeat; background-position: center left   }
+.bg-left      { background-repeat: no-repeat; background-position: center left      }
 ```
 
-| Available classes |
-|-------------------|
-| `.bg-center`      |
-| `.bg-top`         |
-| `.bg-right`       |
-| `.bg-bottom`      |
-| `.bg-left`        |
+## Responsive background-position classes
 
-
-Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
+To apply specific classes at set screen widths, use the following classes:
 
 | Available classes     | Description                                 |
 |-----------------------|---------------------------------------------|
@@ -64,12 +55,9 @@ Don't forget that should you want to have specific sizes for specific screen res
 
 
 ### Example markup
+
 ```html
 <div class="bg-center bg-left-ns">...</div>
 <div class="bg-left bg-right-ns">...</div>
 <div class="bg-right bg-left-ns">...</div>
 ```
-
-
-
-

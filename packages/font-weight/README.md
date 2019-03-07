@@ -35,17 +35,20 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-| Available classes     | Value            |
-|-----------------------|------------------|
-| `.font-weight-normal` | Normal           |
-| `.regular`            | regular (400)    |
-| `.semi-bold`          | semi-bold (600)  |
-| `.bold`               | bold   (700)     |
-| `.extra-bold `        | extra-bold (700) |
+Defines the weight of the text.
+
+| Available classes | Value            |
+|-------------------|------------------|
+| `.normal`         | Normal           |
+| `.regular`        | regular (400)    |
+| `.semi-bold`      | semi-bold (600)  |
+| `.bold`           | bold   (700)     |
+| `.extra-bold `    | extra-bold (700) |
 
 
 ### Example markup
+
 ```html
-<p class="font-weight-normal">...</p>
+<p class="normal">...</p>
 <p class="extra-bold">...</p>
 ```

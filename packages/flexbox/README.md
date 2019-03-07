@@ -34,11 +34,11 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Flex utilities can be used to apply flexbox behaviors to elements by using utility classes.
+Flex utilities can be used to apply flexbox behaviors to elements.
 
 ## Flex container
 
-Use these classes to make an element layout it's content using the flexbox model.
+Use these classes to make an element layout its content using the flexbox model.
 
 ### CSS
 
@@ -148,7 +148,9 @@ Defines how much a flexbox item should shrink if there's not enough space availa
 .flex-shrink-1 { flex-shrink: 1 }
 ```
 
-## Responsive flexbox
+## Responsive flexbox classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|

@@ -33,7 +33,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Provide some horizontal tracking to text by way of the CSS `letter-spacing`.
+Defines the spacing between the characters of a block of text.
 
 ## Abbreviations
 

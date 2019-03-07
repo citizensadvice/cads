@@ -33,19 +33,16 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-The background-size property specifies the size of the background images.This can only be used with a background image.
+Defines the size of the background image.
 
 ```CSS
 .bg-cover   { background-size: cover   }
 .bg-contain { background-size: contain }
 ```
 
-| Available classes |
-|-------------------|
-| `.bg-cover`       |
-| `.bg-contain`     |
+## Responsive background-size classes
 
-Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
+To apply specific classes at set screen widths, use the following classes:
 
 | Available classes     | Description                                 |
 |-----------------------|---------------------------------------------|

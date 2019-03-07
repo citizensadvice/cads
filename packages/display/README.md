@@ -17,19 +17,24 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/display
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
 @import "@citizensadvice/display/index.scss";
 ```
+
 ### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
 ```html
 <link src="https://unpkg.com/@citizensadvice/display@latest/build/display.css" />
 ```
 
 ## Introduction
+
+Sets the display behavior of the element.
 
 | Available classes | Value        |
 |-------------------|--------------|
@@ -42,18 +47,15 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 | `.table-row`      | table-row    |
 | `.table-fixed`    | fixed        |
 
-```css
-.table-fixed  { table-layout: fixed; width: 100% }
-```
+## Responsive display classes
 
-Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
+To apply specific classes at set screen widths, use the following classes:
 
 | Available classes     | Description                                 |
 |-----------------------|---------------------------------------------|
 | `[aboveClassName]-ns` | Screens with a min-width of `48rem`         |
 | `[aboveClassName]-m`  | Screens with widths from `48rem` to `64rem` |
 | `[aboveClassName]-l`  | Screens with a min-width of `64rem`         |
-
 
 ### Example markup
 ```html

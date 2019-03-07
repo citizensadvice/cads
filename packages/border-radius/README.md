@@ -1,13 +1,13 @@
 # Border-radius
 
 | Name                            | Type   | Version                                                                         |
-| ------------------------------- | ------ | ------------------------------------------------------------------------------- |
+|---------------------------------|--------|---------------------------------------------------------------------------------|
 | `@citizensadvice/border-radius` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/border-radius.svg) |
 
 ## Dependencies
 
 | Name                      | Description                 |
-| ------------------------- | --------------------------- |
+|---------------------------|-----------------------------|
 | `@citizensadvice/support` | System wide settings/config |
 
 ## Installation
@@ -34,17 +34,17 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-The border-radius CSS property rounds the corners of an element's outer border edge.
+Defines the radius of the element's corners.
 
-| Available classes | Value   |
-| ----------------- | ------- |
-| `.b-radius-0`     | 0       |
-| `.b-radius-1`     | .063rem |
-| `.b-radius-2`     | .125rem |
-| `.b-radius-3`     | .25rem  |
-| `.b-radius-4`     | .5rem   |
-| `.b-radius-5`     | 1rem    |
-| `.b-radius-6`     | 2rem    |
+| Available classes | Value     |
+|-------------------|-----------|
+| `.b-radius-0`     | `0`       |
+| `.b-radius-1`     | `.063rem` |
+| `.b-radius-2`     | `.125rem` |
+| `.b-radius-3`     | `.25rem`  |
+| `.b-radius-4`     | `.5rem`   |
+| `.b-radius-5`     | `1rem`    |
+| `.b-radius-6`     | `2rem`    |
 
 ### Example markup
 

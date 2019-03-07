@@ -17,6 +17,7 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/floats
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
@@ -26,19 +27,24 @@ Then bring into your stylesheets with...
 ### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
 ```html
 <link src="https://unpkg.com/@citizensadvice/floats@latest/build/floats.css" />
 ```
 
 ## Introduction
 
-| Available classes | Value |
-|-------------------|-------|
-| `.float-left`     | left  |
-| `.float-right`    | right |
-| `.float-none`     | none  |
+Pushes the element to either the left or right side.
 
-Don't forget that should you want to have specific sizes for specific screen resolutions, there are some classes available to assist with that too.
+```css
+.float-left  { float: left   }
+.float-right { float: right  }
+.float-none  { float: none   }
+```
+
+## Responsive float classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Available classes     | Description                                 |
 |-----------------------|---------------------------------------------|
