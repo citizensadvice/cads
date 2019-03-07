@@ -38,4 +38,4 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 This meta package handles the inclusion of all typographic styling.
 
-> For more documentation on a specific package, please refer to it's package `README.md`.
+> For more documentation on a specific dependency package, please refer to it's package `README.md`.

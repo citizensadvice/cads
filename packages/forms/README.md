@@ -39,4 +39,4 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 This meta package handles the inclusion of all form component styling.
 
-> For more documentation on a specific package, please refer to it's package `README.md`.
+> For more documentation on a specific dependency package, please refer to it's package `README.md`.

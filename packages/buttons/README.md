@@ -32,14 +32,18 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 Buttons are an isolated module that relies on nothing more than the support package.
 
+A couple of variations of button are available as detailed below.
+
 | Available classes   |
 |---------------------|
 | `.button `          |
 | `.button-secondary` |
 | `.button-tertiary`  |
 
-### Example markup
+If you're creating a `<form/>` then please make sure you're using the `<button/>` element to markup your page.
+If you need to link off to another page then consider using just a plain `<a/>` in the design rather than a button. These should be kept to forms ideally.
+
 ```html
-<button type="button" class="button">Click Me!</button>
-<button type="button" class="button-secondary">Click Me!</button>
+<button type="button" class="button">Next</button>
+<button type="button" class="button-secondary">Previous</button>
 ```
