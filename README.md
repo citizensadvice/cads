@@ -23,47 +23,10 @@ We also make use of Docker to make sure we avoid the "it works on my machine" st
 
 ## Framework guide
 
-### Getting started
-
-Firstly we need to introduce **ALL** packages available for installation:
-
-| Name                                          | Type      | Description                                             |
-| --------------------------------------------- | --------- | ------------------------------------------------------- |
-| `@citizensadvice/cads-support`                | support   | System-wide global variables and functions              |
-| `@citizensadvice/cads-typography`             | generic   | Generic typographic styling                             |
-| `@citizensadvice/cads-links`                  | generic   | Generic links styles                                    |
-| `@citizensadvice/cads-tables`                 | generic   | Generic table styling                                   |
-| `@citizensadvice/cads-wrapper`                | object    | Component for container elements at a set width         |
-| `@citizensadvice/cads-grid`                   | object    | Custom grid system                                      |
-| `@citizensadvice/cads-list`                   | object    | Component for creating lists                            |
-| `@citizensadvice/cads-global-header`          | component | System-wide global header                               |
-| `@citizensadvice/cads-global-footer`          | component | System-wide global footer                               |
-| `@citizensadvice/cads-buttons`                | component | Custom button components                                |
-| `@citizensadvice/cads-button-container`       | component | Component for holding buttons                           |
-| `@citizensadvice/cads-blockquote`             | component | Custom styles for blockquotes                           |
-| `@citizensadvice/cads-section-nav`            | component | Side navigation component styling                       |
-| `@citizensadvice/cads-form-elements`          | component | Support tool for `form-` components                     |
-| `@citizensadvice/cads-form-fieldsets`         | component | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-inputs`            | component | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-labels`            | component | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-textareas`         | component | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-selects`           | component | Custom styling for form elements                        |
-| `@citizensadvice/cads-form-radios-checkboxes` | component | Custom styling for form elements                        |
-| `@citizensadvice/cads-well`                   | component | Component for separating chunks of content              |
-| `@citizensadvice/cads-icons`                  | utility   | Icon system                                             |
-| `@citizensadvice/cads-line-limit`             | utility   | Helper classes for limiting line length                 |
-| `@citizensadvice/cads-positioning`            | utility   | Helper classes for positioning elements                 |
-| `@citizensadvice/cads-spacing`                | utility   | Helper classes for spacing elements correctly           |
-| `@citizensadvice/cads-charwidth`              | utility   | Helper classes for setting character limits on elements |
-
-> More detail of each package can be seen in each packages own `README.md`.
-
 ### Installation
 
-Once you've decided on the package(s) you need, run:
-
 ```shell
-$ npm install @citizensadvice/cads-[package-name]
+$ npm install @citizensadvice/cads
 ```
 
 ### Folder structure
@@ -95,17 +58,14 @@ For completeness, we've included an output `.css` file for each component. This 
 #### `lib/`
 
 This directory contains the source files that can be compiled using `sass` during your build process.
-We're making use of the ideas of ["ITCSS"](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), a methodology from [Harry Roberts](https://csswizardry.com/), which can be better undertood by reading the `@citizensadvice/cads-system` `README.md`.
 
 ### Usage
 
 Now that you've `npm install` the packages into your `node_modules`, link to them like you would any other `scss` file.
 
 ```scss
-@import "@citizensadvice/cads-button-container";
-@import "@citizensadvice/cads-buttons";
+@import "@citizensadvice/cads";
 ...
-```
 
 > Be sure to add `node_modules` to your included-paths for the above to work correctly.
 
@@ -282,7 +242,7 @@ Rewrite the repo README to include setup information around the framework.
 You'll make many different types of change to the codebase over time but most changes can be categorised under one of the following types. Make use of one of these when writing your commit messages.
 
 | Issue type | Description                                                                   |
-| ---------- | ----------------------------------------------------------------------------- |
+|------------|-------------------------------------------------------------------------------|
 | `feat`     | a new feature                                                                 |
 | `fix`      | a bug fix                                                                     |
 | `docs`     | changes to documentation                                                      |
