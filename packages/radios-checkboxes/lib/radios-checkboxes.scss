@@ -10,8 +10,12 @@
 
 .radio,
 .checkbox {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
   color: $black;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   font-family: 'Open Sans', helvetica, 'helvetica neue', arial, sans-serif;
   font-weight: $font-weight-bold;
@@ -25,6 +29,7 @@
     &::before {
       background-color: $pale-grey;
       border-radius: $border-scale-2;
+      -webkit-box-shadow: inset 0 0 0 $border-scale-2 $light-grey;
       box-shadow: inset 0 0 0 $border-scale-2 $light-grey;
       content: '';
       cursor: pointer;
@@ -39,18 +44,21 @@
     &:checked {
       &::before {
         background-color: $blue-mid;
+        -webkit-box-shadow: inset 0 0 0 $border-scale-2 $blue-dark;
         box-shadow: inset 0 0 0 $border-scale-2 $blue-dark;
       }
     }
 
     &:hover {
       &::before {
+        -webkit-box-shadow: inset 0 0 0 $border-scale-2 $grey;
         box-shadow: inset 0 0 0 $border-scale-2 $grey;
       }
     }
 
     &:focus {
       &::before {
+        -webkit-box-shadow: inset 0 0 0 $border-scale-2 $heritage-yellow;
         box-shadow: inset 0 0 0 $border-scale-2 $heritage-yellow;
       }
     }

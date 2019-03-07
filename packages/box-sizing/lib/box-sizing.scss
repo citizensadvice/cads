@@ -5,15 +5,18 @@
 //
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *:after,
 *:before {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 .content-box {
+  -webkit-box-sizing: content-box !important;
   box-sizing: content-box !important;
 }
