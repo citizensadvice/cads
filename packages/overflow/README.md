@@ -34,7 +34,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Set what to do when an element's content is too big to fit in its block formatting context.
+Defines how overflowing content is displayed.
 
 ### CSS
 

@@ -33,9 +33,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-A system for positioning elements on a page using the CSS `position`. These classes can be mixed and matched with "location" classes and "numbers" to get the desired results.
-
-## Positions
+Defines the position behavior of the element.
 
 ```CSS
 .static   { position: static   }
@@ -44,7 +42,7 @@ A system for positioning elements on a page using the CSS `position`. These clas
 .fixed    { position: fixed    }
 ```
 
-## Locations
+## Positions
 
 | Class name | value                         |
 |------------|-------------------------------|
@@ -68,7 +66,10 @@ A system for positioning elements on a page using the CSS `position`. These clas
 // This will pin our header and footer to the top and bottom respectively, of the window.
 ```
 
-## Responsive positioning
+## Responsive position classes
+
+To apply specific classes at set screen widths, use the following classes:
+
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|

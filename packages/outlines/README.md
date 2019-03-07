@@ -33,9 +33,9 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-A utility class(es) to set the outline properties to an element.
+Defines the element's outline style, width and colour.
 
 ```CSS
-.outline-0               { outline: 0                                      }
+.outline-0               { outline: 0 }
 .outline-heritage-yellow { outline: $border-scale-1 solid $heritage-yellow }
 ```

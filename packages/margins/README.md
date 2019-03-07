@@ -17,6 +17,7 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/margins
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
@@ -33,7 +34,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Background colors are most commonly used for filling large blocks of content or areas with a color. 
+Defines the space outside the element.
 
 ## Abbreviations
 
@@ -74,29 +75,21 @@ Background colors are most commonly used for filling large blocks of content or 
 
 ```html
 <div class="mt-4">Lorem ipsum</div>
-
 // This will give a margin-top of 16px.
-```
 
-```html
 <div class="mr-3">Lorem ipsum</div>
-
 // This will give a margin-right of 12px.
-```
 
-```html
 <div class="mb-5">Lorem ipsum</div>
+// This will give a margin-bottom of 24px
 
-// This will give a margin-bottom of 24px.
-```
-
-```html
 <div class="ml-7">Lorem ipsum</div>
-
 // This will give a margin-left of 40px.
 ```
 
-## Responsive margin
+## Responsive margin classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|

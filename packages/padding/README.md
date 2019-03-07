@@ -33,7 +33,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Background colors are most commonly used for filling large blocks of content or areas with a color. 
+Defines the space inside an element.
 
 ## Abbreviations
 
@@ -74,29 +74,21 @@ Background colors are most commonly used for filling large blocks of content or 
 
 ```html
 <div class="pt-4">Lorem ipsum</div>
-
 // This will give a padding-top of 16px.
-```
 
-```html
 <div class="pr-3">Lorem ipsum</div>
-
 // This will give a padding-right of 12px.
-```
 
-```html
 <div class="pb-5">Lorem ipsum</div>
-
 // This will give a padding-bottom of 24px.
-```
 
-```html
 <div class="pl-7">Lorem ipsum</div>
-
 // This will give a padding-left of 40px.
 ```
 
-## Responsive padding
+## Responsive padding classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|
