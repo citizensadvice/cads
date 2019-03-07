@@ -34,7 +34,7 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 ## Introduction
 
 Selects is an isolated module.
-We enclose them in a `<div/>` with either the class `radio` **OR** `checkbox`.
+We enclose them in a `<div/>` with `<select/>`.
 
 ### Example markup
 

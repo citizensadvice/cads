@@ -30,9 +30,8 @@ You can also make use of the [unpkg](https://unpkg.com) service, try adding the 
 
 ## Introduction
 
-Text-inputs are an isolated module that handles how `<input/>` and `<textarea/>` look. They come with predefined styling to control their overall look and state. You can override this styling by adding utility classes to control spacing and border colours for example too.
-
-All form elements are constructed in the same vein. In the case of text inputs we enclose both the `<label/>` and `<input/>` within an element with the class `text-input`.
+Define styling for the text input components (`<input/>`, `<textarea/>`). 
+Enclose both the `<label/>` and `<input/>` within a `<div/>` with the class `text-input`.
 
 ```HTML
 <div class="text-input">

@@ -34,7 +34,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Simple utility class to that sets the appearance of decorative lines on text. Commonly used on the `<a/>` element.
+Defines how the text content of an element is decorated.
 
 ### CSS
 

@@ -23,6 +23,8 @@ A foundation package that groups together all settings/config needed to support 
 
 It's primarily made up of variables that specify important values for things like spacing, font-sizing and colours etc.
 
+### Package contents
+
 ```
 support
 ├── borders

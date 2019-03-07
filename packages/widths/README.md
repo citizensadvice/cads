@@ -17,6 +17,7 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/widths
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
@@ -33,8 +34,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Widths can be used in a couple of ways. 
-The first being percentage based calculations and the second being a `max-width` of a given number of x characters using the lesser used `ex` unit in CSS.
+Defines the width of an element. `char-width`'s define a width by character length. `w-` classes can be used for layout and as part of a grid.
 
 ## Abbreviations
 
@@ -58,7 +58,9 @@ The first being percentage based calculations and the second being a `max-width`
 // This will limit the max-width of our input element to 10.8ex in width.
 ```
 
-## Responsive widths
+## Responsive width classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|

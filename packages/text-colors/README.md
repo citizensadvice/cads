@@ -21,7 +21,6 @@ $ npm install @citizensadvice/text-colors
 
 Then bring into your stylesheets with...
 
-
 ```scss
 @import "@citizensadvice/text-colors/index.scss";
 ```
@@ -36,7 +35,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-Text colors are most commonly used for styling text content with a specific color.
+Defines the colour of text.
 
 ### Background Colours
 

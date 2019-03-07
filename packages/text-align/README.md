@@ -17,6 +17,7 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/text-align
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
@@ -33,7 +34,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-By using these utility classes, you can horizontally align text content.
+Defines the horizontal alignment of text.
 
 | Class names     | Value                |
 |-----------------|----------------------|
@@ -42,7 +43,9 @@ By using these utility classes, you can horizontally align text content.
 | `.text-center`  | Align content center |
 | `.text-justify` | Jutify content       |
 
-## Responsive text-align
+## Responsive text-align classes
+
+To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
 |------|------------------------------------------------------|

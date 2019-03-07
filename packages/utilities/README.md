@@ -51,6 +51,7 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/utilities
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
@@ -67,8 +68,9 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-This is a meta package that contains all utility packages.
+A meta package that contains all utility packages.
 
-Utility classes adhere to the "Single Responsibility Principle" theory that states that every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+Utilties provide the building blocks for common layout and styling, to avoid writing custom classes.
+They adhere to the "Single Responsibility Principle" theory that states that every module, class or function should have one responsibility and that the responsibility should be entirely encapsulated by the class.
 
 > For more documentation on a specific utility class, please refer to it's package `README.md`.

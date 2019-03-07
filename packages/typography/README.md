@@ -20,6 +20,7 @@ Using your package manager of choice...
 ```shell
 $ npm install @citizensadvice/typography
 ```
+
 Then bring into your stylesheets with...
 
 ```scss
@@ -36,6 +37,6 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 ## Introduction
 
-This meta package handles the inclusion of all typographic styling.
+A meta package to group together all typographic styling.
 
 > For more documentation on a specific dependency package, please refer to it's package `README.md`.
