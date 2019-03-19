@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Grid
+title: Width
 ---
 
-# Grid
+# Width

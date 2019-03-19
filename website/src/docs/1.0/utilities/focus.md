@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Grid
+title: Focus
 ---
 
-# Grid
+# Focus
