@@ -86,54 +86,49 @@
       url: /docs/1.0/utilities/widths.html
     - title: Z-index
       url: /docs/1.0/utilities/z-index.html
-    - title: Components
-      sublinks:
-    -title: breadcrumbs
+- title: Components
+  sublinks:
+    - title: Breadcrumbs
       url: /docs/1.0/components/breadcrumbs.html
-    -title: buttons
+    - title: Buttons
       url: /docs/1.0/components/buttons.html
-    -title: footer
+    - title: Footer
       url: /docs/1.0/components/footer.html
-    -title: form-checkboxes
+    - title: Form-checkboxes
       url: /docs/1.0/components/form-checkboxes.html
-    -title: form-dateinput
+    - title: Form-dateinput
       url: /docs/1.0/components/form-dateinput.html
-    -title: form-dropdowns
+    - title: Form-dropdowns
       url: /docs/1.0/components/form-dropdowns.html
-    -title: form-elements
+    - title: Form-elements
       url: /docs/1.0/components/form-elements.html
-    -title: form-fieldsets
+    - title: Form-fieldsets
       url: /docs/1.0/components/form-fieldsets.html
-    -title: form-input-fields
+    - title: Form-input-fields
       url: /docs/1.0/components/form-input-fields.html
-    -title: form-labels
+    - title: Form-labels
       url: /docs/1.0/components/form-labels.html
-    -title: form-radios
+    - title: Form-radios
       url: /docs/1.0/components/form-radios.html
-    -title: form-textarea
+    - title: Form-textarea
       url: /docs/1.0/components/form-textarea.html
-    -title: header
+    - title: Header
       url: /docs/1.0/components/header.html
-    -title: links
+    - title: Links
       url: /docs/1.0/components/links.html
-    -title: rich-content
+    - title: Rich-content
       url: /docs/1.0/components/rich-content.html
-    -title: search
+    - title: Search
       url: /docs/1.0/components/search.html
-    -title: section-nav
+    - title: Section-nav
       url: /docs/1.0/components/section-nav.html
-    -title: top-nav
+    - title: Top-nav
       url: /docs/1.0/components/top-nav.html
-    -title: typography
-      url: /docs/1.0/components/typography.html
-    -title: validation
-      url: /docs/1.0/components/validation.html
-    -title: wells
-      url: /docs/1.0/components/wells.html
-    -title: wrap
-     url: /docs/1.0/components/wrap.html
     - title: Typography
       url: /docs/1.0/components/typography.html
-    - title: Forms
-      url: /docs/1.0/components/forms.html
-
+    - title: Validation
+      url: /docs/1.0/components/validation.html
+    - title: Wells
+      url: /docs/1.0/components/wells.html
+    - title: Wrap
+      url: /docs/1.0/components/wrap.html
