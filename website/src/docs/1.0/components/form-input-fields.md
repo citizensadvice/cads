@@ -31,23 +31,23 @@ If a question needs extra clarification place hint text above the field.
 
 {% capture example %}
 
-  <div class="mb-5">
+  <fieldset class="b-none p-0 m-0 mb-5">
     <div class="text-input">
       <label class="block bold mb-2" for="firstname">First name</label>
       <input type="text" id="firstname">
     </div>
-  </div>
+  </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
 
-  <div class="mb-5">
+  <fieldset class="b-none p-0 m-0 mb-5">
     <div class="text-input">
       <label class="block bold mb-2" for="firstname">First name</label>
       <input type="text" id="firstname">
     </div>
-  </div>
+  </fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
@@ -57,29 +57,29 @@ Let's look at an example with hint text and an optional flag.
 
 {% capture example %}
 
-  <div class="mb-5">
+  <fieldset class="b-none p-0 m-0 mb-5">
     <div class="text-input">
-      <label class="block bold mb-2" for="surname">Surname
+      <label class="block bold mb-2" for="postcode">What's your postcode?
         <span class="ml-1 normal mid-grey">(optional)</span>
-        <span class="block regular mid-grey ">With additional help text</span>
+        <span class="block regular mid-grey">For example: SW1A 2AA</span>
       </label>
-      <input type="text" id="surname">
+      <input type="text" id="postcode">
     </div>
-  </div>
+  </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
 
-  <div class="mb-5">
+  <fieldset class="b-none p-0 m-0 mb-5">
     <div class="text-input">
-      <label class="block bold mb-2" for="surname">Surname
+      <label class="block bold mb-2" for="postcode">What's your postcode?
         <span class="ml-1 normal mid-grey">(optional)</span>
-        <span class="block regular mid-grey ">With additional help text</span>
+        <span class="block regular mid-grey">For example: SW1A 2AA</span>
       </label>
-      <input type="text" id="surname">
+      <input type="text" id="postcode">
     </div>
-  </div>
+  </fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
@@ -97,18 +97,22 @@ These classes limit the width of an element which in turn is based on the number
 
 {% capture example %}
 
-<div class="text-input inline-block">
-  <label class="block bold mb-2" for="year">Year:</label>
-  <input id="year" type="text" pattern="[0-9]{2}" maxlength="4" minlength="1" class="block char-width-4">
-</div>
+<fieldset class="b-none p-0 m-0 mb-5">
+  <div class="text-input inline-block">
+    <label class="block bold mb-2" for="year">Year:</label>
+    <input id="year" type="text" pattern="[0-9]{2}" maxlength="4" minlength="1" class="block char-width-4">
+  </div>
+</fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
 
-<div class="text-input inline-block">
-  <label class="block bold mb-2" for="year">Year:</label>
-  <input id="year" type="text" pattern="[0-9]{2}" maxlength="4" minlength="1" class="block char-width-4">
-</div>
+<fieldset class="b-none p-0 m-0 mb-5">
+  <div class="text-input inline-block">
+    <label class="block bold mb-2" for="year">Year:</label>
+    <input id="year" type="text" pattern="[0-9]{2}" maxlength="4" minlength="1" class="block char-width-4">
+  </div>
+</fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
