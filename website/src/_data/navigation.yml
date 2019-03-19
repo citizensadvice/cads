@@ -92,37 +92,37 @@
       url: /docs/1.0/components/breadcrumbs.html
     - title: Buttons
       url: /docs/1.0/components/buttons.html
+    - title: Checkboxes
+      url: /docs/1.0/components/form-checkboxes.html
+    - title: Dateinput
+      url: /docs/1.0/components/form-dateinput.html
+    - title: Dropdowns
+      url: /docs/1.0/components/form-dropdowns.html
+    - title: Elements
+      url: /docs/1.0/components/form-elements.html
+    - title: Fieldsets
+      url: /docs/1.0/components/form-fieldsets.html
     - title: Footer
       url: /docs/1.0/components/footer.html
-    - title: Form-checkboxes
-      url: /docs/1.0/components/form-checkboxes.html
-    - title: Form-dateinput
-      url: /docs/1.0/components/form-dateinput.html
-    - title: Form-dropdowns
-      url: /docs/1.0/components/form-dropdowns.html
-    - title: Form-elements
-      url: /docs/1.0/components/form-elements.html
-    - title: Form-fieldsets
-      url: /docs/1.0/components/form-fieldsets.html
-    - title: Form-input-fields
-      url: /docs/1.0/components/form-input-fields.html
-    - title: Form-labels
-      url: /docs/1.0/components/form-labels.html
-    - title: Form-radios
-      url: /docs/1.0/components/form-radios.html
-    - title: Form-textarea
-      url: /docs/1.0/components/form-textarea.html
     - title: Header
       url: /docs/1.0/components/header.html
+    - title: Input-fields
+      url: /docs/1.0/components/form-input-fields.html
+    - title: Labels
+      url: /docs/1.0/components/form-labels.html
     - title: Links
       url: /docs/1.0/components/links.html
-    - title: Rich-content
+    - title: Radios
+      url: /docs/1.0/components/form-radios.html
+    - title: Rich content
       url: /docs/1.0/components/rich-content.html
     - title: Search
       url: /docs/1.0/components/search.html
-    - title: Section-nav
+    - title: Section-navigation
       url: /docs/1.0/components/section-nav.html
-    - title: Top-nav
+    - title: Textarea
+      url: /docs/1.0/components/form-textarea.html
+    - title: Top-navigation
       url: /docs/1.0/components/top-nav.html
     - title: Typography
       url: /docs/1.0/components/typography.html
