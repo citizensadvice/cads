@@ -11,6 +11,7 @@ const sidenav = (() => {
   const init = () => {
     headings.forEach((headings) => {
       headings.addEventListener("click", (e) => {
+        e.preventDefault();
         const headingItem = e.target.nextElementSibling;
         if (headingItem.classList.contains("hidden")) {
           headingItem.classList.remove("hidden");
