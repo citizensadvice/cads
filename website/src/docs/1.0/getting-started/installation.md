@@ -10,38 +10,48 @@ title: Frontend installation
 This repository is distributed with npm. After installing node.js, and npm you can install the front-end developer kit using:
 
 ```
-$ npm install --save cadesignsystem
+$ npm install @citizensadvice/cads
 ```
 
-## Link to the framework
+### Folder structure
 
-Next you'll need to bring the framework into your projects workflow. Use the following to get access to the `scss` files:
-
-```
-@import "./node_modules/cadesignsystem/scss/cabui";
-```
-
-or if you don't have a build process setup, you can always bring in the `css` files with:
+If you check in your `node_modules` directory you should now have a `@citizensadvice/` directory that contains all the packages required to get up and running.
 
 ```
-@import "./node_modules/cadesignsystem/dist/css/cabui.css";
+node_modules/
+└── @citizensadvice/
+  ├── buttons/
+  │ ├── build/
+  │ ├── lib/
+  │ ├── index.scss
+  │ ├── package.json
+  │ └── README.md
+  ├── utilities/
+  │ ├── build/
+  │ ├── lib/
+  │ ├── index.scss
+  │ ├── package.json
+  │ └── README.md
+  └── ...
 ```
 
-or linking to it directly in your `html`:
+### `build/`
 
+For completeness, we've included an output `.css` file for each component. This serves a couple purposes, firstly we can test to see whether our components build correctly without errors. Secondly, should you not be able to use `sass` in your pipeline, we've still got you covered.
+
+### `lib/`
+
+This directory contains the source files that can be compiled using `sass` during your build process.
+
+### Usage
+
+Now that you've `npm install` the packages into your `node_modules`, link to them like you would any other `scss` file.
+
+```scss
+@import "@citizensadvice/cads";
 ```
-<link rel="stylesheet" href="./node_modules/cadesignsystem/dist/css/cabui.css">
-```
 
-There's also a minified version available, simply change `cabui.css` to `cabui.min.css`;
-
-## Static assets
-
-Static assets can be accessed using:
-
-```
-@import "/node_modules/cadesignsystem/dist/images";
-```
+> Be sure to add `node_modules` to your included-paths for the above to work correctly.
 
 ## Browser support
 
