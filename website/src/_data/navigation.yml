@@ -1,6 +1,6 @@
-- title: About the design system
+- title: Getting started
   sublinks:
-    - title: Principles
+    - title: About the design system
       url: /docs/1.0/getting-started/principles.html
     - title: Frontend installation
       url: /docs/1.0/getting-started/installation.html
