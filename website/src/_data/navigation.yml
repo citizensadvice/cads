@@ -1,7 +1,7 @@
 - title: Getting started
   sublinks:
     - title: About the design system
-      url: /docs/1.0/getting-started/principles.html
+      url: /docs/1.0/getting-started/about.html
     - title: Frontend installation
       url: /docs/1.0/getting-started/installation.html
     - title: Figma library

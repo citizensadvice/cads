@@ -4,8 +4,7 @@
     {% for link in site.data.navigation %}
     <li class="m-0 p-0 w-full b-bottom b-light-grey">
       <a data-component="nav-heading"
-         class="outline-none b-none heritage-blue semi-bold p-3 pl-6 w-full no-underline flex justify-between
-focus-outline-heritage-yellow hover-bg-blue-light"
+         class="outline-none b-none heritage-blue semi-bold p-3 pl-6 w-full no-underline flex justify-between focus-outline-heritage-yellow hover-bg-blue-light"
          href="#">
         {{ link.title }}
 
@@ -23,12 +22,21 @@ focus-outline-heritage-yellow hover-bg-blue-light"
 
       <ul class="pl-0 mb-4 hidden">
         {% for sublink in link.sublinks %}
-        <li class="m-0 p-0 w-full flex hover-bg-blue-light ">
+        {% if page.url == sublink.url %}
+        <li class="m-0 p-0 w-full flex bg-blue-light">
           <a class="outline-none b-none black p-3 w-full pl-7 no-underline focus-outline-heritage-yellow"
              href="{{ site.baseurl }}{{ sublink.url }}">
             {{ sublink.title }}
           </a>
         </li>
+        {% else %}
+        <li class="m-0 p-0 w-full flex hover-bg-blue-light">
+          <a class="outline-none b-none black p-3 w-full pl-7 no-underline focus-outline-heritage-yellow"
+             href="{{ site.baseurl }}{{ sublink.url }}">
+            {{ sublink.title }}
+          </a>
+        </li>
+        {% endif %}
         {% endfor %}
       </ul>
     </li>
