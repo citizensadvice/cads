@@ -17,7 +17,9 @@ Media query extensions allow you to modify your grid layout based on predefined 
 | medium    | -m             | 48rem (768px)  | 64rem (1024px) |
 | large     | -l             | 64rem (1024px) | and up         |
 
-## Full width
+## Grid examples
+
+### Full width
 
 {% capture example %}
 
@@ -36,16 +38,16 @@ Media query extensions allow you to modify your grid layout based on predefined 
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
-## Full width on mobile / half width on desktop
+### Full width on mobile half width on desktop
 
 {% capture example %}
 
 <div class="flex flex-wrap gutter-ns">
-  <div class="w-full w-half-ns ph-2-ns mb-0 mb-0-ns">
+  <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
     <div class="bg-blue-mid w-full text-center p-4 b-radius-4">Full width on mobile / half width on desktop</div>
   </div>
 
-  <div class="w-full w-half-ns ph-2-ns mb-0 mb-0-ns">
+  <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
     <div class="bg-blue-mid w-full text-center p-4 b-radius-4">Full width on mobile / half width on desktop</div>
   </div>
 </div>
@@ -67,7 +69,7 @@ Media query extensions allow you to modify your grid layout based on predefined 
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
-## Full width on mobile / one third width on desktop
+### Full width on mobile / one third width on desktop
 
 {% capture example %}
 
@@ -115,7 +117,7 @@ Media query extensions allow you to modify your grid layout based on predefined 
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
-## Full width on mobile / two third & one third width on desktop
+### Full width on mobile / two third & one third width on desktop
 
 {% capture example %}
 
@@ -152,7 +154,7 @@ Media query extensions allow you to modify your grid layout based on predefined 
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
-## Full width mobile / quarter width on desktop
+### Full width mobile / quarter width on desktop
 
 {% capture example %}
 
@@ -208,7 +210,7 @@ Media query extensions allow you to modify your grid layout based on predefined 
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
-## Full width mobile / three quarter & one quarter width on desktop
+### Full width mobile / three quarter & one quarter width on desktop
 
 {% capture example %}
 

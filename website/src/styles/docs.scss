@@ -66,6 +66,11 @@ body {
   max-width: 1024px !important;
 }
 
+.mb-8 {
+  margin-bottom: 4rem;
+}
+
+
 @media #{$breakpoint-not-small} {
   .nav-width-ns {
     width: 300px !important;
