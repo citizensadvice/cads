@@ -94,12 +94,10 @@
       url: /docs/1.0/components/buttons.html
     - title: Checkboxes
       url: /docs/1.0/components/form-checkboxes.html
-    - title: Dateinput
+    - title: Date input
       url: /docs/1.0/components/form-dateinput.html
     - title: Dropdowns
       url: /docs/1.0/components/form-dropdowns.html
-    - title: Elements
-      url: /docs/1.0/components/form-elements.html
     - title: Fieldsets
       url: /docs/1.0/components/form-fieldsets.html
     - title: Footer
@@ -130,5 +128,3 @@
       url: /docs/1.0/components/validation.html
     - title: Wells
       url: /docs/1.0/components/wells.html
-    - title: Wrap
-      url: /docs/1.0/components/wrap.html
