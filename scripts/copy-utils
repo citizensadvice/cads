@@ -1,0 +1,53 @@
+#!/bin/bash
+
+UTILS=(
+  'background-colors'
+  'background-position'
+  'background-size'
+  'border-colors'
+  'border-radius'
+  'border-style'
+  'border-width'
+  'borders'
+  'box-sizing'
+  'cursor'
+  'display'
+  'flexbox'
+  'floats'
+  'focus'
+  'font-family'
+  'font-size'
+  'font-style'
+  'font-weight'
+  'gutters'
+  'heights'
+  'hovers'
+  'letter-spacing'
+  'line-height'
+  'line-limit'
+  'margins'
+  'outlines'
+  'overflow'
+  'padding'
+  'positioning'
+  'text-align'
+  'text-colors'
+  'text-decoration'
+  'widths'
+  'z-index'
+)
+
+read -r -d '' COPY << EOM
+---
+layout: docs
+title: Colours
+---
+EOM
+
+rm -rf ./website/src/docs/1.0/utilities/
+mkdir ./website/src/docs/1.0/utilities/
+
+for D in "${UTILS[@]}"; do
+  cp ./packages/$D/README.md ./website/src/docs/1.0/utilities/$D.md
+  echo "$COPY" | cat - ./website/src/docs/1.0/utilities/$D.md > /tmp/out && mv /tmp/out ./website/src/docs/1.0/utilities/$D.md
+done
