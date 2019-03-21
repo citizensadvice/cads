@@ -4,14 +4,15 @@
 <head>
   {% include helmet.html %}
   <!-- Font styling: hack font -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+  <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
 </head>
 
 <body class="open-sans">
   {% include header.html %}
   <div class="flex-ns flex-row flex-column-ns height-100-ns relative ">
-    <div class="left-0-ns bottom-0-ns pl-6 pr-0 fixed-ns nav-width-ns nav-top overflow-y-auto-ns">
-      <nav>{% include navigation-v2.html %}</nav>
+    <div class="left-0-ns bottom-0-ns fixed-ns nav-width-ns nav-top overflow-y-auto-ns b-right b-light-grey">
+      {% include navigation-v2.html %}
     </div>
 
     <div class="flex-grow-1 flex-shrink-1 nav-ml-300-ns">
@@ -23,6 +24,8 @@
       {% include footer.html %}
     </div>
   </div>
+
+  <script src="{{site.baseurl}}/scripts/docs.js"></script>
 </body>
 
 </html>
