@@ -1,7 +1,10 @@
-<ul class="list-style-none m-0 p-0 b-right b-grey pt-7">
+<ul class="list-style-none m-0 p-0 b-right b-grey">
+  <li>
+    <h2 class="h2 mt-0 pt-7">Design System</h2>
+  </li>
   {% for link in site.data.navigation %}
   <li class="mb-7">
-    <span class="text-heritage-blue inline-block h2 mb-2 mt-0">{{ link.title }} </span>
+    <span class="text-heritage-blue inline-block h3 mb-2 mt-0">{{ link.title }} </span>
     <ul class="m-0 p-0 mr-0 nm-l-6 black list-style-none">
       {% for sublink in link.sublinks %}
       {% if page.url == sublink.url %}

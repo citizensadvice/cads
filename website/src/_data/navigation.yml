@@ -1,4 +1,4 @@
-- title: Getting started
+- title: About the design system
   sublinks:
     - title: Principles
       url: /docs/1.0/getting-started/principles.html
@@ -16,7 +16,7 @@
       url: /docs/1.0/foundations/icons.html
     - title: Spacing
       url: /docs/1.0/foundations/spacing.html
-- title: Utility classes
+- title: CSS Utility classes
   sublinks:
     - title: Background colors
       url: /docs/1.0/utilities/background-colors.html
