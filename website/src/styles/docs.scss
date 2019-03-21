@@ -42,8 +42,16 @@ body {
   margin-right: auto !important;
 }
 
+.docs-content {
+  min-height: calc(100vh - (172px + 64px + 1.5rem));
+}
+
+.docs-footer {
+  flex: 1;
+}
+
 .nav-top {
-  top: 102px !important; // height of header + notice.
+  top: 64px !important; // height of header
 }
 
 .nm-l-6 {
