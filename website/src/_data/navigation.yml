@@ -1,4 +1,5 @@
 - title: Getting started
+  short_name: getting-started
   sublinks:
     - title: About the design system
       url: /docs/1.0/getting-started/about.html
@@ -7,6 +8,7 @@
     - title: Figma library
       url: /docs/1.0/getting-started/figma-library.html
 - title: Foundations
+  short_name: foundations
   sublinks:
     - title: Colours
       url: /docs/1.0/foundations/colours.html
@@ -17,6 +19,7 @@
     - title: Spacing
       url: /docs/1.0/foundations/spacing.html
 - title: CSS Utility classes
+  short_name: utilities
   sublinks:
     - title: Background colors
       url: /docs/1.0/utilities/background-colors.html
@@ -87,6 +90,7 @@
     - title: Z-index
       url: /docs/1.0/utilities/z-index.html
 - title: Components
+  short_name: components
   sublinks:
     - title: Breadcrumbs
       url: /docs/1.0/components/breadcrumbs.html
