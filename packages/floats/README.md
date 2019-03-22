@@ -1,60 +1,56 @@
-# Floats
+# Floats [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/floats.svg)](https://www.npmjs.com/package/@citizensadvice/floats)
 
-| Name                     | Type   | Version                                                                  |
-|--------------------------|--------|--------------------------------------------------------------------------|
-| `@citizensadvice/floats` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/floats.svg) |
+Pushes the element to either the left or right side.
 
-## Dependencies
+- [Classes](#classes)
+- [Examples](#examples)
+- [Installation](#installation)
 
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
+## Classes
+
+```css
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-none {
+  float: none;
+}
+```
+
+### Responsive float classes
+
+To apply specific classes at set screen widths, use the following classes:
+
+| Class name            | Description                                 |
+| --------------------- | ------------------------------------------- |
+| `[aboveClassName]-ns` | Screens with a min-width of `48rem`         |
+| `[aboveClassName]-m`  | Screens with widths from `48rem` to `64rem` |
+| `[aboveClassName]-l`  | Screens with a min-width of `64rem`         |
+
+## Examples
+
+```html
+<div class="float-left float-right-ns float-left-l">...</div>
+<div class="float-none float-left-ns">...</div>
+```
 
 ## Installation
-
-Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/floats
 ```
 
-Then bring into your stylesheets with...
+now import into your stylesheet...
 
 ```scss
-@import "@citizensadvice/floats/index.scss";
+@import '@citizensadvice/floats/index.scss';
 ```
-
-### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
 ```html
 <link src="https://unpkg.com/@citizensadvice/floats@latest/build/floats.css" />
-```
-
-## Introduction
-
-Pushes the element to either the left or right side.
-
-```css
-.float-left  { float: left   }
-.float-right { float: right  }
-.float-none  { float: none   }
-```
-
-## Responsive float classes
-
-To apply specific classes at set screen widths, use the following classes:
-
-| Available classes     | Description                                 |
-|-----------------------|---------------------------------------------|
-| `[aboveClassName]-ns` | Screens with a min-width of `48rem`         |
-| `[aboveClassName]-m`  | Screens with widths from `48rem` to `64rem` |
-| `[aboveClassName]-l`  | Screens with a min-width of `64rem`         |
-
-
-### Example markup
-```html
-<div class="float-left float-right-ns float-left-l">...</div>
-<div class="float-none float-left-ns">...</div>
 ```

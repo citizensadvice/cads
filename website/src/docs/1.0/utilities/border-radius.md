@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Colours
+title: Border-radius
 ---
 
 # Border-radius [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/border-radius.svg)](https://www.npmjs.com/package/@citizensadvice/border-radius)
@@ -14,7 +14,7 @@ Defines the radius of the element's corners.
 ## Classes
 
 | Class name    | Value     |
-|---------------|-----------|
+| ------------- | --------- |
 | `.b-radius-0` | `0`       |
 | `.b-radius-1` | `.063rem` |
 | `.b-radius-2` | `.125rem` |
@@ -39,11 +39,11 @@ $ npm install @citizensadvice/border-radius
 now import into your stylesheet...
 
 ```scss
-@import "@citizensadvice/border-radius/index.scss";
+@import '@citizensadvice/border-radius/index.scss';
 ```
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
 ```html
-<link src="https://unpkg.com/@citizensadvice/border-radius@latest/build/border-radius.css"/>
+<link src="https://unpkg.com/@citizensadvice/border-radius@latest/build/border-radius.css" />
 ```

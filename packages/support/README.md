@@ -1,29 +1,14 @@
-# Support
-
-| Name                      | Type       | Version                                                                   |
-|---------------------------|------------|---------------------------------------------------------------------------|
-| `@citizensadvice/support` | Foundation | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/support.svg) |
-
-## Installation
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/support
-```
-
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/support/index.scss";
-```
-
-## Introduction
+# support [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/support.svg)](https://www.npmjs.com/package/@citizensadvice/support)
 
 A foundation package that groups together all settings/config needed to support **ALL** other packages.
 
 It's primarily made up of variables that specify important values for things like spacing, font-sizing and colours etc.
 
-### Package contents
+- [Package contents](#packagecontents)
+- [Examples](#examples)
+- [Installation](#installation)
+
+## Package contents
 
 ```
 support
@@ -35,4 +20,16 @@ support
 ├── typography
 ├── widths
 └── z-index
+```
+
+## Installation
+
+```shell
+$ npm install @citizensadvice/support
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/support/index.scss';
 ```

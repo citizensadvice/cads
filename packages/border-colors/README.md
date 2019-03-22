@@ -1,43 +1,15 @@
-# Border-colors
-
-| Name                            | Type   | Version                                                                         |
-|---------------------------------|--------|---------------------------------------------------------------------------------|
-| `@citizensadvice/border-colors` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/border-colors.svg) |
-
-## Dependencies
-
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
-
-## Installation
-
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/border-colors
-```
-
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/border-colors/index.scss";
-```
-
-### OR
-
-You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-
-```html
-<link src="https://unpkg.com/@citizensadvice/border-colors@latest/build/border-colors.css"/>
-```
-
-## Introduction
+# Border-colors [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/border-colors.svg)](https://www.npmjs.com/package/@citizensadvice/border-colors)
 
 Defines the color of the element's borders.
 
-| Available classes       | Value                           |
-|-------------------------|---------------------------------|
+- [Classes](#classes)
+- [Examples](#examples)
+- [Installation](#installation)
+
+## Classes
+
+| Class name              | Value                           |
+| ----------------------- | ------------------------------- |
 | `.b-heritage-blue`      | `$heritage-blue (#004B88)`      |
 | `.b-heritage-blue-40`   | `$heritage-blue-40 (#97a8cc)`   |
 | `.b-heritage-yellow-40` | `$heritage-yellow-40 (#fde5c4)` |
@@ -60,10 +32,28 @@ Defines the color of the element's borders.
 | `.b-heritage-yellow`    | `$heritage-yellow (#fcbb69)`    |
 | `.b-red-primary`        | `$red-primary (#df3034)`        |
 
-### Example markup
+## Examples
 
 ```html
 <div class="b-width-1 b-solid b-heritage-blue">...</div>
 <div class="b-heritage-yellow">...</div>
 <div class="b-turquoise-dark">...</div>
+```
+
+## Installation
+
+```shell
+$ npm install @citizensadvice/border-colors
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/border-colors/index.scss';
+```
+
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
+```html
+<link src="https://unpkg.com/@citizensadvice/border-colors@latest/build/border-colors.css" />
 ```

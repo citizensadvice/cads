@@ -1,40 +1,11 @@
-# Radios-checkboxes
-
-| Name                                | Type   | Version                                                                             |
-|-------------------------------------|--------|-------------------------------------------------------------------------------------|
-| `@citizensadvice/radios-checkboxes` | Module | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/radios-checkboxes.svg) |
-
-## Dependencies
-
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
-
-## Installation
-
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/radios-checkboxes
-```
-
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/radios-checkboxes/index.scss";
-```
-
-### OR
-
-You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-
-```html
-<link src="https://unpkg.com/@citizensadvice/radios-checkboxes@latest/build/radios-checkboxes.css" />
-```
-
-## Introduction
+# Radio-checkboxes [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/radio-checkboxes.svg)](https://www.npmjs.com/package/@citizensadvice/radio-checkboxes)
 
 Both radios and checkboxes have been grouped together because they're markup and behaviour is identical. We enclose them in a `<div/>` with either the class `radio` **OR** `checkbox`.
+
+- [Examples](#examples)
+- [Installation](#installation)
+
+## Examples
 
 ### Example checkbox markup
 
@@ -83,4 +54,24 @@ Both radios and checkboxes have been grouped together because they're markup and
     </div>
   </div>
 </fieldset>
+```
+
+## Installation
+
+```shell
+$ npm install @citizensadvice/radios-checkboxes
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/radios-checkboxes/index.scss';
+```
+
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
+```html
+<link
+  src="https://unpkg.com/@citizensadvice/radios-checkboxes@latest/build/radios-checkboxes.css"
+/>
 ```

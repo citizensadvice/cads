@@ -1,45 +1,14 @@
-# Heights
-
-| Name                      | Type   | Version                                                                   |
-|---------------------------|--------|---------------------------------------------------------------------------|
-| `@citizensadvice/heights` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/heights.svg) |
-
-## Dependencies
-
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
-
-## Installation
-
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/heights
-```
-
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/heights/index.scss";
-```
-
-### OR
-
-You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
-
-```html
-<link src="https://unpkg.com/@citizensadvice/heights@latest/build/heights.css" />
-```
-
-## Introduction
+# Heights [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/heights.svg)](https://www.npmjs.com/package/@citizensadvice/heights)
 
 Defines the height of an element.
+
+- [Abbreviations](#abbreviations)
+- [Installation](#installation)
 
 ## Abbreviations
 
 | Abbr          | Value                                                                        |
-|---------------|------------------------------------------------------------------------------|
+| ------------- | ---------------------------------------------------------------------------- |
 | `height-`     | Prefix                                                                       |
 | `min-height-` | Prefix                                                                       |
 | `vh-`         | Prefix - Screen height percentage (to be used with percentage classes below) |
@@ -61,12 +30,12 @@ Defines the height of an element.
 // This will give our element a height of 24px
 ```
 
-## Responsive height classes
+### Responsive height classes
 
 To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
-|------|------------------------------------------------------|
+| ---- | ---------------------------------------------------- |
 | `ns` | `$breakpoint-ns` (min-width: 48rem)                  |
 | `m`  | `$breakpoint-m` (min-width: 48rem, max-width: 64rem) |
 | `l`  | `$breakpoint-l` (min-width: 64rem)                   |
@@ -74,5 +43,24 @@ To apply specific classes at set screen widths, use the following classes:
 ```html
 <div class="height-3 height-5-ns">Lorem ipsum</div>
 
-// This will give our element a height of 12px on devices with a width below 48rem and 24px on device widths of 48rem and above
+// This will give our element a height of 12px on devices with a width below 48rem and 24px on
+device widths of 48rem and above
+```
+
+## Installation
+
+```shell
+$ npm install @citizensadvice/heights
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/heights/index.scss';
+```
+
+You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
+
+```html
+<link src="https://unpkg.com/@citizensadvice/heights@latest/build/heights.css" />
 ```

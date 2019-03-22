@@ -1,44 +1,33 @@
-# Typesetting
+# Type setting [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/typesetting.svg)](https://www.npmjs.com/package/@citizensadvice/typesetting)
 
-| Name                          | Type   | Version                                                                       |
-|-------------------------------|--------|-------------------------------------------------------------------------------|
-| `@citizensadvice/typesetting` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/typesetting.svg) |
+Classes to style content elements such as headings and paragraphs.
 
-## Dependencies
+- [Classes](#classes)
+- [Installation](#installation)
 
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
+## Classes
+
+| Class names |
+| ----------- |
+| `.h1`       |
+| `.h2`       |
+| `.h3`       |
+| `.p`        |
 
 ## Installation
-
-Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/typesetting
 ```
 
-Then bring into your stylesheets with...
+now import into your stylesheet...
 
 ```scss
-@import "@citizensadvice/typesetting/index.scss";
+@import '@citizensadvice/typesetting/index.scss';
 ```
-
-### OR
 
 You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
 
 ```html
 <link src="https://unpkg.com/@citizensadvice/typesetting@latest/build/typesetting.css" />
 ```
-
-## Introduction
-
-Classes to style content elements such as headings and paragraphs.
-
-| Available classes |
-|-------------------|
-| `.h1`             |
-| `.h2`             |
-| `.h3`             |
-| `.p`              |

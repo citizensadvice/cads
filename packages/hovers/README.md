@@ -1,45 +1,20 @@
-# Hovers
+# Hovers [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/hovers.svg)](https://www.npmjs.com/package/@citizensadvice/hovers)
 
-| Name                     | Type   | Version                                                                  |
-|--------------------------|--------|--------------------------------------------------------------------------|
-| `@citizensadvice/hovers` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/hovers.svg) |
+Hover classes provide styling for elements that have the state `:hover`.
 
-## Dependencies
+- [Classes](#classes)
+- [Examples](#examples)
+- [Installation](#installation)
 
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
+## Classes
 
-## Installation
-
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/hovers
-```
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/hovers/index.scss";
-```
-
-### OR
-
-You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
-
-```html
-<link src="https://unpkg.com/@citizensadvice/hovers@latest/build/hovers.css" />
-```
-
-## Introduction
-
-Hover classes provide styling for elements that have the state `:hover`. 
-
-| Available classes      | Value            |
-|------------------------|------------------|
+| Class name             | Value            |
+| ---------------------- | ---------------- |
 | `.hover-text-${color}` | text color       |
 | `.hover-bg-${color}`   | background color |
 | `.hover-b-${color}`    | border color     |
+
+## Examples
 
 ```html
 <p class="black hover-text-heritage-blue">
@@ -53,5 +28,20 @@ Hover classes provide styling for elements that have the state `:hover`.
 </div>
 ```
 
-> If you're unsure of the colour names available, checkout 
-`@citizensadvice/support/lib/colors.scss` package for a list of these.
+## Installation
+
+```shell
+$ npm install @citizensadvice/hovers
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/hovers/index.scss';
+```
+
+You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
+
+```html
+<link src="https://unpkg.com/@citizensadvice/hovers@latest/build/hovers.css" />
+```

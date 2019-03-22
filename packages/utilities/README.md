@@ -1,13 +1,17 @@
-# Utilities
+# Utilities [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/utilities.svg)](https://www.npmjs.com/package/@citizensadvice/utilities)
 
-| Name                        | Type | Version                                                                     |
-|-----------------------------|------|-----------------------------------------------------------------------------|
-| `@citizensadvice/utilities` | Meta | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/utilities.svg) |
+A meta package that contains all utility packages.
+
+Utilties provide the building blocks for common layout and styling, to avoid writing custom classes.
+They adhere to the "Single Responsibility Principle" theory that states that every module, class or function should have one responsibility and that the responsibility should be entirely encapsulated by the class.
+
+- [Dependencies](#dependencies)
+- [Installation](#installation)
 
 ## Dependencies
 
 | Name                                  |
-|---------------------------------------|
+| ------------------------------------- |
 | `@citizensadvice/background-colors`   |
 | `@citizensadvice/background-position` |
 | `@citizensadvice/background-size`     |
@@ -46,31 +50,18 @@
 
 ## Installation
 
-Using your package manager of choice...
-
 ```shell
 $ npm install @citizensadvice/utilities
 ```
 
-Then bring into your stylesheets with...
+now import into your stylesheet...
 
 ```scss
-@import "@citizensadvice/utilities/index.scss";
+@import '@citizensadvice/utilities/index.scss';
 ```
-
-### OR
 
 You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
 
 ```html
 <link src="https://unpkg.com/@citizensadvice/utilities@latest/build/utilities.css" />
 ```
-
-## Introduction
-
-A meta package that contains all utility packages.
-
-Utilties provide the building blocks for common layout and styling, to avoid writing custom classes.
-They adhere to the "Single Responsibility Principle" theory that states that every module, class or function should have one responsibility and that the responsibility should be entirely encapsulated by the class.
-
-> For more documentation on a specific utility class, please refer to it's package `README.md`.

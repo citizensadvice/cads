@@ -1,49 +1,38 @@
-# Cursor
+# Cursor [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cursor.svg)](https://www.npmjs.com/package/@citizensadvice/cursor)
 
-| Name                     | Type   | Version                                                                  |
-|--------------------------|--------|--------------------------------------------------------------------------|
-| `@citizensadvice/cursor` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/cursor.svg) |
+Sets the mouse cursor when hovering the element.
 
+- [Classes](#classes)
+- [Examples](#examples)
+- [Installation](#installation)
 
-## Dependencies
+## Classes
 
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
+| Class name       | Value                   |
+| ---------------- | ----------------------- |
+| `.pointer`       | pointer                 |
+| `.hover-pointer` | pointer (on hover only) |
+
+## Examples
+
+```html
+<a href="#" class="pointer">...</a> <a href="#" class="hover-pointer">...</a>
+```
 
 ## Installation
-Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/cursor
 ```
 
-Then bring into your stylesheets with...
+now import into your stylesheet...
 
 ```scss
-@import "@citizensadvice/cursor/index.scss";
+@import '@citizensadvice/cursor/index.scss';
 ```
-
-### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
 ```html
 <link src="https://unpkg.com/@citizensadvice/cursor@latest/build/cursor.css" />
-```
-
-## Introduction
-
-Sets the mouse cursor when hovering the element.
-
-| Available classes | Value                   |
-|-------------------|-------------------------|
-| `.pointer`        | pointer                 |
-| `.hover-pointer`  | pointer (on hover only) |
-
-### Example markup
-
-```html
-<a href="#" class="pointer">...</a>
-<a href="#" class="hover-pointer">...</a>
 ```

@@ -1,39 +1,11 @@
-# Positioning
-
-| Name                          | Type   | Version                                                                       |
-|-------------------------------|--------|-------------------------------------------------------------------------------|
-| `@citizensadvice/positioning` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/positioning.svg) |
-
-## Dependencies
-
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
-
-## Installation
-
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/positioning
-```
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/positioning/index.scss";
-```
-
-### OR
-
-You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
-
-```html
-<link src="https://unpkg.com/@citizensadvice/positioning@latest/build/positioning.css" />
-```
-
-## Introduction
+# Positioning [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/positioning.svg)](https://www.npmjs.com/package/@citizensadvice/positioning)
 
 Defines the position behavior of the element.
+
+- [Classes](#classes)
+- [Installation](#installation)
+
+## Classes
 
 ```CSS
 .static   { position: static   }
@@ -45,7 +17,7 @@ Defines the position behavior of the element.
 ## Positions
 
 | Class name | value                         |
-|------------|-------------------------------|
+| ---------- | ----------------------------- |
 | `.top-`    | `top:`                        |
 | `.right-`  | `right:`                      |
 | `.bottom-` | `bottom:`                     |
@@ -70,9 +42,8 @@ Defines the position behavior of the element.
 
 To apply specific classes at set screen widths, use the following classes:
 
-
 | Abbr | Value                                                |
-|------|------------------------------------------------------|
+| ---- | ---------------------------------------------------- |
 | `ns` | `$breakpoint-ns` (min-width: 48rem)                  |
 | `m`  | `$breakpoint-m` (min-width: 48rem, max-width: 64rem) |
 | `l`  | `$breakpoint-l` (min-width: 64rem)                   |
@@ -80,5 +51,24 @@ To apply specific classes at set screen widths, use the following classes:
 ```html
 <header class="fixed relative-ns">Lorem ipsum</header>
 
-// This will pin make our header stick to the top of the page on devices with a screen width of up to 48rem.
+// This will pin make our header stick to the top of the page on devices with a screen width of up
+to 48rem.
+```
+
+## Installation
+
+```shell
+$ npm install @citizensadvice/positioning
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/positioning/index.scss';
+```
+
+You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
+
+```html
+<link src="https://unpkg.com/@citizensadvice/positioning@latest/build/positioning.css" />
 ```
