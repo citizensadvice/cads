@@ -89,3 +89,24 @@ body {
     max-width: 250px !important;
   }
 }
+
+.main-content {
+  h1 {
+    max-width: 1024px;
+
+    a {
+      float: right;
+      text-decoration: none;
+      border: none;
+      background: none;
+
+      &:hover {
+        background: none;
+      }
+    }
+
+    img[src^="https://img.shields.io/"] {
+      vertical-align: middle;
+    }
+  }
+}

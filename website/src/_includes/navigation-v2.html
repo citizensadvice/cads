@@ -2,7 +2,8 @@
   <span class="text-heritage-blue inline-block h2 mb-3 mt-0 ph-6 pt-5">Design system </span>
   <ul class="m-0 p-0 mr-0 nm-l-6 black list-style-none b-top b-light-grey">
     {% for link in site.data.navigation %}
-    <li class="m-0 p-0 w-full b-bottom b-light-grey">
+    <li class="m-0 p-0 w-full b-bottom b-light-grey"
+        data-section-name="{{ link.short_name }}">
       <a data-component="nav-heading"
          class="outline-none b-none heritage-blue semi-bold p-3 pl-6 w-full no-underline flex justify-between focus-outline-heritage-yellow hover-bg-blue-light"
          href="#">
