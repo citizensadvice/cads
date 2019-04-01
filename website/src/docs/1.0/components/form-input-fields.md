@@ -31,23 +31,23 @@ If a question needs extra clarification place hint text above the field.
 
 {% capture example %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">First name:</label>
-  <div class="c-input">
-    <input id="firstname" type="text" required>
-  </div>
-</fieldset>
+  <fieldset class="b-none p-0 m-0 mb-5">
+    <div class="text-input">
+      <label class="block bold mb-2" for="firstname">First name</label>
+      <input type="text" id="firstname">
+    </div>
+  </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="firstname">First name:</label>
-  <div class="c-input">
-    <input id="firstname" type="text" required>
-  </div>
-</fieldset>
+  <fieldset class="b-none p-0 m-0 mb-5">
+    <div class="text-input">
+      <label class="block bold mb-2" for="firstname">First name</label>
+      <input type="text" id="firstname">
+    </div>
+  </fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
@@ -57,29 +57,29 @@ Let's look at an example with hint text and an optional flag.
 
 {% capture example %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="surname">
-    Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
-    <span class="c-label__metainfo">With additional help text</span>
-  </label>
-  <div class="c-input">
-    <input id="surname" type="text" required>
-  </div>
-</fieldset>
+  <fieldset class="b-none p-0 m-0 mb-5">
+    <div class="text-input">
+      <label class="block bold mb-2" for="postcode">What's your postcode?
+        <span class="ml-1 normal mid-grey">(optional)</span>
+        <span class="block regular mid-grey">For example: SW1A 2AA</span>
+      </label>
+      <input type="text" id="postcode">
+    </div>
+  </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="surname">
-    Surname: <span class="c-label__tag c-label__tag--optional">optional</span>
-    <span class="c-label__metainfo">With additional help text</span>
-  </label>
-  <div class="c-input">
-    <input id="surname" type="text" required>
-  </div>
-</fieldset>
+  <fieldset class="b-none p-0 m-0 mb-5">
+    <div class="text-input">
+      <label class="block bold mb-2" for="postcode">What's your postcode?
+        <span class="ml-1 normal mid-grey">(optional)</span>
+        <span class="block regular mid-grey">For example: SW1A 2AA</span>
+      </label>
+      <input type="text" id="postcode">
+    </div>
+  </fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
@@ -88,21 +88,19 @@ Let's look at an example with hint text and an optional flag.
 We also make available some utility classes to aid in the user experience of `<input />` elements.
 These classes limit the width of an element which in turn is based on the number of uppercase **W** that can fit inside the input.
 
-> **NOTE:** The important bit to note in the example is the **utility classes** available on the input element, `.u-charWidth` and `.u-charwidth--`.
-
-| Size (character width)  | Class name         |
-| ----------------------- | ------------------ |
-| 2 characters            | `.u-charwidth--2`  |
-| 4 characters            | `.u-charwidth--4`  |
-| 8 characters            | `.u-charwidth--8`  |
-| 20 characters           | `.u-charwidth--20` |
+| Size (character width) | Class name       |
+| ---------------------- | ---------------- |
+| 2 characters           | `.charwidth--2`  |
+| 4 characters           | `.charwidth--4`  |
+| 8 characters           | `.charwidth--8`  |
+| 20 characters          | `.charwidth--20` |
 
 {% capture example %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="year">Year:</label>
-  <div class="c-input">
-    <input id="year" type="text" class="u-charwidth u-charwidth--4" required>
+<fieldset class="b-none p-0 m-0 mb-5">
+  <div class="text-input inline-block">
+    <label class="block bold mb-2" for="year">Year:</label>
+    <input id="year" type="text" pattern="[0-9]{2}" maxlength="4" minlength="1" class="block char-width-4">
   </div>
 </fieldset>
 {% endcapture %}
@@ -110,10 +108,10 @@ These classes limit the width of an element which in turn is based on the number
 
 {% capture snippet %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="year">Year:</label>
-  <div class="c-input">
-    <input id="year" type="text" class="u-charwidth u-charwidth--4" required>
+<fieldset class="b-none p-0 m-0 mb-5">
+  <div class="text-input inline-block">
+    <label class="block bold mb-2" for="year">Year:</label>
+    <input id="year" type="text" pattern="[0-9]{2}" maxlength="4" minlength="1" class="block char-width-4">
   </div>
 </fieldset>
 {% endcapture %}

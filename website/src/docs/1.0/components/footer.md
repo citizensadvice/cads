@@ -8,9 +8,10 @@ title: Footer
 Footers help users find what they need after scrolling to the bottom of a page. They provide supplementary information such as legal information, contact details and links to other pages within the website.
 
 {% capture example %}
+
 <main>Site content will end here...</main>
 
-<footer class="cmt-4 p-7 relative bg-blue-light w-full mt-7">
+<footer class="mt-4 p-7 relative bg-blue-light w-full mt-7">
   <p class="mb-0 black">
     Copyright &copy; 2018 Citizens Advice. All rights reserved.<br>
     Citizens Advice is an operating name of the National Association of Citizens Advice Bureaux. Registered charity number 279057<br>
@@ -22,8 +23,9 @@ Footers help users find what they need after scrolling to the bottom of a page. 
 {% include example.html content=example %}
 
 {% capture snippet %}
-<footer class="cmt-4 p-7 relative bg-blue-light w-full mt-7">
-  <div class="c-wrap">
+
+<footer class="mt-4 p-7 relative bg-blue-light w-full mt-7">
+  <div>
     <p class="mb-0 black">
       Copyright &copy; 2018 Citizens Advice. All rights reserved.<br>
       Citizens Advice is an operating name of the National Association of Citizens Advice Bureaux. Registered charity number 279057 <br>

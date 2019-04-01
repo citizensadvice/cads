@@ -29,5 +29,8 @@
     "watchcss:all": "nodemon --watch ./packages --watch ./website/src/styles --ext scss --exec \"npm run compilecss:all\"",
     "publish:packages": "yarn build:packages && npm login && lerna publish --skip-git && lerna version --skip-git",
     "publish:website": "yarn build:website && gh-pages -d ./website/_site"
+  },
+  "dependencies": {
+    "@citizensadvice/cads": "^1.0.0"
   }
 }

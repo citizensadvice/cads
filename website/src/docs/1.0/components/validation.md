@@ -15,14 +15,16 @@ For all inputs of type `text`, `password`, `email` and `number`.
 
 {% capture example %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="postcode">What's your postcode?</label>
-  <span class="c-label__metainfo">For example: SW1A 2AA</span>
-  <div class="c-input c-input--invalid">
-    <input id="postcode" type="text" name="postcode" pattern="[a-z]{1,15}" />
-  </div>
-  <span class="c-validation c-validation--invalid" for="postcode">Please enter a valid postcode</span>
-</fieldset>
+  <fieldset class="b-none p-0 m-0 mb-5">
+    <div class="text-input is-invalid">
+      <label class="block bold mb-2" for="postcode">What's your postcode?
+        <span class="ml-1 normal mid-grey">(optional)</span>
+        <span class="block regular mid-grey">For example: SW1A 2AA</span>
+      </label>
+      <input type="text" id="postcode">
+    </div>
+      <span class="block red-primary mt-3" for="postcode">Please enter a valid postcode</span>
+  </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
 <!-- prettier-ignore-end -->
@@ -31,14 +33,16 @@ For all inputs of type `text`, `password`, `email` and `number`.
 
 {% capture snippet %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="postcode">What's your postcode?</label>
-  <span class="c-label__metainfo">For example: SW1A 2AA</span>
-  <div class="c-input c-input--invalid">
-    <input id="postcode" type="text" name="postcode" pattern="[a-z]{1,15}" />
-  </div>
-  <span class="c-validation c-validation--invalid" for="postcode">Please enter a valid postcode</span>
-</fieldset>
+  <fieldset class="b-none p-0 m-0 mb-5">
+    <div class="text-input is-invalid">
+      <label class="block bold mb-2" for="postcode">What's your postcode?
+        <span class="ml-1 normal mid-grey">(optional)</span>
+        <span class="block regular mid-grey">For example: SW1A 2AA</span>
+      </label>
+      <input type="text" id="postcode">
+    </div>
+      <span class="block red-primary mt-3" for="postcode">Please select an option</span>
+  </fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
 <!-- prettier-ignore-end -->
@@ -49,49 +53,68 @@ For all inputs of type `text`, `password`, `email` and `number`.
 
 {% capture example %}
 
-<fieldset class="c-fieldset">
-  <legend class="c-label">Did this help?</legend>
-
-  <div class="c-fieldset__item">
-    <div class="c-radio c-radio--invalid">
-      <input checked id="yes" value="yes" name="feedback" type="radio">
-      <label for="yes">Yes</label>
+<fieldset class="b-none p-0 m-0">
+  <legend class="block bold lh-2 mb-2">Did you find this helpful?</legend>
+  <div class="block">
+    <div class="radio is-invalid">
+      <input value="yes" id="yes" name="feedback" type="radio" />
+      <label for="yes" class="ml-2 lh-2 semi-bold pointer">Yes</label>
     </div>
   </div>
-
-  <div class="c-fieldset__item">
-    <div class="c-radio c-radio--invalid">
-      <input id="no" value="no" name="feedback" type="radio">
-      <label for="no">No</label>
+  <div class="block mv-2">
+    <div class="radio is-invalid">
+      <input value="no" id="no" name="feedback" type="radio" />
+      <label for="no" class="ml-2 lh-2 semi-bold">No</label>
     </div>
   </div>
-  <div class="c-validation c-validation--invalid" for="postcode">Please select an option</div>
+  <span class="block red-primary mt-3" for="postcode">Please select an option</span>
 </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
+<!-- prettier-ignore-end -->
+<!-- prettier-ignore-start -->
+
+{% capture snippet %}
+
+<fieldset class="b-none p-0 m-0">
+  <legend class="block bold lh-2 mb-2">Did you find this helpful?</legend>
+  <div class="block">
+    <div class="radio is-invalid">
+      <input value="yes" id="yes" name="feedback" type="radio" />
+      <label for="yes" class="ml-2 lh-2 semi-bold pointer">Yes</label>
+    </div>
+  </div>
+  <div class="block mv-2">
+    <div class="radio is-invalid">
+      <input value="no" id="no-2" name="feedback" type="radio" />
+      <label for="no" class="ml-2 lh-2 semi-bold">No</label>
+    </div>
+  </div>
+  <span class="block red-primary mt-3" for="postcode">Please select an option</span>
+</fieldset>
+{% endcapture %}
+{% include snippet.html content=snippet %}
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
 
 {% capture example %}
 
-<fieldset class="c-fieldset">
-  <legend class="c-fieldset__label">Right and/or left?</legend>
-
-  <div class="c-fieldset__item">
-    <div class="c-checkbox">
-      <input checked id="right" value="right" name="direction" type="checkbox">
-      <label for="right">Right</label>
+<fieldset class="b-none p-0 m-0">
+  <legend class="block bold lh-2 mb-2">Did you find this helpful?</legend>
+  <div class="block">
+    <div class="checkbox is-invalid">
+      <input value="yes" id="yes-2" name="feedback" type="checkbox" />
+      <label for="yes-2" class="ml-2 lh-2 semi-bold pointer">Yes</label>
     </div>
   </div>
-
-  <div class="c-fieldset__item">
-    <div class="c-checkbox c-checkbox--invalid">
-      <input id="left" value="left" name="direction" type="checkbox">
-      <label for="left">Left</label>
+  <div class="block mv-2">
+    <div class="checkbox is-invalid">
+      <input value="no" id="no-2" name="feedback" type="checkbox" />
+      <label for="no-2" class="ml-2 lh-2 semi-bold">No</label>
     </div>
   </div>
-  <div class="c-validation c-validation--invalid" for="postcode">Please select an option</div>
+  <span class="block red-primary mt-3" for="postcode">Please select an option</span>
 </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
@@ -101,23 +124,21 @@ For all inputs of type `text`, `password`, `email` and `number`.
 
 {% capture snippet %}
 
-<fieldset class="c-fieldset">
-  <legend class="c-fieldset__label">Right and/or left?</legend>
-
-  <div class="c-fieldset__item">
-    <div class="c-checkbox">
-      <input checked id="right" value="right" name="direction" type="checkbox">
-      <label for="right">Right</label>
+<fieldset class="b-none p-0 m-0">
+  <legend class="block bold lh-2 mb-2">Did you find this helpful?</legend>
+  <div class="block">
+    <div class="checkbox is-invalid">
+      <input value="yes" id="yes-2" name="feedback" type="checkbox" />
+      <label for="yes-2" class="ml-2 lh-2 semi-bold pointer">Yes</label>
     </div>
   </div>
-
-  <div class="c-fieldset__item">
-    <div class="c-checkbox c-checkbox--invalid">
-      <input id="left" value="left" name="direction" type="checkbox">
-      <label for="left">Left</label>
+  <div class="block mv-2">
+    <div class="checkbox is-invalid">
+      <input value="no" id="no-2" name="feedback" type="checkbox" />
+      <label for="no-2" class="ml-2 lh-2 semi-bold">No</label>
     </div>
   </div>
-  <div class="c-validation c-validation--invalid" for="postcode">Please select an option</div>
+  <span class="block red-primary mt-3" for="postcode">Please select an option</span>
 </fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
@@ -129,9 +150,9 @@ For all inputs of type `text`, `password`, `email` and `number`.
 
 {% capture example %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="select1">Example dropdown select</label>
-  <div class="c-select c-select--invalid">
+<fieldset class="b-0 p-0 m-0 mb-4">
+  <label class="block bold mb-2" for="select">Example dropdown select</label>
+  <div class="select is-invalid">
     <select id="select1">
       <option value="Please select">Please select</option>
       <option value="Option #1">Option #1</option>
@@ -141,7 +162,7 @@ For all inputs of type `text`, `password`, `email` and `number`.
       <option value="Option #5">Option #5</option>
     </select>
   </div>
-  <div class="c-validation c-validation--invalid" for="postcode">Please select one option</div>
+  <span class="block red-primary mt-3" for="select">Please select an option</span>
 </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
@@ -151,9 +172,9 @@ For all inputs of type `text`, `password`, `email` and `number`.
 
 {% capture snippet %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="select1">Example dropdown select</label>
-  <div class="c-select c-select--invalid">
+<fieldset class="b-0 p-0 m-0 mb-4">
+  <label class="block bold mb-2" for="select">Example dropdown select</label>
+  <div class="select is-invalid">
     <select id="select1">
       <option value="Please select">Please select</option>
       <option value="Option #1">Option #1</option>
@@ -163,7 +184,7 @@ For all inputs of type `text`, `password`, `email` and `number`.
       <option value="Option #5">Option #5</option>
     </select>
   </div>
-  <div class="c-validation c-validation--invalid" for="postcode">Please select one option</div>
+  <span class="block red-primary mt-3" for="select">Please select an option</span>
 </fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}
@@ -175,12 +196,12 @@ For all inputs of type `text`, `password`, `email` and `number`.
 
 {% capture example %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="message">Message:</label>
-  <div class="c-textarea c-textarea--invalid">
+<fieldset class="mb-5 b-none p-0 m-0">
+  <div class="text-input is-invalid">
+    <label class="block bold mb-2" for="message">Message</label>
     <textarea id="message"></textarea>
   </div>
-  <div class="c-validation c-validation--invalid" for="postcode">Please leave a message</div>
+  <span class="block red-primary mt-3" for="message">Please enter some text</span>
 </fieldset>
 {% endcapture %}
 {% include example.html content=example %}
@@ -190,12 +211,12 @@ For all inputs of type `text`, `password`, `email` and `number`.
 
 {% capture snippet %}
 
-<fieldset class="c-fieldset">
-  <label class="c-label" for="message">Message:</label>
-  <div class="c-textarea c-textarea--invalid">
+<fieldset class="mb-5 b-none p-0 m-0">
+  <div class="text-input is-invalid">
+    <label class="block bold mb-2" for="message">Message</label>
     <textarea id="message"></textarea>
   </div>
-  <div class="c-validation c-validation--invalid" for="postcode">Please leave a message</div>
+  <span class="block red-primary mt-3" for="message">Please enter some text</span>
 </fieldset>
 {% endcapture %}
 {% include snippet.html content=snippet %}

@@ -5,152 +5,245 @@ title: Grid
 
 # Grid
 
-We use a grid to add structure and consistent horizontal spacing.
+A grid can add structure and consistent horizontal spacing to a page layout.
 
-## Page widths
-The default maximum page width is `1024px`.
+## Responsive grid layouts
 
-## Gutters
-Gutters are `16px` and above `555px` increase to `32px`.
+Media query extensions allow you to modify your grid layout based on predefined screen sizes. All utility classes are mobile first by default and can be overridden by media query extensions that target larger breakpoints.
 
-## Viewport sizes
-The grid column widths are based on the viewport sizes. These are:
+| Size      | Class modifier | Min width      | Max width      |
+| --------- | -------------- | -------------- | -------------- |
+| not-small | -ns            | 0rem           | 48rem (768px)  |
+| medium    | -m             | 48rem (768px)  | 64rem (1024px) |
+| large     | -l             | 64rem (1024px) | and up         |
 
-| Size    | Variable | Grid class name       | Width from | Width to |
-| ------- | -------- | --------------------- | ---------- | -------- |
-| Small   | $bp--sm  | `o-grid__unit--m-#-#` | 320px      | 554px    |
-| Medium  | $bp--md  | `o-grid__unit--t-#-#` | 555px      | 749px    |
-| Large   | $bp--lg  | `o-grid__unit--d-#-#` | 750px      | 1023px   |
-| X Large | $bp--xl  | `N/A`                 | 1024px     | N/A      |
+## Grid examples
 
-## Full width
+### Full width
 
 {% capture example %}
+
 <div class="flex">
-    <div class="w-full bg-blue-mid text-center bold p-4 b-radius-4">Full</div>
+    <div class="w-full bg-blue-mid text-center p-4 b-radius-4">Full</div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
+
 <div class="flex">
-    <div class="w-full bg-blue-mid text-center bold p-4 b-radius-4">...</div>
+    <div class="w-full bg-blue-mid text-center p-4 b-radius-4">...</div>
 </div>
 
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
-## Halves
+### Full width on mobile half width on desktop
 
 {% capture example %}
-<div class="flex flex-wrap gutter">
-  <div class="w-half ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Half</div>
+
+<div class="flex flex-wrap gutter-ns">
+  <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+    <div class="bg-blue-mid w-full text-center p-4 b-radius-4">Full width on mobile / half width on desktop</div>
   </div>
 
-  <div class="w-half ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Half</div>
+  <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+    <div class="bg-blue-mid w-full text-center p-4 b-radius-4">Full width on mobile / half width on desktop</div>
   </div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="flex flex-wrap gutter">
-    <div class="w-half ph-2 mb-0">...</div>
-    <div class="w-half ph-2 mb-0">...</div>
+
+<div class="flex flex-wrap gutter-ns">
+  <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+    <div class="bg-blue-mid w-full text-center p-4 b-radius-4">Full width on mobile / half width on desktop</div>
+  </div>
+
+  <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+    <div class="bg-blue-mid w-full text-center p-4 b-radius-4">Full width on mobile / half width on desktop</div>
+  </div>
 </div>
 
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
-## Thirds
+### Full width on mobile / one third width on desktop
 
 {% capture example %}
-<div class="flex flex-wrap gutter">
-  <div class="w-third ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
-  </div>
 
-  <div class="w-third ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
-  </div>
+ <div class="flex flex-wrap gutter-ns">
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / one third width on desktop
+        </div>
+      </div>
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / one third width on desktop
+        </div>
+      </div>
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / one third width on desktop
+        </div>
+      </div>
+    </div>
 
-  <div class="w-third ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
-  </div>
-</div>
-<br/>
-<div class="flex flex-wrap gutter">
-  <div class="w-two-thirds ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Two thirds</div>
-  </div>
-
-  <div class="w-third ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Third</div>
-  </div>
-</div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="flex flex-wrap gutter">
-    <div class="w-third ph-2 mb-0">...</div>
-    <div class="w-third ph-2 mb-0">...</div>
-    <div class="w-third ph-2 mb-0">...</div>
-</div>
 
-<div class="flex flex-wrap gutter">
-    <div class="w-two-thirds ph-2 mb-0">...</div>
-    <div class="w-third ph-2 mb-0">...</div>
-</div>
+ <div class="flex flex-wrap gutter-ns">
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / one third width on desktop
+        </div>
+      </div>
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / one third width on desktop
+        </div>
+      </div>
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / one third width on desktop
+        </div>
+      </div>
+    </div>
 
 {% endcapture %}
 {% include snippet.html content=snippet %}
 
-## Quarters
+### Full width on mobile / two third & one third width on desktop
 
 {% capture example %}
-<div class="flex flex-wrap gutter">
-  <div class="w-quarter ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
-  </div>
 
-  <div class="w-quarter ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
-  </div>
-
-  <div class="w-quarter ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
-  </div>
-
-  <div class="w-quarter ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
-  </div>
-</div>
-<br/>
-<div class="flex flex-wrap gutter">
-  <div class="w-three-quarters ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Three quarters</div>
-  </div>
-
-  <div class="w-quarter ph-2 mb-0">
-    <div class="bg-blue-mid w-full text-center bold p-4 b-radius-4">Quarter</div>
-  </div>
-</div>
+ <div class="flex flex-wrap gutter-ns">
+      <div class="flex w-full w-two-thirds-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / two third on desktop
+        </div>
+      </div>
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / one third width on desktop
+        </div>
+      </div>
+    </div>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture snippet %}
-<div class="flex flex-wrap gutter">
-    <div class="w-quarter ph-2 mb-0">...</div>
-    <div class="w-quarter ph-2 mb-0">...</div>
-    <div class="w-quarter ph-2 mb-0">...</div>
-    <div class="w-quarter ph-2 mb-0">...</div>
-</div>
-<div class="flex flex-wrap gutter">
-    <div class="w-three-quarters ph-2 mb-0">...</div>
-    <div class="w-quarter ph-2 mb-0">...</div>
-</div>
+
+ <div class="flex flex-wrap gutter-ns">
+      <div class="flex w-full w-two-thirds-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / two third on desktop
+        </div>
+      </div>
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width on mobile / one third width on desktop
+        </div>
+      </div>
+    </div>
+
+{% endcapture %}
+{% include snippet.html content=snippet %}
+
+### Full width mobile / quarter width on desktop
+
+{% capture example %}
+
+  <div class="flex flex-wrap gutter-ns">
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width on desktop
+        </div>
+      </div>
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width on desktop
+        </div>
+      </div>
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width on desktop
+        </div>
+      </div>
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width on desktop
+        </div>
+      </div>
+    </div>
+{% endcapture %}
+{% include example.html content=example %}
+
+{% capture snippet %}
+
+<div class="flex flex-wrap gutter-ns">
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width on desktop
+        </div>
+      </div>
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width on desktop
+        </div>
+      </div>
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width on desktop
+        </div>
+      </div>
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width on desktop
+        </div>
+      </div>
+    </div>
+{% endcapture %}
+{% include snippet.html content=snippet %}
+
+### Full width mobile / three quarter & one quarter width on desktop
+
+{% capture example %}
+
+  <div class="flex flex-wrap gutter-ns">
+      <div class="w-full w-three-quarters-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / three quarter width on desktop
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width desktop
+        </div>
+      </div>
+  </div>
+{% endcapture %}
+{% include example.html content=example %}
+
+{% capture snippet %}
+
+  <div class="flex flex-wrap gutter-ns">
+      <div class="w-full w-three-quarters-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / three quarter width on desktop
+        </div>
+      </div>
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-blue-mid w-full text-center p-5 b-radius-4">
+          Full width mobile / quarter width desktop
+        </div>
+      </div>
+  </div>
 {% endcapture %}
 {% include snippet.html content=snippet %}

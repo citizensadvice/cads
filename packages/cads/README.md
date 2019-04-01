@@ -73,7 +73,6 @@ utilities
 ├── line-height
 ├── line-limit
 ├── margins
-├── normalize
 ├── outlines
 ├── overflow
 ├── padding

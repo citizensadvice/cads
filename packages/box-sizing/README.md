@@ -1,47 +1,37 @@
-# Box-sizing
+# Box-sizing [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/box-sizing.svg)](https://www.npmjs.com/package/@citizensadvice/box-sizing)
 
-| Name                         | Type   | Version                                                                      |
-|------------------------------|--------|------------------------------------------------------------------------------|
-| `@citizensadvice/box-sizing` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/box-sizing.svg) |
+Defines how the width and height of the element are calculated: whether they include the _borders_ and _padding_ or not.
 
-## Dependencies
+- [Classes](#classes)
+- [Examples](#examples)
+- [Installation](#installation)
 
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
+## Classes
+
+| Class name     | Value       |
+| -------------- | ----------- |
+| `.content-box` | content-box |
+
+## Examples
+
+```html
+<div class="content-box">...</div>
+```
 
 ## Installation
-
-Using your package manager of choice...
 
 ```shell
 $ npm install @citizensadvice/box-sizing
 ```
 
-Then bring into your stylesheets with...
+now import into your stylesheet...
 
 ```scss
-@import "@citizensadvice/box-sizing/index.scss";
+@import '@citizensadvice/box-sizing/index.scss';
 ```
-
-### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
 ```html
-<link src="https://unpkg.com/@citizensadvice/box-sizing@latest/build/box-sizing.css"/>
-```
-
-## Introduction
-
-Defines how the width and height of the element are calculated: whether they include the _borders_ and _padding_ or not.
-
-| Available classes | Value       |
-|-------------------|-------------|
-| `.content-box`    | content-box |
-
-### Example markup
-
-```html
-<div class="content-box">...</div>
+<link src="https://unpkg.com/@citizensadvice/box-sizing@latest/build/box-sizing.css" />
 ```

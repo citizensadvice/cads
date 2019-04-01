@@ -1,12 +1,14 @@
-- title: Design system
+- title: Getting started
+  short_name: getting-started
   sublinks:
-    - title: Getting started
-      url: /docs/1.0/design-system/getting-started.html
+    - title: About the design system
+      url: /docs/1.0/getting-started/about.html
     - title: Frontend installation
-      url: /docs/1.0/design-system/frontend-installation.html
+      url: /docs/1.0/getting-started/installation.html
     - title: Figma library
-      url: /docs/1.0/design-system/figma-library.html
+      url: /docs/1.0/getting-started/figma-library.html
 - title: Foundations
+  short_name: foundations
   sublinks:
     - title: Colours
       url: /docs/1.0/foundations/colours.html
@@ -16,47 +18,117 @@
       url: /docs/1.0/foundations/icons.html
     - title: Spacing
       url: /docs/1.0/foundations/spacing.html
-    - title: Typography
-      url: /docs/1.0/foundations/typography.html
+- title: CSS Utility classes
+  short_name: utilities
+  sublinks:
+    - title: Background colors
+      url: /docs/1.0/utilities/background-colors.html
+    - title: Background position
+      url: /docs/1.0/utilities/background-position.html
+    - title: Background size
+      url: /docs/1.0/utilities/background-size.html
+    - title: Border colors
+      url: /docs/1.0/utilities/border-colors.html
+    - title: Border radius
+      url: /docs/1.0/utilities/border-radius.html
+    - title: Border style
+      url: /docs/1.0/utilities/border-style.html
+    - title: Border width
+      url: /docs/1.0/utilities/border-width.html
+    - title: Borders
+      url: /docs/1.0/utilities/borders.html
+    - title: Box-sizing
+      url: /docs/1.0/utilities/box-sizing.html
+    - title: Cursor
+      url: /docs/1.0/utilities/cursor.html
+    - title: Display
+      url: /docs/1.0/utilities/display.html
+    - title: Flexbox
+      url: /docs/1.0/utilities/flexbox.html
+    - title: Floats
+      url: /docs/1.0/utilities/floats.html
+    - title: Focus
+      url: /docs/1.0/utilities/focus.html
+    - title: Font-family
+      url: /docs/1.0/utilities/font-family.html
+    - title: Font-size
+      url: /docs/1.0/utilities/font-size.html
+    - title: Font-style
+      url: /docs/1.0/utilities/font-style.html
+    - title: Font-weight
+      url: /docs/1.0/utilities/font-weight.html
+    - title: Gutters
+      url: /docs/1.0/utilities/gutters.html
+    - title: Heights
+      url: /docs/1.0/utilities/heights.html
+    - title: Hovers
+      url: /docs/1.0/utilities/hovers.html
+    - title: Letter spacing
+      url: /docs/1.0/utilities/letter-spacing.html
+    - title: Line height
+      url: /docs/1.0/utilities/line-height.html
+    - title: Line limit
+      url: /docs/1.0/utilities/line-limit.html
+    - title: Margins
+      url: /docs/1.0/utilities/margins.html
+    - title: Outlines
+      url: /docs/1.0/utilities/outlines.html
+    - title: Overflow
+      url: /docs/1.0/utilities/overflow.html
+    - title: Padding
+      url: /docs/1.0/utilities/padding.html
+    - title: Positioning
+      url: /docs/1.0/utilities/positioning.html
+    - title: Text-align
+      url: /docs/1.0/utilities/text-align.html
+    - title: Text colors
+      url: /docs/1.0/utilities/text-colors.html
+    - title: Text decoration
+      url: /docs/1.0/utilities/text-decoration.html
+    - title: Widths
+      url: /docs/1.0/utilities/widths.html
+    - title: Z-index
+      url: /docs/1.0/utilities/z-index.html
 - title: Components
+  short_name: components
   sublinks:
     - title: Breadcrumbs
       url: /docs/1.0/components/breadcrumbs.html
     - title: Buttons
       url: /docs/1.0/components/buttons.html
-    - title: Button container
-      url: /docs/1.0/components/button-container.html
     - title: Checkboxes
       url: /docs/1.0/components/form-checkboxes.html
     - title: Date input
       url: /docs/1.0/components/form-dateinput.html
     - title: Dropdowns
       url: /docs/1.0/components/form-dropdowns.html
-    - title: Input fields
-      url: /docs/1.0/components/form-input-fields.html
     - title: Fieldsets
       url: /docs/1.0/components/form-fieldsets.html
     - title: Footer
       url: /docs/1.0/components/footer.html
     - title: Header
       url: /docs/1.0/components/header.html
+    - title: Input-fields
+      url: /docs/1.0/components/form-input-fields.html
     - title: Labels
       url: /docs/1.0/components/form-labels.html
     - title: Links
       url: /docs/1.0/components/links.html
-    - title: Radio buttons
+    - title: Radios
       url: /docs/1.0/components/form-radios.html
+    - title: Rich content
+      url: /docs/1.0/components/rich-content.html
     - title: Search
       url: /docs/1.0/components/search.html
-    - title: Section navigation
+    - title: Section-navigation
       url: /docs/1.0/components/section-nav.html
     - title: Textarea
       url: /docs/1.0/components/form-textarea.html
-    - title: Top level navigation
+    - title: Top-navigation
       url: /docs/1.0/components/top-nav.html
+    - title: Typography
+      url: /docs/1.0/components/typography.html
     - title: Validation
       url: /docs/1.0/components/validation.html
     - title: Wells
       url: /docs/1.0/components/wells.html
-    - title: Wrap
-      url: /docs/1.0/components/wrap.html

@@ -1,13 +1,14 @@
-# Forms
+# Forms [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/forms.svg)](https://www.npmjs.com/package/@citizensadvice/forms)
 
-| Name                    | Type | Version                                                                 |
-|-------------------------|------|-------------------------------------------------------------------------|
-| `@citizensadvice/forms` | Meta | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/forms.svg) |
+This meta package includes all form component styling.
+
+- [Dependencies](#dependencies)
+- [Installation](#installation)
 
 ## Dependencies
 
 | Name                                |
-|-------------------------------------|
+| ----------------------------------- |
 | `@citizensadvice/support`           |
 | `@citizensadvice/text-inputs`       |
 | `@citizensadvice/radios-checkboxes` |
@@ -17,28 +18,18 @@
 
 ## Installation
 
-Using your package manager of choice...
-
 ```shell
 $ npm install @citizensadvice/forms
 ```
 
-Then bring into your stylesheets with...
+now import into your stylesheet...
 
 ```scss
-@import "@citizensadvice/forms/index.scss";
+@import '@citizensadvice/forms/index.scss';
 ```
-
-### OR
 
 You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
 
 ```html
 <link src="https://unpkg.com/@citizensadvice/forms@latest/build/forms.css" />
 ```
-
-## Introduction
-
-This meta package includes all form component styling.
-
-> For more documentation on a specific dependency package, please refer to it's package `README.md`.

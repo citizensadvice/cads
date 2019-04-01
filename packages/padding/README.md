@@ -1,44 +1,15 @@
-# Padding
-
-| Name                      | Type   | Version                                                                   |
-|---------------------------|--------|---------------------------------------------------------------------------|
-| `@citizensadvice/padding` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/padding.svg) |
-
-## Dependencies
-
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
-
-## Installation
-
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/padding
-```
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/padding/index.scss";
-```
-
-### OR
-
-You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
-
-```html
-<link src="https://unpkg.com/@citizensadvice/padding@latest/build/padding.css" />
-```
-
-## Introduction
+# Padding [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/padding.svg)](https://www.npmjs.com/package/@citizensadvice/padding)
 
 Defines the space inside an element.
+
+- [Abbreviations](#abbreviations)
+- [Examples](#examples)
+- [Installation](#installation)
 
 ## Abbreviations
 
 | Abbr | Value                        |
-|------|------------------------------|
+| ---- | ---------------------------- |
 | `p`  | padding                      |
 | `t`  | top                          |
 | `r`  | right                        |
@@ -55,7 +26,9 @@ Defines the space inside an element.
 | `6`  | `$spacing-6` (2rem, 32px)    |
 | `7`  | `$spacing-7` (2.5rem, 40px)  |
 
-## Uniform padding
+## Examples
+
+### Uniform padding
 
 ```html
 <div class="p-0">Lorem ipsum</div>
@@ -70,7 +43,7 @@ Defines the space inside an element.
 // This will give a padding of x to all sides.
 ```
 
-## Directional padding
+### Directional padding
 
 ```html
 <div class="pt-4">Lorem ipsum</div>
@@ -86,12 +59,12 @@ Defines the space inside an element.
 // This will give a padding-left of 40px.
 ```
 
-## Responsive padding classes
+### Responsive padding classes
 
 To apply specific classes at set screen widths, use the following classes:
 
 | Abbr | Value                                                |
-|------|------------------------------------------------------|
+| ---- | ---------------------------------------------------- |
 | `ns` | `$breakpoint-ns` (min-width: 48rem)                  |
 | `m`  | `$breakpoint-m` (min-width: 48rem, max-width: 64rem) |
 | `l`  | `$breakpoint-l` (min-width: 64rem)                   |
@@ -99,5 +72,24 @@ To apply specific classes at set screen widths, use the following classes:
 ```html
 <div class="pl-7-l pl-5-ns pl-3">Lorem ipsum</div>
 
-// This will give a padding-left of 40px on device widths over 64rem, 24px on devices with a width of 48rem and finally 12px on devices with a width up to 48rem.
+// This will give a padding-left of 40px on device widths over 64rem, 24px on devices with a width
+of 48rem and finally 12px on devices with a width up to 48rem.
+```
+
+## Installation
+
+```shell
+$ npm install @citizensadvice/padding
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/padding/index.scss';
+```
+
+You can make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file.
+
+```html
+<link src="https://unpkg.com/@citizensadvice/padding@latest/build/padding.css" />
 ```

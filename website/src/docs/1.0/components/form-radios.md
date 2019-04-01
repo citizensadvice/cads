@@ -10,23 +10,21 @@ When using radio buttons
 - let users choose a single option from a list
 - radio buttons should be stacked
 - if necessary two options can be placed horizontally stacked
-- you'll need to use a `.c-label` component, but it won't be linked to a specific radio button. See the [label component]({{ site.baseurl }}/docs/1.0/components/labels) for further information.
 
 {% capture example %}
-<fieldset class="c-fieldset">
-  <legend class="c-label">Did this help?</legend>
 
-  <div class="c-fieldset__item">
-    <div class="c-radio">
-      <input checked id="yes" value="yes" name="feedback" type="radio">
-      <label for="yes">Yes</label>
+<fieldset class="b-none p-0 m-0">
+  <legend class="block bold lh-2 mb-2">Did you find this helpful?</legend>
+  <div class="block">
+    <div class="radio">
+      <input value="yes" id="yes" name="feedback" type="radio" />
+      <label for="yes" class="ml-2 lh-2 semi-bold pointer">Yes</label>
     </div>
   </div>
-
-  <div class="c-fieldset__item">
-    <div class="c-radio">
-      <input id="no" value="no" name="feedback" type="radio">
-      <label for="no">No</label>
+  <div class="block mv-2">
+    <div class="radio">
+      <input value="no" id="no" name="feedback" type="radio" />
+      <label for="no" class="ml-2 lh-2 semi-bold">No</label>
     </div>
   </div>
 </fieldset>
@@ -34,20 +32,19 @@ When using radio buttons
 {% include example.html content=example %}
 
 {% capture snippet %}
-<fieldset class="c-fieldset">
-  <legend class="c-label">Did this help?</legend>
 
-  <div class="c-fieldset__item">
-    <div class="c-radio">
-      <input checked id="yes" value="yes" name="feedback" type="radio">
-      <label for="yes">Yes</label>
+<fieldset class="b-none p-0 m-0">
+  <legend class="block bold lh-2 mb-2">Did you find this helpful?</legend>
+  <div class="block">
+    <div class="radio">
+      <input value="yes" id="yes" name="feedback" type="radio" />
+      <label for="yes" class="ml-2 lh-2 semi-bold pointer">Yes</label>
     </div>
   </div>
-
-  <div class="c-fieldset__item">
-    <div class="c-radio">
-      <input id="no" value="no" name="feedback" type="radio">
-      <label for="no">No</label>
+  <div class="block mv-2">
+    <div class="radio">
+      <input value="no" id="no" name="feedback" type="radio" />
+      <label for="no" class="ml-2 lh-2 semi-bold">No</label>
     </div>
   </div>
 </fieldset>

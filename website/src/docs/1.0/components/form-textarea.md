@@ -9,9 +9,10 @@ A textarea gives users a larger amount of space then just a single line text fie
 The height of your textarea will set expectations for the user on how much to enter. They may not know that the textarea can expand so make the height proportional to the amount of text to be entered.
 
 {% capture example %}
-<fieldset class="c-fieldset">
-  <label class="c-label" for="message">Message:</label>
-  <div class="c-textarea">
+
+<fieldset class="mb-5 b-none p-0 m-0">
+  <div class="text-input">
+    <label class="block bold mb-2" for="message">Message</label>
     <textarea id="message"></textarea>
   </div>
 </fieldset>
@@ -19,9 +20,10 @@ The height of your textarea will set expectations for the user on how much to en
 {% include example.html content=example %}
 
 {% capture snippet %}
-<fieldset class="c-fieldset">
-  <label class="c-label" for="message">Message:</label>
-  <div class="c-textarea">
+
+<fieldset class="mb-5 b-none p-0 m-0">
+  <div class="text-input">
+    <label class="block bold mb-2" for="message">Message</label>
     <textarea id="message"></textarea>
   </div>
 </fieldset>

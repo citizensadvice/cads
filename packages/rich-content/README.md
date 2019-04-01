@@ -1,40 +1,11 @@
-# Rich-content
-
-| Name                           | Type   | Version                                                                        |
-|--------------------------------|--------|--------------------------------------------------------------------------------|
-| `@citizensadvice/rich-content` | Module | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/rich-content.svg) |
-
-## Dependencies
-
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
-
-## Installation
-
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/rich-content
-```
-
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/rich-content/index.scss";
-```
-
-### OR
-
-You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-
-```html
-<link src="https://unpkg.com/@citizensadvice/rich-content@latest/build/rich-content.css" />
-```
-
-## Introduction
+# Rich-content [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/rich-content.svg)](https://www.npmjs.com/package/@citizensadvice/rich-content)
 
 A module for styling up classless elements ideal for use in a CMS.
+
+- [Examples](#examples)
+- [Installation](#installation)
+
+## Examples
 
 ### Example checkbox markup
 
@@ -45,7 +16,7 @@ A module for styling up classless elements ideal for use in a CMS.
   <h3>Heading level 3</h3>
 
   <p>Lorem <em>ipsum</em> dolar sit amet, consectetur...</p>
-  
+
   <ul>
     <li>List item #1</li>
     <li>List item #2</li>
@@ -62,4 +33,22 @@ A module for styling up classless elements ideal for use in a CMS.
 </div>
 ```
 
-> Refer to the typography package for more documentation on each element.
+## Installation
+
+```shell
+$ npm install @citizensadvice/rich-content
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/rich-content/index.scss';
+```
+
+### OR
+
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
+```html
+<link src="https://unpkg.com/@citizensadvice/rich-content@latest/build/rich-content.css" />
+```

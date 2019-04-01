@@ -1,45 +1,16 @@
-# Focus
-
-| Name                    | Type   | Version                                                                 |
-|-------------------------|--------|-------------------------------------------------------------------------|
-| `@citizensadvice/focus` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/focus.svg) |
-
-## Dependencies
-
-| Name                      | Description                 |
-|---------------------------|-----------------------------|
-| `@citizensadvice/support` | System wide settings/config |
-
-## Installation
-
-Using your package manager of choice...
-
-```shell
-$ npm install @citizensadvice/focus
-```
-
-Then bring into your stylesheets with...
-
-```scss
-@import "@citizensadvice/focus/index.scss";
-```
-
-### OR
-
-You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
-
-```html
-<link src="https://unpkg.com/@citizensadvice/focus@latest/build/focus.css" />
-```
-
-## Introduction
+# Focus [![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/focus.svg)](https://www.npmjs.com/package/@citizensadvice/focus)
 
 The `:focus` selector is used to select the element that has focus.
 
-## Text colour focus state
+- [Classes](#classes)
+- [Installation](#installation)
 
-| Available classes                | Value                           |
-|----------------------------------|---------------------------------|
+## Classes
+
+### Text colour focus state
+
+| Class name                       | Value                           |
+| -------------------------------- | ------------------------------- |
 | `.focus-text-heritage-blue`      | `$heritage-blue (#004B88)`      |
 | `.focus-text-heritage-blue-40`   | `$heritage-blue-40 (#97a8cc)`   |
 | `.focus-text-heritage-yellow-40` | `$heritage-yellow-40 (#fde5c4)` |
@@ -68,10 +39,10 @@ The `:focus` selector is used to select the element that has focus.
 <p class="focus-text-turquoise-dark">Text colour of #5cc0b5 on Focus</p>
 ```
 
-## Border focus state
+### Border focus state
 
-| Available classes             | Value                           |
-|-------------------------------|---------------------------------|
+| Class name                    | Value                           |
+| ----------------------------- | ------------------------------- |
 | `.focus-b-heritage-blue`      | `$heritage-blue (#004B88)`      |
 | `.focus-b-heritage-blue-40`   | `$heritage-blue-40 (#97a8cc)`   |
 | `.focus-b-heritage-yellow-40` | `$heritage-yellow-40 (#fde5c4)` |
@@ -100,10 +71,10 @@ The `:focus` selector is used to select the element that has focus.
 <p class="focus-b-pale-grey">Border colour of #f2f2f2 on Focus</p>
 ```
 
-## Background-colour focus state
+### Background-colour focus state
 
-| Available classes              | Value                           |
-|--------------------------------|---------------------------------|
+| Class name                     | Value                           |
+| ------------------------------ | ------------------------------- |
 | `.focus-bg-heritage-blue`      | `$heritage-blue (#004B88)`      |
 | `.focus-bg-heritage-blue-40`   | `$heritage-blue-40 (#97a8cc)`   |
 | `.focus-bg-heritage-yellow-40` | `$heritage-yellow-40 (#fde5c4)` |
@@ -130,4 +101,22 @@ The `:focus` selector is used to select the element that has focus.
 <div class="focus-bg-red-light">A block with Background colour of #fae1e1 on Focus</div>
 <div class="focus-bg-mid-grey">A block with Background colour of #606060 on Focus</div>
 <div class="focus-bg-blue-light">A block with Background colour of #f2f8ff on Focus</div>
+```
+
+## Installation
+
+```shell
+$ npm install @citizensadvice/focus
+```
+
+now import into your stylesheet...
+
+```scss
+@import '@citizensadvice/focus/index.scss';
+```
+
+You can also make use of the [unpkg](https://unpkg.com) service, try adding the link below to the head of your `HTML` file
+
+```html
+<link src="https://unpkg.com/@citizensadvice/focus@latest/build/focus.css" />
 ```
