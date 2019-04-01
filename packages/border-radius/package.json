@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/border-radius",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "cads": {
     "package_type": "utility"
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/support": "^1.0.0"
+    "@citizensadvice/support": "^1.0.1"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
