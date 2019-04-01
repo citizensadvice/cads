@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "cads": {
     "package_type": "meta"
@@ -14,9 +14,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/normalize": "^1.0.0",
-    "@citizensadvice/support": "^1.0.0",
-    "@citizensadvice/utilities": "^1.0.0"
+    "@citizensadvice/normalize": "^1.0.1",
+    "@citizensadvice/support": "^1.0.1",
+    "@citizensadvice/utilities": "^1.0.1"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
