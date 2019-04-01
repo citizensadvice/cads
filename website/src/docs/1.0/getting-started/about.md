@@ -25,7 +25,7 @@ Code is written with performance in mind so all users can have a efficient digit
 
 The CSS framework can cater to any size of project.
 
-Utility CSS classes can be mixed and matched together to create consistent UI elements and layout.
+Utility CSS classes can be mixed and matched together to create consistent UI elements and layout. You can use our [experimental tool](https://adamgparsons.github.io/cads-finder/) to easily find utility classes.
 
 Components are tested UI patterns that can be reused independently across digital products.
 
