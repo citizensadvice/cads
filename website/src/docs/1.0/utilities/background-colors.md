@@ -53,18 +53,20 @@ Background colors are most commonly used for filling large blocks of content or 
 | `.bg-blue-light`         | `$blue-light (#f2f8ff)`         |
 | `.bg-turquoise-dark`     | `$turquoise-dark (#5cc0b5)`     |
 | `.bg-turquoise-primary`  | `$turquoise-primary (#81cec6)`  |
-| `.bg-turquoise-mid `     | `$turquoise-mid (#b8e3df)`      |
+| `.bg-turquoise-mid`      | `$turquoise-mid (#b8e3df)`      |
 | `.bg-turquoise-light`    | `$turquoise-light (#eaf9f7)`    |
 | `.bg-red-light`          | `$red-light (#fae1e1)`          |
 | `.bg-black`              | `$black (#000000)`              |
 | `.bg-dark-grey`          | `$dark-grey (#333333)`          |
 | `.bg-mid-grey`           | `$mid-grey  (#606060)`          |
-| `.bg-grey`               | ` $grey (#9f9f9f)`              |
+| `.bg-grey`               | `$grey (#9f9f9f)`               |
 | `.bg-light-grey`         | `$light-grey (#dfdfdf)`         |
 | `.bg-pale-grey`          | `$pale-grey (#f2f2f2)`          |
 | `.bg-white`              | `$white (#ffffff)`              |
 | `.bg-heritage-yellow`    | `$heritage-yellow (#fcbb69)`    |
 | `.bg-red-primary`        | `$red-primary (#df3034)`        |
+
+### Example markup
 
 ```html
 <div class="bg-heritage-blue">
