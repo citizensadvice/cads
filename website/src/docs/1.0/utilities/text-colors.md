@@ -4,8 +4,8 @@ title: Colours
 ---
 # Text-colors
 
-| Name                          | Type   | Version                                                                       |
-|-------------------------------|--------|-------------------------------------------------------------------------------|
+| Name                          | Type   | Version |
+|-------------------------------|-------- -------------------------------------------------------------------------------|
 | `@citizensadvice/text-colors` | Utilty | ![npm (scoped)](https://img.shields.io/npm/v/@citizensadvice/text-colors.svg) |
 
 
@@ -41,7 +41,7 @@ You can make use of the [unpkg](https://unpkg.com) service, try adding the link 
 
 Defines the colour of text.
 
-### Background Colours
+### Text Colours
 
 | Available classes     | Value                           |
 |-----------------------|---------------------------------|
@@ -54,18 +54,20 @@ Defines the colour of text.
 | `.blue-light`         | `$blue-light (#f2f8ff)`         |
 | `.turquoise-dark`     | `$turquoise-dark (#5cc0b5)`     |
 | `.turquoise-primary`  | `$turquoise-primary (#81cec6)`  |
-| `.turquoise-mid `     | `$turquoise-mid (#b8e3df)`      |
+| `.turquoise-mid`      | `$turquoise-mid (#b8e3df)`      |
 | `.turquoise-light`    | `$turquoise-light (#eaf9f7)`    |
 | `.red-light`          | `$red-light (#fae1e1)`          |
 | `.black`              | `$black (#000000)`              |
 | `.dark-grey`          | `$dark-grey (#333333)`          |
 | `.mid-grey`           | `$mid-grey  (#606060)`          |
-| `.grey`               | ` $grey (#9f9f9f)`              |
+| `.grey`               | `$grey (#9f9f9f)`               |
 | `.light-grey`         | `$light-grey (#dfdfdf)`         |
 | `.pale-grey`          | `$pale-grey (#f2f2f2)`          |
 | `.white`              | `$white (#ffffff)`              |
 | `.heritage-yellow`    | `$heritage-yellow (#fcbb69)`    |
 | `.red-primary`        | `$red-primary (#df3034)`        |
+
+### Example markup
 
 ```html
 <p class="heritage-blue">A block with a text colour of #004B88</p>
