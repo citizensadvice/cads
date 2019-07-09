@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/forms",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "MIT",
   "cads": {
     "package_type": "meta"
@@ -14,12 +14,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/buttons": "^1.0.1",
-    "@citizensadvice/radios-checkboxes": "^1.0.1",
-    "@citizensadvice/selects": "^1.0.1",
-    "@citizensadvice/support": "^1.0.1",
-    "@citizensadvice/text-inputs": "^1.0.1",
-    "@citizensadvice/validation": "^1.0.1"
+    "@citizensadvice/buttons": "^1.0.3",
+    "@citizensadvice/radios-checkboxes": "^1.0.3",
+    "@citizensadvice/selects": "^1.0.3",
+    "@citizensadvice/support": "^1.0.3",
+    "@citizensadvice/text-inputs": "^1.0.3",
+    "@citizensadvice/validation": "^1.0.3"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",

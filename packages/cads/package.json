@@ -1,6 +1,6 @@
 {
   "name": "@citizensadvice/cads",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "MIT",
   "cads": {
     "package_type": "meta"
@@ -14,10 +14,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@citizensadvice/core": "^1.0.1",
-    "@citizensadvice/forms": "^1.0.1",
-    "@citizensadvice/rich-content": "^1.0.1",
-    "@citizensadvice/typography": "^1.0.1"
+    "@citizensadvice/core": "^1.0.3",
+    "@citizensadvice/forms": "^1.0.3",
+    "@citizensadvice/rich-content": "^1.0.3",
+    "@citizensadvice/typography": "^1.0.3"
   },
   "scripts": {
     "build": "npm-run-all -p buildcss:expanded buildcss:compressed",
