@@ -17,7 +17,7 @@ Our platform uses the "mono-repo" concept, where all aspects of the Design Syste
 - the **packages** which are the framework itself,
 - the documentation **[website](https://citizensadvice.github.io/ca-designsystem/)**.
 
-We're making use of [Lerna](Lernajs.io) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they require.
+We're making use of [Lerna](https://lerna.js.org) and Yarn workspaces to help with the dependency management, meaning we can publish each component individually. This gives a consumer of the framework the power to pull in only what they require.
 
 We also make use of Docker to make sure we avoid the "it works on my machine" statement. We detail the instructions for setting this up in each section, but make sure you've installed [Docker](https://www.docker.com/get-started) beforehand.
 
