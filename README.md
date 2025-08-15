@@ -1,3 +1,6 @@
+> [!NOTE]
+> This project has been archived. Please use https://github.com/citizensadvice/design-system instead.
+
 # Citizens Advice Design System
 
 ## Table of contents
